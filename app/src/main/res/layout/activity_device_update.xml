@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#EEE"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_item_height1"
+        android:layout_marginBottom="1dp">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/update"
+            android:textSize="@dimen/text_size_normal"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_curr"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_item_height1"
+            android:background="#EEE"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/current_version_is"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/content_text_curr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:text="1"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_new"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_item_height1"
+            android:layout_below="@+id/ll_curr"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/can_update_to"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/content_text_new"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_item_height1"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:text="1"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/content_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="@dimen/progress_width_height"
+            android:layout_height="@dimen/progress_width_height"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@anim/progress_white"
+            android:indeterminateDuration="560000" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_bottom_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/layout_button1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/button1_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/delete"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_button2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/button2_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/tabshop_main_frame">
+
+        <com.smartism.znzk.view.ScrollWebView
+            android:id="@+id/web_view1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:visibility="gone"
+            android:progressDrawable="@drawable/progress_webview"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_no_hub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/location_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/zhzj_welcome_line" />
+
+        <Button
+            android:id="@+id/btn_into"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/into_smart_button"
+            android:layout_marginBottom="10dp"
+            android:text="进入智能家居"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

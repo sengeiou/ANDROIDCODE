@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/setting_top_layout"
+        style="@style/default_paddding_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/zhzj_imageview_back"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_setting_title" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/setting_top_layout"
+        android:background="@color/graysloae" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp">
+
+        <LinearLayout
+            android:id="@+id/ly_noticecenter_port"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/linearlayout_radious"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Notice_center_item_left"
+                android:text="@string/activity_port" />
+
+            <EditText
+                android:id="@+id/et_port"
+                style="@style/Notice_center_item_right"
+                android:hint="端口"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/graysloae"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ly_noticecenter_ip"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/linearlayout_radious_center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Notice_center_item_left"
+                android:text="@string/activity_ip_address" />
+
+            <EditText
+                android:id="@+id/et_ip_address"
+                style="@style/Notice_center_item_right"
+                android:hint="IP" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_noticecenter_unumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/linearlayout_radious_center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Notice_center_item_left"
+                android:text="@string/activity_user_num" />
+
+            <EditText
+                android:id="@+id/et_user_id"
+                style="@style/Notice_center_item_right"
+                android:hint="用户编号"
+                android:inputType="number"
+                android:maxLength="10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_noticecenter_status"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/linearlayout_radious_bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Notice_center_item_left"
+                android:layout_height="match_parent"
+                android:text="@string/activity_conn_status" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center|left"
+                android:hint="状态"
+                android:paddingLeft="5dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_noticecenter_acid"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/linearlayout_radious_center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/Notice_center_item_left"
+                android:text="@string/activity_ac_id" />
+
+            <EditText
+                android:id="@+id/et_ac_number"
+                style="@style/Notice_center_item_right"
+                android:hint="@string/activity_ac_number"
+                android:maxLength="20" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/userinfo_update_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/zhzj_default_button"
+            android:onClick="updateUserInfo"
+            android:text="@string/activity_beijingsuo_submitupdate"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </TableLayout>
+
+
+</LinearLayout>

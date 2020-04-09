@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jdm="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eeeeee" >
+
+    <ImageView
+        android:id="@+id/am_devicelogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp" />
+    
+    <TextView
+        android:id="@+id/am_commandtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/am_devicelogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/am_command"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/am_commandtime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="16sp" />
+
+    
+    <FrameLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/long_press_layout_parent"
+
+        >
+
+        <com.smartism.znzk.view.ProgressCycleView
+            android:id="@+id/am_controlbg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            jdm:jdmlayout_width="2dp"
+            jdm:background="@android:color/transparent"
+            jdm:max="100"
+            jdm:jdmprogress="0"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/am_controlbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/am_cancel_btn" />
+
+        <TextView
+            android:id="@+id/tv_notice"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:textSize="16sp"
+	        android:text="@string/jiechutishi" />
+    </FrameLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/zhicheng_no_door"
+            android:visibility="gone"
+    >
+        <Button
+                android:layout_centerInParent="true"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_zhicheng_bg"
+                android:text="@string/lookover"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:id="@+id/look_zhicheng_btn"
+        />
+        <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/circle_zhicheng_bg"
+                android:text="@string/ignore"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:id="@+id/ignore_zhicheng_btn"
+                android:layout_marginLeft="17dp"
+        />
+
+        <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="17dp"
+                android:background="@drawable/circle_zhicheng_bg"
+                android:text="@string/lift"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:id="@+id/release_zhicheng_btn"
+        />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/zhicheng_parent"
+        android:visibility="gone"
+        >
+
+        <View android:layout_width="0dp"
+              android:layout_height="1dp"
+              android:layout_centerHorizontal="true"
+              android:id="@+id/center_view"
+        />
+
+        <ImageView
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:background="@drawable/call_btn_jie"
+            android:id="@+id/zhicheng_look_camera_btn"
+            android:layout_toRightOf="@id/center_view"
+            android:layout_centerVertical="true"
+            />
+
+
+        <ImageView
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:background="@drawable/call_btn_up"
+            android:id="@+id/zhicheng_ignore_btn"
+            android:layout_toLeftOf="@id/center_view"
+            android:layout_centerVertical="true"
+        />
+
+    </RelativeLayout>
+    
+</RelativeLayout>

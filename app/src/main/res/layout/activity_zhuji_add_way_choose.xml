@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/set_top_layout"
+        style="@style/default_paddding_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/zhzj_imageview_back"
+            android:onClick="back"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/add_devices_title" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_zhuji_way_choose_bg"
+            >
+
+            <LinearLayout
+                android:id="@+id/rl_zhuji_add_smartlink"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/zhzj_add_item_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_25"
+                android:layout_marginStart="20sp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginEnd="20sp">
+
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_margin="10sp"
+                    android:src="@drawable/icon_add_zhuji_way_choose_smartlink"/>
+
+                <TextView
+                    style="@style/zhuji_add_item_title"
+                    android:text="@string/zhuji_addway_choose_item_smartlink"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rl_zhuji_add_smartlink_instruction"
+                android:layout_below="@id/rl_zhuji_add_smartlink"
+                style="@style/zhuji_add_item_instruction"
+                android:text="@string/zhuji_addway_choose_item_smartlink_instruction"/>
+
+            <LinearLayout
+                android:id="@+id/rl_zhuji_add_ap"
+                android:layout_below="@id/rl_zhuji_add_smartlink_instruction"
+                style="@style/zhuji_add_item_layout">
+
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_margin="10sp"
+                    android:src="@drawable/icon_add_zhuji_way_choose_ap"/>
+
+                <TextView
+                    style="@style/zhuji_add_item_title"
+                    android:text="@string/zhuji_addway_choose_item_ap"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rl_zhuji_add_ap_instruction"
+                android:layout_below="@id/rl_zhuji_add_ap"
+                style="@style/zhuji_add_item_instruction"
+                android:text="@string/zhuji_addway_choose_item_ap_instruction"/>
+
+            <LinearLayout
+                android:id="@+id/rl_zhuji_add_scan"
+                android:layout_below="@id/rl_zhuji_add_ap_instruction"
+                style="@style/zhuji_add_item_layout">
+
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_margin="10sp"
+                    android:src="@drawable/icon_add_zhuji_way_choose_scan"/>
+
+                <TextView
+                    style="@style/zhuji_add_item_title"
+                    android:text="@string/zhuji_addway_choose_item_scan"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rl_zhuji_add_search"
+                android:layout_below="@id/rl_zhuji_add_scan"
+                style="@style/zhuji_add_item_layout"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_margin="10sp"
+                    android:src="@drawable/icon_add_zhuji_way_choose_search"/>
+
+                <TextView
+                    style="@style/zhuji_add_item_title"
+                    android:text="@string/zhuji_addway_choose_item_search"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/rl_zhuji_add_search_instruction"
+                android:layout_below="@id/rl_zhuji_add_search"
+                style="@style/zhuji_add_item_instruction"
+                android:text="@string/zhuji_addway_choose_item_search_instruction"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/rl_zhuji_add_serial"
+                android:layout_below="@id/rl_zhuji_add_search_instruction"
+                style="@style/zhuji_add_item_layout"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_margin="10sp"
+                    android:src="@drawable/icon_add_zhuji_way_choose_serial"/>
+
+                <TextView
+                    style="@style/zhuji_add_item_title"
+                    android:text="@string/zhuji_addway_choose_item_serial"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rl_zhuji_add_serial_instruction"
+                android:layout_below="@id/rl_zhuji_add_serial"
+                style="@style/zhuji_add_item_instruction"
+                android:text="@string/zhuji_addway_choose_item_serial_instruction"
+                android:visibility="gone"/>
+
+
+            <LinearLayout
+                android:id="@+id/rl_zhuji_add_sms"
+                android:layout_below="@id/rl_zhuji_add_serial_instruction"
+                style="@style/zhuji_add_item_layout"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_margin="10sp"
+                    android:src="@drawable/icon_add_zhuji_way_choose_sms"/>
+
+                <TextView
+                    style="@style/zhuji_add_item_title"
+                    android:text="@string/zhuji_addway_choose_item_sms"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rl_zhuji_add_sms_instruction"
+                android:layout_below="@id/rl_zhuji_add_sms"
+                style="@style/zhuji_add_item_instruction"
+                android:text="@string/zhuji_addway_choose_item_sms_instruction"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/rl_zhuji_add_camera"
+                android:layout_below="@id/rl_zhuji_add_sms_instruction"
+                style="@style/zhuji_add_item_layout"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_margin="10sp"
+                    android:src="@drawable/icon_add_zhuji_way_choose_camera"/>
+
+                <TextView
+                    style="@style/zhuji_add_item_title"
+                    android:text="@string/zhuji_addway_choose_item_camera"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

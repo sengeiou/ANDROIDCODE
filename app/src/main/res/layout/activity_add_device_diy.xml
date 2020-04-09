@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/add_top_layout"
+        style="@style/default_paddding_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/zhzj_imageview_back"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/regiter_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_add_device_diy_title" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/add_top_layout"
+        android:background="@color/graysloae" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/diy_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_list_item_bg"
+                android:paddingBottom="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="20dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/diy_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/activity_add_device_diy_function" />
+
+                <TextView
+                    android:id="@+id/diy_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/diy_head"
+                    android:text="@string/activity_add_device_diy_function_hit"
+                    android:textColor="@color/gray" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/graysloae"
+                android:visibility="gone" />
+
+            <com.smartism.znzk.view.MyGridView
+                android:id="@+id/study_command_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:columnWidth="80dp"
+                android:horizontalSpacing="10dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="10dp"></com.smartism.znzk.view.MyGridView>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:id="@+id/study_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/add_study_exit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/zhzj_default_button"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/activity_add_device_diy_buttonexit"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+
+            <Button
+                android:id="@+id/add_study_exit_finish_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/zhzj_default_button"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/activity_add_device_diy_buttonfinish"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_study_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/zhzj_default_button"
+        android:text="@string/activity_add_device_diy_buttonstudy"
+        android:textColor="@color/selector_btn_textcolor"
+        android:textSize="18sp" />
+
+</RelativeLayout>

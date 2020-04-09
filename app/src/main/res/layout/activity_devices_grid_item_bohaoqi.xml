@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_bohaoqi_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <FrameLayout
+        android:id="@+id/item_bohaoqi_frame"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_150">
+        <ImageView
+            android:id="@+id/item_bohaoqi_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_grid_item_bohaoqi_input"/>
+        <TextView
+            android:id="@+id/item_bohaoqi_trigname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TRIG1"/>
+    </FrameLayout>
+    <TextView
+        android:id="@+id/item_bohaoqi_dname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_bohaoqi_frame"
+        android:text="我是设备名称"/>
+
+</LinearLayout>

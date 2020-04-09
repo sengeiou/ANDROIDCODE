@@ -1,0 +1,16 @@
+{
+    "auth": {
+        "ctrsmarthomefacd92d1": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": []
+        }
+    },
+    "storage": {
+        "ctrsmarthomestorage": {
+            "service": "S3",
+            "providerPlugin": "awscloudformation"
+        }
+    },
+    "notifications": {}
+}

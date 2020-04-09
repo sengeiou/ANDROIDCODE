@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/zhzj_xueyaji_caidan_bg">
+
+        <RelativeLayout
+            android:id="@+id/pop_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableStart="@drawable/zhzj_shezhi"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="start|center_vertical"
+                android:padding="10dp"
+                android:text="Share device"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/tv_edit_fluid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_share"
+                android:layout_centerHorizontal="true"
+                android:drawableStart="@drawable/zhzj_shoudongfenpei"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="start|center_vertical"
+                android:padding="10dp"
+                android:text="Edit fluid"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_create_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_edit_fluid"
+                android:layout_centerHorizontal="true"
+                android:drawableStart="@drawable/zhzj_shezhi"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="start|center_vertical"
+                android:padding="10dp"
+                android:text="Create group"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_wifi_diagnosis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_create_group"
+                android:layout_centerHorizontal="true"
+                android:drawableStart="@drawable/zhzj_shoudongfenpei"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="start|center_vertical"
+                android:padding="10dp"
+                android:text="Signal diagnosis"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/device_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/device_item_click_bg"
+    android:descendantFocusability="blocksDescendants">
+
+
+    <FrameLayout
+        android:id="@+id/f_layout"
+        android:layout_width="55dip"
+        android:layout_height="55dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/device_logo"
+            android:layout_width="55dip"
+            android:layout_height="55dip"
+            android:layout_gravity="center"
+            android:padding="3dp"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/device_low"
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:layout_gravity="top|start"
+            android:scaleType="fitCenter"
+            android:src="@drawable/low" />
+
+        <ImageView
+            android:id="@+id/device_power"
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:layout_gravity="bottom|start"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_power_normal"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/r_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/last_time"
+            style="@style/Devices_list_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end" />
+
+        <LinearLayout
+            android:id="@+id/c_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="end"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/c_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@drawable/submenu"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/c_one_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/device_item_one_button_bg"
+                android:visibility="gone" />
+
+            <com.smartism.znzk.view.CheckSwitchButton
+                android:id="@+id/c_switchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:enabled="true"
+                android:focusable="false"
+
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/r_layout"
+        android:layout_toRightOf="@id/f_layout">
+
+        <LinearLayout
+            android:id="@+id/n_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/device_name"
+                style="@style/Devices_list_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/device_type_left"
+                style="@style/Devices_list_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(" />
+
+            <TextView
+                android:id="@+id/device_type"
+                style="@style/Devices_list_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/device_type_right"
+                style="@style/Devices_list_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=")" />
+
+            <ImageView
+                android:id="@+id/zhuji_anim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/device_mode"
+                style="@style/Devices_list_item_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/comm_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/n_layout"
+            android:layout_marginTop="3dp">
+
+            <ImageView
+                android:id="@+id/wendu_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/wendu"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/last_command"
+                style="@style/Devices_list_item_command"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/wendu_img"
+                android:ellipsize="marquee"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/wendu_shidu_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/last_command"
+                android:src="@drawable/shidu"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/last_command_shidu"
+                style="@style/Devices_list_item_command"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/wendu_shidu_img"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/scene_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/comm_layout"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/scene_arming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/scene_item_arming_normal" />
+
+            <ImageView
+                android:id="@+id/scene_disarming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/scene_item_disarming_normal" />
+
+            <ImageView
+                android:id="@+id/scene_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/scene_item_home_normal" />
+
+            <ImageView
+                android:id="@+id/scene_panic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/btn_panic_bg" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

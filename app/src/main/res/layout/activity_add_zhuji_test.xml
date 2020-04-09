@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/addzhuji_top_layout"
+        style="@style/default_paddding_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/zhzj_imageview_back"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/activity_add_zhuji_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/connect_failure_connect" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/cause_tv"
+        android:paddingTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/addzhuji_top_layout"
+        android:textSize="@dimen/sp_16"
+        style="@android:style/TextAppearance"
+        android:text="@string/connect_failure_reson"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <com.smartism.znzk.widget.ElasticityListView
+        android:divider="@null"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/cause_listview"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHeight_percent="0.65"
+        app:layout_constraintTop_toBottomOf="@id/cause_tv"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+
+    </com.smartism.znzk.widget.ElasticityListView>
+    <Button
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/cause_listview"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ap_btn"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintVertical_bias="0"
+        android:id="@+id/btn_rebuild"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/zhzj_default_button"
+        android:text="@string/connect_failure_rebuild"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_rebuild"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintVertical_bias="0"
+        android:id="@+id/ap_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/zhzj_default_button"
+        android:text="@string/add_zhuji_by_ap_name_try"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</android.support.constraint.ConstraintLayout>

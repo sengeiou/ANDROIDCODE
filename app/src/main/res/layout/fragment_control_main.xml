@@ -1,0 +1,758 @@
+<com.smartism.znzk.widget.BounceScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/control_main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EEE"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/time_control"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_item_height"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/item_left_right_margin"
+                android:paddingRight="@dimen/item_left_right_margin"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/icon_ctl_time"
+                    android:layout_width="@dimen/item_left_icon_width_height"
+                    android:layout_height="@dimen/item_left_icon_width_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/zhzj_ctl_time" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/icon_ctl_time"
+                    android:text="@string/time_control"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/zhzj_arrow"
+                    android:contentDescription="@string/imagedes" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/video_control"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/item_left_right_margin"
+                android:paddingRight="@dimen/item_left_right_margin"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/icon_ctl_media"
+                    android:layout_width="@dimen/item_left_icon_width_height"
+                    android:layout_height="@dimen/item_left_icon_width_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/zhzj_ctl_video" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/base_setting_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/icon_ctl_media"
+                    android:text="@string/audio_video_control"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/zhzj_arrow"
+                    android:contentDescription="@string/imagedes" />
+            </RelativeLayout>
+
+            <!-- 高级设置 -->
+            <RelativeLayout
+                android:id="@+id/more_settings_control"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/item_left_right_margin"
+                android:paddingRight="@dimen/item_left_right_margin"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/icon_ctl_moresettings"
+                    android:layout_width="@dimen/item_left_icon_width_height"
+                    android:layout_height="@dimen/item_left_icon_width_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_order" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/icon_ctl_moresettings"
+                    android:text="@string/xm_more_setting"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/zhzj_arrow"
+                    android:contentDescription="@string/imagedes" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/screen_shot"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/item_left_right_margin"
+                android:paddingRight="@dimen/item_left_right_margin"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/icon_ctl_shot"
+                    android:layout_width="@dimen/item_left_icon_width_height"
+                    android:layout_height="@dimen/item_left_icon_width_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/zhzj_ctl_picture" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/icon_ctl_shot"
+                    android:text="@string/network_shot"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/zhzj_arrow"
+                    android:contentDescription="@string/imagedes" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/security_control"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/item_left_right_margin"
+                android:paddingRight="@dimen/item_left_right_margin"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/icon_ctl_security"
+                    android:layout_width="@dimen/item_left_icon_width_height"
+                    android:layout_height="@dimen/item_left_icon_width_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/zhzj_ctl_security" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/icon_ctl_security"
+                    android:text="@string/security_control"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/zhzj_arrow"
+                    android:contentDescription="@string/imagedes" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/recode_control"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/item_left_right_margin"
+                android:paddingRight="@dimen/item_left_right_margin"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/icon_ctl_recode"
+                    android:layout_width="@dimen/item_left_icon_width_height"
+                    android:layout_height="@dimen/item_left_icon_width_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/zhzj_ctl_recoding" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/icon_ctl_recode"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/icon_ctl_recode"
+                    android:text="@string/video_set" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/zhzj_arrow"
+                    android:contentDescription="@string/imagedes" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/recodeback_control"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/item_left_right_margin"
+                android:paddingRight="@dimen/item_left_right_margin"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/icon_ctl_recodeback"
+                    android:layout_width="@dimen/item_left_icon_width_height"
+                    android:layout_height="@dimen/item_left_icon_width_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/zhzj_ctl_files" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:layout_toRightOf="@+id/icon_ctl_recodeback"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/record_file_list"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/zhzj_arrow"
+                    android:contentDescription="@string/imagedes" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/alarm_control"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/item_left_right_margin"
+                android:paddingRight="@dimen/item_left_right_margin"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/icon_ctl_alarm"
+                    android:layout_width="@dimen/item_left_icon_width_height"
+                    android:layout_height="@dimen/item_left_icon_width_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/zhzj_ctl_police" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/icon_ctl_alarm"
+                    android:text="@string/alarm_control"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/zhzj_arrow"
+                    android:contentDescription="@string/imagedes" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ap_statechange"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/item_left_right_margin"
+                android:paddingRight="@dimen/item_left_right_margin"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/icon_ctl_apmodechange"
+                    android:layout_width="@dimen/item_left_icon_width_height"
+                    android:layout_height="@dimen/item_left_icon_width_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ap_statechange" />
+
+                <TextView
+                    android:id="@+id/tx_apmodecange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/icon_ctl_apmodechange"
+                    android:text="@string/ap_modecahnge_line"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/zhzj_arrow"
+                    android:contentDescription="@string/imagedes" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/net_control"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/item_left_right_margin"
+                android:paddingRight="@dimen/item_left_right_margin"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/icon_ctl_net"
+                    android:layout_width="@dimen/item_left_icon_width_height"
+                    android:layout_height="@dimen/item_left_icon_width_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/zhzj_ctl_net" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/add_magin_right"
+                    android:background="@drawable/zhzj_arrow"
+                    android:contentDescription="@string/imagedes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/network_control"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/icon_ctl_net"
+                    android:layout_toEndOf="@+id/icon_ctl_net"
+                    android:id="@+id/textView8" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/modify_wifipwd_control"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/item_left_right_margin"
+                android:paddingRight="@dimen/item_left_right_margin"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/icon_ctl_modify_wifipwd"
+                    android:layout_width="@dimen/item_left_icon_width_height"
+                    android:layout_height="@dimen/item_left_icon_width_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/modify_wifi_pwd" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/icon_ctl_modify_wifipwd"
+                    android:text="@string/set_wifi_pwd"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/zhzj_arrow"
+                    android:contentDescription="@string/imagedes" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/language_control"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/item_left_right_margin"
+                android:paddingRight="@dimen/item_left_right_margin"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/icon_language"
+                    android:layout_width="@dimen/item_left_icon_width_height"
+                    android:layout_height="@dimen/item_left_icon_width_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/languages" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/icon_language"
+                    android:text="@string/language_set"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/zhzj_arrow"
+                    android:contentDescription="@string/imagedes" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sd_card_control"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/item_left_right_margin"
+                android:paddingRight="@dimen/item_left_right_margin"
+                >
+
+                <ImageView
+                    android:id="@+id/icon_ctl_sd_card"
+                    android:layout_width="@dimen/item_left_icon_width_height"
+                    android:layout_height="@dimen/item_left_icon_width_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sd_card" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/icon_ctl_sd_card"
+                    android:text="@string/sd_card_set"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/zhzj_arrow"
+                    android:contentDescription="@string/imagedes" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/remote_control"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/item_left_right_margin"
+                android:paddingRight="@dimen/item_left_right_margin"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/icon_ctl_remote"
+                    android:layout_width="@dimen/item_left_icon_width_height"
+                    android:layout_height="@dimen/item_left_icon_width_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_ctl_remote" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/icon_ctl_remote"
+                    android:text="@string/remote_control"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/zhzj_arrow"
+                    android:contentDescription="@string/imagedes" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/check_device_update"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/item_left_right_margin"
+                android:paddingRight="@dimen/item_left_right_margin"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/icon_ctl_remotes"
+                    android:layout_width="@dimen/item_left_icon_width_height"
+                    android:layout_height="@dimen/item_left_icon_width_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/zhzj_ctl_updates" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/icon_ctl_remotes"
+                    android:text="@string/check_device_update"
+                    />
+
+                <TextView
+                    android:id="@+id/update_progress_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/up_arrow"
+                    android:text=""
+                    />
+
+                <ImageView
+                    android:id="@+id/up_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/zhzj_arrow"
+                    android:contentDescription="@string/imagedes" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_phone_record_file"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/item_left_right_margin"
+                android:paddingRight="@dimen/item_left_right_margin"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_phone_file"
+                    android:layout_width="@dimen/item_left_icon_width_height"
+                    android:layout_height="@dimen/item_left_icon_width_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/zhzj_ctl_files" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/iv_phone_file"
+                    android:text="@string/xmsmf_local_video_setting"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_phone_record_file"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/iv_phone_file_right_arrow"
+                    android:text=""
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_phone_file_right_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/zhzj_arrow"
+                    android:contentDescription="@string/imagedes" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_screenshot_from_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/item_left_right_margin"
+                android:paddingRight="@dimen/item_left_right_margin"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_screenshot"
+                    android:layout_width="@dimen/item_left_icon_width_height"
+                    android:layout_height="@dimen/item_left_icon_width_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/zhzj_ctl_picture" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/iv_screenshot"
+                    android:text="@string/xmsmf_look_picture"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_srceenshot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/iv_screenshot_arrow"
+                    android:text=""
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_screenshot_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/zhzj_arrow"
+                    android:contentDescription="@string/imagedes" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_about_device"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/item_left_right_margin"
+                android:paddingRight="@dimen/item_left_right_margin"
+                android:visibility="gone"
+              >
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_about_device"
+                    android:layout_width="@dimen/item_left_icon_width_height"
+                    android:layout_height="@dimen/item_left_icon_width_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_about_device_svg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_about_device"
+                    android:text="@string/xmada_about_device"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_about_device"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/iv_about_device_arrow"
+                    android:text=""
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_about_device_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/zhzj_arrow"
+                    android:contentDescription="@string/imagedes" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.smartism.znzk.widget.BounceScrollView>

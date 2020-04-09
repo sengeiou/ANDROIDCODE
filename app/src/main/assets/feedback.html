@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" class="feedback">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>Feedback</title>
+		<link rel="stylesheet" type="text/css" href="css/feedback.css" />
+		<link href="css/mui.picker.min.css" rel="stylesheet" />
+		<link href="css/mui.poppicker.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<form action="addFeedback" id="feedbackForm" method="post" enctype="multipart/form-data">
+				<p>Feedback</p>
+				<div class="row mui-input-row">
+					<textarea id='content' name="content" maxlength="1000" class="mui-input-clear question" placeholder="Please tell me any suggestions you have"></textarea>
+				</div>
+				<p>Contacts</p>
+				<div class="mui-input-row">
+					<input id='email' name="email" type="text" maxlength="100" class="mui-input-clear email" placeholder="email" />
+				</div>
+				<div class="mui-input-row">
+					<input id='mobile' name="mobile" type="text" maxlength="100" class="mui-input-clear mobile" placeholder="phone number" />
+				</div>
+				<div class="mui-input-row">
+					<input id='whatsapp' name="whatsapp" type="text" maxlength="100" class="mui-input-clear whatsapp" placeholder="whatsapp" />
+				</div>
+				<div class="mui-content-padded">
+					<button type="button" id="submitBtn" class="mui-btn mui-btn-success mui-btn-block">Save</button>
+				</div>
+			</form>
+			<br />
+		</div>
+		<script src="js/app.js"></script>
+		<script src="js/jquery.form.js"></script>
+		<script src="js/mui.picker.min.js"></script>
+		<script src="js/mui.poppicker.js"></script>
+		<script type="text/javascript">
+					mui.init();
+            mui('.mui-scroll-wrapper').scroll();
+            mui.ready(function() {
+            	initSubmitEvent();
+					});
+
+            function initSubmitEvent() {
+                mui(".mui-content").on('tap',"#submitBtn",function(){
+                    submitFeedback();
+                });
+            }
+					function submitFeedback() {
+                if ($("#content").val().length <= 20){
+                    jdmAlert("You should enter at least 20 letters");
+                    return;
+				}
+                if ($("#email").val() == ""&& $("#mobile").val() == ""&&$("#wechat").val() == ""){
+                    jdmAlert("You should leave at least one contact");
+                    return;
+                }
+                saveToS3("feedback",JSON.stringify({
+												            content:$("#content").val(),
+												            email:$("#email").val(),
+												            phone_number:$("#mobile").val(),
+												            wechat:$("#wechat").val()
+												        }));
+												      }
+		</script>
+	</body>
+
+</html>

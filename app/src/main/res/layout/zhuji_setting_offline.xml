@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/colorCustom"
+>
+       <ListView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/bottom_lv"
+               android:choiceMode="singleChoice"
+               android:scrollbars="none"
+       >
+       </ListView>
+
+</android.support.v7.widget.CardView>

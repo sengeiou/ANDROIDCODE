@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item android:duration="83" android:drawable="@drawable/ic_strength1" />
+    <item android:duration="83" android:drawable="@drawable/ic_strength2" />
+    <item android:duration="83" android:drawable="@drawable/ic_strength3" />
+    <item android:duration="83" android:drawable="@drawable/ic_strength4" />
+    <item android:duration="83" android:drawable="@drawable/ic_strength5" />
+    <item android:duration="83" android:drawable="@drawable/icon_floating"/>
+</animation-list>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_linkage_scene"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/device_main_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.smartism.znzk.activity.scene.LinkageSceneActivity">
+
+    <RelativeLayout
+        style="@style/default_paddding_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            style="@style/zhzj_imageview_back"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/title_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_slectscene_title_linkage" />
+
+        <ImageView
+            android:id="@+id/right_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/zhzj_save" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_graylose" />
+
+    <RelativeLayout
+        android:id="@+id/timing_scene_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_item_height"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_scene_name"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/selec_scene_marginleft"
+            android:gravity="center"
+            android:text="@string/activity_editscene_name" />
+
+        <EditText
+            android:id="@+id/et_scene_name"
+            style="@style/textStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_scene_name"
+            android:background="#00000000"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:hint="@string/activity_scene_item_name"
+            android:text=""
+            android:textSize="@dimen/text_size_15sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/custom_scene_touch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_item_height"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_scene_touch"
+            style="@style/textStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/selec_scene_marginleft"
+            android:layout_toLeftOf="@+id/iv_scene_touch"
+            android:gravity="center_vertical"
+            android:text="@string/activity_select_toudeive" />
+
+        <ImageView
+            android:id="@+id/iv_scene_touch"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/selec_scene_marginleft"
+            android:src="@drawable/zhzj_cj_add" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_touch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/custom_scene_clt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_item_height"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_scene_add"
+            style="@style/textStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/selec_scene_marginleft"
+            android:layout_toLeftOf="@+id/iv_scene_controll"
+            android:gravity="center_vertical"
+            android:text="@string/activity_select_ctldeive" />
+
+        <ImageView
+            android:id="@+id/iv_scene_controll"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/selec_scene_marginleft"
+            android:src="@drawable/zhzj_cj_add" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_clt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+</LinearLayout>

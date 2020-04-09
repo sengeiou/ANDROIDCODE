@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <RelativeLayout
+        android:id="@+id/guide_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/solid_dark_holo" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_button_bg"
+            android:drawableLeft="@drawable/back_button_ioc_bg"
+            android:drawablePadding="10dp"
+            android:onClick="back"
+            android:padding="10dp"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/guide_top_layout"
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    
+    <LinearLayout 
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24.0dip"
+        android:orientation="horizontal" >
+        
+        <ImageView  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Guide_point_style"
+            android:src="@drawable/guide_point"/>
+        
+        <ImageView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            style="@style/Guide_point_style"
+            android:src="@drawable/guide_point"/>
+        
+        <ImageView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"  
+            style="@style/Guide_point_style"
+            android:src="@drawable/guide_point"/>
+        
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/startBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:text="@string/zhstart"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120.0dip"
+        android:onClick="startbutton"
+        android:visibility="gone"/>
+
+</RelativeLayout>

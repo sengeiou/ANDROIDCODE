@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bearLin"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_item"
+    >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/selector_list_item"
+        >
+        <TextView
+            android:id="@+id/rName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:singleLine="true"
+            android:textSize="19sp"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:text=""
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

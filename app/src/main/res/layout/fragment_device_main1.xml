@@ -1,0 +1,534 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_device_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_no_hub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/zhzj_main_no_hub"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/zhzj_welcome_line" />
+
+        <Button
+            android:id="@+id/btn_add_hub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/add_zhuji_button"
+            android:padding="15dp"
+            android:text="@string/activity_add_zhuji_title"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_express_zhuji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/activity_device_main_nohub"
+            android:textColor="@color/zhzj_default"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zhzj_welcome_pic" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_notice"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/rl_title"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:background="@color/dimgray"
+            android:src="@drawable/icon_trumpet" />
+
+        <com.smartism.znzk.view.TextViewAutoVerticalScroll
+            android:id="@+id/textview_auto_roll"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/iv_notice"
+            android:background="@color/dimgray"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/activity_devices_list_item_nonet" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner_top"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="gone"/>
+
+            <com.smartism.znzk.view.DeviceMainTopLinearLyout
+                android:id="@+id/ll_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/banner_top"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_hub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="horizontal"
+                                  android:id="@+id/hongcai_flash_alarm"
+                    >
+                        <ImageView android:layout_width="24dp"
+                                   android:layout_height="24dp"
+                                   android:id="@+id/hc_ic_volume"
+                                   android:visibility="gone"
+                                   app:srcCompat="@drawable/hongcai_ic_volume_off_black_24dp"/>
+                        <ImageView android:layout_width="24dp"
+                                   android:layout_height="24dp"
+                                   android:id="@+id/hc_flash_off"
+                                   android:visibility="gone"
+                                   app:srcCompat="@drawable/hongcai_ic_flash_off_black_24dp"/>
+                        <ImageView android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                   android:paddingRight="5dp"
+                                    android:id="@+id/al_battery_ima"
+                                   android:visibility="gone"
+                        />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_toRightOf="@id/hongcai_flash_alarm"
+                        android:id="@+id/ll_hub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/hub_background"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_hub"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/zhzj_host_lixian" />
+
+                        <ImageView
+                            android:id="@+id/iv_hub_line"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignRight="@id/iv_hub"
+                            android:src="@drawable/zhzj_sy_unline" />
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/ll_hub"
+                        android:layout_alignTop="@id/ll_hub"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/ll_hub"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/zhzj_main_hub_num" />
+
+                            <TextView
+                                android:id="@+id/tv_hub_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_tel_sms_alarm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/zhzj_main_gsm_sta" />
+
+                            <TextView
+                                android:id="@+id/tv_call_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="" />
+
+                            <ImageView
+                                android:id="@+id/iv_call_status"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/weak_password"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/zhzj_main_current_user"
+                            />
+
+                            <TextView
+                                android:id="@+id/tv_user_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="8" />
+                        </LinearLayout>
+                        <View android:layout_width="match_parent"
+                              android:layout_height="5dp"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/zhzj_tjsb_dianji" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_sence_sl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/iv_right"
+                        android:layout_toRightOf="@id/ll_no"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/sence_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/zhzj_sl_shefang" />
+
+                        <TextView
+                            android:id="@+id/sence_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/graysloae" />
+
+                <com.smartism.znzk.view.ExpandableView.ExpandableLayout
+                    android:id="@+id/expandable_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:el_duration="500"
+                    app:el_expanded="true">
+
+                    <LinearLayout
+                        android:id="@+id/ll_sence"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_sence_top"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="17dp"
+                            android:paddingTop="10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/zhzj_sy_changjing" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="1"
+                                android:text="@string/zhzj_main_scence_mana"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/iv_sence"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/dp_15"
+                                android:src="@drawable/zhzj_edit_scence_button_bg" />
+
+                            <ImageView
+                                android:id="@+id/iv_add_sence"
+                                style="@style/zhzj_imageview_edit" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_default_scence"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="18dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/long_press_layout_parent">
+
+                                    <ImageView
+                                        android:id="@+id/scene_arming"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/zhzj_sy_chefang" />
+
+                                    <com.smartism.znzk.view.ProgressCycleView
+                                        android:id="@+id/scene_arming_progress"
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        app:jdmlayout_width="2dp"
+                                        app:background="@android:color/transparent"
+                                        app:max="100"
+                                        app:jdmprogress="0"
+                                        android:layout_gravity="center"
+                                        android:visibility="gone"/>
+                                </FrameLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/activity_scene_item_outside" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:id="@+id/scene_disarming"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/zhzj_sy_shefang" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/activity_scene_item_home" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:id="@+id/scene_home"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/zhzj_sy_athome" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/activity_scene_item_inhome" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                </com.smartism.znzk.view.ExpandableView.ExpandableLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/graysloae" />
+
+
+            </com.smartism.znzk.view.DeviceMainTopLinearLyout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_below="@id/ll_top"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/zhzj_list" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/zhzj_main_current"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textSize="14sp" />
+                    <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="10dp"
+                    >
+                        <ImageView android:layout_width="35dp"
+                                   android:layout_height="30dp"
+                                   android:layout_gravity="right|center_vertical"
+                                   android:src="@drawable/hongcai_showgroup"
+                                   android:id="@+id/hc_switch_show"
+                                   android:visibility="gone"
+                                   android:background="@drawable/bg_alertbutton_none"
+                        />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lv_device"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:divider="@color/graysloae"
+                    android:layout_weight="1"
+                    android:dividerHeight="1dp"/>
+            </LinearLayout>
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

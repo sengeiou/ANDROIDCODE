@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.smartism.znzk"
+    android:versionCode="13"
+    android:versionName="1.3.321">
+
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" /> <!-- 雄迈权限 -->
+    <!-- <uses-permission android:name="android.permission.RESTART_PACKAGES" /> -->
+    <!-- <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_LOGS" /> -->
+    <!-- 角标权限 -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" /> <!-- for Samsung -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- 角标权限结束 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+<!--    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />-->
+<!--    <uses-permission android:name="android.permission.RECORD_AUDIO" />-->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> <!-- <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" /> -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATIsON" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- <uses-permission android:name="android.permission.WRITE_SETTINGS" /> -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> <!-- <uses-permission android:name="android.permission.READ_SMS"/> -->
+    <!-- file and SD Card usage -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" /> <!-- <uses-permission android:name="android.permission.WRITE_CONTACTS" /> &lt;!&ndash; 写入通讯录权限 &ndash;&gt; -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- 华为推送android8.0 -->
+    <!-- <uses-permission android:name="android.permission.READ_CONTACTS" /> &lt;!&ndash; 小米推送 权限 &ndash;&gt; -->
+    <permission
+        android:name="${MIPUSH_PERMISSION_VALUE}"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="${MIPUSH_PERMISSION_VALUE}" /> <!-- 极光推送 必须权限开始 -->
+    <permission
+        android:name="${JIPUSH_PERMISSION_VALUE}"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="${JIPUSH_PERMISSION_VALUE}" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 极光权限结束 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 位置权限，获取wifi名称需要 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 位置权限，获取wifi名称需要 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <!-- For Android Q (API 29):-->
+<!-- 添加到application s3   android:requestLegacyExternalStorage="true"-->
+    <application
+        android:name=".application.MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:overrideLibrary="com.amazonaws.mobile.auth.ui"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        tools:replace="android:name,android:allowBackup,android:appComponentFactory">
+        <activity android:name=".activity.weather.WeatherInfoActivity"></activity>
+
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+
+        <service android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService" android:enabled="true" />
+
+<!--        <service-->
+<!--            android:name=".PushListenerService">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.google.firebase.MESSAGING_EVENT"/>-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+
+        <activity android:name=".xiongmai.activities.XiongmaiPasswordModifyActivity" />
+        <activity android:name=".xiongmai.activities.XiongmaiSecuritySettingActivity" />
+        <activity
+            android:name=".xiongmai.activities.XiongmaiAboutDeviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".xiongmai.activities.XiongMaiSetupAlarmActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".xiongmai.activities.XMScreenshotDisplayActivity" />
+        <activity android:name=".activity.device.WiFiRqSettingActivity" />
+        <activity android:name=".activity.device.NumberPickerSettingActivity" />
+        <activity
+            android:name=".activity.scene.SecenControlBySmsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.add.AddZhujiByGsmFailureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.add.GSMDistributionNetworkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.add.GeneralCollectionWifiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.AddZhujiBySelectMethodActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.ZhujiPasswordModifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.ArmyDelayTimeSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.ZoneAttributeSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.add.AddZhujiByApFailureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.SendSmsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.device.BeiJingSuoHistoryActivity" />
+        <activity
+            android:name=".activity.device.add.AddZhujiByApCollectWifiActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.device.SingleProductDetailActivity" />
+        <activity
+            android:name=".activity.device.add.AddWiredDeviceActivity"
+            android:parentActivityName=".activity.device.DeviceMainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.common.ZldGSMPhoneSettingActivity" />
+        <activity android:name=".activity.common.ZldGSMSettingActivity" />
+        <activity android:name=".activity.common.JdqWorkTimeSettingActivity" />
+        <activity android:name=".activity.common.TriggerSettingActivity" />
+        <activity android:name=".activity.common.ZhujiSettingCallModeActivity" />
+        <activity
+            android:name=".activity.device.add.AddZhujiByApConnectActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.device.add.AddZhujiByApSendActivity" />
+        <activity
+            android:name=".activity.device.add.AddZhujiByAPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".xiongmai.activities.XMDeviceRecordListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".xiongmai.activities.XMDeviceSetupRecord"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".xiongmai.activities.XMDeviceMoreSettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".xiongmai.activities.XMDeviceSetupStorage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".zhicheng.activities.ZCSmartMatchActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".zhicheng.activities.ZCIRRemoteList" />
+        <activity android:name=".zhicheng.activities.ZCModeListActivity" />
+        <activity
+            android:name=".zhicheng.activities.ZCInfraredModeSelectionActivity"
+            android:screenOrientation="portrait" /> <!-- appk + 渠道 -->
+        <!-- jjm :  56a1dbeae0f55ab39f001e7e -->
+        <!-- lilesi:572d521d67e58e7622000074 -->
+        <!-- jujiang:572d6006e0f55a6c190023d9 -->
+        <!-- 百度定位的api_key 2018年08月24日 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="${BAIDU_LBS_API_KEY}" /> <!-- value的值“appid”用实际申请的应用ID替换，来源于开发者联盟网站应用的服务详情。 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="${UMENG_APPKEY_VALUE}" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${applicationId}" />
+        <!-- </>值来自开发者平台取得的AppKey -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" /> <!-- 必须加上这个，否则下面无法直接使用自定的action -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 百度定位 服务 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" /> <!-- 支付宝配置 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+
+        <receiver android:name=".util.update.DownLoadBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- google推送 -->
+        <service android:name=".google.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activity.device.add.Add8781WifiActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.user.RegisterActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.user.UserMessageRegisterActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.DeviceMainActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/DeviceMain">
+
+            <!-- 华为推送需要打开DeviceMainActivity页面时，需要用此过滤,暂未实现，传参接收不到，现在直接使用打开APP的方式 -->
+            <!--
+推送服务器生成的uri代码为
+    Intent intent = new Intent(Intent.ACTION_VIEW);
+    intent.setData(Uri.parse("jdmscheme://com.smartism.allpush/push_detail"));
+    intent.putExtra("did",123456);
+    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //华为要求必须，否则会出现消息重复
+    intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+    String intentUri = intent.toUri(Intent.URI_INTENT_SCHEME);
+
+<intent-filter>
+    <action android:name="android.intent.action.VIEW"/>
+    <category android:name="android.intent.category.DEFAULT" />
+
+    <data android:host="com.smartism.allpush"
+        android:path="/push_detail"
+        android:scheme="jdmscheme"/>
+</intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".activity.user.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="myapp" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.user.LoginSmsActivity" />
+        <activity
+            android:name=".activity.device.add.AddDeviceActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.add.AddDeviceFromHistoryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.add.AddDeviceOfDIYActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.user.UserInfoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.EnvironmentCheckToolActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.user.ChangePasswordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.zbarscan.ScanCaptureActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.DeviceCommandHistoryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.DeviceDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.IPCZhujiDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.AllEquipmentListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.ControlEquipmentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.TriggerEqipmentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.DeviceCategoryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.DeviceSetActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.DeviceSetGSMPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.user.ResetPasswordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.SettingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.NoticeCenterActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.GuideActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.share.ShareDevicesActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.add.AddZhujiActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.add.AddZhujiWayChooseActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.add.AddZhujiOldActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.add.AddVirtualRemoteControlActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.add.AddDeviceChooseActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.add.AddGroupActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.AboutActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.alert.AlertMessageActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activity.user.factory.FactoryAddDevicesActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activity.scene.SceneActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.scene.AddSceneActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.developer.DeveCommandShowActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.camera.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.camera.DeviceUpdateActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/UpdateCameraDialog" />
+        <activity
+            android:name=".activity.camera.ContectChangeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.camera.AddContactActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.camera.RadarAddActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.camera.PlayBaseActivity"
+            android:configChanges="screenSize|orientation|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.camera.ApMonitorActivity"
+            android:configChanges="screenSize|orientation|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.camera.AddContactNextActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.camera.ModifyNpcPasswordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.DeviceSetBoHaoQiRelayActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.DeviceSetBoHaoQiFqActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.camera.AddWaitActicity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.camera.ModifyContactActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.camera.CutImageActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.camera.MainControlActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name="com.smartism.znzk.activity.camera.ModifyBoundEmailActivity" -->
+        <!--
+     android:screenOrientation="portrait"
+     android:launchMode="singleTop" />
+        -->
+        <activity
+            android:name=".activity.camera.AlarmPushAccountActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.camera.AlarmPictrueActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.camera.ImageSeeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.camera.RecordFileActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.camera.CameraPlayBackActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activity.camera.VPlayMonitor"
+            android:configChanges="screenSize|orientation|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".activity.ImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CommonWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.GroupInfoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activity.GPSActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" /> <!-- 有人的WiFi模块配置 -->
+        <activity
+            android:name=".activity.device.add.AddDeviceWifiActivity"
+            android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|navigation|orientation|screenSize|fontScale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.view.LockActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name="com.smartism.znzk.activity.view.LockPatternView" -->
+        <!--
+     android:screenOrientation="portrait"
+     android:launchMode="singleTop" />
+        -->
+        <activity
+            android:name=".activity.view.LockSetupActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.user.GenstureSettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.user.GenstureInitActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.alert.AudioSettingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.alert.ChooseAudioSettingMode"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.yaokan.YKGetDeviceTypeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.yaokan.YKElectricFanMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.yaokan.YKDownLoadCodeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.yaokan.YKDisplayActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.yaokan.YKDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.yaokan.YKRemoteTypeAirActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.yaokan.YKTVMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.yaokan.YKTVBoxActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.yaokan.YKRemoteListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.DeviceUpdatetGSMPhoneActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZSSuoActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ZSSuoNewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.device.DeviceInfoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+
+        <service
+            android:name=".communication.service.CoreService"
+            android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="com.znwx.jiadianmao.service.CoreService" />
+
+                <category android:name="android.intent.category.default" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".communication.service.AudioTipsService"
+            android:exported="true" />
+        <service android:name=".global.LogService">
+            <intent-filter>
+                <action android:name="com.smartism.znzk.service.LOGCAT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".global.AutoStartReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".activity.camera.CameraListActivity" />
+        <activity android:name=".activity.device.DeviceInfoHistoryActivity" />
+        <activity android:name=".activity.device.EditGroupActivity" /> <!-- 保活策略 -->
+        <!-- Define your service, make sure to add the permision! -->
+        <service
+            android:name=".communication.service.KeepLiveService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity android:name=".activity.device.EditKeyActivity" />
+        <activity
+            android:name=".activity.device.SecurityActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QWQActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HeaterActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.HeaterScheduleActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.AddHeaterScheduleActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.HeaterSignalDiagnosisActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.common.NetworkDiagnosisActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QWQNoticeActicity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+        <activity android:name=".activity.user.RechargeActivity" />
+        <activity android:name=".activity.user.GCodeListActivity" />
+        <activity android:name=".activity.user.ShopRecordActivity" />
+        <activity
+            android:name=".activity.speech.IatSpeechActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity android:name=".listener.speech.IatSettings" />
+        <activity android:name=".listener.speech.TtsSettings" />
+        <activity
+            android:name=".activity.speech.TtsSpeechActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".activity.SettingSpeechActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <service android:name=".communication.service.FloatService" />
+
+        <activity
+            android:name=".activity.device.ZhujiOwnerActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".view.cityweel.SelectAddreActivity" />
+        <activity
+            android:name=".activity.ZssOpenCloseHistoryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.smartlock.LockUserListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.camera.DoorBellNewActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.camera.CallActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.ZhujiListActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.device.BeijingSuoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.device.HoshooIPCActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.device.StudyBJsuoActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.camera.RecorFilesActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.device.BeiJingMaoYanActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".activity.device.add.Add8266WifiActivity" />
+        <activity android:name=".activity.device.add.ConnectActivity" />
+        <activity
+            android:name=".activity.SmartMedicine.SmartMedicineMainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SmartMedicine.SmartMedicineAddActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SmartMedicine.SMartMedicineHistoryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.camera.LocalRecordFilesActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.camera.VideoSurfaceActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.common.ImageViewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".activity.DisclaimerActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.SmartMedicine.MedicineSetTimeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.device.add.AddDeviceTypeActivity" />
+        <activity android:name=".activity.scene.SelectSceneTypeActivity" />
+        <activity android:name=".activity.scene.CustomSceneActivity" />
+        <activity android:name=".activity.scene.TimingSceneActivity" />
+        <activity android:name=".activity.scene.LinkageSceneActivity" />
+        <activity android:name=".activity.scene.ChooseTimesActivity" />
+        <activity android:name=".activity.scene.ChooseDeviceActivity" />
+        <activity android:name=".activity.scene.ChooseTipsActivity" />
+        <activity android:name=".activity.device.ZhujiInfoActivity" />
+        <activity android:name=".activity.user.CropImageActivity" />
+        <activity android:name=".activity.common.HongCaiTantouSettingActivity" />
+        <activity android:name=".activity.common.DeviceSortStyleActivity" />
+        <activity android:name=".activity.device.SecurityInfoActivity">
+            <intent-filter>
+                <action android:name="com.android.activity.SECURITYINFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.device.SetDeviceInfoActivity" />
+        <activity android:name=".activity.device.add.AddTimingActivity" />
+        <activity
+            android:name=".activity.camera.PlayBackActivity"
+            android:configChanges="locale|orientation"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".activity.camera.PlayBackListActivity"
+            android:configChanges="locale|orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".activity.device.add.AddZhujiGuideActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.device.add.AddZhujiFailureActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.camera.ReadyGuideActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.camera.WaitGuideActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.camera.AddMessageActivity" />
+        <activity android:name=".activity.camera.AddContactTypeActivity" />
+        <activity android:name=".activity.device.add.AddSelectActivity" />
+        <activity android:name=".activity.device.PlatoonActivity" />
+        <activity android:name=".activity.device.THHistoryActivity" />
+        <activity android:name=".activity.DeviceTimingListActivity" />
+        <activity android:name=".activity.DeviceTimingEditActicity" />
+        <activity android:name=".activity.device.PerminssonTransActivity" />
+        <activity android:name=".activity.common.WSDTimeSetActivity" />
+        <activity android:name=".activity.common.ZhujiAlarmTimeSetActivity" />
+        <activity android:name=".activity.common.UserPermissionActivity" />
+        <activity android:name=".activity.BannerViewActivity" />
+        <activity android:name=".activity.common.XZSWAboutActivity" />
+        <activity android:name=".activity.user.BindPhoneActivity" />
+        <activity android:name=".activity.common.ZhujiSettingActivity" />
+        <activity android:name=".activity.device.SecurityDisarmingActivity" />
+        <activity android:name=".activity.scene.ScenceArmingDisarmingActivity" />
+        <activity android:name=".activity.scene.ScenceArmingDisarmingEditActicity" />
+        <activity android:name=".activity.common.CLDTimeSetActivity" />
+        <activity android:name=".activity.camera.CameraBindAlarmActivity" />
+        <activity android:name=".activity.camera.CameraBindAlarmGuideActivity" />
+        <activity
+            android:name=".hipermission.PermissionActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/CustomTheme_Dialog" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".activity.smartlock.LockMainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.smartlock.WifiLockMainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.smartlock.LockInfoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.smartlock.LockPasswordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" /> <!-- 未关门报警时长设置 -->
+        <activity android:name=".activity.alert.NoCloseAlarmActivity" /> <!-- 雄迈截图查看 -->
+        <activity
+            android:name=".xiongmai.activities.XiongMaiImageSeeActivity"
+            android:screenOrientation="portrait" /> <!-- 雄迈本地录像 -->
+        <activity
+            android:name=".xiongmai.activities.XMLocalRecordFilesActivity"
+            android:screenOrientation="portrait" /> <!-- 雄迈wifi配置 -->
+        <activity
+            android:name=".xiongmai.activities.NewXiongMaiQuickWifiConfig"
+            android:screenOrientation="portrait" /> <!-- 雄迈摄像头播放 -->
+        <activity
+            android:name=".xiongmai.activities.XiongMaiDisplayCameraActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name=".xiongmai.activities.XMSettingActivity" />
+        <activity android:name=".activity.common.HongCaiSettingActivity" />
+        <activity android:name=".activity.smartlock.GatewaySettingActivity" />
+        <activity android:name=".activity.smartlock.JieaoLockUserInfoActivity" />
+        <activity
+            android:name=".zhicheng.activities.AirConditioningActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".zhicheng.activities.ZCAlertMessageActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".zhicheng.activities.ZCBrandDisplayActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.device.RqzjDeviceInfoActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.smartism.znzk.activity.camera.CameraListActivity">
+
+    <ListView
+        android:id="@+id/binding_camera_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/binding_camera_sure"
+        android:layout_below="@+id/divider"></ListView>
+
+    <RelativeLayout
+        android:id="@+id/binding_top_layout"
+        style="@style/default_paddding_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/binding_top_back"
+            style="@style/zhzj_imageview_back"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/regiter_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_device_set_bipc" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/binding_top_layout"
+        android:background="@color/graysloae" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/divider"
+        android:text="@string/no_bind_camera"
+        android:gravity="center"
+        android:textSize="@dimen/dp_25"
+        android:visibility="gone"
+        android:id="@+id/no_camera_comment"
+        />
+    <Button
+        android:id="@+id/binding_camera_sure"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="25dp"
+        android:background="@drawable/zhzj_default_button"
+        android:text="@string/pickerview_submit"
+        android:textColor="@color/selector_btn_textcolor"
+        android:textSize="18sp" />
+</RelativeLayout>

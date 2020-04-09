@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/set_top_layout"
+        style="@style/default_paddding_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/zhzj_imageview_back"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_device_set_tip" />
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/save"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_10">
+
+            <com.smartism.znzk.view.ContainsEmojiEditText
+                android:id="@+id/set_name_edit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/activity_device_set_dnamehit"
+                android:maxLength="25"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/graysloae" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/set_bohaoqi_type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/item_pressed_bg">
+
+        <RelativeLayout
+            style="@style/default_paddding_left_right"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_45">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/triggers_title" />
+
+            <ImageView
+                android:id="@+id/baojingshichang_jiantou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/zhzj_tjsb_dianji" />
+
+            <TextView
+                android:id="@+id/tv_alarm_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/baojingshichang_jiantou"
+                android:paddingRight="@dimen/dp_10"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bgColor_divier" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/set_bohaoqi_signal_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/item_pressed_bg">
+
+        <RelativeLayout
+            style="@style/default_paddding_left_right"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_45">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/triggers_edge_title" />
+
+            <ImageView
+                android:id="@+id/baojingshichang_signal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/zhzj_tjsb_dianji" />
+
+            <TextView
+                android:id="@+id/tv_alarm_signal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/baojingshichang_signal"
+                android:paddingRight="@dimen/dp_10"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bgColor_divier" />
+    </LinearLayout>
+</LinearLayout>

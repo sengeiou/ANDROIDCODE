@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/success_dialog">
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:text="@string/set_wifi_success"
+           android:textSize="@dimen/text_size_normal"
+           android:textColor="@color/black"/>
+</RelativeLayout>

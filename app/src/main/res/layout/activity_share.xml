@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/login_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/zhzj_imageview_back"
+            android:onClick="back"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/share_activity_title_button" />
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/login_top_layout"
+        android:background="@color/graysloae" />
+
+    <!---->
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/login_top_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="60dp"-->
+    <!--android:background="@drawable/solid_dark_holo">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn"-->
+    <!--android:layout_width="60dp"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:background="@drawable/back_button_bg"-->
+    <!--android:drawableLeft="@drawable/back_button_ioc_bg"-->
+    <!--android:drawablePadding="10dp"-->
+    <!--android:onClick="back"-->
+    <!--android:padding="10dp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_toRightOf="@+id/btn"-->
+    <!--android:text="@string/share_activity_title_button"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="18sp" />-->
+
+    <!--</RelativeLayout>-->
+
+    <TextView
+        android:id="@+id/share_title"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/share_qr"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp" />
+
+
+</RelativeLayout>

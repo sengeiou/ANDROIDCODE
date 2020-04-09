@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pop_layout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/pop_myfaq"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rightmenu_item_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_myquestion" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/activity_devices_interaction_rightmenu_myfaq"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_myidea"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rightmenu_item_bg"
+                android:orientation="horizontal"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_myidea" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/activity_devices_interaction_rightmenu_myidea"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_myyugou"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rightmenu_item_bg"
+                android:orientation="horizontal"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_myidea" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/activity_devices_interaction_rightmenu_myyugou"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_newfaq"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rightmenu_item_bg"
+                android:orientation="horizontal"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_new_question" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/activity_devices_interaction_rightmenu_newfaq"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_newidea"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rightmenu_item_bg"
+                android:orientation="horizontal"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_new_idea" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:singleLine="false"
+                    android:text="@string/activity_devices_interaction_rightmenu_newIdea"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_newwjob"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rightmenu_item_bg"
+                android:orientation="horizontal"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_new_workorder" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/activity_devices_interaction_rightmenu_newwjob"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

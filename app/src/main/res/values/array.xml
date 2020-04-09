@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="med_unit">
+        <item>@string/unit_pian</item>
+        <item>@string/unit_li</item>
+    </string-array>
+    <array name="permissionNames">
+        <item>@string/permission_storage</item>
+        <item>@string/permission_location</item>
+        <item>@string/permission_camera</item>
+    </array>
+
+
+    <string-array name="record_type">
+        <item>All videos</item>
+        <item>Alarm recording</item>
+        <item>Detection video</item>
+        <item>Ordinary video</item>
+        <item>Manual recording</item>
+        <item>Remote Video</item>
+    </string-array>
+
+    <string-array name="pic_type">
+        <item>All </item>
+        <item>Alarm</item>
+        <item>Detection</item>
+        <item>Normal</item>
+        <item>Remote control</item>
+        <item>Key</item>
+        <item>Time delay</item>
+        <item>Continuous shooting </item>
+    </string-array>
+
+</resources>

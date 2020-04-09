@@ -1,0 +1,199 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/date_pick"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:id="@+id/date_tab"
+        android:layout_width="match_parent"
+        android:background="@color/grayl"
+        android:layout_height="@dimen/p2p_control_top_item_width">
+
+        <Button
+            android:id="@+id/date_cancel"
+            android:layout_width="@dimen/dp_size_80"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/tab_btn_margin"
+            android:background="#00000000"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="@dimen/dp_size_80"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/tab_btn_margin"
+            android:background="#00000000"
+            android:text="@string/query" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_cNumber1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_height"
+        android:layout_marginLeft="@dimen/item_left_right_margin"
+        android:layout_marginRight="@dimen/item_left_right_margin"
+        android:layout_marginTop="@dimen/item_group_margin_top"
+        android:background="@drawable/corner_tiao_single_bg">
+
+        <EditText
+            android:id="@+id/start_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/contact_item_margin"
+            android:layout_marginRight="@dimen/contact_item_margin"
+            android:background="#00000000"
+            android:gravity="left|center_vertical"
+            android:hint="@string/start_time"
+            android:inputType="number"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_normal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_cNumber"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_height"
+        android:layout_marginLeft="@dimen/item_left_right_margin"
+        android:layout_marginRight="@dimen/item_left_right_margin"
+        android:layout_marginTop="@dimen/item_group_margin_top"
+        android:background="@drawable/corner_tiao_single_bg">
+
+        <EditText
+            android:id="@+id/end_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/contact_item_margin"
+            android:layout_marginRight="@dimen/contact_item_margin"
+            android:background="#00000000"
+            android:gravity="left|center_vertical"
+            android:hint="@string/end_time"
+            android:inputType="number"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_normal" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/contact_item_margin"
+        android:layout_marginRight="@dimen/contact_item_margin"
+        android:layout_marginTop="@dimen/item_group_margin_top"
+        android:background="@drawable/tiao_bg_single"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="@dimen/item_height"
+                android:layout_height="@dimen/item_height"
+                android:gravity="center"
+                android:text="@string/fragment_time_year"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/fragment_time_moth"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/fragment_time_day"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/hour"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/minutes"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.smartism.znzk.widget.wheel.WheelView
+                android:id="@+id/date_year"
+                android:layout_width="@dimen/item_height"
+                android:layout_height="wrap_content" />
+
+            <com.smartism.znzk.widget.wheel.WheelView
+                android:id="@+id/date_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.smartism.znzk.widget.wheel.WheelView
+                android:id="@+id/date_day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.smartism.znzk.widget.wheel.WheelView
+                android:id="@+id/date_hour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.smartism.znzk.widget.wheel.WheelView
+                android:id="@+id/date_minute"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_group_margin_top" />
+</LinearLayout>

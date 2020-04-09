@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/history_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/solid_dark_holo" >
+
+        <Button
+            android:id="@+id/command_history_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_button_bg"
+            android:drawableLeft="@drawable/back_button_ioc_bg"
+            android:drawablePadding="10dp"
+            android:onClick="back"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/title_edit_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/edit"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/group_add_save"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/back_button_bg"
+            android:drawablePadding="10dp"
+            android:onClick="save"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/add_edit_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/history_top_layout"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:id="@+id/add_type_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="@string/activity_group_add_name" />
+
+            <EditText
+                android:id="@+id/group_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:hint="@string/activity_group_add_name_hit"
+                android:paddingLeft="5dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/devices_list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:groupIndicator="@null"
+        android:scrollbars="none"
+        android:layout_below="@id/add_edit_layout"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+</RelativeLayout>

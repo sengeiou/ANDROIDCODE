@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_tel"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/btn_update"
+        android:gravity="center"
+        android:text="时间"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/tv_tel"
+        android:gravity="center"
+        android:text="指令"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:text="禁用/开启"
+        android:textSize="16sp" />
+
+    <com.smartism.znzk.view.SwitchButton.SwitchButton
+        android:id="@+id/btn_switch"
+        style="@style/SwitchButtonStyleIOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:layout_below="@id/tv_tel"
+        android:layout_marginTop="2dp"
+        android:background="#e0dddd"
+        android:visibility="gone" />
+</RelativeLayout>

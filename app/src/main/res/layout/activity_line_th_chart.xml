@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.smartism.znzk.view.SegmentControl
+        android:id="@+id/segment_control"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="8dp"
+        android:textSize="16sp"
+        app:selectedColor="#0291fd"
+        app:normalColor="#FFFFFF"
+        app:cornerRadius="5dip"
+        android:orientation="horizontal"
+        app:horizonGap="8dip"
+        app:texts="@string/activity_thchart_segmentcontrol_noHour"
+        android:background="#FFFFFF"
+        app:verticalGap="8dip"/>
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/segment_control"/>
+</RelativeLayout>

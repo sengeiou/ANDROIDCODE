@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item
+        android:drawable="@drawable/zhzj_host_black"
+        android:duration="100"></item>
+    <item
+        android:drawable="@drawable/zhzj_host_light"
+        android:duration="100"></item>
+    <item
+        android:drawable="@drawable/zhzj_host_black"
+        android:duration="100"></item>
+    <item
+        android:drawable="@drawable/zhzj_host_light"
+        android:duration="100"></item>
+</animation-list>

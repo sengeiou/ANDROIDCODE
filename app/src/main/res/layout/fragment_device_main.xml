@@ -1,0 +1,68 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_device_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/ll_notice"
+            android:orientation="horizontal"
+            android:layout_below="@+id/rl_title"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:id="@+id/iv_notice"
+                android:src="@drawable/icon_trumpet"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:background="@color/dimgray"
+                android:layout_height="30dp" />
+
+            <com.smartism.znzk.view.TextViewAutoVerticalScroll
+                android:id="@+id/textview_auto_roll"
+                android:layout_toRightOf="@+id/iv_notice"
+                android:background="@color/dimgray"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_ly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_notice" >
+
+            <ListView
+                android:id="@+id/dv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@drawable/deviceslist_divider"
+                android:dividerHeight="1px"
+                android:headerDividersEnabled="false"
+                android:listSelector="@android:color/transparent" >
+            </ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    <!--</com.smartism.znzk.view.MyRelativeLayout>-->
+
+    <!--<android.support.design.widget.TabLayout-->
+    <!--android:id="@+id/tabLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--app:tabGravity="fill"-->
+    <!--app:tabIndicatorHeight="0dp"-->
+    <!--app:tabMode="fixed"-->
+    <!--app:tabSelectedTextColor="#FF4081"-->
+    <!--app:tabTextColor="#000">-->
+    <!--</android.support.design.widget.TabLayout>-->
+</LinearLayout>

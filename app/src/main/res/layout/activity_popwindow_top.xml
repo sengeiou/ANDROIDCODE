@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/video_mode_hd"
+        android:layout_width="@dimen/p2p_control_top_item_width"
+        android:layout_height="@dimen/p2p_control_top_item_height"
+        android:background="@drawable/selector_play_back"
+        android:gravity="center"
+        android:text="@string/video_mode_hd"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small" />
+
+    <View
+        android:id="@+id/v_line_hd"
+        android:layout_width="@dimen/p2p_control_top_item_width"
+        android:layout_height="0.5dp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/video_mode_sd"
+        android:layout_width="@dimen/p2p_control_top_item_width"
+        android:layout_height="@dimen/p2p_control_top_item_height"
+        android:background="@drawable/selector_play_back"
+        android:gravity="center"
+        android:text="@string/video_mode_sd"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small" />
+
+</LinearLayout>

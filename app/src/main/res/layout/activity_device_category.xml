@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/device_category_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/zhzj_imageview_back"
+            android:layout_marginLeft="17dp"
+            android:clickable="true"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/regiter_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_devices_list_rightmenu_addt_add" />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/device_category_top_layout"
+        android:background="@color/graysloae" />
+
+
+    <GridView
+        android:id="@+id/device_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view"
+        android:horizontalSpacing="0dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:verticalSpacing="15dp" />
+</RelativeLayout>

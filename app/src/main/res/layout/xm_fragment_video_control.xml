@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/change_image_reverse_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_8"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/change_imag_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/ic_change_img" />
+
+        <TextView
+            android:id="@+id/image_reverse_text"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:maxLines="1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/change_imag_top"
+            android:gravity="center"
+            android:text="@string/xm_image_reverse_top" />
+
+        <ImageView
+            android:id="@+id/image_reverse_img_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/zhzj_switch_off" />
+    </RelativeLayout>
+    <include layout="@layout/line_graylose" />
+    <RelativeLayout
+        android:id="@+id/change_image_reverse_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_8"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/change_imag_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/ic_change_img" />
+
+        <TextView
+            android:id="@+id/image_reverse_text_right"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/change_imag_right"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/xm_image_reverse_right" />
+
+        <ImageView
+            android:id="@+id/image_reverse_img_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/zhzj_switch_off" />
+    </RelativeLayout>
+
+</LinearLayout>

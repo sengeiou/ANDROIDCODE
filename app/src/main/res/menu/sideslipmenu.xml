@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/sideslip_user"
+            android:icon="@drawable/ico_sideslip_userinfo"
+            android:title="@string/deviceslist_server_leftmenu_myselfinfo" />
+        <item
+            android:id="@+id/sideslip_replacehost"
+            android:icon="@drawable/ico_sideslip_hostchange"
+            android:title="@string/deviceslist_server_leftmenu_zjchange" />
+        <item
+            android:id="@+id/sideslip_scene"
+            android:icon="@drawable/zhzj_menu_scene"
+            android:title="@string/deviceslist_server_leftmenu_scene" />
+        <item
+            android:id="@+id/sideslip_update"
+            android:icon="@drawable/zhzj_menu_cherk"
+            android:title="@string/deviceslist_server_leftmenu_checkupdate" />
+
+        <item
+            android:id="@+id/sideslip_help"
+            android:icon="@drawable/zhzj_menu_help"
+            android:title="@string/deviceslist_server_leftmenu_help" />
+        <item
+            android:id="@+id/sideslip_about"
+            android:icon="@drawable/zhzj_menu_aboutus"
+            android:title="@string/deviceslist_server_leftmenu_about" />
+        <item
+            android:id="@+id/sideslip_setting"
+            android:icon="@drawable/zss_cd_shezhi"
+            android:title="@string/deviceslist_server_leftmenu_setting" />
+        <item
+            android:id="@+id/sideslip_showzhuji"
+            android:icon="@drawable/ico_sideslip_scene"
+            android:title="@string/activity_devices_list_rightmenu_sys" />
+        <item
+            android:id="@+id/sideslip_voice_setting"
+            android:icon="@drawable/ico_sideslip_scene"
+            android:title="@string/speech_voice_setting" />
+        <item
+            android:id="@+id/sideslip_exitlogin"
+            android:icon="@drawable/zhzj_menu_scenelogout"
+            android:title="@string/deviceslist_server_leftmenu_logout" />
+    </group>
+    <!--<group android:id="@+id/nav_about_group">-->
+        <!--<item android:title="基本设置">-->
+            <!--<item-->
+                <!--android:id="@+id/sideslip_help"-->
+                <!--android:icon="@drawable/ico_sideslip_help"-->
+                <!--android:title="@string/deviceslist_server_leftmenu_help" />-->
+            <!--<item-->
+                <!--android:id="@+id/sideslip_about"-->
+                <!--android:icon="@drawable/ico_sideslip_about"-->
+                <!--android:title="@string/deviceslist_server_leftmenu_about" />-->
+            <!--<item-->
+                <!--android:id="@+id/sideslip_setting"-->
+                <!--android:icon="@drawable/ico_sideslip_setting"-->
+                <!--android:title="@string/action_settings" />- -->
+        <!--</item>-->
+    <!--</group>-->
+
+</menu>

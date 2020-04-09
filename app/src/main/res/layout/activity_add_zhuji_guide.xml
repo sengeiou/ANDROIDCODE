@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_zhuji_guide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smartism.znzk.activity.device.add.AddZhujiGuideActivity">
+
+    <RelativeLayout
+        android:id="@+id/addzhuji_top_layout"
+        style="@style/default_paddding_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/zhzj_imageview_back"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/activity_add_zhuji_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/connect_addzhuji_title" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/addzhuji_top_layout"
+        android:background="@color/graysloae" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/message_zhuji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:gravity="center"
+            android:text="@string/connect_gruid_mesaage" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/select_sure"
+            android:layout_below="@+id/message_zhuji">
+
+            <ImageView
+                android:id="@+id/icon_zhuji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zhzj_add_zhuji_anim"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/select_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_next"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/zhzj_radiobutton_select"
+            android:drawablePadding="8dp"
+            android:text="@string/connect_select_message"
+            android:textColor="#666666" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/zhzj_button_p"
+            android:text="@string/connect_gruid_next"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

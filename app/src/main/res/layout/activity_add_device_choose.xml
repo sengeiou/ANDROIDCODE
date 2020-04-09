@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/choose_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/solid_dark_holo">
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/back_button_ioc_bg"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:background="@drawable/back_button_bg"
+            
+            android:onClick="back" />
+        
+        <TextView 
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/activity_add_device_choose_title"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/qr_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choose_top_layout"
+        android:background="@drawable/device_add_choose_item_bg" >
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/device_add_choose_item_rq"/>
+        
+        <TextView
+            android:id="@+id/choose_have_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_add_device_choose_qr"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/choose_have_1"
+            android:text="@string/activity_add_device_choose_qr_tips"
+            android:textColor="@color/whitesmoke"
+            android:layout_marginLeft="5dp"
+            android:textSize="10sp" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/sd_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qr_layout"
+        android:background="@drawable/device_add_choose_item_bg"
+        android:layout_marginTop="3dp"
+        android:visibility="gone">
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/device_add_choose_item_sd"/>
+        
+        <TextView
+            android:id="@+id/choose_no_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_add_device_choose_sd"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/choose_no_1"
+            android:text="@string/activity_add_device_choose_sd_tips"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/whitesmoke"
+            android:textSize="10sp" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/hi_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sd_layout"
+        android:background="@drawable/device_add_choose_item_bg"
+        android:layout_marginTop="3dp" >
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/device_add_choose_item_sd"/>
+        
+        <TextView
+            android:id="@+id/choose_history_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_add_device_choose_hi"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/choose_history_1"
+            android:text="@string/activity_add_device_choose_hi_tips"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/whitesmoke"
+            android:textSize="10sp" />
+    </RelativeLayout>
+    
+    
+    <TextView
+        android:id="@+id/sd_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sd_layout"
+        android:paddingTop="40dp"
+        android:text="@string/activity_add_device_choose_more_tips"
+        android:visibility="gone" />
+    
+	<GridView 
+	    android:id="@+id/choose_types"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/sd_txt"
+	    android:numColumns="4"
+	    android:layout_marginTop="10dp"
+		android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+	    android:listSelector="@android:color/transparent"
+	    android:visibility="gone" />
+</RelativeLayout>

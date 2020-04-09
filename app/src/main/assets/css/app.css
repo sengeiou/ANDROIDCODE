@@ -1,0 +1,30 @@
+/**
+   统一引用的css文件，做mui的标准css替换用
+ */
+/**
+  确定按钮
+ */
+.mui-btn-success{
+	border: 1px solid #1dc58a;
+	background-color: #1dc58a;
+}
+.mui-btn-blue{
+	border: 1px solid #1893FC;
+	background-color: #1893FC;
+}
+.mui-switch-blue.mui-active{
+    border: 2px solid #1893FC;
+    background-color: #1893FC;
+}
+/**
+  确定按钮的高度
+ */
+.mui-btn-block{
+	padding: 10px 0;
+}
+/**
+	checkbox和radio的背景色
+ */
+.mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before{
+	color: #2eb294;
+}

@@ -1,0 +1,29 @@
+{
+  "type": "type-1",
+  "versionCode": 1,
+  "versionName": "V0.0.1",
+  "mac": "AAAAAAAAAAAA",
+  "signalStrength": 10,
+  "ambientTemperature": 110.0,
+  "heater": [
+    {
+      "id": 1,
+      "power": "ON/OFF",
+      "temperature": 120.0,
+      "wickTemperature": 110.0,
+      "fluidType": "Type-01",
+      "fluidLevel": 1,
+      "mode": 0,//0 boost  1  Timer  2 sleep
+      "timer": 1583372694 //到期时间戳 单位秒
+    },{
+      "id": 2,
+      "power": "ON/OFF",
+      "temperature": 120.0,
+      "wickTemperature": 110.0,
+      "fluidType": "Type-01",
+      "fluidLevel": 1,
+      "mode": 0,
+      "timer": 1583372694 //到期时间戳 单位秒
+    }
+  ]
+}

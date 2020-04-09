@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/device_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/solid_dark_holo">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="35dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_button_bg"
+            android:drawableLeft="@drawable/back_button_ioc_bg"
+            android:drawablePadding="10dp"
+            android:onClick="back"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/back"
+            android:src="@drawable/qwqtitle" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/qwq_title"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_history"
+            android:layout_width="40dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/setting" />
+        />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_morn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Set Time"
+            android:textColor="@color/qwq"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_btn_blue"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="@string/activity_device_addgsm_tip" />
+
+        <com.smartism.znzk.view.CheckSwitchButton
+            android:id="@+id/switch_morn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_clock"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"></ListView>
+
+
+    <Button
+        android:id="@+id/onnminitue"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selector_btn_blue"
+        android:text="@string/qwq_one_minute"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

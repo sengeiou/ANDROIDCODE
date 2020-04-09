@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.smartism.znzk.xiongmai.activities.XiongmaiAboutDeviceActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/ll_serial_number"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:text="@string/xmada_serial_number"
+            android:textSize="@dimen/text_size_16sp"
+            style="@android:style/TextAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:paddingRight="10dp"
+            android:textColor="@color/zhzj_default"
+            android:textSize="@dimen/sp_16"
+            android:layout_weight="1"
+            android:gravity="right"
+            style="@android:style/TextAppearance"
+            android:id="@+id/textDeviceSN"
+            android:text=""
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/serial_number_devider"
+        app:layout_constraintTop_toBottomOf="@id/ll_serial_number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/graysloae"
+        android:layout_width="0dp"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/serial_number_devider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/ll_device_version"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:text="@string/xmada_device_version"
+            android:textSize="@dimen/text_size_16sp"
+            style="@android:style/TextAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:paddingRight="10dp"
+            android:textColor="@color/zhzj_default"
+            android:textSize="@dimen/sp_16"
+            android:layout_weight="1"
+            android:gravity="right"
+            style="@android:style/TextAppearance"
+            android:id="@+id/textDeviceModel"
+            android:text=""
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/ll_device_version_devider"
+        app:layout_constraintTop_toBottomOf="@id/ll_device_version"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/graysloae"
+        android:layout_width="0dp"
+        android:layout_height="1dp" />
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/ll_device_version_devider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/ll_soft_version"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:text="@string/xmada_soft_version"
+            android:textSize="@dimen/text_size_16sp"
+            style="@android:style/TextAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:paddingRight="10dp"
+            android:textColor="@color/zhzj_default"
+            android:textSize="@dimen/sp_16"
+            android:layout_weight="1"
+            android:gravity="right"
+            style="@android:style/TextAppearance"
+            android:id="@+id/textDeviceSWVer"
+            android:text=""
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/ll_soft_version_devider"
+        app:layout_constraintTop_toBottomOf="@id/ll_soft_version"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/graysloae"
+        android:layout_width="0dp"
+        android:layout_height="1dp" />
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/ll_soft_version_devider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/ll_release_time"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:text="@string/xmada_release_time"
+            android:textSize="@dimen/text_size_16sp"
+            style="@android:style/TextAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:paddingRight="10dp"
+            android:textColor="@color/zhzj_default"
+            android:textSize="@dimen/sp_16"
+            android:layout_weight="1"
+            android:gravity="right"
+            style="@android:style/TextAppearance"
+            android:id="@+id/textDevicePubDate"
+            android:text=""
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/ll_release_time_devider"
+        app:layout_constraintTop_toBottomOf="@id/ll_release_time"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/graysloae"
+        android:layout_width="0dp"
+        android:layout_height="1dp" />
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/ll_release_time_devider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/ll_device_time"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:text="@string/xmada_device_time"
+                android:textSize="@dimen/text_size_16sp"
+                style="@android:style/TextAppearance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:gravity="center_vertical"
+                android:text="@string/xmada_click_sync_time"
+                android:textSize="@dimen/text_size_10sp"
+                style="@android:style/TextAppearance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                />
+        </LinearLayout>
+        <com.smartism.znzk.xiongmai.lib.funsdk.support.widget.TimeTextView
+            android:paddingRight="10dp"
+            android:textColor="@color/zhzj_default"
+            android:textSize="@dimen/sp_16"
+            style="@android:style/TextAppearance"
+            android:id="@+id/textDevicePubTime"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/ll_device_time_devider"
+        app:layout_constraintTop_toBottomOf="@id/ll_device_time"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/graysloae"
+        android:layout_width="0dp"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/ll_device_time_devider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/ll_network_mode"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:text="@string/xmada_network_mode"
+            android:textSize="@dimen/text_size_16sp"
+            style="@android:style/TextAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:paddingRight="10dp"
+            android:textColor="@color/zhzj_default"
+            android:textSize="@dimen/sp_16"
+            android:layout_weight="1"
+            android:gravity="right"
+            style="@android:style/TextAppearance"
+            android:id="@+id/textDeviceNatCode"
+            android:text=""
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/ll_network_mode_devider"
+        app:layout_constraintTop_toBottomOf="@id/ll_network_mode"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/graysloae"
+        android:layout_width="0dp"
+        android:layout_height="1dp" />
+
+
+    <Button
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_network_mode_devider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintVertical_bias="0.85"
+        android:text="@string/xmada_recovery"
+        android:textColor="@color/white"
+        android:id="@+id/defealtconfig"
+        android:background="@drawable/zhzj_default_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>

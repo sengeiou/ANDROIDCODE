@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_rightmenu_zhuji"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:descendantFocusability= "blocksDescendants"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/rightmenu_zhuji_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff"
+        android:paddingLeft="5dp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:text="@string/deviceslist_server_leftmenu_zjchange" />
+
+    <RadioButton
+        android:id="@+id/rightmenu_zhuji_chack"
+        android:focusable = "false"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        />
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+<SinaWeibo Enable="false" />
+<TencentWeibo Enable="false" />
+<Douban Enable="false" />
+<QZone Enable="false" />
+<Renren Enable="false" />
+<KaiXin Enable="false" />
+<Facebook Id="8" SortId="8" ShareByAppClient="true" Enable="true" ConsumerKey="1958550597733885" ConsumerSecret="d1f3016b89a8aab49c24898cf595089d" RedirectUrl="https://www.baidu.com/" />
+<Twitter Id="9" SortId="9" ShareByAppClient="true" Enable="true" ConsumerKey="cd6JsqqzVyZpsleDSzhUkKVRW" ConsumerSecret="PaVygKdp1Bm3R0cSnn52ojnKMGdpO0Cby6nks35Ney1Hk7HQTi" CallbackUrl="https://www.smart-ism.com" />
+<Evernote Enable="false" />
+<FourSquare Enable="false" />
+<GooglePlus Id="21" SortId="21" ShareByAppClient="true" Enable="false" ClientID="" RedirectUrl="http://localhost" />
+<Instagram Enable="false" />
+<LinkedIn Enable="false" />
+<Tumblr Enable="false" />
+<Email Enable="false" />
+<ShortMessage Enable="false" />
+<Wechat Id="4" SortId="4" AppId="wxd5cd8f54f86853ba" AppSecret="4221b9d58c7a7122b778a90622b573ae" userName="" path="pages/index/index.html?id=1" WithShareTicket="true" MiniprogramType="0" BypassApproval="false" Enable="true" />
+<WechatMoments Id="5" SortId="5" AppId="wxd5cd8f54f86853ba" AppSecret="4221b9d58c7a7122b778a90622b573ae" BypassApproval="false" Enable="true" />
+<QQ Id="7" SortId="7" AppId="1106176871" AppKey="wbX6edQOwxXe96ex" ShareByAppClient="false" BypassApproval="false" Enable="true" />
+<Instapaper Enable="false" />
+<Pocket Enable="false" />
+<YouDao Enable="false" />
+<Pinterest Enable="false" />
+<Flickr Enable="false" />
+<Dropbox Enable="false" />
+<VKontakte Enable="false" />
+<WechatFavorite Id="6" SortId="6" AppId="wxd5cd8f54f86853ba" AppSecret="4221b9d58c7a7122b778a90622b573ae" BypassApproval="false" Enable="true" />
+<Yixin Enable="false" />
+<YixinMoments Enable="false" />
+<Mingdao Enable="false" />
+<Line Enable="false" />
+<WhatsApp Enable="false" />
+<KakaoTalk Enable="false" />
+<KakaoStory Enable="false" />
+<FacebookMessenger Enable="false" />
+<Alipay Enable="false" />
+<AlipayMoments Enable="false" />
+<Dingding Enable="false" />
+<Youtube Enable="false" />
+<Meipai Enable="false" />
+<Telegram Enable="false" />
+<Cmcc Enable="false" />
+<Reddit Enable="false" />
+<Telecom Enable="false" />
+<Accountkit Enable="false" />
+<Douyin Enable="false" />
+<Wework Enable="false" />
+<HWAccount Enable="false" />
+<Oasis Enable="false" />
+</DevInfor>

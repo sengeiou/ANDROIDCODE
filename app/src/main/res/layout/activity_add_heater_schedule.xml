@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/history_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/device_main_bg" >
+
+        <ImageView
+            android:id="@+id/command_history_title"
+            style="@style/zhzj_imageview_back"
+            android:layout_marginLeft="17dp"
+            android:onClick="back"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Add Schedule"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        
+        <TextView
+            android:gravity="center"
+            android:id="@+id/group_add_save"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:onClick="save"
+            android:padding="10dp"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_time_pickers"
+        android:layout_below="@id/history_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_time_picker_ON"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_5"
+            android:orientation="horizontal"/>
+
+        <View
+            android:layout_width="1sp"
+            android:layout_height="match_parent"
+            android:background="@color/main_color"/>
+
+        <LinearLayout
+            android:id="@+id/layout_time_picker_OFF"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_5"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/custom_scene_times"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_item_height"
+        android:layout_below="@id/layout_time_pickers"
+        android:background="@color/bg_ctr_gray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_scene_times"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/selec_scene_marginleft"
+            android:gravity="center"
+            android:text="@string/activity_editscene_cycle" />
+
+        <TextView
+            android:id="@+id/scene_times"
+            style="@style/textStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/icon_2"
+            android:layout_toRightOf="@+id/tv_scene_times"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_15sp" />
+
+        <ImageView
+            android:id="@+id/icon_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/selec_scene_icon_margin"
+            android:src="@drawable/zhzj_tjcj_dianji" />
+    </RelativeLayout>
+
+</RelativeLayout>

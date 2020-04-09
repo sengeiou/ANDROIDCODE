@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/dialog_input_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <include layout="@layout/dialog_input" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/bounceScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/dialog_input_mask"
+        android:layout_toRightOf="@+id/dialog_input_mask">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/net_type_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ctl_setting_bar_height"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/net_type" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_net_type"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="@dimen/inner_item_progress_width_height"
+                    android:layout_height="@dimen/inner_item_progress_width_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:indeterminateDrawable="@anim/progress_white"
+                    android:indeterminateDuration="560000" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/net_type_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/main_item_height"
+                        android:background="@color/white"
+                        android:button="@null"
+                        android:drawableRight="@drawable/zhzj_radiobutton_select"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="@string/net_wired" />
+
+                    <RadioButton
+                        android:id="@+id/radio_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/main_item_height"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/white"
+                        android:button="@null"
+                        android:drawableRight="@drawable/zhzj_radiobutton_select"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="@string/net_wifi"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/list_wifi_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ctl_setting_bar_height"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:visibility="visible">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@drawable/main_bg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/list_wifi" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_list_wifi"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="@dimen/inner_item_progress_width_height"
+                    android:layout_height="@dimen/inner_item_progress_width_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:indeterminateDrawable="@anim/progress_white"
+                    android:indeterminateDuration="560000" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/list_wifi_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/main_bg" />
+
+                <com.smartism.znzk.view.MyListView
+                    android:id="@+id/list_wifi"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="#00000000"
+                    android:cacheColorHint="@null" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

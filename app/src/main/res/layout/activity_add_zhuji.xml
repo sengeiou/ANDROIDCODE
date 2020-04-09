@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/addzhuji_top_layout"
+        style="@style/default_paddding_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/zhzj_imageview_back"
+            android:clickable="true"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/activity_add_zhuji_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_add_zhuji_title" />
+
+        <ImageView
+            android:id="@+id/iv_menu_qrcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/zhzj_qrcode_bg"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/addzhuji_top_layout"
+        android:background="@color/graysloae" />
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/addzhuji_top_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="55dp"-->
+    <!--android:background="@drawable/solid_dark_holo">-->
+
+    <!--<Button-->
+    <!--android:layout_width="60dp"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:drawableLeft="@drawable/back_button_ioc_bg"-->
+    <!--android:drawableStart="@drawable/back_button_ioc_bg"-->
+    <!--android:drawablePadding="10dp"-->
+    <!--android:padding="10dp"-->
+    <!--android:background="@drawable/back_button_bg"-->
+    <!---->
+    <!--android:onClick="back" />-->
+    <!---->
+    <!--<TextView -->
+    <!--android:id="@+id/activity_add_zhuji_title"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:text="@string/activity_add_zhuji_title"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="18sp"-->
+    <!--/>-->
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/nozhuji_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addzhuji_top_layout"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/addzhu_left_nozhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:src="@drawable/zhuji_lan" />
+
+
+        <TextView
+            android:id="@+id/addzhu_no_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/addzhu_left_nozhu"
+            android:text="@string/activity_add_zhuji_nozhu"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addzhu_no_1"
+            android:layout_toRightOf="@+id/addzhu_left_nozhu"
+            android:text="@string/activity_add_zhuji_nozhu_tips"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wifizhuji_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nozhuji_layout"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/addzhu_left_wifizhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/zhuji_wifi" />
+
+
+        <TextView
+            android:id="@+id/addzhu_wifi_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/addzhu_left_wifizhu"
+            android:text="@string/activity_add_zhuji_wifizhu"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/addzhu_wifi_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addzhu_wifi_1"
+            android:layout_toRightOf="@+id/addzhu_left_wifizhu"
+            android:text="@string/activity_add_zhuji_wifizhu_tips"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gprszhuji_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wifizhuji_layout"
+        android:enabled="false"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/addzhu_left_gprszhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/zhuji_gprs" />
+
+
+        <TextView
+            android:id="@+id/addzhu_gprs_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/addzhu_left_gprszhu"
+            android:text="@string/activity_add_zhuji_gprszhu"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addzhu_gprs_1"
+            android:layout_toRightOf="@+id/addzhu_left_gprszhu"
+            android:text="@string/activity_add_zhuji_gprszhu_tips"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/havezhuji_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gprszhuji_layout"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/addzhu_left_havezhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/zhuji_warn" />
+
+        <TextView
+            android:id="@+id/addzhu_have_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/addzhu_left_havezhu"
+            android:text="@string/activity_add_zhuji_havezhu"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addzhu_have_1"
+            android:layout_toRightOf="@+id/addzhu_left_havezhu"
+            android:text="@string/activity_add_zhuji_havezhu_tips"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

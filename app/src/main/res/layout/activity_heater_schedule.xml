@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/history_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/device_main_bg" >
+
+        <ImageView
+            android:id="@+id/command_history_title"
+            style="@style/zhzj_imageview_back"
+            android:layout_marginLeft="17dp"
+            android:onClick="back"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Schedule List"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/add_schedule"
+            style="@style/zhzj_imageview_add"
+            android:onClick="addSchedule" />
+        
+    </RelativeLayout>
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/devices_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:groupIndicator="@null"
+        android:scrollbars="none"
+        android:layout_below="@id/history_top_layout"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"/>
+
+</RelativeLayout>

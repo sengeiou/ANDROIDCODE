@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/weight_item_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/xyj_data_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="88.9"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/weight_nodata_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@id/xyj_data_tv"
+            android:text="@string/weight_no_data"
+            android:textColor="@color/red"
+              />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/weight_nodata_iv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_toRightOf="@id/weight_unit_tv"-->
+            <!--android:gravity="center"-->
+            <!--android:src="@drawable/weight_user_height"-->
+            <!--android:visibility="gone" />-->
+
+        <TextView
+            android:id="@+id/weight_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="9月12日 19:53" />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/weight_update_iv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!---->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:src="@drawable/weight_user_birthday"-->
+        <!--android:visibility="gone" />-->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:layout_below="@id/weight_data_tv"
+            android:layout_marginTop="2dp"
+            android:background="#e0dddd" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/weight_item_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+    <TextView
+        android:id="@+id/weight_delete_iv"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background="#FFFF0000"
+        android:visibility="gone"
+        android:text="@string/deviceslist_server_leftmenu_delbutton"
+        android:gravity="center"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/weight_update_iv"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background="#C4C4C4"
+        android:layout_marginRight="1dp"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/weight_delete_iv"
+        android:gravity="center"
+        android:text="编辑"
+        android:textColor="@android:color/white" />
+    </RelativeLayout>
+</LinearLayout>

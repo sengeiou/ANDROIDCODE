@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:gravity="center_horizontal"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/sending_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/add_auto_tips_auto_sending" />
+
+    <ImageView
+        android:id="@+id/sending_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/sending_tips"
+        android:scaleType="centerCrop"
+        android:src="@drawable/loading" />
+
+
+    <GridView
+        android:id="@+id/keys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sending_tips"
+        android:layout_marginTop="10dp"
+        android:columnWidth="80dp"
+        android:horizontalSpacing="10dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp" />
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sending_tips"
+            android:id="@+id/ailien_key_parent"
+            android:visibility="gone"
+            android:gravity="center"
+    >
+
+    </FrameLayout>
+
+</RelativeLayout>

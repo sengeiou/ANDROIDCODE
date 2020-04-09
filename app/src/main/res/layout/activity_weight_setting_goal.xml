@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/set_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/solid_dark_holo" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_button_bg"
+            android:drawableLeft="@drawable/back_button_ioc_bg"
+            android:drawablePadding="10dp"
+            android:onClick="back"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/set_top_layout"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:visibility="gone" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/setgsm_edit_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/lv_tel"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_weight_goal" />
+
+            <TextView
+                android:id="@+id/weight_goal_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_editbox"
+                android:gravity="center"
+                android:hint="@string/activity_weight"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!--<Button-->
+            <!--android:id="@+id/set_weight_goal"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="80dp"-->
+            <!--android:layout_marginRight="80dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="@drawable/btn_style_green"-->
+            <!--android:onClick="subToUpdate"-->
+            <!--android:text="@string/save"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="18sp" />-->
+        <Button
+            android:id="@+id/set_weight_goal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/selector_btn_blue"
+            android:text="@string/save"
+            android:textColor="@color/selector_btn_textcolor"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

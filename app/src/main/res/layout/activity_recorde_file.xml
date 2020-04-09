@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/solid_dark_holo" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_button_bg"
+            android:drawableLeft="@drawable/back_button_ioc_bg"
+            android:drawablePadding="10dp"
+            android:onClick="back"
+            android:padding="10dp"
+            android:text="@string/record_file_list"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    	
+    <ListView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_record"
+        ></ListView>
+	
+</LinearLayout>

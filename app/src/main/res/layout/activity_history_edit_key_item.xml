@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+
+    android:orientation="vertical" >
+    <EditText 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+		android:maxLength="8"
+        android:id="@+id/edit_keyname"
+		android:text="12"
+        />
+	<Spinner
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/edit_keybg"
+	    android:spinnerMode="dropdown"
+	    android:popupBackground="#D5D5D5"
+	    android:dropDownWidth="80dp"
+	    android:dropDownHorizontalOffset="0sp"
+	    />
+</LinearLayout>

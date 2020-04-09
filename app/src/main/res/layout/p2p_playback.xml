@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.p2p.core.P2PView
+            android:id="@+id/pView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/control_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/dialog_back_color">
+
+            <TextView
+                android:id="@+id/nowTime"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="0:00:00"
+                android:textColor="#ffffff"
+                android:textSize="17dp" />
+
+            <SeekBar
+                android:id="@+id/seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/totalTime"
+                android:layout_toRightOf="@+id/nowTime"
+                android:clickable="true"
+                android:maxHeight="5dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="3dp"
+                style="@style/SeekBarStyle"
+                android:progressDrawable="@drawable/seekbar_bg2" />
+
+            <TextView
+                android:id="@+id/totalTime"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="0:00:00"
+                android:textColor="#ffffff"
+                android:textSize="17dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/center_solid"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/top"
+            android:background="#90ffffff">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/center_solid"
+            android:layout_centerVertical="true"
+            android:background="@color/dialog_back_color"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/previous"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_play_back"
+                android:scaleType="fitCenter"
+                android:src="@drawable/playing_previous" />
+
+            <ImageView
+                android:id="@+id/pause"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_play_back"
+                android:scaleType="fitCenter"
+                android:src="@drawable/playing_pause" />
+
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_play_back"
+                android:scaleType="fitCenter"
+                android:src="@drawable/playing_next" />
+
+
+            <ImageView
+                android:id="@+id/close_voice"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_play_back"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_playback_voice" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/dialog_back_color">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="212131"
+            android:layout_toRightOf="@+id/back"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_back_p"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

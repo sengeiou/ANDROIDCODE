@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_divier"
+        android:background="@color/bgColor_divier" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_alert_button"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <TextView
+            android:id="@+id/tvAlert_center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_alert_button"
+            android:gravity="center"
+
+            android:textColor="@color/textColor_alert_button_others"
+            android:textSize="@dimen/textSize_alert_button" />
+
+        <TextView
+            android:id="@+id/tvAlert"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor_alert_button_others"
+            android:textSize="@dimen/textSize_alert_button" />
+
+        <ImageView
+            android:id="@+id/tvImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_check_on_holo_light" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+    >
+    <RelativeLayout
+		android:id="@+id/add_bar_item"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/ctl_add_item_height"
+		android:background="@drawable/tiao_bg_center"
+		>
+					<ImageView 
+					    android:id="@+id/delete_item"
+	                    android:layout_width="40dp"
+	                    android:layout_height="50dp"
+	                    android:layout_centerVertical="true"
+	                    android:layout_marginLeft="10dp"
+	                    android:src="@drawable/ic_delete_item"
+	                    android:scaleType="center"
+	                    />
+		           
+		           	<TextView 
+		           	    android:id="@+id/alarmId_text"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerVertical="true"
+	                    android:textColor="@color/gray"
+	                    android:textSize="@dimen/text_size_small"
+	                    android:layout_marginRight="5dp"
+	                    android:text="@string/unbound"
+	                    android:layout_toLeftOf="@+id/arrow"
+	                    />
+		           	
+	                <ImageView 
+	                    android:id="@+id/arrow"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerVertical="true"
+	                    android:layout_marginRight="10dp"
+	                    android:layout_alignParentRight="true"
+	                    android:background="@drawable/zhzj_arrow"/>
+	</RelativeLayout>
+    
+</RelativeLayout>

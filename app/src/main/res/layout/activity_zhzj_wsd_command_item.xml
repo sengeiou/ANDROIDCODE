@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/rl_day"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_marginLeft="25dp"-->
+    <!--android:orientation="horizontal">-->
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:gravity="bottom"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="18"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_day"
+            android:layout_alignTop="@id/tv_day"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_day"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="10dp"
+            android:text="2月"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_xingqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:paddingTop="10dp"
+            android:text="星期六"
+            android:textColor="#cccccc"
+            android:textSize="15sp" />
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_day"
+            android:layout_marginLeft="40dp"
+            android:gravity="center_horizontal|top">
+            <!--<View-->
+            <!--android:id="@+id/gray_line_top"-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="5dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:background="@color/graysloae" />-->
+
+            <View
+                android:id="@+id/gray_line"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/graysloae" />
+
+            <ImageView
+                android:id="@+id/iv_circle_hover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/zhzj_history_circle" />
+
+            <ImageView
+                android:id="@+id/iv_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/zhzj_history_lcircle"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/frame"
+            android:layout_below="@id/tv_month"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:layout_marginRight="@dimen/dp_50"
+            android:layout_toRightOf="@id/frame"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:text="11:35" />
+
+            <ImageView
+                android:id="@+id/wendu_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                android:src="@drawable/wendu" />
+
+            <TextView
+                android:id="@+id/tv_command"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="开箱" />
+
+            <ImageView
+                android:id="@+id/wendu_shidu_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/last_command"
+                android:visibility="gone"
+                android:src="@drawable/shidu" />
+
+            <TextView
+                android:id="@+id/tv_commandshidu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_oper"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="小李" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

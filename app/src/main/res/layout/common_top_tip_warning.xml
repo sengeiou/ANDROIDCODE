@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/common_top_tip_warning"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/common_toptip_warning_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/zhzj_abnormal" />
+
+        <com.smartism.znzk.view.TextViewAutoHorizontalScroll
+            android:id="@+id/textview_auto_roll"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/iv_notice"
+            android:padding="5dp"
+            android:textSize="@dimen/text_size_small"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/zhzj_sy_quxiao" />
+
+    </LinearLayout>
+
+</LinearLayout>

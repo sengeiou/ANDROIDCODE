@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:id="@+id/box_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/activity_zhujiowner_please_select"
+                android:textColor="@color/bg_devices_modle"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/bgColor_actionsheet_cancel_nor"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+
+        android:background="@color/bgColor_actionsheet_cancel_nor">
+
+        <TextView
+            android:id="@+id/address_show_saddre"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/bg_devices_modle"
+            android:paddingLeft="5dp"/>
+        <TextView
+            android:id="@+id/address_show_cdaare"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/bg_devices_modle"
+            android:paddingLeft="5dp"/>
+        <TextView
+            android:id="@+id/address_show_qaddre"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/bg_devices_modle"
+            android:paddingLeft="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/address_picker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_chart" />
+    </LinearLayout>
+
+</LinearLayout>

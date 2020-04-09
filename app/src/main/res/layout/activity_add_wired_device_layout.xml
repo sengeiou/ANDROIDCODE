@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context="com.smartism.znzk.activity.device.add.AddWiredDeviceActivity">
+    <TextView
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="5dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintRight_toLeftOf="@id/device_name_tv"
+            android:textSize="@dimen/text_size_16sp"
+            style="@android:style/TextAppearance"
+            android:text="@string/zhzj_zhujiipc_name"
+            android:id="@+id/device_name_desc"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <EditText
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textCursorDrawable="@drawable/cursor_zhuji_default"
+            android:background="@null"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textSize="@dimen/text_size_16sp"
+            style="@android:style/TextAppearance"
+            android:text=""
+            android:hint="@string/input_device_name"
+            android:id="@+id/device_name_tv"
+            app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintLeft_toRightOf="@id/device_name_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    <android.support.constraint.Barrier
+
+            android:id="@+id/first_barrier"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="device_name_desc,device_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <View
+            android:id="@+id/first_divider"
+            android:background="@color/graysloae"
+            app:layout_constraintTop_toBottomOf="@id/first_barrier"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+    <TextView
+            android:layout_marginTop="10dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintRight_toLeftOf="@id/device_location_tv"
+            android:textSize="@dimen/text_size_16sp"
+            style="@android:style/TextAppearance"
+            android:text="@string/zhzj_zhujiipc_where"
+            android:id="@+id/device_location_desc"
+            app:layout_constraintTop_toBottomOf="@id/first_divider"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <EditText
+            android:textCursorDrawable="@drawable/cursor_zhuji_default"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/first_divider"
+            android:background="@null"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textSize="@dimen/text_size_16sp"
+            style="@android:style/TextAppearance"
+            android:text=""
+            android:hint="@string/jjsuo_info_where"
+            android:id="@+id/device_location_tv"
+            app:layout_constraintLeft_toRightOf="@id/device_location_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    <android.support.constraint.Barrier
+
+            android:id="@+id/second_barrier"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="device_location_tv,device_location_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/text_size_16sp"
+            style="@android:style/TextAppearance"
+            android:text="@string/adwa_select_fangqu"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/second_barrier"
+            android:id="@+id/select_fangqu_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <FrameLayout
+            android:id="@+id/list_parent"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintBottom_toTopOf="@id/save"
+            app:layout_constraintTop_toBottomOf="@id/select_fangqu_tv"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+    <ListView
+            android:choiceMode="singleChoice"
+            android:scrollbars="none"
+            android:id="@+id/list_view"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+        <TextView
+                android:id="@+id/list_emppty_view"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_16sp"
+                style="@android:style/TextAppearance"
+                android:text="@string/adwa_current_no_zone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+    </FrameLayout>
+
+
+    <Button
+            app:layout_constraintTop_toBottomOf="@id/select_fangqu_tv"
+            android:layout_marginTop="10dp"
+            app:layout_constraintWidth_percent="0.9"
+            app:layout_constraintDimensionRatio="7:1"
+            app:layout_constraintVertical_bias="0.98"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAllCaps="false"
+            android:id="@+id/save"
+            android:onClick="saveEvent"
+            android:background="@drawable/zhzj_default_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textColor="@color/white"
+            android:text="@string/device_add_from_history_add"
+    />
+
+</android.support.constraint.ConstraintLayout>

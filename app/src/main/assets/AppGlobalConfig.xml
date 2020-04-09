@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+    <!--  此配合文件为xml全局配置文件，功能的支持与屏蔽都需要此文件的支持，定义步骤
+      1、进入com.smartism.znzk.global 包下的AppGlobalConfig.java增加一个属性，并设置get和set方法
+      2、在次文件中增加一条和属性名称相同的项，并设置text值。mainApplication的initAppGlobalConfig()方法会自动解析。
+      -->
+    <version>zhzj</version> <!-- 版本号(默认智能中控)-->
+    <versionPrefix>FF05</versionPrefix><!-- 版本主机前缀-->
+    <appid>11964929</appid><!-- 版本appid-->
+    <appSecret>qP7sc2Ab7730J7f3</appSecret><!-- 版本appsecret-->
+    <isTc>false</isTc><!-- 注册用户是否支持透传,自动会注册为客户管理员-->
+    <isDebug>true</isDebug><!-- 是否是测试环境 开发环境需要修改修改环境地址-->
+    <miPushId>2882303761517532185</miPushId><!-- 小米推送的push id-->
+    <miPushKey>5881753258185</miPushKey><!-- 小米推送的push key-->
+    <APPID></APPID><!-- 摄像头APPID-->
+    <APPToken></APPToken><!-- 摄像头Token-->
+    <APPVersion></APPVersion><!-- 摄像头APPVersion-->
+    <XMAPPUUID>d66f10f47a0d4e0e98fcd31fff521c59</XMAPPUUID>
+    <XMAPPKey>f1a08c17eaf74b57a811ce100285199f</XMAPPKey>
+    <XMAPPSecret>53750132f36e4b71afc2e3087655293f</XMAPPSecret><!--雄迈摄像头-->
+    <isRightMenu>false</isRightMenu><!-- 是否将侧滑菜单置于右边，false置于左边-->
+    <isShowFrequency>false</isShowFrequency><!-- 是否显示遥控器频率 （1.智能中控显示）-->
+    <isFourKeyTelecontrol>false</isFourKeyTelecontrol><!-- 是否是315 4键遥控器 （1.巨将）-->
+    <isShowMostZhuji>false</isShowMostZhuji><!-- 是否显示新增主机菜单-->
+    <isShowAddDevice>true</isShowAddDevice><!-- 是否显示添加设备菜单-->
+    <isShowAddGroup>false</isShowAddGroup><!-- 是否显示添加群组菜单-->
+    <isShowNewAddGroup>false</isShowNewAddGroup><!--宏才分组方式-->
+    <isShowAddZhujiGroup>false</isShowAddZhujiGroup><!-- 是否显示添加群组菜单,主机支持的-->
+    <isShowStudyFrequency>false</isShowStudyFrequency><!-- 是否显示学习任意遥控器(巨将，智能中控)-->
+    <isShowVirtual>false</isShowVirtual><!-- 是否显示添加虚拟遥控器(巨将支持)-->
+    <isShowStudyProbe>true</isShowStudyProbe><!-- 是否显示学习任意探头(巨将，智能中控,智慧主机)-->
+    <isShowBatchControl>false</isShowBatchControl><!-- 是否显示批量操作页面菜单 无此配置项时默认false-->
+    <isShowAddCamera>true</isShowAddCamera><!--是否显示添加摄像头菜单-->
+    <isShowAddXMCamera>true</isShowAddXMCamera><!--是否支持添加雄迈摄像头-->
+    <isShowAddJWCamera>true</isShowAddJWCamera><!-- 是否显示添加JW摄像头菜单-->
+    <isShowAddVCamera>false</isShowAddVCamera><!-- 是否显示添加V380摄像头菜单-->
+    <isShowTemporarySharing>false</isShowTemporarySharing><!-- 是否显示临时分享(巨将)-->
+    <isShowTime>true</isShowTime><!-- 首页是否显示时间-->
+    <isShowWendu>true</isShowWendu><!-- 首页是否显示温度-->
+    <isShowShidu>true</isShowShidu><!-- 首页是否显示湿度-->
+    <isRotationFortification>false</isRotationFortification><!-- 吉开达的三个按钮放在一起轮播(设防，在家，撤防)-->
+    <isShowFortification>true</isShowFortification><!-- 是否显示按钮(设防，在家，撤防)-->
+    <isBipcn>true</isBipcn><!-- 是否显示绑定摄像头功能（巨匠）-->
+    <isAudioMenu>false</isAudioMenu><!-- 是否显示自定义铃声设置功能（只有巨匠有）-->
+    <isNoticeCenter>true</isNoticeCenter><!-- 是否显示报警中心（支持：CHANNEL_SHUNANJU）-->
+    <isShowSecurity>true</isShowSecurity><!-- 是否显示24小时防区（支持：CHANNEL_LILESI）-->
+    <isShowTabHostShop>false</isShowTabHostShop><!-- 是否显示底部导航的商城页签（支持：CHANNEL_JUJIANG）-->
+    <isShowTabHostInteraction>false</isShowTabHostInteraction><!-- 是否显示底部导航的互动页签（支持：CHANNEL_JUJIANG）-->
+    <isShowTabHostService>false</isShowTabHostService><!-- 是否显示底部导航的服务页签（支持：CHANNEL_JUJIANG）-->
+    <isShowSecurityDevice>true</isShowSecurityDevice><!-- 是否显示防区设置（支持：CHANNEL_SHUNANJU）-->
+    <isPhone>false</isPhone><!-- 是否支持手机验证码功能（支持：CHANNEL_HTZN， CHANNEL_JKD）-->
+    <isShowRecode>false</isShowRecode><!-- 是否显示录像功能（支持：CHANNEL_HTZN， CHANNEL_JKD）-->
+    <isGridFragment>false</isGridFragment><!-- 设备列表是否显示gridview（支持：fsny）-->
+    <isAutomaticUpdates>false</isAutomaticUpdates><!-- 是否支持自动更新-->
+    <isShowAFpanel>false</isShowAFpanel><!-- 是否显主机遥控器自定义面板-->
+    <!-- 登录界面的第三方登录-->
+    <isShowThirdLogin>true</isShowThirdLogin><!-- 是否显示第三方登录布局-->
+    <isShowQQ>false</isShowQQ><!-- QQ-->
+    <isShowFaceBook>false</isShowFaceBook><!-- FaceBook-->
+    <isShowWeiXin>false</isShowWeiXin><!-- wWeiXin-->
+    <isShowGoogle>true</isShowGoogle><!-- google-->
+    <isShowTwitter>false</isShowTwitter><!-- Twitter-->
+    <!-- 主机详情信息界面显示SIM 、电量、 联网 、 电源（立乐斯、jkd）-->
+    <isShowPhoneState>true</isShowPhoneState>
+    <!--       侧滑菜单      -->
+    <isShowScene>true</isShowScene>
+    <!--       添加主机界面      -->
+    <isShowAddLanZJ>true</isShowAddLanZJ>
+    //是否显示Lan新购主机
+    <isShowAddWifiZJ>true</isShowAddWifiZJ>
+    //是否显示WIFI新购主机
+
+    <isShowWelcome>true</isShowWelcome>//是否显示欢迎页
+    <isShowGuidePage>false</isShowGuidePage>//是否显示引导页
+    <isClickDeviceItem>false</isClickDeviceItem>//在主机离线的时候是否可以点击设备（支持：巨将）
+    <isShowScanCamera>false</isShowScanCamera>//是否支持扫码添加摄像头
+    <isShowHeldWeb>false</isShowHeldWeb>//是否显示帮助页
+    <isSowSpeech>false</isSowSpeech>//是否显示语音
+    <isChildAccountAllow>true</isChildAccountAllow>//是否允许子账户删除设备
+    <!-- 首页底部菜单 -->
+    <isShowCallAlarm>true</isShowCallAlarm><!-- 首页底部菜单是否显示电话报警设置 -->
+    <isShowSmsAlarm>true</isShowSmsAlarm><!-- 首页底部菜单是否显示电话报警设置 -->
+    <isSuportVoice>true</isSuportVoice><!-- 是否支持语音验证码 -->
+
+    <isStartLogService>false</isStartLogService><!-- 是否开启日志服务 -->
+    <!--摄像头设置菜单-->
+    <cameraTimeSetting>true</cameraTimeSetting>   <!--时间设置-->
+    <cameraMediaSetting>true</cameraMediaSetting>   <!--媒体设置-->
+    <cameraSnapshotSetting>true</cameraSnapshotSetting>   <!--截图-->
+    <cameraSecuritySetting>true</cameraSecuritySetting>   <!--安全设置-->
+    <cameraRecordSetting>true</cameraRecordSetting>   <!--录像设置-->
+    <cameraVedioFile>true</cameraVedioFile>   <!--录像列表-->
+    <cameraAlarmSetting>true</cameraAlarmSetting>   <!--报警设置-->
+    <cameraNetWorkSetting>true</cameraNetWorkSetting>   <!--网络设置-->
+    <cameraUpDate>true</cameraUpDate>   <!--更新固件-->
+    <isShowDevicesPermisson>true</isShowDevicesPermisson> <!--用户设备授权-->
+    <isShowABBQService>true</isShowABBQService> <!--服务TAB页面-->
+    <isShowMine>true</isShowMine> <!--我的TAB页面-->
+    <isShowMessages>false</isShowMessages> <!--消息中心TAB页面-->
+    <isShowShoTabMain>false</isShowShoTabMain> <!--是否支持TAB页签 - 商城版本 - 首页-->
+    <isShowShoTabFind>false</isShowShoTabFind> <!--是否支持TAB页签 - 商城版本 - 发现-->
+    <isShowShoTabMerchant>false</isShowShoTabMerchant> <!--是否支持TAB页签 - 商城版本 - 商家-->
+    <isShowShoTabMine>false</isShowShoTabMine> <!--是否支持TAB页签 - 商城版本 - 我的-->
+    <isRepeatClickSence>true</isRepeatClickSence> <!--首页场景是否可重复点击-->
+    <isShowExperiHub>true</isShowExperiHub> <!--是否显示体验主机-->
+    <isSupportGestures>false</isSupportGestures> <!--是否支持手势密码-->
+
+</Config>

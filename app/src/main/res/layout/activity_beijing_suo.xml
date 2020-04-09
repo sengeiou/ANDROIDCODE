@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_beijing_suo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    tools:context="com.smartism.znzk.activity.device.BeijingSuoActivity">
+    <!-- *********************标题*********************** -->
+    <RelativeLayout
+        android:id="@+id/command_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@drawable/solid_dark_holo">
+
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/back_button_ioc_bg"
+            android:onClick="back" />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/menu_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/history"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/tip_img"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/banner" />
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/camera_display_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/activity_beijingsuo_electricity"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/textView5" />
+
+        <ImageView
+            android:id="@+id/low_vol"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/bjs_dianliang_zhengchang" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="--"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/beijingsuo_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/white" />
+
+</LinearLayout>

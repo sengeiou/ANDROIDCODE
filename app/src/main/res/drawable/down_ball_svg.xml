@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100"
+    >
+
+    <group
+        android:name="ball_group"
+        android:pivotY="50"
+        android:pivotX="50"
+        >
+
+
+
+    <path
+        android:name="half_circle_down"
+        android:fillColor="@color/zhzj_default"
+        android:pathData="M40,52 a10,10,0,1,0,20,0  a10,0,0,1,0,-20,0"
+        />
+    <path android:fillColor="@color/mediumpurple"
+        android:name="half_cicle_up"
+        android:pathData="M40,48 a10,10,0,1,1,20,0 a10,0,0,1,1,-20,0"
+        />
+<!--    <path
+        android:fillColor="#00ff00"
+        android:pathData="M40,10 a10,10,0,1,1,20,0 a10,10,0,1,1,-20,0"
+        />-->
+
+    </group>
+
+</vector>

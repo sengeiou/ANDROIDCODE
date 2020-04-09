@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    android:orientation="vertical">
+
+    <!-- *********************标题*********************** -->
+    <RelativeLayout
+        android:id="@+id/command_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/zhzj_imageview_back"
+            android:layout_marginLeft="10dp"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/camera"
+            android:src="@drawable/zhzj_information"/>
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="cameraAPicture"
+            android:padding="10dp"
+            android:src="@drawable/zhzj_photo" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dinfo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@color/zhzj_default"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:id="@+id/ll_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hub_background"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/device_logo"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_moreinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ll_logo"
+            android:layout_alignTop="@id/ll_logo"
+            android:layout_toRightOf="@id/ll_logo"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/history_d_name"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/d_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/history_d_where"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/d_where"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/history_d_type"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/d_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/history_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/white" />
+
+</LinearLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:animateLayoutChanges="true"
+>
+<LinearLayout
+              android:orientation="vertical"
+              android:background="@color/bgColor_divier"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+>
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_gateway"
+            android:layout_width="match_parent"
+            android:background="@color/mediumpurple"
+            android:layout_height="?android:attr/actionBarSize"
+            app:navigationIcon="@drawable/zhzj_welcome_device_back"
+            app:title="@string/jjsuo_sp_add"
+            app:titleTextColor="@color/white"
+            app:contentInsetStartWithNavigation="0dp"
+    >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:onClick="save"
+                android:padding="5dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="?android:attr/selectableItemBackground"
+        />
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout android:layout_width="match_parent"
+          android:layout_marginTop="2dp"
+          android:layout_below="@id/toolbar_gateway"
+          android:background="@color/white"
+          android:orientation="horizontal"
+          android:layout_marginBottom="2dp"
+          android:layout_height="45dp">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:padding="8dp"
+                  android:text="@string/jjsuo_user_lname"
+                  android:gravity="center"
+                  android:textSize="@dimen/text_size_18sp"
+                  android:textColor="#000000"
+        />
+        <EditText android:layout_width="0dp"
+                  android:background="@color/white"
+                  android:layout_height="match_parent"
+                  android:layout_weight="4"
+                  android:id="@+id/name_edit"
+                  android:textColor="@color/mediumpurple"
+
+        />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:background="@color/white"
+                  android:layout_marginBottom="2dp"
+                  android:orientation="horizontal"
+                  android:layout_height="45dp">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:padding="8dp"
+                  android:text="@string/hiflying_smartlinker_password"
+                  android:gravity="center"
+                  android:textSize="@dimen/text_size_18sp"
+                  android:textColor="#000000"
+        />
+        <EditText android:layout_width="0dp"
+                  android:background="@color/white"
+                  android:layout_height="match_parent"
+                  android:layout_weight="4"
+                  android:id="@+id/password_edit"
+                  android:inputType="numberPassword"
+                  android:maxLength="10"
+                  android:textColor="@color/mediumpurple"
+
+        />
+    </LinearLayout>
+
+    <LinearLayout
+                  android:id="@+id/ll_start_time"
+                  android:layout_width="match_parent"
+                  android:background="@color/white"
+                  android:orientation="horizontal"
+                  android:layout_marginBottom="2dp"
+                  android:layout_height="45dp">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:text="@string/start_time"
+                  android:gravity="center"
+                  android:textSize="@dimen/text_size_18sp"
+                  android:textColor="#000000"
+                  android:padding="8dp"
+        />
+        <TextView android:layout_width="0dp"
+                  android:paddingRight="10dp"
+                  android:text=""
+                  android:gravity="center_vertical|right"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:textSize="@dimen/text_size_18sp"
+                  android:textColor="@color/zhzj_default"
+                  android:drawableRight="@drawable/zhzj_tjsb_dianji"
+                  android:drawablePadding="10dp"
+                  android:id="@+id/tv_start_time"
+        />
+    </LinearLayout>
+
+
+    <LinearLayout
+                  android:id="@+id/ll_end_time"
+                  android:layout_width="match_parent"
+                  android:background="@color/white"
+                  android:orientation="horizontal"
+                  android:layout_marginBottom="2dp"
+                  android:layout_height="45dp">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:text="@string/end_time"
+                  android:gravity="center"
+                  android:textSize="@dimen/text_size_18sp"
+                  android:textColor="#000000"
+                  android:padding="8dp"
+        />
+        <TextView android:layout_width="0dp"
+                  android:paddingRight="10dp"
+                  android:text=""
+                  android:gravity="center_vertical|right"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:textSize="@dimen/text_size_18sp"
+                  android:textColor="@color/zhzj_default"
+                  android:drawableRight="@drawable/zhzj_tjsb_dianji"
+                  android:drawablePadding="10dp"
+                  android:id="@+id/tv_end_time"
+
+        />
+    </LinearLayout>
+
+</LinearLayout>
+
+</FrameLayout>

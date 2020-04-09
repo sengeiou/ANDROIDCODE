@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graysloae"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_15"
+        android:text="9月17日"
+        android:textColor="@color/zhzj_default"
+        android:visibility="gone" />
+
+    <!--         android:background="@drawable/item_xyj_his"  android:padding="@dimen/dp_10"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:drawablePadding="@dimen/dp_1"
+            android:drawableTop="@drawable/zhzj_his_time"
+            android:text="14:20"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_time"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:background="@color/graysloae" />
+
+
+        <TextView
+            android:id="@+id/tv_xy"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_7"
+            android:layout_toRightOf="@id/view"
+            android:text="120/86"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tv_xy_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_toRightOf="@id/tv_xy"
+            android:layout_marginRight="@dimen/dp_15"
+            android:text="mmHg" />
+
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_8"
+            android:layout_toRightOf="@id/tv_xy_unit"
+            android:background="@color/graysloae" />
+
+
+        <TextView
+            android:id="@+id/tv_bpm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_9"
+            android:layout_marginRight="@dimen/dp_9"
+            android:layout_toRightOf="@id/view1"
+            android:text="30"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tv_bpm_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_bpm"
+            android:layout_centerVertical="true"
+            android:text="bpm" />
+
+
+        <ImageView
+            android:id="@+id/iv_xy_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dp_13"
+            android:layout_marginRight="@dimen/dp_10"
+            android:src="@drawable/zhzj_xueyaji_zhengchang" />
+
+
+    </RelativeLayout>
+</LinearLayout>

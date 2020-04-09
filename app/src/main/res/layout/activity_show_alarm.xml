@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background" >
+    
+    <ImageView 
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alarm_pictrue2"
+        />
+	<TextView 
+	    android:id="@+id/device_id"
+	    android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+	    />
+	<TextView 
+	    android:layout_marginTop="20dp"
+	    android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/cancel_call_police"
+	    />
+	<RelativeLayout
+	    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+	    >
+		<ImageView
+		    android:id="@+id/iv_sure"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="80dp"
+	        android:src="@drawable/add_ok" />
+	    <ImageView
+	        android:id="@+id/iv_cancel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	         android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="80dp"
+	        android:src="@drawable/cancel" />
+
+	</RelativeLayout>
+</LinearLayout>

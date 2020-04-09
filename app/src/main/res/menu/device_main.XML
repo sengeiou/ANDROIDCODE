@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/device_main_setting"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/ico_sideslip_about"
+        android:title="@string/action_settings"/>
+
+</menu>

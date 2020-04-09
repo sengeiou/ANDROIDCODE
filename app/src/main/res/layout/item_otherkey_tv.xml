@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ec921a"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/btn_otherkey"
+        style="@style/tv_other_button"
+        android:layout_width="95dp"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:singleLine="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:ellipsize="marquee"
+        android:text="energysaving" />
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_otherkey"-->
+    <!--style="@style/tv_other_button"-->
+    <!--android:layout_width="80dp"-->
+    <!--android:text="摇头"-->
+    <!--android:singleLine="true"-->
+    <!--android:paddingLeft="20dp"-->
+    <!--android:paddingRight="20dp"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:paddingBottom="10dp"-->
+    <!--/>-->
+
+</LinearLayout>

@@ -1,2 +1,1 @@
-# ANDROIDCODE
-ANDROIDCODE
+# first file  created  at 2017/05/22 by pingko

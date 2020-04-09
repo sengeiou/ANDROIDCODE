@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_security_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.smartism.znzk.activity.device.SecurityInfoActivity">
+    <!-- *********************标题*********************** -->
+    <RelativeLayout
+        android:id="@+id/command_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/zhzj_imageview_back"
+            android:layout_marginLeft="17dp"
+            android:onClick="back"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/add_title_button" />
+
+
+        <TextView
+            android:id="@+id/menu_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/action_settings"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/device_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            android:src="@drawable/history_button" />
+
+        <ImageView
+            android:id="@+id/command_history_linechart"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:onClick="lineChart"
+            android:padding="10dp"
+            android:src="@drawable/button_history_linechart"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_graylose" />
+
+    <com.smartism.znzk.view.P2PSquareLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/zhzj_shebei_meici" />
+
+        <!--底部菜单 ：撤防 、 设备信息-->
+        <LinearLayout
+            android:id="@+id/bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="#66000000"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/cf_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/icon_cf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/zhzj_shebei_shefang" />
+
+                <TextView
+                    android:id="@+id/tv_cf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_defence"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/icon_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/zhzj_shebei_shebeixinxi" />
+
+                <TextView
+                    android:id="@+id/tv_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/device_info"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/device_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_menu"
+            android:layout_centerHorizontal="true"
+            android:padding="16dp"
+            android:textColor="@color/white" />
+    </com.smartism.znzk.view.P2PSquareLayout>
+
+    <!--联动设备列表-->
+    <LinearLayout
+        android:id="@+id/switch_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/info_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:text="@string/activity_add_devicefactory_name"
+            android:textColor="@color/zhzj_default"
+            android:textSize="17sp" />
+
+        <RadioGroup
+            android:id="@+id/device_switch"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/switch_on"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/zhzj_left_radio"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/security_device_open" />
+
+            <RadioButton
+                android:id="@+id/switch_off"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/zhzj_right_radio"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/security_device_close" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/graysloae" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="@string/device_scenes_title" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/graysloae" />
+        </LinearLayout>
+
+        <com.smartism.znzk.view.MyGridView
+            android:id="@+id/security_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="10dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="4"
+            android:padding="@dimen/selec_scene_icon_margin"
+            android:verticalSpacing="10dp"></com.smartism.znzk.view.MyGridView>
+    </LinearLayout>
+
+</LinearLayout>

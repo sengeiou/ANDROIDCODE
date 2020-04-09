@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/solid_dark_holo"
+        android:orientation="vertical" >
+
+         <Button
+            android:id="@+id/back_btn"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_button_bg"
+            android:drawableLeft="@drawable/back_button_ioc_bg"
+            android:drawablePadding="10dp"
+            android:onClick="back"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/ap_mode"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_choosee_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:text="@string/choosee_device"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_title"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/r_p2pview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="@color/black" >
+
+            <com.p2p.core.P2PView
+                android:id="@+id/p2pview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+            <RelativeLayout
+                android:id="@+id/rl_prgError"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="visible" >
+
+                <com.smartism.znzk.widget.HeaderView
+                    android:id="@+id/hv_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <Button
+                    android:id="@+id/btn_refrash"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/refrash"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tx_monitor_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_refrash"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/linke_error"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/prg_monitor"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="@dimen/progress_width_height"
+                    android:layout_height="@dimen/progress_width_height"
+                    android:layout_centerInParent="true"
+                    android:indeterminateDrawable="@anim/progress_monitor_waite"
+                    android:indeterminateDuration="560000" />
+
+                <TextView
+                    android:id="@+id/tx_wait_for_connect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prg_monitor"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/waite_for_linke"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

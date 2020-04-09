@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?><!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="fill_parent"--><!--android:layout_height="fill_parent"--><!--android:scrollbars="none">-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/userinfo_top_layout"
+        style="@style/default_paddding_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/zhzj_imageview_back"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/deviceslist_server_leftmenu_myselfinfo" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/graylose_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/userinfo_top_layout"
+        android:background="@color/graysloae" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/graylose_line">
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/default_paddding_left_right"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50">
+
+                <TextView
+                    style="@style/userinfo_des_hint"
+                    android:text="@string/userinfo_base" />
+            </RelativeLayout>
+
+            <View style="@style/graylose_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_user"
+                style="@style/default_paddding_left_right"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_68">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/userinfo_head_title" />
+
+                <ImageView
+                    android:id="@+id/lv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/zhzj_tjcj_dianji" />
+
+                <com.smartism.znzk.view.CircleImageView
+                    android:id="@+id/userinfo_logo"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/lv_right"
+                    android:scaleType="centerCrop" />
+
+
+            </RelativeLayout>
+
+            <View style="@style/graylose_line" />
+
+            <RelativeLayout style="@style/zhzj_item_padding_high">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_zhanghaohit" />
+
+                <TextView
+                    android:id="@+id/userinfo_account_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="15dp" />
+            </RelativeLayout>
+
+            <View style="@style/graylose_line" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_update_nickname"
+                style="@style/zhzj_item_padding_high">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_nicheng" />
+
+                <TextView
+                    android:id="@+id/tv_userinfo_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@drawable/zhzj_tjcj_dianji" />
+            </RelativeLayout>
+
+            <View style="@style/graylose_line" />
+
+
+            <RelativeLayout
+                style="@style/default_paddding_left_right"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50">
+
+                <TextView
+                    style="@style/userinfo_des_hint"
+                    android:text="@string/userinfo_account_bind" />
+            </RelativeLayout>
+
+            <View style="@style/graylose_line" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_tel"
+                        style="@style/zhzj_item_padding_high_1">
+
+                        <ImageView
+                            android:id="@+id/iv_tel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/zhzj_phone_m" />
+
+                        <TextView
+                            android:id="@+id/tv_tel"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:layout_toRightOf="@id/iv_tel"
+                            android:drawablePadding="15dp"
+                            android:drawableRight="@drawable/zhzj_tjcj_dianji"
+                            android:gravity="center_vertical"
+                            android:text="@string/userinfo_activity_account_not_bind" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/graylose_line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_email"
+                        style="@style/zhzj_item_padding_high_1">
+
+                        <ImageView
+                            android:id="@+id/iv_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/zhzj_email_m" />
+
+                        <TextView
+                            android:id="@+id/tv_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:layout_toRightOf="@id/iv_email"
+                            android:drawablePadding="15dp"
+                            android:drawableRight="@drawable/zhzj_tjcj_dianji"
+                            android:gravity="center_vertical"
+                            android:text="@string/userinfo_activity_account_not_bind" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/graylose_line" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_qq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_qq"
+                        style="@style/zhzj_item_padding_high_1">
+
+                        <ImageView
+                            android:id="@+id/iv_qq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/zhzj_qq_m" />
+
+                        <TextView
+                            android:id="@+id/tv_qq"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:layout_toRightOf="@id/iv_qq"
+                            android:drawablePadding="15dp"
+                            android:drawableRight="@drawable/zhzj_tjcj_dianji"
+                            android:gravity="center_vertical"
+                            android:text="@string/userinfo_activity_account_not_bind" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/graylose_line" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_wechat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_wechat"
+                        style="@style/zhzj_item_padding_high_1">
+
+                        <ImageView
+                            android:id="@+id/iv_wechat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/zhzj_wechat_m" />
+
+                        <TextView
+                            android:id="@+id/tv_wechat"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:layout_toRightOf="@id/iv_wechat"
+                            android:drawablePadding="15dp"
+                            android:drawableRight="@drawable/zhzj_tjcj_dianji"
+                            android:gravity="center_vertical"
+                            android:text="@string/userinfo_activity_account_not_bind" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/graylose_line" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_facebook"
+                        style="@style/zhzj_item_padding_high_1">
+
+                        <ImageView
+                            android:id="@+id/iv_facebook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/zhzj_facebook_m" />
+
+                        <TextView
+                            android:id="@+id/tv_facebook"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:layout_toRightOf="@id/iv_facebook"
+                            android:drawablePadding="15dp"
+                            android:drawableRight="@drawable/zhzj_tjcj_dianji"
+                            android:gravity="center_vertical"
+                            android:text="@string/userinfo_activity_account_not_bind" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/graylose_line" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_twitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_twitter"
+                        style="@style/zhzj_item_padding_high_1">
+
+                        <ImageView
+                            android:id="@+id/iv_twitter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/zhzj_twitter_m" />
+
+                        <TextView
+                            android:id="@+id/tv_twitter"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:layout_toRightOf="@id/iv_twitter"
+                            android:drawablePadding="15dp"
+                            android:drawableRight="@drawable/zhzj_tjcj_dianji"
+                            android:gravity="center_vertical"
+                            android:text="@string/userinfo_activity_account_not_bind" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/graylose_line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_google"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_google"
+                        style="@style/zhzj_item_padding_high_1">
+
+                        <ImageView
+                            android:id="@+id/iv_google"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/zhzj_twitter_m" />
+
+                        <TextView
+                            android:id="@+id/tv_google"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:layout_toRightOf="@id/iv_google"
+                            android:drawablePadding="15dp"
+                            android:drawableRight="@drawable/zhzj_tjcj_dianji"
+                            android:gravity="center_vertical"
+                            android:text="@string/userinfo_activity_account_not_bind" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/graylose_line" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    style="@style/default_paddding_left_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50">
+
+                    <TextView
+                        style="@style/userinfo_des_hint"
+                        android:text="@string/userinfo_passsword" />
+                </RelativeLayout>
+
+                <View style="@style/graylose_line" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_change_password"
+                    style="@style/zhzj_item_padding_high">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="15dp"
+                        android:drawableRight="@drawable/zhzj_tjcj_dianji"
+                        android:text="@string/activity_changepassword_title" />
+
+                </RelativeLayout>
+
+                <View style="@style/graylose_line" />
+
+                <LinearLayout
+                    android:id="@+id/ll_charge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_charge"
+                        style="@style/zhzj_item_padding_high">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_charge" />
+
+                        <TextView
+                            android:id="@+id/tv_charge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:paddingRight="15dp" />
+                    </RelativeLayout>
+
+                    <View style="@style/graylose_line" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/match_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/zhzj_default_button"
+                android:onClick="logout"
+                android:text="@string/userinfo_activity_zx"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+    <!--</ScrollView>-->

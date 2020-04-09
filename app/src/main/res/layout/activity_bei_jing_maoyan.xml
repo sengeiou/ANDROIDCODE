@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_beijing_suo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    android:orientation="vertical"
+    tools:context="com.smartism.znzk.activity.device.BeiJingMaoYanActivity">
+
+    <!-- *********************标题*********************** -->
+    <RelativeLayout
+        android:id="@+id/command_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/solid_dark_holo">
+
+        <Button
+            android:id="@+id/beijing_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_button_bg"
+            android:drawableLeft="@drawable/back_button_ioc_bg"
+            android:onClick="back"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/banner" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <RadioButton
+            android:id="@+id/button_wifiset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/wifi"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text="@string/activity_beijingmy_wifiset"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/button_bindblock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/bangding"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text="@string/activity_beijingmy_bindlock"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/button_picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/paizhao"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text="@string/activity_beijingmy_makingpictures"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+
+
+    <ListView
+        android:id="@+id/beijingsuo_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/white" />
+
+</LinearLayout>

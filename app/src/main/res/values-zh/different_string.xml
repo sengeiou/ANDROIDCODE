@@ -1,0 +1,2987 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="load_failed">加载失败</string>
+    <string name="action_settings">设置</string>
+    <string name="loadmore_button">加载更多</string>
+    <string name="loading">加载中&#8230;</string>
+    <string name="submiting">提交中&#8230;</string>
+    <string name="operationing">操作中&#8230;</string>
+    <string name="ongoing">请稍后&#8230;</string>
+    <string name="timeout">已超时</string>
+    <string name="request_timeout">请求超时,请重试</string>
+    <string name="canceled">已取消</string>
+    <string name="tips">提示</string>
+    <string name="edit">编辑</string>
+    <string name="sure">确定</string>
+    <string name="save">保存</string>
+    <string name="shock">震动</string>
+    <string name="voiced">有声</string>
+    <string name="silent">无声</string>
+    <string name="voice_and_shock">声音加震动</string>
+    <string name="history">历史记录</string>
+    <string name="cancel">取消</string>
+    <string name="lift">解除</string>
+    <string name="ignore">忽略</string>
+    <string name="lookover">查看</string>
+    <string name="normal">正常</string>
+    <string name="camera">拍照</string>
+    <string name="album">相册</string>
+    <string name="zhstart">开启智慧生活</string>
+    <string name="jiechutishi">长按解除报警</string>
+    <string name="close_notice">长按关闭页面</string>
+    <string name="yesterday">昨天</string>
+    <string name="monday">周一</string>
+    <string name="tuesday">周二</string>
+    <string name="wednesday">周三</string>
+    <string name="thursday">周四</string>
+    <string name="friday">周五</string>
+    <string name="saturday">周六</string>
+    <string name="sunday">周日</string>
+    <string name="sundays">周日</string>
+    <string name="week">周</string>
+    <string name="jan">1月</string>
+    <string name="feb">2月</string>
+    <string name="mar">3月</string>
+    <string name="apr">4月</string>
+    <string name="may">5月</string>
+    <string name="june">6月</string>
+    <string name="july">7月</string>
+    <string name="aug">8月</string>
+    <string name="sept">9月</string>
+    <string name="oct">10月</string>
+    <string name="nov">11月</string>
+    <string name="dec">12月</string>
+    <string name="everyday">每天</string>
+    <string name="zjoffline">主机已掉线</string>
+    <string name="zjonline">主机已上线</string>
+    <string name="zjnothave">主机不存在</string>
+    <string name="shefang">设防</string>
+    <string name="back">返回</string>
+    <string name="success">操作成功</string>
+    <string name="compele">完成</string>
+    <string name="initfailed">初始化失败，请等待或者重新打开</string>
+    <string name="addfailed">添加失败</string>
+    <string name="submit">提交</string>
+    <string name="sensor_add">添加传感器</string>
+    <string name="sensor">传感器</string>
+    <string name="sensor_addfailed">主机报警绑定失败</string>
+    <string name="alarm_center">报警中心</string>
+    <string name="ditaixing_alarm_center">智慧监控中心</string>
+    <string name="versioninfo">版本信息</string>
+    <string name="unset">未设置</string>
+    <string name="sever_time_out">服务时间已到期</string>
+    <string name="sever_close">该主机已经暂停服务</string>
+    <string name="close">关闭</string>
+    <string name="notification_ongoing">程序运行通知</string>
+    <string name="notification_default">报警通知</string>
+
+    <!-- net error -->
+    <string name="poor_network_tips">网络不佳时,会延迟显示,记得耐心等待...</string>
+    <string name="camera_play">播放</string>
+    <string name="net_error_nodata">无数据</string>
+    <string name="net_error_operationfailed">操作失败</string>
+    <string name="net_error_loginoutofday">登录已失效</string>
+    <string name="net_error_loginoutofdayipc">摄像头登录已失效，请重新登录</string>
+    <string name="net_error_servererror">服务器错误</string>
+    <string name="net_error_programs">参数错误</string>
+    <string name="net_error_response">返回值错误</string>
+    <string name="net_error_weizhi">未知错误</string>
+    <string name="net_error_nonet">网络未连接</string>
+    <string name="net_error_urlerror">URL错误</string>
+    <string name="net_error_requestfailed">系统繁忙请稍后再试</string>
+    <string name="net_error_ioerror">网络不给力，请重试</string>
+    <string name="net_error_exception">请求异常，请重试</string>
+    <string name="net_error_illegal_request">非法请求,请稍后或者重新登录!</string>
+    <string name="net_error_nopermission">您无操作此功能的权限</string>
+    <string name="net_error_noinit">数据未初始化</string>
+    <string name="net_error_sendtimeout">发送给设备超时，请重试</string>
+
+    <!-- login page -->
+    <string name="login_user_hit">账号/邮箱/手机号</string>
+    <string name="login_user_hit_nophone">账号/邮箱</string>
+    <string name="login_password_hit">密码</string>
+    <string name="login_login_button">登    录</string>
+    <string name="login_title_button">登录</string>
+    <string name="login_thrid_qq">QQ登录</string>
+    <string name="login_thrid_weixin">微信登录</string>
+    <string name="login_thrid_sina">微博登录</string>
+    <string name="login_newuser_button">注册</string>
+    <string name="login_password_forget">忘记了密码?</string>
+    <string name="login_password_remember">记住密码</string>
+    <string name="login_thrid_error_cancel">授权取消</string>
+    <string name="login_thrid_error_failed">授权失败</string>
+    <string name="login_thrid_error_error">授权错误</string>
+    <string name="login_thrid_error_inging">正在授权跳转，请稍后</string>
+    <string name="login_thrid_title">其它方式登录</string>
+
+    <!-- register page -->
+    <string name="register_title_button">注册</string>
+    <string name="register_pass_button">设置密码</string>
+    <string name="register_zhanghao">账    号:</string>
+    <string name="register_zhanghaohit">账号 </string>
+    <string name="register_pass">密    码: </string>
+    <string name="register_passhit">密码</string>
+    <string name="register_pass_confirm">确认密码: </string>
+    <string name="register_passhit_confirm">确认密码</string>
+    <string name="register_nicheng">昵称</string>
+    <string name="register_balance">余    额:</string>
+    <string name="register_nichenghint">昵称</string>
+    <string name="register_phone">手    机:</string>
+    <string name="register_phonehint">手机号</string>
+    <string name="register_email">邮    箱:</string>
+    <string name="register_email_code">验 证 码:</string>
+    <string name="register_emailhint">邮箱地址</string>
+    <string name="register_phonenumberhint">+86 18912345678</string>
+    <string name="register_emailcodehint">验证码</string>
+    <string name="register_emailcodesend">获取验证码</string>
+    <string name="register_emailcodewait">重发</string>
+    <string name="register_emailcodewait_voice">重发</string>
+    <string name="register_voicecodetip">没有收到验证码？请尝试一下</string>
+    <string name="register_voicecodesend">语音验证码</string>
+    <string name="register_registerbutton">提 交 注 册</string>
+    <string name="register_nextbutton">下一步</string>
+    <string name="register_determinebutton">保存</string>
+    <string name="register_codetimeout">验证码已失效</string>
+    <string name="register_codesendtip">验证码已发送</string>
+    <string name="register_codeerror">验证码错误</string>
+    <string name="register_codesendsuccess">验证码已发往输入的邮箱。</string>
+    <string name="register_have_no_account">还没有账号？</string>
+    <string name="register_account">立即注册</string>
+    <string name="register_phone_regis">手机</string>
+    <string name="register_email_regis">邮箱</string>
+    <string name="register_operate_many">请勿频繁操作</string>
+    <string name="register_operate_limit">注册次数已超过当日上限</string>
+
+
+    <!-- resetpassword -->
+    <string name="resetpassword_zhaohuititle">找回密码</string>
+    <string name="resetpassword_zhaohuibutton">找回密码</string>
+    <string name="reset_zhanghaohit">账号/手机/邮箱 </string>
+
+    <!-- AddDeviceActivity -->
+    <string name="add_title_button">添加新设备</string>
+    <string name="add_submit_button">点击配对添加</string>
+    <string name="add_submit_autobutton">点击自动配对</string>
+    <string name="add_auto_tips_msg">自动配对进行中，需要结束自动配对请点击结束配对，默认3分钟后自动结束！</string>
+    <string name="add_auto_tips_title">自动配对进行中</string>
+    <string name="ailien_add_send_instruction">发码</string>
+    <string name="add_auto_tips_auto_sending">正在自动发送第一个按键指令&#8230;</string>
+    <string name="add_auto_tips_auto_sendstop">自动发送已停止</string>
+    <string name="add_auto_tips_over">结束配对</string>
+    <string name="add_auto_tips_auto_over">自动配对已自动结束！</string>
+    <string name="add_shoudong_tips">进入配对，请按照提示操作：</string>
+    <string name="add_shoudong_only_tips">配对中，请观察配对现象，并按照提示操作：</string>
+    <string name="add_shoudong_only_tips_title">配对提示</string>
+    <string name="add_shoudong_only_success">配对成功了</string>
+    <string name="add_shoudong_only_failed">配对未成功</string>
+    <string name="add_shoudong_tips_notip">请按照周边设备的说明书配对操作！</string>
+    <string name="add_shoudong_neiqian_tips">配对成功,请安装新的子app</string>
+    <string name="add_shoudong_success">配对成功</string>
+    <string name="add_shoudong_failed">配对失败</string>
+    <string name="add_shoudong_failed_nohost">配对失败，主机不在线</string>
+    <string name="add_shoudong_failed_again">进入配对失败请重试！</string>
+    <string name="add_shoudong_failed_chaoshi">配对失败，已超时请重试！</string>
+    <string name="add_shoudong_failed_nohost2">未获取到主机信息，不能新增设备！</string>
+    <string name="add_shoudong_submit_notype">请输入设备类型</string>
+    <string name="add_shoudong_submit_into">正在进入配对，请稍后&#8230;</string>
+    <string name="add_submit_needjihuo_message">此类型设备需要厂家激活，如果您是厂家请点击激活按钮进行激活；正常用户请稍后再添加此类型设备！</string>
+    <string name="add_submit_needjihuo_title">请激活</string>
+    <string name="add_submit_button_jihuo">激活</string>
+    <string name="add_submit_finish">正在完成配对，请稍后&#8230;</string>
+    <string name="add_submit_device_have">设备已存在</string>
+
+    <!-- syncDataDispatcher 直接接受服务器的通知提示 -->
+    <string name="rq_control_sendfailed">指令发送失败</string>
+    <string name="rq_control_sendsuccess">指令发送成功</string>
+    <string name="tips_1">未发现主机，请使手机和主机连接在同一个路由器下</string>
+    <string name="tips_2">无此设备类型，请检查</string>
+    <string name="tips_3">配对超时,配对未完成</string>
+    <string name="tips_4">指令发送失败，主机断开连接,不过配对已经完成</string>
+    <string name="tips_5">设备不存在</string>
+    <string name="tips_6">服务器未配置此设备操作指令</string>
+    <string name="tips_7">未发现此指令，请检查服务器设置或者联系厂家</string>
+    <string name="tips_8">设备未在线，指令发送到设备失败</string>
+
+    <!-- activity_add_device -->
+    <string name="activity_add_device_dt">设备类型:</string>
+    <string name="activity_add_device_dttips">请选择合适的设备类型</string>
+    <string name="activity_add_device_dttipshit">请输入设备类型</string>
+    <string name="activity_add_device_buttonadd">点击配对添加</string>
+    <string name="activity_add_device_notidentify">无此商品类型，请手动输入</string>
+    <string name="activity_add_device_drepeat">触发的设备已经配对过了，请触发其它设备！</string>
+    <string name="activity_add_device_dinotherhub">触发的设备已经被主机%s添加，请先删除或者触发其它设备！</string>
+
+    <!-- activity_device_set -->
+    <string name="activity_device_set_tip">设备设置</string>
+    <string name="activity_device_set_where">放置地点:</string>
+    <string name="activity_device_set_wherehit">自定义放置地点</string>
+    <string name="activity_device_set_dname">设备名称:</string>
+    <string name="activity_zhuji_set_name">主机名称:</string>
+    <string name="activity_nbyg_set_name">烟感名称:</string>
+    <string name="activity_group_set_name">群组名称:</string>
+    <string name="activity_group_set_adrr">请输入设备放置地点</string>
+    <string name="activity_group_set_type">设备型号:</string>
+    <string name="activity_group_set_type_m">请输入设备型号</string>
+
+
+    <string name="activity_device_set_dnamehit">自定义设备名称</string>
+    <string name="activity_device_set_sectorNum">自定义防区编号</string>
+    <string name="activity_device_set_kgname">定时操作开关:</string>
+    <string name="activity_device_set_kgkai">定时开:</string>
+    <string name="activity_device_set_kgguan">定时关:</string>
+    <string name="activity_device_set_bipc">摄像头绑定</string>
+    <string name="no_bind_camera">没有可绑定的摄像头</string>
+    <string name="activity_weiguanmenbaojing">未关门报警</string>
+    <string name="activity_device_set_lowbattery">设备电量低</string>
+    <string name="activity_device_set_restorebattery">恢复设备电量</string>
+    <string name="devices_list_menu_dialog_rece_push">接收开锁推送</string>
+    <string name="activity_device_set_lowbattery_msg">此操作会恢复设备电量，请确定是已经更换了电池</string>
+    <string name="activity_device_set_lowbattery_btn">已恢复</string>
+    <string name="activity_device_setsector">设置防区:</string>
+    <string name="activity_device_set_updagebutton">提 交 修  改</string>
+    <string name="Operator">操作者</string>
+
+
+    <!-- activity_device_set_gsm -->
+    <string name="activity_device_setgsm_tip">主机GSM报警号码设置</string>
+    <string name="activity_device_setgsm_gsm">GSM报警号码:</string>
+    <string name="activity_device_setgsm_phone_tip">报警号码设置</string>
+    <string name="activity_device_setgsm_phone_mana">报警号码管理</string>
+    <string name="activity_device_setgsm_phonenumber">报警号码：</string>
+    <string name="activity_device_setgsm_gsmhit">请输入主机GSM模块报警号码</string>
+    <string name="activity_device_setgsm_errorgly">需要管理员权限</string>
+    <string name="activity_device_setgsm_notgsm">此主机不支持GSM报警</string>
+    <string name="activity_device_addgsm_tip">添加</string>
+    <string name="net_error_failed">修改失败</string>
+    <string name="gsm_tel">是否启用GSM报警</string>
+    <string name="activity_device_setgsm_scall">是否启用电话报警</string>
+    <string name="activity_device_setgsm_ssms">是否启用短信报警</string>
+    <string name="activity_device_setgsm_typeway">号码支持功能：</string>
+    <string name="activity_device_setgsm_typewaysms">短信</string>
+    <string name="activity_device_setgsm_typewaycall">电话</string>
+    <string name="activity_device_setgsm_scall_tips">温馨提示：只有主账户才可以编辑哦~\n\n为了更好的用户体验,用户收到电话和短信报警的10分钟之内,不会再次收到电话和短信报警。</string>
+    <string name="activity_device_setgsm_scall_number">报警来电立马知晓，点我将报警号码设置到通讯录中</string>
+    <string name="activity_device_setgsm_scall_click">点我</string>
+    <string name="activity_device_setgsm_scall_balance">报警短信或者电话余额不足，请及时在APP内的”服务“栏目里了解并充值更多条数，以免影响您的报警服务！</string>
+
+    <!-- nonet.xml -->
+    <string name="activity_devices_list_item_nonet">APP连接已断开，请等待重连或点击检查手机网络设置</string>
+    <string name="common_tip_tip_netcall">网络短信电话通知</string>
+
+    <!-- activity_devices_list_rightmenu -->
+    <string name="activity_devices_list_rightmenu_addnew">添加设备</string>
+    <string name="activity_devices_list_rightmenu_addzhuji">添加主机</string>
+    <string name="activity_devices_list_rightmenu_addgroup">添加群组</string>
+    <string name="activity_devices_list_rightmenu_sys">分享主机</string>
+    <string name="activity_devices_list_rightmenu_sys_temp">体验分享主机</string>
+    <string name="activity_devices_list_rightmenu_factory">厂商添加</string>
+    <string name="activity_devices_list_rightmenu_devetc">透传测试</string>
+    <string name="activity_devices_list_rightmenu_addy">学习任意遥控器</string>
+    <string name="activity_devices_list_rightmenu_addyx">创建虚拟遥控器</string>
+    <string name="activity_devices_list_rightmenu_addt">学习任意探头</string>
+    <string name="activity_devices_list_rightmenu_addt_add">学习任意探头</string>
+    <string name="activity_devices_list_rightmenu_batcontrol">批量控制</string>
+    <string name="activity_devices_list_choose">请选择你要操作的设备</string>
+    <string name="activity_devices_list_choose_operation">请选择操作</string>
+    <string name="activity_devices_no_choose_operation">你没有选择操作，请从新选择</string>
+    <!-- activity_devices_interaction_rightmenu -->
+    <string name="activity_devices_interaction_rightmenu_myfaq">我的问题</string>
+    <string name="activity_devices_interaction_rightmenu_myidea">我的点子</string>
+    <string name="activity_devices_interaction_rightmenu_myyugou">我的预购</string>
+    <string name="activity_devices_interaction_rightmenu_newfaq">新增问题</string>
+    <string name="activity_devices_interaction_rightmenu_newIdea">新增点子</string>
+    <string name="activity_devices_interaction_rightmenu_newwjob">售后服务</string>
+    <string name="activity_devices_interaction_menu">问题|点子</string>
+
+    <!-- activity_devices_commandhistory_rightmenu -->
+    <string name="activity_devices_commandhistory_edit">编辑按钮</string>
+    <string name="activity_devices_commandhistory_save">保存修改</string>
+    <string name="activity_devices_commandhistory_tip">请勿频繁操作</string>
+
+    <!-- activity_setting -->
+    <string name="activity_setting_title">设置</string>
+    <string name="activity_setting_tip_tips">设备背景来消息提示：</string>
+    <string name="activity_setting_tip_showzhuji">是否显示主机：</string>
+    <string name="activity_setting_tip_temperature_unit">温度显示单位：</string>
+    <string name="activity_setting_tip_dlistsort">设备列表排序方式：</string>
+    <string name="activity_setting_tips_dlistsort">设备列表排序方式</string>
+    <string name="activity_setting_tip_showongoing">系统通知栏显示APP图标</string>
+    <string name="activity_setting_tip_gensture_code">是否开启手势密码：</string>
+    <string name="activity_setting_tip_notice">报警中心设置</string>
+    <string name="activity_setting_tips_security">安防设置</string>
+    <string name="activity_setting_wsd_time">温湿度计时间间隔:</string>
+    <string name="activity_setting_wsd_time_title">温湿度计时间间隔</string>
+    <string name="activity_setting_cld_time_title">禁区面积设置</string>
+    <string name="activity_setting_zhuji_alarm_title">主机报警时长</string>
+
+
+    <!-- activity_user_info -->
+    <string name="activity_user_info_title">我的信息</string>
+    <string name="activity_user_info_passhit">点击修改密码</string>
+    <string name="activity_user_info_submitupdate">提 交 更 新</string>
+    <string name="activity_user_info_account_qq">QQ账号</string>
+    <string name="activity_user_info_account_sina">新浪微博账号</string>
+    <string name="activity_user_info_account_wechat">微信账号</string>
+    <string name="activity_user_info_account_facebook">Facebook账号</string>
+    <string name="activity_user_info_account_twitter">Twitter账号</string>
+    <string name="activity_user_info_account_google">Google账号</string>
+
+    <string name="activity_user_info_password_notchange">密码不能修改</string>
+    <string name="activity_user_info_logout">退出登录</string>
+    <string name="activity_user_info_logout_tip">退出当前账号</string>
+    <string name="activity_user_info_logout_mes">退出当前账号会使您接收不到报警信息，确定退出？</string>
+
+    <string name="alarm_center_delete_title">删除之前报警号码请求</string>
+    <string name="alarm_center_delete_message">为了能及时的为您更新报警中心号码,我们需要将之前的报警中心号码删除,您是否希望更新报警号码呢?</string>
+    <string name="alarm_center_delete_no">不删除</string>
+    <string name="alarm_center_delete_yes">好吧,让你更新一次</string>
+
+    <string name="alarm_center_add_contacts_title">添加报警中心联系人请求</string>
+    <string name="alarm_center_add_contacts_message">为了能在报警情况下给您及时的通知，需要写入报警联系人,您是否同意?</string>
+
+
+    <!-- devices_list_menu_dialog -->
+    <string name="devices_list_menu_dialog_checkversion">更新固件</string>
+    <string name="devices_list_menu_dialog_auto_strongtishi">警告音提醒</string>
+    <string name="devices_list_menu_dialog_autotishi">短信音提醒</string>
+    <string name="devices_list_menu_dialog_jsbts">接收但不提醒</string>
+    <string name="devices_list_menu_dialog_pbbjsxx">屏蔽不接收</string>
+    <string name="devices_list_menu_dialog_on">开</string>
+    <string name="devices_list_menu_dialog_off">关</string>
+    <string name="devices_list_menu_dialog_on_or_off">开/关</string>
+    <string name="devices_list_menu_dialog_out_strongtishi">撤防模式</string>
+    <string name="devices_list_menu_dialog_horn">喇叭</string>
+    <string name="devices_list_menu_dialog_gsmsetting">GSM报警号码设置</string>
+    <string name="devices_list_menu_dialog_scallsetting">报警号码设置</string>
+    <string name="devices_list_menu_dialog_devicesetting">设置设备</string>
+    <string name="devices_list_menu_dialog_devicedel">删除设备</string>
+    <string name="devices_list_menu_dialog_groupsetting">设置群组 </string>
+    <string name="devices_list_menu_dialog_group">删除群组</string>
+    <string name="devices_list_menu_dialog_zhujisetting">设置主机 </string>
+    <string name="devices_list_menu_nb_setting">设置烟感</string>
+    <string name="devices_list_menu_dialog_zhuji">删除主机</string>
+    <string name="Set_up_prompt_tone_of_devices">警告音设置</string>
+    <string name="Set_up_prompt_tone_of_messages">短信音设置</string>
+    <string name="devices_list_menu_dialog_admin_trans">管理员转移</string>
+
+    <!-- devicesListActivity -->
+    <string name="deviceslist_zhuji_offline">主机已离线</string>
+    <string name="deviceslisy_device_offine">设备离线</string>
+    <string name="deviceslist_server_totaldevices">个设备</string>
+    <string name="deviceslist_server_totalonlineapps">位用户</string>
+    <string name="deviceslist_server_notconnector">服务器未连接</string>
+    <string name="deviceslist_server_addnewapptips">请安装新的子app</string>
+    <string name="deviceslist_server_leftmenu_myselfinfo">我的信息</string>
+    <string name="deviceslist_server_leftmenu_zjchange">主机切换</string>
+    <string name="deviceslist_server_leftmenu_scene">智能场景</string>
+    <string name="deviceslist_server_leftmenu_feedback">建议反馈</string>
+    <string name="deviceslist_server_leftmenu_checkupdate">检查更新</string>
+    <string name="deviceslist_server_leftmenu_help">使用帮助</string>
+    <string name="deviceslist_server_leftmenu_about">关于我们</string>
+    <string name="deviceslist_server_leftmenu_logout">退出登录</string>
+    <string name="deviceslist_server_leftmenu_setting">常规设置</string>
+    <string name="deviceslist_server_leftmenu_islastversion">已是最新版本</string>
+    <string name="deviceslist_server_leftmenu_notwifi">没有wifi连接， 只在wifi下更新</string>
+    <string name="deviceslist_server_leftmenu_chaoshi">检查超时</string>
+    <string name="deviceslist_server_leftmenu_dtitle">的家</string>
+    <string name="deviceslist_server_leftmenu_deltitle">删除确认</string>
+    <string name="deviceslist_server_leftmenu_delmessage">确认删除此设备？</string>
+    <string name="deviceslist_server_leftmenu_delmessage_zhuji">确认删除此主机，主机删除将删除app与主机的绑定，所有的设备也将删除？</string>
+    <string name="deviceslist_server_leftmenu_delbutton">删除</string>
+    <string name="deviceslist_server_leftmenu_delcancel">取消</string>
+    <string name="deviceslist_server_leftmenu_unknownbutton">按了一个未处理的按钮</string>
+    <string name="deviceslist_server_leftmenu_deltips">删除中&#8230;</string>
+    <string name="deviceslist_server_leftmenu_delfaultedtips">参数为空，删除失败</string>
+    <string name="deviceslist_server_zhuji_online">在线</string>
+    <string name="deviceslist_server_zhuji_offline">离线</string>
+    <string name="deviceslist_server_item_normal">正常</string>
+    <string name="deviceslist_server_exit_again">再按一次回到桌面</string>
+    <string name="deviceslist_server_noupdate">固件版本已是最新</string>
+    <string name="deviceslist_server_noupdatev">固件版本%1$s已是最新</string>
+    <string name="deviceslist_server_update">固件更新</string>
+    <string name="deviceslist_server_update_button">更新</string>
+    <string name="deviceslist_server_updating_timeout">主机进入更新失败，请重试</string>
+    <string name="deviceslist_server_updating">正在更新固件，请稍后&#8230;</string>
+    <string name="deviceslist_server_update_havenew">有新的固件版本，是否更新？</string>
+    <string name="deviceslist_server_update_havenewv">当前固件版本：%1$s,新的固件版本：%2$s,是否更新</string>
+    <string name="deviceslist_server_update_success">新固件更新成功</string>
+    <string name="deviceslist_server_update_reboot">正在启动主机</string>
+    <string name="deviceslist_server_camera_error">相机打开失败,请检查相机是否可正常使用</string>
+    <string name="deviceslist_server_search_nowifi">请使手机通过wifi和主机连接同一路由器</string>
+    <string name="deviceslist_server_search_ing">正在搜索手机wifi所在路由器上的主机</string>
+    <string name="deviceslist_server_search_again">未找到主机，请检查后点击刷新按钮</string>
+    <string name="deviceslist_server_search_setbtn">手机未连上wifi >> 点我设置</string>
+    <string name="deviceslist_sever_now">当前主机</string>
+    <string name="deviceslist_morehub_title">主机切换</string>
+    <string name="deviceslist_502L_nofind">未发现502R遥控器或者527SL警号</string>
+    <string name="deviceslist_camera_count">个设备</string>
+    <string name="deviceslist_527sl_send">正在给%s发送紧急信号</string>
+    <string name="deviceslist_zhuji_sim">SIM卡状态:</string>
+    <string name="deviceslist_zhuji_sim_no">无卡</string>
+    <string name="deviceslist_zhuji_sim_normal">信号正常</string>
+    <string name="deviceslist_zhuji_sim_poor">信号差</string>
+    <string name="deviceslist_zhuji_battery">电池状态:</string>
+    <string name="deviceslist_zhuji_battery_power">电池电量:</string>
+    <string name="deviceslist_zhuji_battery_normal">正常</string>
+    <string name="deviceslist_zhuji_battery_less">低电</string>
+    <string name="deviceslist_zhuji_battery_low">电池低电</string>
+    <string name="deviceslist_zhuji_power">电源状态:</string>
+    <string name="deviceslist_zhuji_power_220v">市电</string>
+    <string name="deviceslist_zhuji_power_battery">电池</string>
+    <string name="deviceslist_zhuji_wan">联网状态:</string>
+    <string name="deviceslist_zhuji_wan_lain">有线</string>
+    <string name="deviceslist_zhuji_wan_wifi">WIFI</string>
+    <string name="deviceslist_zhuji_wan_gsm">GSM</string>
+    <string name="deviceslist_device_heartrate">心率:</string>
+    <string name="deviceslist_device_bloodpressure">高压:</string>
+    <string name="deviceslist_device_bloodpressureh">低压:</string>
+    <string name="deviceslist_device_heartrate_">心率</string>
+    <string name="deviceslist_device_bloodpressure_">高压</string>
+    <string name="deviceslist_device_bloodpressureh_">低压</string>
+
+    <!-- devicecommandhistoryactivity -->
+    <string name="history_head_time">触发时间</string>
+    <string name="history_head_content">指令内容</string>
+    <string name="history_head_deviceOperator">操作者</string>
+    <string name="history_response_nodevice">设备不存在</string>
+    <string name="history_d_name">名称：</string>
+    <string name="history_d_mac">序列号：</string>
+    <string name="history_d_servicetime">服务到期时间：</string>
+    <string name="history_d_userlist">用户列表</string>
+    <string name="history_d_where">安装位置：</string>
+    <string name="history_d_type">型号：</string>
+    <string name="history_d_jixincode">机芯码：</string>
+    <string name="history_d_dianliang">电量：</string>
+    <string name="history_control_nofind_jh">未发现无线警号</string>
+
+    <!-- DeviceSetActivity -->
+    <string name="device_set_tip_success">修改成功</string>
+    <string name="device_set_tip_nopro">传入参数为空</string>
+    <string name="device_set_tip_inupdate">提交修改中</string>
+    <string name="device_set_tip_nodevice">设备不存在</string>
+    <string name="device_set_tip_responseerr">返回值错误</string>
+    <string name="device_check_failure">校验失败</string>
+    <string name="device_not_getdata">未获得数据</string>
+    <string name="device_del_success">删除成功</string>
+    <string name="device_not_permission">无此权限</string>
+    <string name="sence_add_success">添加智能场景成功</string>
+
+    <!-- LoginActivity -->
+    <string name="login_failde">登录失败</string>
+    <string name="login_tip_registersuccess">注册成功</string>
+    <string name="login_tip_logining">正在登录&#8230;</string>
+    <string name="login_tip_account_empty">账号不能为空</string>
+    <string name="login_tip_password_empty">密码不能为空</string>
+    <string name="login_tip_password_wifi">WiFi账号不能为空</string>
+    <string name="login_request_account_empty">账号为空</string>
+    <string name="login_request_password_empty">密码为空</string>
+    <string name="login_request_no_user">用户不存在</string>
+    <string name="login_request_password_error">密码不正确</string>
+    <string name="login_kickoff_tip">登出提醒</string>
+    <string name="login_kickoff_msg">您的账号在其它设备登录，您已被踢下线，如果您不知情，您的密码可能已经泄露！</string>
+    <string name="login_kickoff_errorpassword_tip">您的密码已经被修改，请重新登录</string>
+    <string name="login_kickoff_sessionfailure_tip">您的登录已失效，请重新登录</string>
+    <string name="login_kickoff_outofday_tip">您的账号已过期，请重新登录</string>
+
+    <!-- RegisterActivity -->
+    <string name="register_ing">正在注册&#8230;</string>
+    <string name="submit_ing">正在提交&#8230;</string>
+    <string name="register_tip_password_empty">密码不能为空</string>
+    <string name="register_tip_password_confirm">两遍密码不一致</string>
+    <string name="register_tip_password_length">密码必须大于6位</string>
+    <string name="register_tip_account_empty">账号不能为空</string>
+    <string name="register_tip_nicheng_empty">昵称不能为空</string>
+    <string name="register_tip_email_empty">邮箱不能为空</string>
+    <string name="register_tip_email_erro">邮箱格式错误</string>
+    <string name="register_tip_phone_empty">手机号不能为空</string>
+    <string name="register_tip_account_error">账号只能由数字、字母、下划线、中划线组成，长度为2&#8211;16位</string>
+    <string name="register_tip_account_notphone">账号不能输入手机号</string>
+    <string name="register_tip_account_notemail">邮箱格式不正确</string>
+    <string name="register_tip_phone_error">手机号格式不正确</string>
+    <string name="register_tip_email_isin">邮箱已经存在</string>
+    <string name="register_tip_email_send_filde">邮件发送失败</string>
+    <string name="register_tip_account_isin">账号已经存在</string>
+    <string name="register_tip_empty">参数为空</string>
+    <string name="register_tip_phone_isin">手机已经存在</string>
+    <string name="register_tip_phone_not">手机号未注册</string>
+
+    <!-- ResetPasswordActivity -->
+    <string name="reset_password_nosetemail">此账号未设置邮箱，不能重置！</string>
+    <string name="reset_password_sendemailfailed">发送邮件失败，密码未重置！</string>
+    <string name="reset_password_noaccounthave">无此用户！</string>
+    <string name="reset_password_success">重置的密码已经发往您注册的邮箱，请查看！</string>
+    <string name="reset_password_submiting">正在提交&#8230;</string>
+    <string name="reset_password_noaccount">账号/手机/邮箱不能为空</string>
+    <string name="reset_password_email">我们会将修改密码链接发送至您的电子邮箱，请您点击链接修改密码</string>
+    <!-- DeviceInfoActivity -->
+    <string name="deviceinfo_activity_success">设置成功</string>
+    <string name="deviceinfo_activity_copy">复制密码</string>
+    <string name="deviceinfo_activity_copy_ok">复制成功</string>
+    <string name="deviceinfo_activity_zhujimanager_title">主机管理</string>
+    <string name="deviceinfo_activity_singleproduct_title">%s管理</string>
+    <string name="deviceinfo_activity_singleproduct_info">%s信息</string>
+    <string name="deviceinfo_activity_singleproduct_ower">%s所有者</string>
+    <string name="deviceinfo_activity_singleproduct_nbyg">烟感</string>
+
+    <string name="deviceinfo_activity_wifiymq_send_tip">点击\"确认发射\"按钮便会发射指令!请慎重!</string>
+    <string name="deviceinfo_activity_wifiymq_drugstatus">药品状态:%s</string>
+    <string name="deviceinfo_activity_wifiymq_drugsfull">充足</string>
+    <string name="deviceinfo_activiyt_wifiymq_drugslack">缺少</string>
+    <string name="deviceinfo_activity_wifiymq_password_setting">开启烟雾密码设置</string>
+    <string name="deviceinfo_activity_wifiymq_online_full">在线有料</string>
+    <string name="deviceinfo_activity_wifiymq_offline_lack">在线无料</string>
+
+    <!-- SettingActivity -->
+    <string name="setting_activity_show">显示</string>
+    <string name="setting_activity_hide">隐藏</string>
+    <string name="setting_activity_zhineng">触发智能优先</string>
+    <string name="setting_activity_addsort">添加顺序</string>
+    <string name="setting_activity_select_isshowzhuji">是否显示主机</string>
+    <string name="setting_activity_select_unit">温度显示单位</string>
+    <string name="setting_activity_select_dlistsort">设备列表排序方式</string>
+    <string name="setting_activity_cancel">取消</string>
+    <string name="Set_up_gesture_password">手势密码锁定</string>
+    <string name="Whether_receive_host_online_notification">是否接收主机上线通知</string>
+    <string name="Whether_receive_host_offline_notification">是否接收主机下线通知</string>
+    <string name="Whether_to_display_the_host">是否显示主机</string>
+    <string name="Set_up_prompt_tone">提示音设置</string>
+    <string name="follow_the_system">跟随系统</string>
+    <string name="hub_offline_tips">主机离线提醒</string>
+    <string name="smoke_offline_tip_name">是否接收烟感设备离线提醒</string>
+    <string name="hub_offline_tips_close">关闭(默认)</string>
+    <string name="hub_offline_tips_delay_three_minutes">延时3分钟</string>
+    <string name="hub_offline_tips_delay_ten_minutes">延时10分钟</string>
+    <string name="hub_offline_tips_delay_thirty_minutes">延时30分钟</string>
+    <string name="hub_offline_tips_delay">延时</string>
+    <string name="hub_offline_tips_delay_minutes">分钟</string>
+
+    <!--WieghtPrepareActivity-->
+    <string name="wpa_no_select_sex">性别未选择</string>
+    <string name="wpa_no_select_birth">生日未选择</string>
+    <string name="wpa_no_select_shengao">身高未选择</string>
+    <!--WeightNewChartActivity-->
+    <string name="wnca_weight_change">体重趋势</string>
+    <string name="wnca_new_user">新角色</string>
+
+
+    <!--WeightHistoryDataActivity-->
+    <string name="whda_distribution_success">分配成功</string>
+    <string name="whda_select_object">选择对象</string>
+    <string name="whda_select_dest_weight">请选择目标体重</string>
+
+    <!--WeightManualActivity-->
+    <string name="wma_wait_distribution_data">待分配数据</string>
+    <!--WeightPrimaryAcitivty-->
+    <string-array name="wpa_titles">
+        <item>手动记录</item>
+        <item>成员管理</item>
+        <item>历史记录</item>
+    </string-array>
+
+    <!--WeightMainFramgment-->
+    <string name="wmf_dest_weight_value">目标体重:</string>
+    <string name="wmf_weight_standard">标准</string>
+    <string name="wmf_weight_weak">偏瘦</string>
+    <string name="wmf_weight_gain">偏胖</string>
+    <string name="wmf_no_member">当前无成员</string>
+    <string name="wmf_recent_30_weight_change">最近30天体重趋势</string>
+    <string name="wmf_recent_30_change">最近30天变化:</string>
+    <string name="wmf_recent_7_change">最近7天变化</string>
+    
+    <!--WeightRecordFragment-->
+    <string name="wrf_weight_name">体重 </string>
+    <string name="wrf_add_member">添加成员</string>
+    <string name="wrf_distribution">分配</string>
+    <string name="wrf_delete">删除</string>
+    <string name="wrf_please_select_user">请选择分配的用户</string>
+    <string name="wfr_current_no_user">当前无可分配成员</string>
+    
+    <!-- UserInfoActivity -->
+    <string name="userinfo_activity_updatesuccess">用户信息已更新</string>
+    <string name="userinfo_activity_account_not_bind">未绑定</string>
+    <string name="userinfo_activity_account_binding">开启应用中</string>
+    <string name="userinfo_activity_account_remove_bind">解绑成功</string>
+    <string name="userinfo_activity_account_update_bind">更换成功</string>
+    <string name="userinfo_activity_account_have_bind">该账号已被绑定</string>
+    <string name="userinfo_activity_update_phone">更换号码</string>
+    <string name="userinfo_activity_remove_phone">解除绑定</string>
+    <string name="userinfo_activity_remove_bind">是否解除绑定</string>
+    <string name="userinfo_activity_phone_bind">绑定手机</string>
+    <string name="userinfo_activity_updating">正在更新&#8230;</string>
+    <string name="userinfo_activity_idisnull">用户ID不能为空</string>
+    <string name="userinfo_activity_usernotexists">用户不存在</string>
+    <string name="userinfo_activity_nicheng">请输入昵称</string>
+    <string name="userinfo_activity_zx">退出登录</string>
+    <string name="userinfo_activity_account_charge">账户充值</string>
+
+    <!-- ScanCaptureAct -->
+    <string name="capture_activity_unknown">未知的扫码内容</string>
+    <string name="capture_activity_title">添加新设备 支持二维码/条形码</string>
+    <string name="capture_activity_opendiverfail">启动摄像头失败，请检查摄像头调用权限是否禁用</string>
+    <string name="capture_activity_ing">扫描中&#8230;</string>
+    <string name="capture_activity_setcamera_yes">马上设置</string>
+    <string name="capture_activity_setcamera_no">暂时不用</string>
+    <string name="capture_activity_notify_zhuji">请去主机添加入口</string>
+
+    <!-- shareactivity -->
+    <string name="share_activity_title_button">分享主机以及设备信息</string>
+    <string name="share_activity_title">请打开app的扫描功能扫描下面的二维码，本次二维码有效时长为3分钟</string>
+    <string name="share_activity_title_error">您没有可分享的设备信息</string>
+    <string name="share_activity_ongoing">正在生成二维码，请稍后&#8230;</string>
+
+    <!-- AddZhujiActivity -->
+    <string name="activity_add_zhuji_title">添加主机</string>
+    <string name="activity_add_zhuji_title_device">添加新设备</string>
+    <string name="activity_add_zhuji_title_wifi">WIFI添加</string>
+    <string name="activity_add_zhuji_nozhu">新购LAN主机</string>
+    <string name="activity_add_zhuji_nozhu_tips">主机为新设备或者所有控制此主机的用户将主机删除了，无用户能够控制此主机，请将手机连接到和主机在同一路由器下，点此项进行搜索</string>
+    <string name="activity_add_zhuji_wifizhu">新购WIFI主机</string>
+    <string name="activity_add_zhuji_wifizhu_tips">主机为新设备或者所有控制此主机的用户将主机删除了，无用户能够控制此主机，主机使用wifi上网，请点此项完成添加</string>
+    <string name="activity_add_zhuji_gprszhu">新购GPRS主机/序列号添加</string>
+    <string name="activity_add_zhuji_gprszhu_tips">主机为新设备或者所有控制此主机的用户将主机删除了，无用户能够控制此主机，并且主机插上能够上网的SIM卡后，点此项进行添加</string>
+    <string name="activity_add_zhuji_nozhu_typetitle">主机搜索提醒</string>
+    <string name="activity_add_zhuji_nozhu_type_p_more">主机已在使用中，请</string>
+    <string name="activity_add_zhuji_nozhu_type_p_one">主机已在使用中，请</string>
+    <string name="activity_add_zhuji_nozhu_type_f_more">中的任意一人分享设备</string>
+    <string name="activity_add_zhuji_nozhu_type_f_one">分享设备</string>
+    <string name="activity_add_zhuji_nozhu_again">主机搜索超时，请重试</string>
+    <string name="activity_add_zhuji_havezhu">使用中主机</string>
+    <string name="activity_add_zhuji_havezhu_tips">主机已经有能够控制它的用户，请任何一位能够控制此主机的用户通过app右上角的菜单，选择分享设备功能，生成二维码后，点此项扫描二维码获得主机</string>
+    <string name="activity_add_zhuji_havezhu_ongoing">正在获取设备信息，请稍后&#8230;</string>
+    <string name="activity_add_zhuji_havezhu_shixiao">已失效请重新扫描</string>
+    <string name="activity_add_zhuji_havezhu_addsuccess">添加成功</string>
+    <string name="activity_add_zhuji_idzhu">使用序列号添加主机</string>
+    <string name="activity_add_zhuji_wangduoduo_tip_first">未能获取序列号为</string>
+    <string name="activity_add_zhuji_wangduoduo_tip_middle">的主机的位置，需要您到后台进行手动添加</string>
+    <string name="activity_add_zhuji_idzhu_ongoing">正在添加主机，请稍后&#8230;</string>
+    <string name="activity_add_zhuji_idzhu_tips">每一个主机都有唯一的序列号，此选项是使用主机的唯一序列号进行添加，一般在主机的背面都有</string>
+    <string name="activity_add_zhuji_idzhu_hit">请输入主机序列号</string>
+    <string name="activity_add_zhuji_idzhu_msg">输入主机序列号</string>
+    <string name="activity_add_zhuji_idzhu_empty">序列号不能为空</string>
+    <string name="activity_add_zhuji_idzhu_leng">序列号长度为10</string>
+    <string name="activity_add_zhuji_idzhu_notfond">未发现此序列号的主机，请将主机上电，并连上互联网</string>
+    <string name="activity_add_zhuji_idzhu_offline">主机未在线</string>
+    <string name="activity_add_zhuji_idzhu_smart">请将主机配网</string>
+    <string name="activity_add_zhuji_idzhu_lan">请把主机接入网线并确认网络是否正常</string>
+    <string name="activity_add_zhuji_idzhu_smart_lan">请将主机配网/网络是否正常</string>
+    <string name="activity_add_zhuji_idzhu_smart_sim">请将主机配网/是否没插入SIM卡</string>
+    <string name="activity_add_zhuji_idzhu_sim">请将SIM卡插入主机并确保网络正常</string>
+    <string name="activity_add_zhuji_idzhu_nofondinwifi">未能在wifi局域网中找到主机，是否手动输入序列号添加？</string>
+
+    <!-- AddDeviceChooseActivity -->
+    <string name="activity_add_device_choose_title">添加设备方式</string>
+    <string name="activity_add_device_choose_qr">扫描二维码或条形码</string>
+    <string name="activity_add_device_choose_qr_tips">设备、外包装或说明书上有二维码或条形码</string>
+    <string name="activity_add_device_choose_sd">手动输入分类</string>
+    <string name="activity_add_device_choose_sd_tips">设备、外包装或说明书上有设备类型名称</string>
+    <string name="activity_add_device_choose_hi">从历史记录恢复</string>
+    <string name="activity_add_device_choose_hi_tips">从曾经添加过的历史记录中恢复曾经的设备</string>
+    <string name="activity_add_device_choose_more_tips">可购买添加的设备：</string>
+    <string name="activity_add_infrared_ray_tips">添加红外设备</string>
+
+    <!-- AddDeviceWifiZhuji -->
+    <string name="activity_add_device_wifi_title">设置wifi主机路由</string>
+    <string name="hiflying_smartlinker_ssid">SSID:</string>
+    <string name="hiflying_smartlinker_password">密码:</string>
+    <string name="hiflying_smartlinker_start">开始设置</string>
+    <string name="hiflying_smartlinker_waiting">正在搜索主机，并设置主机路由，请稍后&#8230;</string>
+    <string name="hiflying_smartlinker_timeout">配置超时!</string>
+    <string name="hiflying_smartlinker_completed">配置完成</string>
+    <string name="hiflying_smartlinker_failed">配置失败</string>
+    <string name="hiflying_smartlinker_new_module_found" formatted="false">发现新主机: Mac-%s Ip-%s，正在完成设置，请稍后&#8230;</string>
+    <string name="hiflying_smartlinker_no_wifi_connectivity">没有Wifi连接</string>
+    <string name="hiflying_smartlinker_waiting_set">正在配置主机，请稍后&#8230;</string>
+    <string name="hiflying_smartlinker_request_location">请求打开位置服务</string>
+    <string name="hiflying_smartlinker_request_location_tip">获取手机Wifi名称需要您打开手机位置服务</string>
+    <string name="hiflying_smartlinker_request_location_error">未能获取到手机位置权限，请在系统设置中开启</string>
+
+    <!-- AddDeviceFromHistoryActivity : activity_add_device_from_history -->
+    <string name="device_add_from_history_title">历史记录</string>
+    <string name="device_add_from_history_add">添加</string>
+    <string name="device_add_from_history_del">删除</string>
+    <string name="device_add_from_history_sone">只能选择一个添加</string>
+
+    <!-- AddGroupActivity -->
+    <string name="activity_group_add_title">创建群组</string>
+    <string name="activity_group_add_name">群组名称:</string>
+    <string name="activity_group_add_name_hit">请输入群组名称</string>
+    <string name="activity_group_add_name_empty">群组名称不能为空</string>
+    <string name="activity_group_add_devict_empty">请至少选择一个设备</string>
+
+    <!--ChooseAudioSettingMode-->
+    <string name="no_close_minute">分钟</string>
+    <string name="no_colse_alarm_close">关闭</string>
+    <string name="no_close_alarm_five_minute">5 分钟</string>
+    <string name="no_close_alarm_ten_minute">10 分钟</string>
+    <string name="no_close_alarm_fifteen_minute">15 分钟</string>
+    <string name="no_close_alarm_thirty">30 分钟</string>
+    
+    
+    <!--XiongmaiAboutDeviceActivity-->
+    <string name="xmsmf_local_video_setting">本地录像文件</string>
+    <string name="xmsmf_look_picture">查看截图</string>
+    <string name="xmada_about_device">关于设备</string>
+    <string name="xmada_serial_number">序列号</string>
+    <string name="xmada_device_version">设备版本</string>
+    <string name="xmada_soft_version">软件版本</string>
+    <string name="xmada_release_time">发布时间</string>
+    <string name="xmada_device_time">设备时间</string>
+    <string name="xmada_click_sync_time">点击右侧同步设备时间</string>
+    <string name="xmada_network_mode">网络模式</string>
+    <string name="xmada_recovery">恢复出厂设置</string>
+    <string name="xmada_recovery_tip">确定将所有的参数恢复至出厂默认设置吗?</string>
+    <string name="xmada_sync_device_time">同步设备时间</string>
+    <string name="xmada_sync_device_time_tip">将摄像头的显示时间同步为当前时间</string>
+    <string name="xmada_recovery_failed">恢复出厂设置失败</string>
+    <string name="xmada_reboot_device">恢复出厂设置成功,重启中...</string>
+    <string name="xmada_sync_time_success">时间同步成功</string>
+    
+    <!--XiongMaiSetupAlarmActivity-->
+    <string name="xmsaa_alarm_dingyue">报警消息订阅</string>
+    <string name="xmsaa_alarm_dingyue_tip">打开时,设备订阅报警推送,会将捕捉报警事件推送到报警服务器</string>
+    <string name="xmsaa_title">报警设置</string>
+    <string name="xmsaa_alarm_level_dowm">低级</string>
+    <string name="xmsaa_alarm_level_middle">中级</string>
+    <string name="xmsaa_alarm_level_high">高级</string>
+    <string name="xmsaa_motion_detection">移动侦测</string>
+    <string name="xmsaa_motion_detection_tip">开关打开时，设备如果检测到移动物体，会触发报警事件</string>
+    <string name="xmsaa_video_link">录像联动</string>
+    <string name="xmsaa_video_link_tip">开关打开时，设备如果检测到移动物体，就会开始录像</string>
+    <string name="xmsaa_picture_link">拍照联动</string>
+    <string name="xmsaa_picture_link_tip">开关打开时，设备如果检测到移动物体，就会抓取一张图片</string>
+    <string name="xmsaa_motion_notification">侦测推送</string>
+    <string name="xmsaa_motion_notification_tip">开关打开时，设备移动侦测报警触发后，报警消息会推送到报警服务器</string>
+    <string name="xmsaa_alarm_sensitivity">报警灵敏度</string>
+    <string name="xmsaa_video_occlusion">视频遮挡</string>
+    <string name="xmsaa_video_occlusion_tip">开关打开时，设备如果检测到前方被遮挡，会触发报警事件</string>
+    <string name="xmsaa_video_link_occlusion">开关打开时，设备镜头如果被遮挡，就会开始录像</string>
+    <string name="xmsaa_occlusion_notification">遮挡推送</string>
+    <string name="xmsaa_occ_nofi_tip">开关打开时，设备镜头被遮挡报警触发后，报警消息会推送到报警服务器</string>
+
+    <!--XiongmaipasswordModifyActivity-->
+    <string name="xmpma_password_request_tip">新的密码必须为6-30位包含字母、数字的字符</string>
+
+
+    <!--XMDeviceSetupStorage-->
+    <string name="xmdss_sd_title">是否格式化设备磁盘?</string>
+    <string name="xmdss_use_space_tip">已用%s</string>
+    <string name="xmdss_storage_total">存储容量:</string>
+    <string name="xmdss_record_storage_area">录像分区:</string>
+    <string name="xmdss_pic_storage_area">图片分区:</string>
+    <string name="xmdss_record_manshi">录像满时:</string>
+    <string name="xmdss_stop_record">停止录像</string>
+    <string name="xmdss_cycle_record">循环录像</string>
+    <string name="xmdss_remain_size">剩余容量:</string>
+    <string name="xmdss_get_device_info_timeout">获取摄像头信息超时</string>
+    <string name="xmdss_device_no_screenshot">设备没有数据截图</string>
+
+    <string name="xmdss_xiongmai_name">雄迈</string>
+    <string name="xmdss_jiwei_name">技威</string>
+
+    <!--XMDeviceSetupRecord-->
+    <string name="xmdss_qingxidu">清晰度</string>
+    <string name="xmdss_luxaingduan">录像段</string>
+    <string name="xmdss_yulu">预录</string>
+    <string name="xmdss_luxiangyinpin">录像音频</string>
+    <string name="xmdss_luxiangyinpin_tip">如果关闭,则录下来的文件没有音频</string>
+    <string name="xmdss_peizhi_no_change">配置没有变化</string>
+    <string name="xmdss_record_method">录像方式</string>
+
+    <!--ZhujiSettingCallModeActivity-->
+    <string name="zscm_call_only_number">拨打对应防区号码</string>
+    <string name="zscm_call_all_number">拨打所有号码</string>
+    <string name="zscm_call_mode_title">拨号模式选择</string>
+    <string name="zscm_call_times">拨打号码轮数:</string>
+    <string-array name="zscm_modes">
+        <item>@string/zscm_call_only_number</item>
+        <item>@string/zscm_call_all_number</item>
+    </string-array>
+
+    <!--TriggerSettingActivity-->
+    <string name="triggers_low_level">持续信号</string>
+    <string name="triggers_high_lever">一个信号</string>
+    <string name="triggers_title">触发信号</string>
+    <string name="triggers_edge_title">触发方式</string>
+    <string name="triggers_edge_level">常开</string>
+    <string name="triggers_edge_edge">常闭</string>
+    <string name="triggers_high_level_defen">高电平布防</string>
+    <string name="triggers_low_level_defen">低电平布防</string>
+    <string name="triggers_defen_title">布防电平设置</string>
+
+    <string-array name="triggers_lists">
+        <item>@string/triggers_low_level</item>
+        <item>@string/triggers_high_lever</item>
+    </string-array>
+
+    <string-array name="triggers_edge_lists">
+        <item>@string/triggers_edge_level</item>
+        <item>@string/triggers_edge_edge</item>
+    </string-array>
+
+
+    <string-array name="triggers_defen_lists">
+        <item>@string/triggers_low_level_defen</item>
+        <item>@string/triggers_high_level_defen</item>
+    </string-array>
+
+    <!--JdqWorkTimeSettingActivity-->
+    <string name="jwtsa_work_range_limit">工作时长范围为0&#8211;6500秒</string>
+    <string name="jwtsa_work_time_title">工作时长设置</string>
+    <string name="jwtsa_work_must_delow_value">工作时长不能大于%d</string>
+    <string name="jwtsa_work_time_seconds">秒</string>
+
+    <!--SendSmsActivity-->
+    <string name="ssa_title">短信控制</string>
+    <string name="ssa_send_sms">发送短信</string>
+    <string name="ssa_send_sms_success">发送短信成功</string>
+    <string name="ssa_please_select_order">请选择要控制的指令</string>
+    <string name="ssa_please_input_number">请输入主机的GSM号码</string>
+
+
+    <!--ZoneAttributeSettingActivity-->
+    <string name="jiayu_zone_attribute_title">防区属性</string>
+    <string name="jiayu_zone_attribute_home">在家防区</string>
+    <string name="jiayu_zone_attribute_mistake">智能防误触发防区</string>
+    <string name="jiayu_zone_attribute_24">24H紧急防区</string>
+    <string name="jiayu_zone_attribute_open">启用防区</string>
+    <string name="jiayu_zone_attribute_close">禁用防区</string>
+    <string name="jiayu_zone_attribute_door">门铃防区</string>
+
+    <string-array name="jiayu_zone_setting_array">
+        <item>@string/jiayu_zone_attribute_home</item>
+        <item>@string/jiayu_zone_attribute_mistake</item>
+        <item>@string/jiayu_zone_attribute_24</item>
+        <item>@string/jiayu_zone_attribute_open</item>
+        <item>@string/jiayu_zone_attribute_close</item>
+        <item>@string/jiayu_zone_attribute_door</item>
+    </string-array>
+
+    <!--ArmyDelayTimeSettingActivity-->
+    <string name="jiayu_adsa_title">布防延迟时长</string>
+    <string name="jiayu_adsa_alarm_title">报警延迟时长</string>
+    <string name="jiayu_adsa_zero_time">不延时(默认)</string>
+    <string name="jiayu_adsa_5_second">5秒</string>
+    <string name="jiayu_adsa_10_second">10秒</string>
+    <string name="jiayu_adsa_15_second">15秒</string>
+    <string name="jiayu_adsa_20_second">20秒</string>
+    <string name="jiayu_adsa_30_second">30秒</string>
+    <string name="jiayu_adsa_45_second">45秒</string>
+    <string name="jiayu_adsa_1_minute">1分钟</string>
+    <string name="jiayu_adsa_2_minute">2分钟</string>
+    <string name="jiayu_adsa_3_minute">3分钟</string>
+    <string name="jiayu_adsa_5_minute">5分钟</string>
+    <string name="jiayu_adsa_8_minute">8分钟</string>
+    <string name="jiayu_adsa_10_minute">10分钟</string>
+
+    <string-array name="jiayu_adsa_array">
+        <item>@string/jiayu_adsa_zero_time</item>
+        <item>@string/jiayu_adsa_5_second</item>
+        <item>@string/jiayu_adsa_10_second</item>
+        <item>@string/jiayu_adsa_15_second</item>
+        <item>@string/jiayu_adsa_20_second</item>
+        <item>@string/jiayu_adsa_30_second</item>
+        <item>@string/jiayu_adsa_45_second</item>
+        <item>@string/jiayu_adsa_1_minute</item>
+        <item>@string/jiayu_adsa_2_minute</item>
+        <item>@string/jiayu_adsa_3_minute</item>
+        <item>@string/jiayu_adsa_5_minute</item>
+        <item>@string/jiayu_adsa_8_minute</item>
+        <item>@string/jiayu_adsa_10_minute</item>
+    </string-array>
+
+    <!--ZhujiPasswordModifyActivity-->
+    <string name="zhuji_pwd_setting_title">主机密码设置</string>
+    <string name="zhuji_pwd_confirm_tip">请输入确认密码</string>
+    <string name="zhuji_pwd_length_error">密码为4到8为数字</string>
+    <string name="zhuji_pwd_confirm_error">两次输入密码不相同，请重新输入</string>
+    <string name="zhuji_pwd_new_tip">请输入新密码</string>
+    <string name="zhuji_pwd_current_input">请输入当前密码</string>
+    <string name="zhuji_pwd_original_error">原始密码错误，请重新输入</string>
+    <string name="zhuji_pwd_original_title">原密码</string>
+    <string name="zhuji_pwd_input_original">填写原密码</string>
+    <string name="zhuji_pwd_new_title">新密码</string>
+    <string name="zhuji_pwd_new_input">填写新密码</string>
+    <string name="zhuji_pwd_confirm_title">密码确认</string>
+    <string name="zhuji_pwd_confirm_input">填写确认密码</string>
+    <string name="zhuji_pwd_change_pwd">确认修改</string>
+
+    <!-- zhujiSettingActivity -->
+    <string name="zhuji_setting_wifi">主机WIFI设置</string>
+    <string name="zhuji_setting_lang">主机语言设置</string>
+    <string name="zhuji_setting_timezone">主机时区设置</string>
+    <string name="zhuji_setting_init">同步主机配件信息</string>
+
+    <!--AddZhujiBySelectMethodActivity-->
+
+    <string name="zhuji_perwang_sms_title">短信配网</string>
+    <string name="zhuji_peiwang_smsmethod">短信配网(部分GSM主机)</string>
+    <string name="zhuji_perwang_othermethod_tip">温馨提示：为了避免浪费您的时间，请看说明书或咨询商家确定主机支持以下配网方式。</string>
+
+    <string-array name="peiwang_method_array">
+        <item>@string/add_zhuji_by_ap_name</item>
+        <item>@string/zhuji_peiwang_smsmethod</item>
+    </string-array>
+
+    <!--GSMDistributionNetworkActivity-->
+    <string name="zhuji_perwang_method">使用其它配网方式</string>
+    <string name="gsmdna_sms_first_tip">1、请输入主机的GSM号码，然后发送短信</string>
+    <string name="gsmdna_sms_second_tip">2、如果您已发送短信，并在30秒内观察到主机蓝灯长亮，请点击\"下一步\"。</string>
+    <string name="gsmdna_sms_no_find_tip"><![CDATA[<font color=\"#ff0000\"><u>未观察到主机蓝灯长亮?</u></font>]]></string>
+    <string name="gsmdna_please_input_gms">请输入GSM号码</string>
+
+    <!--NumberPickerSettingActivity-->
+    <string name="ranqinongdu_fazhi">燃气浓度报警阀值</string>
+    <string name="wendu_fazhi">温度报警阀值</string>
+    <string name="ranqi_wendu">燃气温度:%s℃</string>
+
+    <!--AddZhujiByGsmFailureActivity-->
+    <string name="azgfa_peiwang_failed">短信配网失败</string>
+    <string name="azgfa_main_causefailure">主机不支持短信配网方式,请尝试其它方式;</string>
+    <string-array name="gsm_failure_cause">
+        <item>@string/azgfa_main_causefailure</item>
+        <item>@array/connect_failure_reasons</item>
+    </string-array>
+
+
+    <!--SecenControlBySmsActivity-->
+    <string name="scba_title">短信控制场景</string>
+    <string name="scba_after_send_tip">发送成功，GSM号码稍后会发短信通知设置结果</string>
+
+    <!--ZldGSMSettingActivity-->
+    <string name="zld_gsm_group_name">组%d</string>
+    <string name="zld_gsmphone_tip">组%d 报警号码设置</string>
+    <string name="zld_sms_setting_tip">温馨提示:只有主账号才能编辑哦~</string>
+    <string name="zld_sms_setting">布撤防短信推送</string>
+    <string-array name="zld_gsmphone_type">
+        <item>短信</item>
+    </string-array>
+
+    <string-array name="xmdss_qingxidudefinition_values">
+        <item>很差</item>
+        <item>较差</item>
+        <item>一般</item>
+        <item>好</item>
+        <item>很好</item>
+        <item>最好</item>
+    </string-array>
+
+    <string-array name="xmdss_sensitivity_values">
+        <item>低</item>
+        <item>中</item>
+        <item>高</item>
+    </string-array>
+
+    <string-array name="xmdss_recordmethod_values">
+        <item>从不录像</item>
+        <item>普通录像</item><!--平时为普通录像，一旦侦测到物体移动为侦测录像-->
+        <item>侦测录像</item><!--说明，只有在侦测到移动物体后才录像-->
+    </string-array>
+
+    <!--XMDeviceRecordListActivity-->
+    <string name="xmdrs_by_file_search">按文件搜索</string>
+    <string name="xmdrs_by_time_search">按时间搜索</string>
+    <string name="xmdrs_video_empty">当天视频列表为空,请选择其他日期</string>
+    <string name="xmdrs_get_failed">获取失败 %s</string>
+    <string name="xmdrs_play_failed">播放失败 %s</string>
+
+    <!--AddWiredDeviceActivity-->
+    <string name="adwa_fangqu_name">防区 %d</string>
+    <string name="adwa_select_fangqu">请选择防区</string>
+    <string name="adwa_current_no_zone">当前没有可添加的防区</string>
+    <string name="adwa_wired_zone_flow">有线防区设备已满</string>
+    <string name="adwa_wired_zone_errordevice">%s 有故障</string>
+
+    <!--AddZhujiByApActivity-->
+    <string name="add_zhuji_by_ap_search_again">再次搜索</string>
+    <string name="add_zhuji_by_ap_searchfailed_msg">如果主机灯长亮蓝灯说明已经在线，请确认序列号之后可以再次搜索.</string>
+    <string name="add_zhuji_by_ap_name">AP配网</string>
+    <string name="add_zhuji_by_ap_name_try">尝试AP配网</string>
+    <string name="add_zhuji_by_ap_current_wifi_enviroment">当前WiFi: %s</string>
+    <string name="add_zhuji_by_ap_current_notwifi_enviroment">当前非WiFi环境</string>
+    <string name="add_zhuji_by_ap_connect_wifizhuji">3、连接主机发出的WiFi</string>
+    <string name="add_zhuji_by_ap_connectwifizhuji_firsttip"><![CDATA[请点击前往设置WiFi按钮，打开WiFi按钮并用密码<font color=\"#0000ff\">\"12345678\"</font>连上名称为<font color=\"#0000ff\">\"AP_CONNECT_xxxx\"</font>的WiFi。]]></string>
+    <string name="add_zhuji_by_ap_connectwifizhuji_secondtip"><![CDATA[或者手动前往手机的\"设置\"->\"WLAN和互联网\"中打开WiFi并连上它。]]></string>
+    <string name="add_zhuji_by_ap_setting_wifi">前往设置WiFi</string>
+    <string name="add_zhuji_by_ap_inputwifi_tip">请输入WiFi名</string>
+    <string name="add_zhuji_by_ap_sendtips">请输入要让主机连接的WiFi账号和密码，请保证输入正确。</string>
+    <string name="add_zhuji_by_ap_searchtip">正在搜索序列号为%s的主机</string>
+    <string name="add_zhuji_by_ap_permission_tip">1.主机已被\"%s\"添加，请找他分享使用。\n\n\t\t\t2.如果主机已被未知用户添加，可长按主机reset键10秒，按语音提示操作清空用户信息后，再配置主机Wifi并添加使用。</string>
+    <string name="add_zhuji_by_ap_priciple_first"><![CDATA[原理:<font color=\"#0000ff\">主机在AP模式下相当于是一个路由器,</font>会发出WiFi信号,手机连接后便可以发送信息给它。操作步骤如下:]]></string>
+    <string name="add_zhuji_by_ap_priciple_second">1、接通电源，短按主机reset键，主机指示灯进入快闪状态(1秒5次)。</string>
+    <string name="add_zhuji_by_ap_priciple_three">2、接下来再次短按主机reset键，请观察到主机指示灯是否进入慢闪状态(1秒1次)。①慢闪则松开，然后点击\"下一步\"。②如果没有慢闪，则说明此主机不支持AP配网，请使用其它配网方式。</string>
+    <string-array name="add_zhuji_by_ap_priciple_tips">
+        <item>@string/add_zhuji_by_ap_priciple_second</item>
+        <item>@string/add_zhuji_by_ap_priciple_three</item>
+    </string-array>
+    <string name="add_zhuji_by_ap_settingap_title">1、设置主机进入AP模式</string>
+    <string name="add_zhuji_bt_ap_nofind_wifitip"><![CDATA[<font color=\"#ff0000\"><u>没有找到该WiFi?</u></font>]]></string>
+    <string name="add_zhuji_by_ap_invaildate_password">请输入有效的WiFi密码!位数需要大于8位</string>
+    <string name="add_zhuji_by_ap_send_wifiinfo_todevice">正在WiFi配置中&#8230;&#8230;&#8230;</string>
+    <string name="add_zhuji_by_ap_collecwifi_title">2、请输入主机预连接的WiFi信息</string>
+    <string name="add_zhuji_by_ap_other_tip">其它方式</string>
+    <string name="add_zhuji_by_ap_send_wifiinfo_failed">发送WiFi信息给主机失败,请重新尝试AP配网。</string>
+    <string name="add_zhuji_by_ap_get_wifiinfo">主机已收到WiFi信息</string>
+    <string name="add_zhuji_by_ap_change_wifi">更换WiFi</string>
+
+
+    <string name="add_zhuji_by_ap_failure_title">没有找到该WiFi</string>
+    <string-array name="add_zhuji_by_ap_failure_cause">
+        <item>1、此主机可能不支持AP配网，请尝试其它配网方式。</item>
+        <item>2、请重新让主机进入AP模式，并观察指示灯是否慢闪。</item>
+        <item>3、指示灯慢闪后请刷新WiFi列表。</item>
+    </string-array>
+
+
+    <string name="runlong_about_com">北京润泷科技有限公司</string>
+    <string name="runlong_about">\t\t\t\t北京润泷科技有限公司致力于智能安防锁芯的研发和生产，以精益求精的工匠精神，把传统五金锁芯创新成智能安防锁芯，运用物联网，无线传输，大数据，智能识别等技术，诠释出颠覆机械锁五金行业的安防技术，实现了撬锁远程报警，远程授权等功能，给用户带来一种前所未有的安防体验，让小锁芯拥有大智慧，让用户把安全带回家。</string>
+    <string name="runlong_about_tel">售后电话:</string>
+    <string name="runlong_about_email">服务邮箱:</string>
+
+    <!-- AboutActivity -->
+    <string name="activity_about_title">版本信息</string>
+    <string name="activity_about_suportstu">再按%d次打开高级学习功能</string>
+    <string name="activity_about_closesuportstu">再按%d次关闭高级学习功能</string>
+    <string name="activity_about_suportstu_open">高级学习功能已经打开</string>
+    <string name="activity_about_suportstu_close">高级学习功能已经关闭</string>
+    <string name="activity_about_copyright">This APP is powered by Smart-ism.com</string>
+
+    <!-- activity_add_device_factory.xml -->
+    <string name="activity_add_devicefactory_title">工厂模式添加设备种类</string>
+    <string name="activity_add_deviceactivation_title">工厂模式设备种类激活</string>
+    <string name="activity_add_devicefactory_logo">设备图片</string>
+    <string name="activity_add_devicefactory_name">设备名称</string>
+    <string name="activity_add_devicefactory_name_hint">请输入设备名称例如：门磁、红外、烟感等</string>
+    <string name="activity_add_devicefactory_type">设备型号</string>
+    <string name="activity_add_devicefactory_type_hint">请输入设备型号,例如：xxx-1，xxx-xx1等</string>
+    <string name="activity_add_devicefactory_barcode">条  形  码</string>
+    <string name="activity_add_devicefactory_barcode_hint">请输入设备包装条形码，没有不填</string>
+    <string name="activity_add_devicefactory_ctype">设备分类</string>
+    <string name="activity_add_devicefactory_shangxing_1">一键上行</string>
+    <string name="activity_add_devicefactory_xiaxing_1">一键下行</string>
+    <string name="activity_add_devicefactory_xiaxing_2">两键下行</string>
+    <string name="activity_add_devicefactory_zhujiselected">选择主机</string>
+    <string name="activity_add_devicefactory_submit">开始添加</string>
+    <string name="activity_add_deviceactivation_submit">开始激活</string>
+    <string name="activity_add_devicefactory_submiting">正在通知主机进入工厂模式，请稍后&#8230;</string>
+    <string name="activity_add_devicefactory_quiting">正在通知主机提出工厂模式，请稍后&#8230;</string>
+    <string name="activity_add_devicefactory_nozhuji">错误：无主机</string>
+    <string name="activity_add_devicefactory_havetype">错误：类型已经存在</string>
+    <string name="activity_add_devicefactory_nothavetype">错误：类型不存在</string>
+    <string name="activity_add_devicefactory_ontftips">请准备三个一模一样的设备，并依次触发，完成三次正确数据收集才能完成添加</string>
+    <string name="activity_add_devicefactory_twoftips">请准备三个一模一样的设备，并依次先触发其开后触发关，完成三次正确数据收集才能完成添加</string>
+    <string name="activity_add_devicefactory_device1">第一个设备</string>
+    <string name="activity_add_devicefactory_device2">第二个设备</string>
+    <string name="activity_add_devicefactory_device3">第三个设备</string>
+    <string name="activity_add_devicefactory_trigger">请触发</string>
+    <string name="activity_add_devicefactory_triggeron">请触发ON</string>
+    <string name="activity_add_devicefactory_triggeroff">请触发OFF</string>
+    <string name="activity_add_devicefactory_triggersucc">已触发</string>
+    <string name="activity_add_devicefactory_triggerfailed">触发验证失败</string>
+    <string name="activity_add_devicefactory_addsuccess">新设备类型添加成功</string>
+    <string name="activity_add_devicefactory_submitlogo">新设备图片未设置</string>
+    <string name="activity_add_devicefactory_submitname">新设备名称未设置</string>
+    <string name="activity_add_devicefactory_submittype">新设备型号未设置</string>
+    <string name="activity_add_devicefactory_confirmfactory_title">确认退出工厂模式</string>
+    <string name="activity_add_devicefactory_confirmfactory_message">新的设备类型尚未学习完成，确认需要退出工厂模式吗？</string>
+    <string name="activity_add_devicefactory_logo_title">请选择图片来源</string>
+    <string name="activity_add_devicefactory_logo_message">此图片用来显示设备，请选择一张设备的图片</string>
+    <string name="activity_add_devicefactory_success_quitfailed">设备类型添加成功，主机退出工厂模式失败，请重新退出</string>
+
+    <!-- coreservice -->
+    <string name="coreservice_isrunning">正在运行</string>
+    <string name="coreservice_runningslogan">你的家，请放心</string>
+    <string name="coreservice_runningslogan_abbq">你的店，请放心</string>
+
+    <!-- activity_scene -->
+    <string name="activity_scene_title">智能场景</string>
+    <string name="activity_scene_current">当前场景:</string>
+    <string name="activity_scene_item_no">无</string>
+    <string name="activity_scene_item_outside">布防</string>
+    <string name="activity_scene_item_home">撤防</string>
+    <string name="activity_scene_item_inhome">在家</string>
+    <string name="activity_scene_item_outside_moden">设防模式</string>
+    <string name="activity_scene_item_home_moden">撤防模式</string>
+    <string name="activity_scene_item_inhome_moden">在家模式</string>
+    <string name="activity_scene_item_add">添加</string>
+    <string name="activity_scene_get_tip">未获取到指令</string>
+    <string name="activity_scene_item_name">请输入场景名称</string>
+    <string name="activity_scene_item_circle">请选择重复日期</string>
+    <string name="activity_scene_item_ctd">请选择控制设备</string>
+    <string name="activity_scene_item_time">定时场景</string>
+    <string name="activity_scene_item_trigger">联动场景</string>
+    <string name="activity_scene_item_diy">自定义场景</string>
+    <string name="activity_scene_item_security">安防场景</string>
+    <string name="activity_scene_modify">修改</string>
+    <string name="activity_scene_enable">启用</string>
+    <string name="activity_scene_disable">禁用</string>
+    <string name="activity_scene_del">删除</string>
+    <string name="activity_scene_notedit">不可编辑</string>
+    <string name="activity_scene_emergency">紧急</string>
+
+
+    <string name="activity_slectscene_item_time">添加定时场景</string>
+    <string name="activity_slectscene_item_trigger">添加联动场景</string>
+    <string name="activity_slectscene_item_diy">添加自定义场景</string>
+    <string name="activity_slectscene_item_dsbcf">定时布撤防</string>
+    <string name="activity_slectscene_item_dsaf">添加定时安防场景</string>
+
+    <string name="activity_slectscene_title_deviec">选择设备</string>
+    <string name="activity_slectscene_title_times">选择重复日期</string>
+    <string name="activity_slectscene_title_tips">选择报警方式</string>
+    <string name="activity_slectscene_title_touch">选择触发指令</string>
+
+    <string name="activity_slectscene_title_scenetype">选择场景类型</string>
+    <string name="activity_slectscene_title_linkage">添加联动场景</string>
+    <string name="activity_slectscene_title_custom">添加自定义场景</string>
+    <string name="activity_slectscene_title_timing">添加定时场景</string>
+
+    <string name="activity_editscene_title_linkage">编辑联动场景</string>
+    <string name="activity_editscene_title_custom">编辑自定义场景</string>
+    <string name="activity_editscene_title_timing">编辑定时场景</string>
+    <!-- activity_add_scene -->
+
+    <string name="activity_select_ctldeive">选择控制设备</string>
+    <string name="activity_select_toudeive">选择触发设备</string>
+    <string name="activity_editscene_add">添加新的智能场景</string>
+    <string name="activity_editscene_edit">编辑智能场景</string>
+    <string name="activity_editscene_name">场景名称：</string>
+    <string name="activity_editscene_name_hit">场景名称</string>
+    <string name="activity_editscene_type">场景类型：</string>
+    <string name="activity_editscene_time">触发时间：</string>
+    <string name="activity_editscene_cycle">重复次数：</string>
+    <string name="activity_editscene_cycle_tytle">重复次数选择</string>
+    <string name="activity_editscene_need_operation">选择你需要的操作</string>
+    <string name="activity_editscene_trigger">触发设备：</string>
+    <string name="activity_editscene_control">联动控制：</string>
+    <string name="activity_device_control">控制设备</string>
+    <string name="activity_device_trigger">触发设备</string>
+    <string name="activity_editscene_control_s">的</string>
+    <string name="activity_editscene_control_command">指令</string>
+    <string name="activity_editscene_type_0">自定义场景</string>
+    <string name="activity_editscene_type_1">定时场景</string>
+    <string name="activity_editscene_type_2">联动场景</string>
+    <string name="activity_editscene_type_1_empty">type为1时时间或周期为空</string>
+    <string name="activity_editscene_type_2_empty">type为2时触发设备id或指令为空</string>
+    <string name="activity_editscene_type_control_erro">控制类型只能未0,1中的一个</string>
+    <string name="activity_editscene_type_control_empty">控制的设备id或指令为空</string>
+    <string name="activity_editscene_paser_erro">解析失败</string>
+    <string name="activity_editscene_name_empty">名称为空</string>
+    <string name="activity_editscene_lang_empty">语言为空</string>
+    <string name="activity_editscene_masterid_empty">masterid为空</string>
+    <string name="activity_editscene_type_only">类型只能为0,1,2,3,4中的一个</string>
+    <string name="activity_editscene_type_empty">类型为空</string>
+    <string name="activity_editscene_isexist">该场景已存在</string>
+    <string name="activity_editscene_type_control_sure">被控制的设备必填</string>
+    <string name="activity_editscene_s_erro">参数不正确</string>
+    <string name="activity_editscene_id_empty">id不存在</string>
+    <string name="activity_editscene_set_success">设置成功</string>
+    <string name="activity_editscene_set_falid">设置失败</string>
+    <string name="activity_editscene_modify_success">保存成功</string>
+    <string name="activity_editscene_not">场景不存在</string>
+    <string name="activity_editscene_isdisable">场景已被禁用</string>
+    <string name="activity_editscene_enable">已启用</string>
+    <string name="activity_editscene_disable">已禁用</string>
+
+    <!-- zbar_scan_caputre -->
+    <string name="zbar_scan_caputre_title">请对准二维码或条形码扫描</string>
+    <string name="zbar_scan_caputre_scan">扫描中&#8230;</string>
+
+    <!-- changepassword -->
+    <string name="password_repeat">用户密码重复</string>
+    <string name="add_new_user">添加用户</string>
+    <string name="please_enter_admin_pwd_and_user_name">请输入管理员密码、新用户密码、新用户昵称</string>
+    <string name="admin_password_input">管理员密码</string>
+    <string name="admin_password_error">管理员密码错误</string>
+    <string name="new_user_password">新用户密码</string>
+    <string name="new_user_name">新用户昵称</string>
+    <string name="activity_changepassword_title">修改密码</string>
+    <string name="activity_changepassword_old">旧密码：</string>
+    <string name="activity_changepassword_old_hit">请输入原始密码</string>
+    <string name="activity_changepassword_new">新密码：</string>
+    <string name="activity_changepassword_new_hit">请输入新密码</string>
+    <string name="activity_changepassword_confirm">密码确认：</string>
+    <string name="activity_changepassword_confirm_hit">请再次输入一遍密码</string>
+    <string name="activity_changepassword_button">确认修改</string>
+    <string name="activity_changepassword_error_empty">密码不能为空</string>
+    <string name="activity_changepassword_error_oldpass">原密码错误</string>
+    <string name="activity_changepassword_error_confirm">两遍密码输入不相同</string>
+    <string name="activity_changepassword_success">密码修改成功</string>
+
+    <!-- alertmessage -->
+    <string name="activity_alertmessage_jctip">解除提醒</string>
+    <string name="activity_alertmessage_jcmessage">即将解除警报，是否解除此设备的语音提醒？</string>
+    <string name="activity_alertmessage_tip">提醒</string>
+    <string name="activity_alertmessage_choose">请选择您要进行的操作？</string>
+    <string name="activity_alertmessage_jqif">有警情</string>
+    <string name="activity_alertmessage_help"> 的求助</string>
+
+    <!--hongcai_alertmessage-->
+    <string name="hongcai_tantou_activity_alertmessage_jcmessage">确定想要撤防系统吗?否则请点\"忽略\"退出。</string>
+    <string name="hongcai_emm_activity_alertmessage_jcmessage">请点\"知悉\"退出。\"重置警报\"只适用于接受远程控制的型号。</string>
+    <string name="hongcai_eem_activity_alertmessage_firstmessage">请点\"知悉\"退出。\n</string>
+    <string name="hongcai_eem_activity_alertmessage_lastmessage">\"重置警报\"只适用于接受远程控制的型号。</string>
+    <string name="hongcai_zhixi_tip">知悉</string>
+    <string name="hongcai_zhongyaoalarm">重置警报</string>
+    <!-- ChooseAudioSettingMode -->
+    <string name="activity_bindipc_jiechu">解除绑定</string>
+    <string name="activity_bindipc_success">绑定成功</string>
+
+    <string name="login_request_no_keys">用户未分配钥匙</string>
+    <string name="login_request_temp_keys">用户有临时钥匙</string>
+
+
+    <!-- pickerView string -->
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+
+    <!-- add_device_diy -->
+    <string name="activity_add_device_diy_title">DIY添加设备</string>
+    <string name="activity_add_device_diy_title_finish">DIY添加设备</string>
+    <string name="activity_add_device_diy_buttonstudy">开始学习</string>
+    <string name="activity_add_device_diy_buttonexit">结束学习</string>
+    <string name="activity_add_device_diy_buttonfinish">结束并完成学习</string>
+    <string name="activity_add_device_diy_buttonexit_tip">您确定放弃学习？</string>
+    <string name="activity_add_device_diy_buttonfinish_tip">您确定完成学习并退出学习模式？</string>
+    <string name="activity_add_device_diy_submit_into">正在进入学习模式，请稍后&#8230;</string>
+    <string name="activity_add_device_diy_submit_exit">正在退出学习模式，请稍后&#8230;</string>
+    <string name="activity_add_device_diy_have">当前触发的设备已存在，请重新学习</string>
+    <string name="activity_add_device_diy_success">学习成功</string>
+    <string name="activity_add_device_diy_pt">请触发</string>
+    <string name="activity_add_device_diy_sfail">学习失败</string>
+    <string name="activity_add_device_diy_function">遥控器学码方式</string>
+    <string name="activity_add_device_diy_function_hit">请选择方式</string>
+
+    <!-- add_virtual remoter control -->
+    <string name="activity_add_vrc_title">创建虚拟遥控器</string>
+    <string name="activity_add_vrc_create">开始创建</string>
+    <string name="activity_add_vrc_key">遥控器键数</string>
+    <string name="activity_add_vrc_key_hit">请选择遥控器键数</string>
+    <string name="activity_add_vrc_type">遥控器类型</string>
+    <string name="activity_add_vrc_type_hit">请选择遥控器类型</string>
+    <string name="activity_add_vrc_pl">遥控器频率</string>
+    <string name="activity_add_vrc_pl_hit">请选择遥控器频率</string>
+    <string name="activity_add_vrc_success">创建成功</string>
+
+    <string name="activity_deve_show_tid">产品类型：</string>
+    <string name="activity_deve_show_did">产品ID：</string>
+    <!-- devecommandshow -->
+    <string name="activity_deve_show_datatype">数据类型：</string>
+    <string name="activity_deve_show_data">数据：</string>
+
+    <!-- Camera -->
+    <string name="xm_ip_zhilian">IP直连</string>
+    <string name="xm_unkonw">Unknown type</string>
+    <string name="xm_zhuangfamoshi">Forwarding mode</string>
+    <string name="xm_hardware_xinghao">硬件版本号:</string>
+    <string name="xm_runtime">运行时间:</string>
+    <string name="xm_connection_method">连接方式:</string>
+    <string name="xm_release_time">发布时间:</string>
+    <string name="xm_more_setting">高级设置</string>
+    <string name="xm_move_trace_switch">移动追踪开关</string>
+    <string name="xm_move_trace_sensitivity">移动追踪灵敏度</string>
+    <string name="EE_CAMERA_XM_QUERY_ERROR">查询设备信息失败，无法设置</string>
+    <string name="get_camera_info_fail">获取摄像头信息失败</string>
+    <string name="start_record">开始录制</string>
+    <string name="end_record">录制失败,停止录制</string>
+    <string name="camera_off">设备不在线</string>
+    <string name="please_play_camera">请先播放摄像头</string>
+    <string name="activity_camera_add_main">添加摄像头</string>
+    <string name="activity_vcamera_add_main">V380</string>
+    <string name="account_no_exist">账户不存在</string>
+    <string name="add_contact">添加至设备列表</string>
+    <string name="add_contacts">添加设备</string>
+    <string name="add_success">添加成功</string>
+    <string name="alarm_control">报警设置</string>
+    <string name="alarm_email">报警推送邮箱</string>
+    <string name="alarm_id_must_first_with_zero">报警推送账号是指你的APP账号</string>
+    <string name="alarm_id_too_long">报警ID不能超过9个字符</string>
+    <string name="alarm_info">报警信息</string>
+    <string name="alarm_manager">报警管理</string>
+    <string name="alarm_mask">报警屏蔽设备</string>
+    <string name="alarm_mask_id_too_long">设备ID不能超过9个字符</string>
+    <string name="alarm_record">报警记录</string>
+    <string name="alarm_time_interval">报警间隔(秒)</string>
+    <string name="all_tel">摄像机列表</string>
+    <string name="allarm_ring">报警铃声</string>
+    <string name="allarm_robot">设备：</string>
+    <string name="allarm_type">类型：</string>
+    <string name="input_alarmId">请输入报警推送账号</string>
+    <string name="input_contact_id">请输入设备ID</string>
+    <string name="input_contact_name">请输入设备昵称</string>
+    <string name="input_contact_pwd">请输入设备密码</string>
+    <string name="input_pwd_mesage">初始密码位于机子底部标签</string>
+    <string name="input_device_id">请输入设备ID</string>
+    <string name="input_device_name">请输入设备名称</string>
+    <string name="input_email">请输入邮箱</string>
+    <string name="input_friend_id">请输入设备ID</string>
+    <string name="input_friend_name">请输入设备名称</string>
+    <string name="input_login_pwd">请输入登录密码</string>
+    <string name="input_monitor_pwd">请输入监控密码</string>
+    <string name="input_new_device_pwd">请输入新的管理密码</string>
+    <string name="input_new_pwd">请输入新的密码</string>
+    <string name="input_old_device_pwd">请输入旧的管理密码</string>
+    <string name="input_old_pwd">请输入旧的密码</string>
+    <string name="create_pwd">请输入设备密码</string>
+    <string name="create_pwd_prompt">请创建一个6~30位包含字母、数字的设备密码</string>
+    <string name="current_version">当前版本</string>
+    <string name="current_version_is">当前版本是</string>
+    <string name="customize">自定义</string>
+    <string name="prompt">提示</string>
+    <string name="psw_not">密码(可以不填)</string>
+    <string name="pull_to_refresh_refreshing_success_label">刷新成功</string>
+    <string name="pw_incrrect">密码错误</string>
+    <string name="pwd_inconsistence">您两次输入的密码不一致</string>
+    <string name="re_create_pwd">请再输入一次密码</string>
+    <string name="add_online_device">添加已联网设备</string>
+    <string name="net_error_operator_fault">网络异常，操作失败</string>
+    <string name="net_error_tip">当前网络不可用，请检查你的网络设置</string>
+    <string name="net_type">网络类型</string>
+    <string name="net_wifi">Wi-Fi</string>
+    <string name="net_wired">有线</string>
+    <string name="network_control">网络设置</string>
+    <string name="network_error">网络异常</string>
+    <string name="discover">发现</string>
+    <string name="input_tip">账户和密码不能为空</string>
+    <string name="input_vf_code">请输入手机验证码</string>
+    <string name="input_wifi_pwd">请输入Wi-Fi密码</string>
+    <string name="inputpassword">请输入密码</string>
+    <string name="reinputpassword">请再一次输入密码</string>
+    <string name="differentpassword">两次输入的密码不一致</string>
+    <string name="simple_password">密码太简单</string>
+    <string name="new_device">个新设备</string>
+    <string name="new_pwd_too_long">新密码长度不能超过10个字符</string>
+    <string name="next">下一步</string>
+    <string name="next_time">下次再说</string>
+    <string name="update_now">立即更新</string>
+    <string name="update_prompt_title">更新</string>
+    <string name="username_error">用户名错误</string>
+    <string name="verification">等待验证</string>
+    <string name="verifing">验证中</string>
+    <string name="vfcode_error">验证码错误</string>
+    <string name="vfcode_timeout">验证码超时</string>
+    <string name="connecting_network">正在连接中&#8230;</string>
+    <string name="connecting_wait">请耐心等待，马上就要连接成功了.</string>
+    <string name="wait_connect">等待连接</string>
+    <string name="intelligent_online">智能联机</string>
+    <string name="port_is_occupied">端口被占用</string>
+    <string name="set_wifi_success">嘿嘿！设置成功！</string>
+    <string name="set_wifi_failed">设置Wi-Fi失败</string>
+    <string name="qr_code_add_device">扫描二维码添加设备</string>
+    <string name="unbind">解除绑定</string>
+    <string name="unbind_phone">解除手机绑定</string>
+    <string name="unbound">未绑定</string>
+    <string name="binding">报警推送账号</string>
+    <string name="busy">对方忙线</string>
+    <string name="buzzer">蜂鸣器</string>
+    <string name="buzzer_time">蜂鸣时长(分钟)</string>
+    <string name="calling_to">正在呼叫</string>
+    <string name="device_id_invalid">设备ID无效</string>
+    <string name="device_password_invalid">设备密码无效</string>
+    <string name="contact_already_exist">设备已存在</string>
+    <string name="device_name_exist">设备名已经存在</string>
+    <string name="input_account">账户不能为空！</string>
+    <string name="input_password">密码不能为空！</string>
+    <string name="activity_server_not_exit">服务器不存在</string>
+    <string name="allarm_type1">外部报警</string>
+    <string name="allarm_type2">移动侦测</string>
+    <string name="allarm_type3">紧急报警</string>
+    <string name="record_file_list">录像文件列表</string>
+    <string name="Allarm_vibrate">报警振动</string>
+    <string name="already_init_passwd">添加失败，密码已经存在</string>
+    <string name="are_you_sure_delete">确定删除</string>
+    <string name="online_state">在线</string>
+    <string name="operator">操作</string>
+    <string name="operator_error">操作失败</string>
+    <string name="password_error">密码错误</string>
+    <string name="password_length_error">密码太长</string>
+    <string name="defence">布防</string>
+    <string name="defence_area_control">防区设置</string>
+    <string name="delete">删除</string>
+    <string name="delete_account">删除账号</string>
+    <string name="delete_alarm_id">删除报警账号</string>
+    <string name="delete_alarm_records">删除报警记录</string>
+    <string name="delete_contact">删除设备</string>
+    <string name="delete_group">删除群组</string>
+    <string name="delete_sys_messages">删除系统消息</string>
+    <string name="ensure_delete">确定删除</string>
+    <string name="ap_mode">单机模式</string>
+    <string name="linke_error">连接错误</string>
+    <string name="waite_for_linke">拼命加载中&#8230;</string>
+    <string name="choosee_device">选择设备</string>
+    <string name="hold_talk">按住说话</string>
+    <string name="video_format">视频制式</string>
+    <string name="video_mode_hd">高清</string>
+    <string name="video_mode_ld">流畅</string>
+    <string name="video_mode_sd">标清</string>
+    <string name="tab_device">设备</string>
+    <string name="tab_message">事件</string>
+    <string name="tab_image">影像</string>
+    <string name="tab_more">更多</string>
+    <string name="radar_add">雷达</string>
+    <string name="gpio_success">操作成功</string>
+    <string name="device_not_support">设备不支持此操作。</string>
+    <string name="capture">截图</string>
+    <string name="look_capture">查看截图</string>
+    <string name="capture_failed">截图失败</string>
+    <string name="capture_success">截图成功</string>
+    <string name="open_door">开门</string>
+    <string name="confirm_open_door">确认开门？</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="switch_connect">正在切换</string>
+    <string name="Press_again_exit">再按一次退出播放</string>
+    <string name="Press_again">再按一次退出通话</string>
+    <string name="press_again_monitor">再按一次退出监控</string>
+    <string name="offline_state">离线</string>
+    <string name="clear_visitorpwd">清除访客密码</string>
+    <string name="clear_bundemail">清除绑定邮箱</string>
+    <string name="clear_bundealarmid">解绑</string>
+    <string name="check">查看</string>
+    <string name="clear_bundealarmid_tips">将不再接收此设备的报警推送</string>
+    <string name="manually_add">手动</string>
+    <string name="ignore_alarm_prompt_end">秒内不接收报警信息</string>
+    <string name="image_size_too_small">图片尺寸太小</string>
+    <string name="start_down">开始下载</string>
+    <string name="start_time">开始时间</string>
+    <string name="start_update">设备开始升级</string>
+    <string name="update">更新</string>
+    <string name="can_update_to">可更新至</string>
+    <string name="cancel_shield">取消屏蔽</string>
+    <string name="system_setting">系统设置</string>
+    <string name="time_set">时间设置</string>
+    <string name="media_set">媒体设置</string>
+    <string name="security_set">安全设置</string>
+    <string name="user_account">账户信息</string>
+    <string name="user_charge">充    值</string>
+    <string name="user_expenses_record">消费记录</string>
+    <string name="network_set">网络设置</string>
+    <string name="network_shot">网络截图</string>
+    <string name="alarm_set">报警设置</string>
+    <string name="video_set">录像设置</string>
+    <string name="defense_zone_set">防区设置</string>
+    <string name="message_record_play">正在录像，格式化失败！</string>
+    <string name="auto_record">自动录像</string>
+    <string name="alarm_records">报警录像</string>
+    <string name="record_mode">录像分辨率:</string>
+    <string name="sd_card_set">存储设置</string>
+    <string name="sd_capacity">总容量：</string>
+    <string name="sd_remainning_capacity">剩余：</string>
+    <string name="sd_formatting">格式化SD卡</string>
+    <string name="sd_no_exist">SD卡不存在</string>
+    <string name="delete_sd_remind">要清空SD卡吗？如果这样做，您会丢失其中存储的全部数据！</string>
+    <string name="sd_format_success">SD卡格式化成功</string>
+    <string name="sd_format_fail">SD卡格式化失败</string>
+    <string name="language_set">语言设置</string>
+    <string name="wifi_pwd_error">密码至少8位</string>
+    <string name="set_wifi_pwd">修改WIFI密码</string>
+    <string name="manual_setting">手动设置</string>
+    <string name="email_checked">验证</string>
+    <string name="email_error_tips">密码不匹配</string>
+    <string name="email_notsurpport_smtp">不支持%s邮箱</string>
+    <string name="email_notcheck_smtp">邮箱未验证,请确保邮箱已开启SMTP服务！</string>
+    <string name="sender">发件人:</string>
+    <string name="hide_sender">请输入发件人邮箱</string>
+    <string name="encryption">加密方式</string>
+    <string name="no_encrypt">不加密</string>
+    <string name="ssl_encrypt">SSL加密</string>
+    <string name="tls_encrypt">TLS加密</string>
+    <string name="send_password">密码:</string>
+    <string name="port">端口：</string>
+    <string name="input_port">请输入端口号</string>
+    <string name="ipaddress_error">IP地址错误</string>
+    <string name="smtp_address">SMTP地址:</string>
+    <string name="hide_smtp_address">请输入SMTP地址，如有多个，请用逗号隔开</string>
+    <string name="addressee">收件人:</string>
+    <string name="get_guy">邮箱:</string>
+    <string name="send_self">勾选选框，则发件人与收件人为同一人</string>
+    <string name="send_guy">邮箱:</string>
+    <string name="modify_email">修改邮箱</string>
+    <string name="email_format_error">邮箱格式错误</string>
+    <string name="time_out">超时</string>
+    <string name="addressee_not_empty">收件人不能为空</string>
+    <string name="addressee_to_much">收件人不超过3个</string>
+    <string name="addressee_email_error">收件人邮箱格式错误</string>
+    <string name="sender_not_empty">发件人不能为空</string>
+    <string name="sender_one">发件人不能超过1个</string>
+    <string name="sender_email_error">发件人邮箱格式错误</string>
+    <string name="smtp_not_empty">SMTP地址不能为空</string>
+    <string name="smtp_addresses_to_much">SMTP地址不能超过5个</string>
+    <string name="smtp_addresses_error">SMTP地址错误</string>
+    <string name="port_not_empty">端口号不能为空</string>
+    <string name="port_between">端口号在0~65535之间</string>
+    <string name="email_too_long">邮箱长度必须是3-32个字符</string>
+    <string name="modify_alarmId">修改报警推送账号</string>
+    <string name="modify_contacts">修改设备</string>
+    <string name="modify_device_password">修改管理密码</string>
+    <string name="contact_name">设备昵称</string>
+    <string name="contact_pwd">设备密码</string>
+    <string name="device_wifi_pwd">设备WI-FI密码</string>
+    <string name="input_device_wifi_pwd">请输入设备WI-FI密码</string>
+    <string name="modify_login_password">修改登录密码</string>
+    <string name="modify_login_pwd">修改登录密码</string>
+    <string name="modify_net_warning">修改网络可能造成设备断开连接，请确认操作！</string>
+    <string name="weak_password">新的密码必须为6~30位包含字母、数字的字符</string>
+    <string name="visitor_pwd_error">访客密码无效</string>
+    <string name="new_device_password">新的密码必须为6~10位包含字母、数字的字符</string>
+    <string name="smtp_or_password_error">SMTP或密码不匹配</string>
+    <string name="hide_addressee">仅支持3个，并以逗号隔开</string>
+    <string name="no_bind_email">还没有绑定邮箱，无需清除</string>
+    <string name="other_was_checking">网络繁忙，请稍后再试</string>
+    <string name="down_complete_click">下载完成，点击更新。</string>
+    <string name="down_device_update">正在下载</string>
+    <string name="down_fault">下载失败</string>
+    <string name="down_fault_click">下载失败，点击移除。</string>
+    <string name="down_londing_click">正在下载，点击取消。</string>
+    <string name="update_check_false">当前为最新版本(%s)，无需升级</string>
+    <string name="update_failed">更新失败!</string>
+    <string name="device_set">设备设置</string>
+    <string name="message_net_connect">连接到网络：</string>
+    <string name="can_update_in_sd">能够从SD卡升级</string>
+    <string name="device">添加至设备列表</string>
+    <string name="device_info">设备信息</string>
+    <string name="device_is_latest_version">当前设备为最新版本</string>
+    <string name="input_re_new_device_pwd">请再输入一次密码</string>
+    <string name="modify_nvr_pwd">修改NVR密码</string>
+    <string name="old_pwd_error">旧密码错误</string>
+    <string name="please_input_visitor_pwd">请输入访客密码</string>
+    <string name="modify_device_super_password">修改访客密码</string>
+    <string name="input_visitor_pwd">请输入访客密码</string>
+    <string name="input_wifi_password">输入无线网络密码</string>
+    <string name="nearby_wireless_network">设备附近的无线网络</string>
+    <string name="please_choose_wireless">请先将手机连接无线网络</string>
+    <string name="please_wait">请稍后</string>
+    <string name="camera_need_network">摄像头需要连接的Wi-Fi(暂不支持5G)</string>
+    <string name="connect_power_wait">接通电源，等待摄像头发出连接提示音</string>
+    <string name="wait_di">如果没有听到连接提示音，请将摄像头复位</string>
+    <string name="connect_power">连接好电源</string>
+    <string name="please_input_wifi_password">请输入Wi-Fi密码</string>
+    <string name="connect_device_wifi">请先连接设备的wifi</string>
+    <string name="confirm_delete">确定删除吗？</string>
+    <string name="confirm_exit">确定退出吗？</string>
+    <string name="cancel_call_police">是否取消报警？</string>
+    <string name="change_phone_net">请切换手机网络</string>
+    <string name="warning">警告</string>
+    <string name="change">更改</string>
+    <string name="nohelper">连接失败</string>
+    <string name="none">未知原因</string>
+    <string name="not_support">不支持</string>
+    <string name="notification_bar_icon">通知栏挂机图标</string>
+    <string name="offline">对方离线</string>
+    <string name="powerdown">对方关机</string>
+    <string name="no_body">无人接听</string>
+    <string name="hungup">挂断</string>
+    <string name="internal_error">内部错误</string>
+    <string name="ir_control">红外遥控</string>
+    <string name="conn_fail">连接失败</string>
+    <string name="rtsp_not_frame">Rtsp没有图像</string>
+    <string name="device_manger_password">管理密码</string>
+    <string name="device_visitor_password">访客密码</string>
+    <string name="alarm_switch">接收报警信息</string>
+    <string name="alarm_vioce">报警音提示</string>
+    <string name="alarm_push_limit">报警接收人数已达上限</string>
+    <string name="bind_zjalarm">当前设备不支持此功能</string>
+    <string name="bind_zjalarm_notmore">有设备正在执行，请稍后</string>
+    <string name="day_format">a</string>
+    <string name="imagedes">" "</string>
+    <string name="weak">弱</string>
+    <string name="center">中</string>
+    <string name="strong">强</string>
+    <string name="motion_detection">移动侦测</string>
+    <string name="my_email">我的邮箱</string>
+    <string name="my_phone">我的手机</string>
+    <string name="net_error">网络异常</string>
+    <string name="image_reverse">图像倒转</string>
+    <string name="xm_image_reverse_top">图像上下翻转</string>
+    <string name="xm_image_reverse_right">图像左右翻转</string>
+    <string name="infrared_switch">人体红外侦测</string>
+    <string name="alarm_input_switch">有线报警输入</string>
+    <string name="alarm_out_switch">有线报警输出</string>
+    <string name="alarm_bind_zj">主机报警绑定</string>
+    <string name="old_pwd_too_long">原密码长度不能超过10个字符</string>
+    <string name="id_disabled">对方的id被禁用</string>
+    <string name="id_inactived">对方的id未激活</string>
+    <string name="id_overdate">对方的id已过期</string>
+    <string name="no_alarm_account">无报警推送账号</string>
+    <string name="system_administrator">系统管理员</string>
+    <string name="remote_control">远程设置</string>
+    <string name="remote_denfence">远程布防</string>
+    <string name="remote_record">录像开关</string>
+    <string name="reject">拒绝</string>
+    <string name="rem_pass">记住密码</string>
+    <string name="remote">遥控</string>
+    <string name="hall">大厅</string>
+    <string name="window">窗户</string>
+    <string name="balcony">阳台</string>
+    <string name="bedroom">卧室</string>
+    <string name="kitchen">厨房</string>
+    <string name="courtyard">庭院</string>
+    <string name="door_lock">门锁</string>
+    <string name="other">其它</string>
+    <string name="year_format">-</string>
+    <string name="month_format">-</string>
+    <string name="area">防区</string>
+    <string name="channel">通道</string>
+    <string name="low_voltage_alarm">低电压报警</string>
+    <string name="allarm_type4">人体红外报警</string>
+    <string name="allarm_type5">有线报警</string>
+    <string name="allarm_type6">低电压报警</string>
+    <string name="no_defence">撤防</string>
+    <string name="defence_switch">布撤防开关</string>
+    <string name="battery_low_alarm">电池低电报警</string>
+    <string name="alarm_type">有人来访</string>
+    <string name="record_failed">录像故障</string>
+    <string name="door_alarm">门磁报警</string>
+    <string name="not_know">未知</string>
+    <string name="exit">退出</string>
+    <string name="exit_ap_m_confirm">是否退出单机模式？</string>
+    <string name="connect_wifi_timeout">连接超时</string>
+    <string name="check_update">检查更新</string>
+    <string name="about_s">关于 </string>
+    <string name="accept">接听</string>
+    <string name="account">账号</string>
+    <string name="kernelVersion">内核版本</string>
+    <string name="rootfsVersion">系统版本</string>
+    <string name="waite">等待验证&#8230;</string>
+    <string name="remind_msg">温馨提示</string>
+    <string name="remind_input_wifi_pwd">您的无线网络需要密码验证哦！！</string>
+    <string name="remind_input_wifi_pwd1">请输入密码</string>
+    <string name="wait_connection_wifi">等待设备连接Wi-Fi</string>
+    <string name="help_pictrue">请将摄像头对准二维码，直到听到叮的一声</string>
+    <string name="connect_fail_remind">连接失败提示</string>
+    <string name="reason">可能的原因：</string>
+    <string name="reason1">1.手机与设备不在同一局域网内</string>
+    <string name="reason2">2.设备连接Wi-Fi不成功</string>
+    <string name="try_again">再试一次</string>
+    <string name="use_qrecode">试试二维码添加</string>
+    <string name="tv_add_device1">这里还是空的哦！您需要添加设备才能查看</string>
+    <string name="tv_add_device2">视频，赶快行动吧~</string>
+    <string name="connect_failed_reason1">1.输入错误的Wi-Fi密码</string>
+    <string name="connect_failed_reason2">2.摄像头不支持5G网络</string>
+    <string name="connect_failed_reason3">3.当前网络环境较差</string>
+    <string name="system_msg">系统通知</string>
+    <string name="system_set">系统设置</string>
+    <string name="tell_detail">通话详细</string>
+    <string name="three_day">最近三天</string>
+    <string name="three_number">3C</string>
+    <string name="time_control">时间设置</string>
+    <string name="time_setting">应用</string>
+    <string name="uBootVersion">uBoot版本</string>
+    <string name="insufficient_permissions">权限不足</string>
+    <string name="no_ipc_list">该台NVR没有IPC</string>
+    <string name="message">短信</string>
+    <string name="playback">回放</string>
+    <string name="chat">通话</string>
+    <string name="audio_video_control">媒体设置</string>
+    <string name="base_setting">基本设置</string>
+    <string name="security_control">安全设置</string>
+    <string name="ap_modecahnge_line">切换到单机模式</string>
+    <string name="check_device_update">检查设备更新</string>
+    <string name="ap_modecahnge">确定切换?</string>
+    <string name="list_wifi">无线网络列表</string>
+    <string name="ap_modecahnge_ap">切换到联网模式</string>
+    <string name="change_wifi">更改Wi-Fi</string>
+    <string name="wifi_pwd_format_error">Wi-Fi密码格式错误</string>
+    <string name="record_manual">手动录像</string>
+    <string name="record_time_length">录像时长</string>
+    <string name="record_timer">定时录像</string>
+    <string name="record_type">录像模式</string>
+    <string name="record_alarm">报警录像</string>
+    <string name="record_control">录像设置</string>
+    <string name="pre_record">预录像</string>
+    <string name="schedule">计划时间表</string>
+    <string name="hour">时</string>
+    <string name="minutes">分</string>
+    <string name="plan_time">应用</string>
+    <string name="memory_card">存储卡容量</string>
+    <string name="automatic_upgrade">自动升级</string>
+    <string name="volume">音量</string>
+    <string name="p2p_call_push_mesg">呼叫中</string>
+    <string name="usb_capacity">U盘容量：</string>
+    <string name="usb_remainning_capacity">U盘剩余容量：</string>
+    <string name="music_0">MusicDefult</string>
+    <string name="music_1">Music1</string>
+    <string name="music_2">Music2</string>
+    <string name="music_3">Music3</string>
+    <string name="music_4">Music4</string>
+    <string name="music_5">Music5</string>
+    <string name="music_6">Music6</string>
+    <string name="music_7">Music7</string>
+    <string name="search_device">搜索设备</string>
+
+    <plurals name="plurals_second">
+        <item quantity="other">%d 秒</item>
+    </plurals>
+
+    <plurals name="plurals_minute">
+        <item quantity="other">%d 分</item>
+    </plurals>
+
+    <!-- weight -->
+    <string name="activity_weight_mian_now">Current weight[kg]</string>
+    <string name="activity_weight_mian_dynamic">Dynamic</string>
+    <string name="activity_weight_mian_trend">Tendency</string>
+    <string name="activity_weight_mian_user_list">用户列表</string>
+    <string name="activity_weight_trend_recode">体重记录</string>
+    <string name="activity_weight_trend_avage">平均</string>
+    <string name="activity_weight_trend_unit">公斤</string>
+    <string name="activity_weight_trend_best_high">Highest</string>
+    <string name="activity_weight_trend_best_low">Lowest</string>
+    <string name="activity_weight_trend_to_lastweek">than last week</string>
+    <string name="activity_weight_trend_scal">称重</string>
+    <string name="activity_weight_trend_year">一年</string>
+    <string name="activity_weight_trend_week">一周</string>
+    <string name="activity_weight_trend_month">一月</string>
+    <string name="activity_weight_mian_user">Weight(kg)</string>
+    <string name="activity_weight_user_add">添加新角色</string>
+    <string name="weight_man">男</string>
+    <string name="weight_female">女</string>
+    <string name="weight_birthday">生 日</string>
+    <string name="weight_tall">身 高</string>
+    <string name="weight_mode">抱婴者模式</string>
+    <string name="weight_adlut">成人模式</string>
+    <string name="weight_byz">抱婴者</string>
+    <string name="weight_goal">目标体重</string>
+    <string name="weight_qiehuan">你已切换至</string>
+    <string name="activity_setting_tip_weight_unit">体重显示单位:</string>
+    <string name="activity_weight_goal">目标体重: </string>
+    <string name="activity_weight_notice">提醒</string>
+    <string name="activity_weight">体 重</string>
+    <string name="member_not_exsit">成员不存在</string>
+    <string name="user_master_not_equals">分配给此成员的抱婴者无最新数据</string>
+    <string name="weight_baby_invalid">婴儿的体重小于0</string>
+    <string name="weight_data_not_exsit">记录不存在</string>
+    <string name="weight_data_exsit">记录已分配</string>
+    <string name="weight_no_data">未分配</string>
+    <string name="weight_fenpei">分配</string>
+    <string name="weight_del_user">确认删除此用户？</string>
+    <string name="weight_history_title">历史数据</string>
+    <string name="weight_user_add">添加成员</string>
+    <string name="weight_user_update">修改成员</string>
+
+
+    <!--  update -->
+    <string name="Break_Network">未联网</string>
+    <string name="UpdateTitle">发现新版本</string>
+    <string name="NewVersion">最新版本: </string>
+    <string name="UpdateContent">更新内容</string>
+    <string name="TargetSize">新版本大小:</string>
+    <string name="GprsCondition">（提示：非WIFI环境）</string>
+    <string name="UpdateNow">立即更新</string>
+    <string name="NotNow">以后再说</string>
+    <string name="Cancel">暂不更新</string>
+    <string name="Downloading">下载中&#8230;</string>
+    <string name="DownloadingFailed">下载失败</string>
+    <string name="Fileerror">下载文件校验失败，请重新下载</string>
+
+
+    <!--     gensture -->
+    <string name="reset_gensture">修改手势密码</string>
+    <string name="gesture_unInit">未设置</string>
+    <string name="gensture_open">打开</string>
+    <string name="gensture_off">关闭</string>
+    <string name="init_gesture_password">创建手势密码</string>
+    <string name="leading_tip">设置密码：他人借用你的手机时无法打开此应用程序</string>
+    <string name="lock_tip">请输入手势密码</string>
+    <string name="Please_set_up_gesture_password">请设置手势密码</string>
+    <string name="Enable_gesture_password">手势密码锁定</string>
+    <string name="goon">继续</string>
+    <string name="confirm">确认</string>
+    <string name="error">错误</string>
+    <string name="cancel_panel">取消</string>
+    <string name="try_again_panel">重试</string>
+    <string name="lockpattern_recording_incorrect_too_short">"至少连接4个点，请重试"</string>
+    <string name="lockpattern_error">"手势密码不对"</string>
+    <string name="lockscreen_access_pattern_start">Pattern started</string>
+    <string name="lockscreen_access_pattern_cleared">Pattern cleared</string>
+    <string name="lockscreen_access_pattern_cell_added">Cell added</string>
+    <string name="lockscreen_access_pattern_detected">Pattern completed</string>
+    <string name="gensture_save">密码保存</string>
+    <string name="gensture_wrong_pre_tip">再输错</string>
+    <string name="gensture_wrong_tail_tip">次，一分钟后才能输入</string>
+    <string name="gensture_resttime">秒后可继续输入手势密码</string>
+
+    <!-- thlinechartactivity-->
+    <string name="activity_thchart_day">天</string>
+    <string name="activity_thchart_week">周</string>
+    <string name="activity_thchart_month">月</string>
+    <string name="activity_thchart_quarter">季</string>
+    <string name="activity_thchart_year">年</string>
+    <string name="activity_thchart_tmessage">的温度为：</string>
+    <string name="activity_thchart_hmessage">的湿度为：</string>
+    <string name="activity_thchart_tmessage_verage">的平均温度为：</string>
+    <string name="activity_thchart_hmessage_verage">的平均湿度为：</string>
+    <string name="activity_thchart_reminder">温馨提示:</string>
+    <string name="activity_thchart_temperature">温度（℃）</string>
+    <string name="activity_thchart_temperature_hsd">华氏度（℉）</string>
+    <string name="activity_thchart_humidity">湿度（%）</string>
+    <string name="activity_thchart_bloodsugar">血糖（mmol/L）</string>
+    <string name="activity_thchart_no_chartdata">暂时尚无数据</string>
+
+    <string name="activity_thchart_spring">春季</string>
+    <string name="activity_thchart_summer">夏季</string>
+    <string name="activity_thchart_autumn">秋季</string>
+    <string name="activity_thchart_winter">冬季</string>
+
+    <string name="activity_thchart_first">第一周</string>
+    <string name="activity_thchart_second">第二周</string>
+    <string name="activity_thchart_third">第三周</string>
+    <string name="activity_thchart_fourth">第四周</string>
+    <string name="activity_thchart_fifth">第五周</string>
+
+    <string name="activity_thchart_segmentcontrol">时|天|周|月|季|年</string>
+    <string name="activity_thchart_segmentcontrol_noHour">天|周|月|季|年</string>
+
+    <string name="activity_wsd_chart_segmentcontrol">温度|湿度</string>
+
+    <!--weightchart-->
+    <string name="weight_chart_weiht">体重（Kg）</string>
+    <string name="weight_chart_weiht_lb">磅（lb）</string>
+
+    <!--xyjchartactivity-->
+    <string name="xyj_chart_high">收缩压/mmhg</string>
+    <string name="xyj_chart_low">舒张压/mmhg</string>
+    <string name="xyj_chart_bpm">心率/bpm</string>
+
+    <!-- mainAdapter -->
+    <string name="adapter_title_null">输入标题为空</string>
+
+    <!-- GroupInfoActivity -->
+    <string name="activity_group_rightmenu_del">删除设备</string>
+    <string name="activity_group_rightmenu_add">添加设备</string>
+
+
+    <!--NoticeCenter-->
+    <string name="activity_port">端口:</string>
+    <string name="activity_ip_address">IP地址:</string>
+    <string name="activity_user_num">用户编号:</string>
+    <string name="activity_conn_status">连接状态:</string>
+    <string name="activity_ac_id">联网报警中心:</string>
+    <string name="activity_on_status">已连接</string>
+    <string name="activity_off_status">未连接</string>
+    <string name="activity_not_port">请输入端口</string>
+    <string name="activity_not_ip">请输入IP</string>
+    <string name="activity_not_number">请输入编号</string>
+    <string name="activity_ac_number">请输入报警中心账号</string>
+    <string name="activity_zhuji_not">主机不在线</string>
+    <string name="activity_nbyg_offine">烟感不在线</string>
+    <string name="activity_ac_number_empty">报警中心账号必填</string>
+
+    <string name="hwzf_mode_ar">制冷</string>
+    <string name="hwzf_mode_ah">制热</string>
+    <string name="hwzf_mode_aa">自动</string>
+    <string name="hwzf_mode_ad">抽湿</string>
+    <string name="hwzf_mode_aw">送风</string>
+    <string name="hwzf_mode_off">关</string>
+    <string name="hwzf_on_off">请打开开关键</string>
+    <string name="hwzf_mode_not_supply">当前模式不支持</string>
+    <string name="hwzf_code">错误码:</string>
+    <string name="hwzf_no_type">未找到对应型号？进入学习界面</string>
+    <string name="hwzf_no_data">暂无数据</string>
+
+
+    <string name="auth_cancel">授权操作已取消</string>
+    <string name="auth_error">授权操作遇到错误</string>
+    <string name="auth_complete">授权成功，正在跳转登录操作…</string>
+    <string name="authorization_method">授权方式:</string>
+    <string name="authorization_method_one_hour_at_a_time">单次一小时</string>
+    <string name="authorization_method_one_day_at_a_time">单次一天</string>
+    <string name="authorization_method_you_xian">有限期授权</string>
+    <string name="please_select_authorization_method">请选择授权方式</string>
+    <string name="old_temporary_invalidate_after_new">设置新的临时密码后旧的临时密码自动失效</string>
+
+    <string name="tab_home">首页</string>
+    <string name="tab_shop">商城</string>
+    <string name="tab_interactive">互动</string>
+    <string name="tab_service">服务</string>
+    <string name="exit_tip">再次点击，确认退出</string>
+
+
+    <string name="toastFailed">失败!</string>
+    <string name="buttonOp">更多</string>
+
+    <!-- For Simple Config Layout Interface -->
+    <string name="wifi_scan">Wi-Fi 网络</string>
+    <string name="pin_text">PIN</string>
+    <string name="qrcode_cancel">取消</string>
+    <string name="start_config">开始</string>
+    <string name="stop_config">停止</string>
+
+    <!-- For Simple Control Layout Interface -->
+    <string name="dev_discovery">连接设备</string>
+    <string name="rename_dev">重命名</string>
+    <string name="del_prof">移除设备</string>
+
+    <!-- Button label to connect to a wifi network-->
+    <string name="connect">连接</string>
+    <!--<string name="cancel">Cancel</string>-->
+    <!--  !!!!!!!! vpn_connect_toTitle of VPN connect dialog -->
+    <string name="wifi_connect_to">连接至 %s</string>
+    <!-- Wi-Fi IP address label -->
+    <string name="ip_address">IP 地址</string>
+    <!-- Label for the signal strength -->
+    <string name="signal">Signal strength</string>
+
+    <!-- Button caption to forget a wifi network -->
+    <string name="forget_network">忘掉</string>
+    <!-- Label for status of connection -->
+    <string name="wifi_status">状态</string>
+    <!--Wi-Fi settings screen, summary text for network when connected -->
+    <string name="status_connected">连接</string>
+    <string name="status_connecting">连接中&#8230;</string>
+    <!-- Label for link speed (wifi) -->
+    <string name="wifi_link_speed">高速</string>
+    <!-- Verbose wifi signal strength.  This is the best out of 4 levels. -->
+    <string name="wifi_signal_3">优秀</string>
+    <!-- Verbose wifi signal strength.  This is the 2nd best out of 4 levels. -->
+    <string name="wifi_signal_2">良好</string>
+    <!-- Verbose wifi signal strength.  This is the 3rd best out of 4 levels. -->
+    <string name="wifi_signal_1">一般</string>
+    <!-- Verbose wifi signal strength.  This is the worst out of 4 levels. -->
+    <string name="wifi_signal_0">弱</string>
+    <!-- Label for the security of a wifi network -->
+    <string name="security">安全</string>
+    <!-- Value for the wifi security.  This means no encryption. -->
+    <string name="wifi_security_open">开</string>
+    <!-- Value for the wifi security -->
+    <string name="wifi_security_wep">WEP</string>
+    <!-- Value for the wifi security -->
+    <string name="wifi_security_wpa">WPA</string>
+    <!-- Value for the wifi security -->
+    <string name="wifi_security_wpa2">WPA2</string>
+    <!-- Value for the wifi security -->
+    <string name="wifi_security_wpa_eap">WPA-EAP</string>
+    <!-- Value for the wifi security -->
+    <string name="wifi_security_ieee8021x">IEEE8021X</string>
+
+
+    <string name="please_type_passphrase">无线密码</string>
+    <string name="wifi_show_password">显示密码</string>
+
+    <string name="wifi_change_password">更改密码</string>
+    <string name="button_change_password">修改</string>
+    <!-- An edit field's grayed out value when it has not been modified -->
+    <string name="wifi_password_unchanged">(不变)</string>
+    <!-- Button caption to save a configuration wifi -->
+    <string name="wifi_save_config">保存</string>
+
+    <string name="adhoc_not_supported_yet">热点不支持当前Android平台</string>
+    <string name="qrcode_desc">二维码</string>
+    <string name="qrcode_title">二维码扫描</string>
+
+    <!-- security -->
+    <string name="activity_security_rightmenu_del">删除24小时防区设备</string>
+    <string name="activity_security_rightmenu_add">添加24小时防区设备</string>
+    <string name="activity_security_rightmenu_title">24小时防区设备列表</string>
+    <string name="activity_security_rightmenu_del_disarming">删除永久撤防防区设备</string>
+    <string name="activity_security_rightmenu_add_disarming">添加永久撤防防区设备</string>
+    <string name="activity_security_rightmenu_title_disarming">永久撤防防区设备列表</string>
+    <string name="activity_setting_security">24小时防区</string>
+    <string name="activity_setting_camera">摄像头联动报警</string>
+    <string name="activity_setting_disarming">永久撤防防区</string>
+
+    <!-- loginsmsactivity -->
+    <string name="activity_phone_check_fail">验证不通过</string>
+    <string name="activity_phone_number_isexit">号码已经存在</string>
+    <string name="activity_phone_number_formaterror">手机号码格式错误</string>
+    <string name="activity_phone_verificationcode_error">验证码错误</string>
+    <string name="activity_phone_verificationcode_outtime">验证码已过期</string>
+    <string name="activity_phone_parameter_error">参数错误</string>
+
+    <!-- LoginActivity -->
+    <string name="activity_login_mode">注册方式</string>
+    <string name="activity_login_mode_message">请选择你的注册方式</string>
+    <string name="activity_login_mode_email">邮箱注册</string>
+    <string name="activity_login_mode_phone">手机注册</string>
+    <!-- register page -->
+    <string name="register_account_msm">验证码登录</string>
+    <string name="register_phone_codesendsuccess">验证码已发往手机，有效期为10分钟</string>
+    <string name="register_phonenumber">手机号码</string>
+
+    <!-- RegisterActivity -->
+    <string name="register_tip_phone_send_filde">验证码发送失败</string>
+    <string name="register_reset_pass_email">邮箱找回</string>
+    <string name="login_reset_pass_phone">手机找回</string>
+    <string name="login_reset_pass_mode">找回密码方式</string>
+    <string name="login_reset_pass_messages">请选择找回密码的方式</string>
+    <string name="login_reset_pass_succesmessage">成功找回</string>
+    <string name="login_regis_code">验证码不能为空</string>
+
+    <!--payactivity-->
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="oay_result_ok">支付成功</string>
+    <string name="oay_result_cancel">用户取消</string>
+    <string name="oay_result_fail">支付失败</string>
+    <string name="oay_result_fail_errpar">支付失败,参数错误</string>
+
+    <!--devicegridmainfragment-->
+    <string name="activity_group_name">群组</string>
+
+    <!--QWQActivity-->
+    <string name="sence_mornnning">早上</string>
+    <string name="sence_evenning">晚上</string>
+    <string name="sence_date">日期</string>
+    <string name="qwq_one_minute">喷洒一分钟</string>
+    <string name="qwq_date">请选择日期</string>
+    <string name="qwq_title">SolaMist Spray Schedule</string>
+
+    <string name="qwq_battry_normal">正常</string>
+    <string name="qwq_battry_low">低</string>
+
+    <string name="qwq_dianlaing">电量</string>
+    <string name="qwq_yelaing">液量</string>
+    <string name="qwq_clock">确认删除此定时？</string>
+
+    <!--  讯飞语音 - 开始  -->
+    <string name="app_id">5861c639</string>
+    <!-- 听写 -->
+    <string name="text_begin">请开始说话…</string>
+    <string name="text_begin_recognizer">开始音频流识别</string>
+    <string name="text_upload_contacts">上传联系人</string>
+    <string name="text_upload_userwords">上传用户词表</string>
+    <string name="text_upload_success">上传成功</string>
+    <string name="text_userword_empty">词表下载失败或内容为空</string>
+    <string name="text_download_success">下载成功</string>
+    <string name="pref_key_iat_show">iat_show</string>
+    <string name="pref_title_iat_show">显示听写界面</string>
+    <string name="pref_title_iat_dwa">结果动态修正</string>
+    <!-- 语言 -->
+    <string-array name="language_entries">
+        <item>普通话</item>
+        <item>粤语</item>
+        <item>河南话</item>
+        <item>英语</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>mandarin</item>
+        <item>cantonese</item>
+        <item>henanese</item>
+        <item>en_us</item>
+    </string-array>
+    <string-array name="ise_language_entries">
+        <item>英语</item>
+        <item>汉语</item>
+    </string-array>
+    <string-array name="ise_language_values">
+        <item>en_us</item>
+        <item>zh_cn</item>
+    </string-array>
+    <!-- 标点符号 -->
+    <string-array name="punc_entries">
+        <item>有标点</item>
+        <item>无标点</item>
+    </string-array>
+    <string-array name="punc_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string name="speech_voice_setting">语音</string>
+    <!-- 合成 -->
+    <string name="tts_toast_format" formatted="false">缓冲进度为%d%%，播放进度为%d%%</string>
+    <string-array name="voicer_cloud_entries">
+        <item>小燕—女青、中英、普通话</item>
+        <item>小宇—男青、中英、普通话</item>
+        <item>凯瑟琳—女青、英</item>
+        <item>亨利—男青、英</item>
+        <item>玛丽—女青、英</item>
+        <item>小研—女青、中英、普通话</item>
+        <item>小琪—女青、中英、普通话</item>
+        <item>小峰—男青、中英、普通话</item>
+        <item>小梅—女青、中英、粤语</item>
+        <item>小莉—女青、中英、台湾普通话</item>
+        <item>小蓉—女青、中、四川话</item>
+        <item>小芸—女青、中、东北话</item>
+        <item>小坤—男青、中、河南话</item>
+        <item>小强—男青、中、湖南话</item>
+        <item>小莹—女青、中、陕西话</item>
+        <item>小新—男童、中、普通话</item>
+        <item>楠楠—女童、中、普通话</item>
+        <item>老孙—男老、中、普通话</item>
+    </string-array>
+    <string-array name="voicer_cloud_values">
+        <item>xiaoyan</item>
+        <item>xiaoyu</item>
+        <item>catherine</item>
+        <item>henry</item>
+        <item>vimary</item>
+        <item>vixy</item>
+        <item>xiaoqi</item>
+        <item>vixf</item>
+        <item>xiaomei</item>
+        <item>xiaolin</item>
+        <item>xiaorong</item>
+        <item>xiaoqian</item>
+        <item>xiaokun</item>
+        <item>xiaoqiang</item>
+        <item>vixying</item>
+        <item>xiaoxin</item>
+        <item>nannan</item>
+        <item>vils</item>
+    </string-array>
+    <!--  讯飞语音 - 结束  -->
+
+    <!--scanAddCamera -->
+    <string name="scanaddcamera_tip_error" formatted="false">手机和摄像头不在同一网络下</string>
+    <string name="scanaddcamera_tip_oncamera" formatted="false">没有可以添加的摄像头</string>
+
+    <string name="gsm_phonenumber">号码</string>
+
+    <string name="about_web_http1">http://www.gdefud.com</string>
+    <string name="about_web_http2">https://efud.tmall.com</string>
+    <string name="about_web_http3">https://mall.jd.com/index-148439.html</string>
+
+    <!-- zssuoactivity -->
+    <string name="zss_blow_normal">正常</string>
+    <string name="zss_blow_blow">低</string>
+    <string name="zss_item_edit">编辑</string>
+    <string name="zss_item_del">删除</string>
+    <string name="zss_main_shefang">设防</string>
+    <string name="zss_main_chefang">撤防</string>
+    <string name="zss_main_history">历史记录</string>
+    <string name="zss_item_open_number">开锁编号</string>
+    <string name="zss_item_exception">异常</string>
+    <string name="zss_auto">自动闭锁</string>
+    <string name="zss_sd">手动闭锁</string>
+
+    <!--zhujiowneractivity-->
+    <string name="activity_zhujiowner_title">主机所有者</string>
+    <string name="activity_zhujiowner_edit">编辑</string>
+    <string name="activity_zhujiowner_sure">确定</string>
+    <string name="activity_zhujiowner_name">姓名：</string>
+    <string name="activity_zhujiowner_tel">电话号码：</string>
+    <string name="activity_zhujiowner_phone">手机号码：</string>
+    <string name="activity_zhujiowner_city">城市地区：</string>
+    <string name="activity_zhujiowner_addre">详细地址：</string>
+    <string name="activity_zhujiowner_please_select">请选择</string>
+
+    <string name="view_edittext_input_errormsg">不支持输入Emoji表情符号</string>
+
+    <!--YKTVMainActivity-->
+    <string name="activity_yaokantv_power">电源</string>
+    <string name="activity_yaokantv_check">输入选择</string>
+    <string name="activity_yaokantv_zhuye">主页</string>
+    <string name="activity_yaokan_download">开始学习</string>
+    <string name="activity_yaokan_type">家电类型</string>
+    <string name="activity_yaokan_brand">家电品牌</string>
+    <string name="activity_yaokan_model">遥控型号</string>
+    <string name="activity_yaokan_debug">遥控调试</string>
+
+
+    <string name="ssdk_weibo_oauth_regiseter">应用授权</string>
+    <string name="ssdk_website">http://www.mob.com</string>
+    <string name="ssdk_weibo_upload_content">分享图片</string>
+    <string name="ssdk_wechat_client_inavailable">目前您的微信版本过低或未安装微信，需要安装微信才能使用</string>
+    <string name="ssdk_google_plus_client_inavailable">Google+ 版本过低或者没有安装，需要升级或安装Google+才能使用！</string>
+    <string name="ssdk_qq_client_inavailable">QQ 版本过低或者没有安装，需要升级或安装QQ才能使用！</string>
+    <string name="ssdk_pinterest_client_inavailable">Pinterest版本过低或者没有安装，需要升级或安装Pinterest才能使用！</string>
+    <string name="ssdk_instagram_client_inavailable">Instagram版本过低或者没有安装，需要升级或安装Instagram才能使用！</string>
+    <string name="ssdk_yixin_client_inavailable">目前您的易信版本过低或未安装，需要安装易信才能使用</string>
+    <string name="ssdk_line_client_inavailable">目前您的Line版本过低或未安装，需要安装Line才能使用</string>
+    <string name="ssdk_kakaotalk_client_inavailable">目前您的KakaoTalk版本过低或未安装，需要安装KakaoTalk才能使用</string>
+    <string name="ssdk_kakaostory_client_inavailable">目前您的KakaoStory版本过低或未安装，需要安装KakaoStory才能使用</string>
+    <string name="ssdk_whatsapp_client_inavailable">目前您的WhatsApp版本过低或未安装，需要安装WhatsApp才能使用</string>
+    <string name="ssdk_laiwang_client_inavailable">目前您的来往版本过低或未安装，需要安装来往才能使用</string>
+    <string name="ssdk_alipay_client_inavailable">目前您的支付宝版本过低或未安装，需要安装支付宝才能使用</string>
+    <string name="ssdk_facebookmessenger_client_inavailable">目前您的FacebookMessenger版本过低或未安装，需要安装才能使用</string>
+
+    <string name="ssdk_sinaweibo">新浪微博</string>
+    <string name="ssdk_tencentweibo">腾讯微博</string>
+    <string name="ssdk_qzone">QQ空间</string>
+    <string name="ssdk_wechat">微信好友</string>
+    <string name="ssdk_wechatmoments">微信朋友圈</string>
+    <string name="ssdk_wechatfavorite">微信收藏</string>
+    <string name="ssdk_facebook">Facebook</string>
+    <string name="ssdk_twitter">Twitter</string>
+    <string name="ssdk_renren">人人网</string>
+    <string name="ssdk_kaixin">开心网</string>
+    <string name="ssdk_email">邮件</string>
+    <string name="ssdk_shortmessage">信息</string>
+    <string name="ssdk_sohumicroblog">搜狐微博</string>
+    <string name="ssdk_sohusuishenkan">搜狐随身看</string>
+    <string name="ssdk_neteasemicroblog">网易微博</string>
+    <string name="ssdk_douban">豆瓣</string>
+    <string name="ssdk_youdao">有道云笔记</string>
+    <string name="ssdk_evernote">印象笔记</string>
+    <string name="ssdk_linkedin">领英</string>
+    <string name="ssdk_googleplus">Google+</string>
+    <string name="ssdk_foursquare">FourSquare</string>
+    <string name="ssdk_qq">QQ</string>
+    <string name="ssdk_pinterest">Pinterest</string>
+    <string name="ssdk_flickr">Flickr</string>
+    <string name="ssdk_tumblr">Tumblr</string>
+    <string name="ssdk_dropbox">Dropbox</string>
+    <string name="ssdk_vkontakte">VK</string>
+    <string name="ssdk_instagram">Instagram</string>
+    <string name="ssdk_yixin">易信</string>
+    <string name="ssdk_yixinmoments">易信朋友圈</string>
+    <string name="ssdk_mingdao">明道</string>
+    <string name="ssdk_kakaotalk">KakaoTalk</string>
+    <string name="ssdk_kakaostory">KakaoStory</string>
+    <string name="ssdk_line">Line</string>
+    <string name="ssdk_bluetooth">蓝牙</string>
+    <string name="ssdk_whatsapp">WhatsApp</string>
+    <string name="ssdk_pocket">Pocket</string>
+    <string name="ssdk_instapaper">Instapaper</string>
+    <string name="ssdk_instapaper_email">邮箱</string>
+    <string name="ssdk_instapaper_pwd">密码</string>
+    <string name="ssdk_instapaper_login">登录</string>
+    <string name="ssdk_instapaper_logining">登录中…</string>
+    <string name="ssdk_instapager_email_or_password_incorrect">Email或密码不正确</string>
+    <string name="ssdk_facebookmessenger">Facebook Messenger</string>
+    <string name="ssdk_laiwang">来往</string>
+    <string name="ssdk_laiwangmoments">来往动态</string>
+    <string name="ssdk_alipay">支付宝好友</string>
+    <string name="ssdk_alipaymoments">支付宝生活圈</string>
+    <string name="ssdk_plurk">Plurk</string>
+    <string name="ssdk_youtube">Youtube</string>
+    <string name="ssdk_dingding">钉钉</string>
+    <string name="ssdk_meipai">美拍</string>
+    <string name="ssdk_share_to_qzone">分享到QQ空间</string>
+    <string name="ssdk_share_to_qq">分享到QQ</string>
+    <string name="ssdk_share_to_facebook">分享到Facebook</string>
+    <string name="ssdk_mingdao_share_content">网页分享</string>
+    <string name="ssdk_share_to_mingdao">分享到明道</string>
+    <string name="ssdk_share_to_googleplus">分享到Google+</string>
+    <string name="ssdk_share_to_qzone_default">来自%s的分享</string>
+    <string name="ssdk_use_login_button">请改用“登录”按钮</string>
+    <string name="ssdk_share_to_youtube">分享到Youtube</string>
+
+    <string name="ssdk_gender_male">男</string>
+    <string name="ssdk_gender_female">女</string>
+    <string name="ssdk_symbol_ellipsis">...</string>
+
+    <string name="ssdk_oks_share">分享</string>
+    <string name="ssdk_oks_sharing">分享操作正在后台进行…</string>
+    <string name="ssdk_oks_share_failed">分享失败</string>
+    <string name="ssdk_oks_share_completed">分享成功</string>
+    <string name="ssdk_oks_share_canceled">分享已取消</string>
+    <string name="ssdk_oks_cancel">取消</string>
+    <string name="ssdk_oks_multi_share">图文分享</string>
+    <string name="ssdk_oks_confirm">确定</string>
+    <string name="ssdk_oks_contacts">联系人</string>
+    <string name="ssdk_oks_pull_to_refresh">下拉刷新</string>
+    <string name="ssdk_oks_release_to_refresh">松开刷新</string>
+    <string name="ssdk_oks_refreshing">刷新中…</string>
+
+    <string name="activity_change_zhujilist">主机列表</string>
+
+    <string name="activity_guide_start">跳过</string>
+    <string name="activity_guide_next">下一步</string>
+
+    <string name="activity_recordfile_null">没有录像文件</string>
+    <string name="activity_record_on">手动录像已开启</string>
+    <string name="activity_record_off">录像已关闭</string>
+
+    <!--XTYChart-->
+    <string name="xty_chart">血糖（mmol/L）</string>
+
+
+    <string name="currentday_nodata">当天无数据</string>
+
+
+    <string name="configure_ok">设备连接成功</string>
+    <string name="configure_error">\t\t\t\t设备连接失败\n返回检查WIFI名字和密码</string>
+    <string name="configure_info">\t\t\t设备连接中\n请尽量不要移动手机</string>
+    <string name="configure_ap">1.将设备重启四次\t2.第一次操作完毕后手机连接到设备的wifi热点\t 3.返回配网界面，重新输入家庭wifi的账号和密码去进行配置</string>
+    <string name="error_check">返回检查</string>
+    <string name="error_ap">使用AP配网</string>
+    <string name="smart_input_wifi_ssid">当前 WI-FI </string>
+    <string name="smart_input_wifi_pwd">WI-FI密码</string>
+    <string name="psw_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ</string>
+
+    <!-- beijingblock -->
+    <string name="activity_beijingsuo_electricity">剩余电量：</string>
+    <string name="activity_beijingsuo_reqkeyauthtitle">请求授权</string>
+    <string name="activity_beijingsuo_reqkeyauth">授权</string>
+    <string name="activity_beijingsuo_notauth">不授权</string>
+    <string name="activity_beijingsuo_keylist">钥匙列表</string>
+    <string name="activity_beijingsuo_studykeytitle">学习钥匙</string>
+    <string name="activity_beijingsuo_updatekeytitle">修改钥匙</string>
+    <string name="activity_beijingsuo_instudymodel">正在进入学习模式请稍后&#8230;&#8230;&#8230;</string>
+    <string name="activity_beijingsuo_intomodel">请插入钥匙</string>
+    <string name="activity_beijingsuo_instudymodelfailed">设备进入学习模式失败</string>
+    <string name="activity_beijingsuo_namemust">钥匙名称必填</string>
+    <string name="activity_beijingsuo_key_type">请选择一个钥匙类型</string>
+    <string name="activity_beijingsuo_keyname">钥匙名称：</string>
+    <string name="activity_beijingsuo_keytype">钥匙类型：</string>
+    <string name="activity_beijingsuo_users">分配给用户：</string>
+    <string name="activity_beijingsuo_keytypenormal">正常钥匙</string>
+    <string name="activity_beijingsuo_keytypetmp">临时钥匙</string>
+    <string name="activity_beijingsuo_finishstudy">完成学习</string>
+    <string name="activity_beijingsuo_submitupdate">提交修改</string>
+    <string name="activity_beijingsuo_again">重试</string>
+    <string name="activity_beijingsuo_key_exits">钥匙已经存在</string>
+    <string name="activity_beijingsuo_study_failed">学习失败，请重试</string>
+
+    <!-- beijing maoyan -->
+    <string name="activity_beijingmy_wifiset">WIFI配置</string>
+    <string name="activity_beijingmy_bindlock">绑定锁</string>
+    <string name="activity_beijingmy_makingpictures">拍照</string>
+    <string name="activity_beijingmy_wifititle">设置WIFI信息</string>
+    <string name="activity_beijingmy_wifiinfoempty">WIFI SSID或者密码不能为空</string>
+    <string name="activity_beijingmy_wifiname">WIFI 名称：</string>
+    <string name="activity_beijingmy_wifipwd">WIFI 密码：</string>
+    <string name="activity_beijingmy_wifinamehit">WIFI名称</string>
+    <string name="activity_beijingmy_wifipwdhit">WIFI密码</string>
+    <string name="activity_beijingmy_nosmartlock">主机下未发现智能锁</string>
+    <string name="activity_beijingmy_bindsuccess">绑定成功</string>
+    <string name="activity_beijingmy_picturelist">图片列表</string>
+    <string name="activity_beijingmy_noselectbindlock">未选择绑定的锁</string>
+
+    <!--hwzf_tv-->
+
+    <string name="hwzf_tv_tv">电视</string>
+    <string name="hwzf_tv_power">电源</string>
+    <string name="hwzf_tv_choose">输入选择</string>
+    <string name="hwzf_tv_zhuye">主页</string>
+    <string name="hwzf_tv_pindao">频道</string>
+    <string name="hwzf_tv_yinliang">音量</string>
+    <string name="hwzf_tv_exit">退出</string>
+    <string name="hwzf_tv_info">信息</string>
+
+
+    <string name="hwzf_tvbox_tvbox">电视机顶盒</string>
+    <string name="hwzf_tvbox_power">机顶盒开关</string>
+
+
+    <string name="hwzf_fan_fan">风扇</string>
+    <string name="hwzf_fan_yt">摇头</string>
+    <string name="hwzf_fan_fl">风类</string>
+    <string name="hwzf_fan_ds">定时</string>
+
+    <string name="hwzf_study">红外转发器</string>
+
+    <string name="hwzf_download_title">使用手机遥控家电</string>
+    <string name="hwzf_download_title_small">添加遥控器</string>
+    <string name="hwzf_get_remote_fail">获取遥控器状态失败，无法发送控制命令</string>
+    <string name="hwzf_close_power_tips">请先打开电源</string>
+    <string name="hwzf_server_data_error">服务器返回数据错误</string>
+    <string name="hwzf_please_input_remote_type">请输入遥控器型号</string>
+    <string name="hwzf_please_input_air_type">请输入空调的品牌</string>
+    <string name="hwzf_device_response_tip">设备有响应吗?</string>
+    <string name="hwzf_last_type_tip">已经是最后一个空调型号啦</string>
+    <string name="hwzf_no_type_click_tip">无型号请点击</string>
+    <string name="hwzf_zhinengpiper_title">如何进行智能匹配</string>
+    <string name="hwzf_zhinengpipei_content"><![CDATA[<font>&nbsp;点击\"开始匹配\"后，请将遥控器对准红外设备，<br><br>&nbsp;&nbsp;&nbsp;并按下开关键，设备会进入自学习。<br><br>&nbsp;&nbsp;&nbsp;&nbsp;设备需要时间来响应您的操作，<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;还请您操作后适当等待下。</font>]]></string>
+    <string name="hwzf_zhinengpipei">智能匹配</string>
+    <string name="hwzf_start_pipei">开始匹配</string>
+    <string name="hwzf_restart_pipei">重新匹配</string>
+    <string name="hwzf_pipei_fail">匹配失败,请重试</string>
+    <string name="hwzf_select_pipei_item">请点击选择遥控器型号</string>
+    <string name="hwzf_fengxiang">风向</string>
+    <string name="hwzf_fengsu">风速</string>
+    <string name="hwzf_mode">模式</string>
+    <string name="hwzf_power_text">开/关</string>
+    <string name="hwzf_fengxiang_maohao">风向:</string>
+    <string name="hwzf_fengsu_maohao">风速:</string>
+    <string name="hwzf_brand_search">品牌查找</string>
+    <string name="hwzf_brand_xinghao">品牌型号</string>
+    <string name="hwzf_brand_next">下一个</string>
+    <string name="hwzf_bran_last">上一个</string>
+    <string name="hwzf_brand_add_remote_title">是否添加该遥控器?</string>
+    <string name="hwzf_brand_smart_irtip_first">接收摇控码中,请按下遥控器...</string>
+    <string name="hwzf_brand_smart_irtip_second">接收成功,匹配中...</string>
+
+
+    <string name="hwzf_jdlx">家电类型</string>
+    <string name="hwzf_jdpp">家电品牌</string>
+    <string name="hwzf_ykxh">遥控型号</string>
+    <string name="hwzf_ykts">遥控调试</string>
+    <string name="hwzf_fa">套遥控方案</string>
+
+    <string name="hwzf_detail_dz">请将红外转发器对准</string>
+    <string name="hwzf_detail_yl">,点击下方的"音量+"</string>
+    <string name="hwzf_detail_kg">,点击下方的"开关"</string>\
+    <string name="hwzf_detail_sure">请确保</string>
+    <string name="hwzf_detail_zt">处于打开状态</string>
+    <string name="hwzf_detail_bdhwzf">绑定到红外转发器</string>
+
+    <string name="hwzf_kt">空调</string>
+    <string name="hwzf_kt_wd">温度</string>
+    <string name="hwzf_kt_spsf">水平扫风</string>
+    <string name="hwzf_kt_sxsf">上下扫风</string>
+    <string name="hwzf_kt_fs">风速</string>
+
+
+    <string name="hwzf_ykxh_ss">按型号搜索</string>
+
+
+    <string name="fragment_time_setfailure">设置时间失败</string>
+    <string name="fragment_time_setsuccess">设置时间成功</string>
+    <string name="fragment_time_device">设备时间</string>
+    <string name="fragment_time_timezone">时区设置:</string>
+    <string name="fragment_time_success">设置成功</string>
+    <string name="fragment_time_year">年</string>
+    <string name="fragment_time_moth">月</string>
+    <string name="fragment_time_day">日</string>
+
+    <string name="activity_localrecord_del">是否确认删除视频？</string>
+
+    <string name="activity_error_nosdcard">没有内存卡</string>
+    <string name="activity_recording">正在录像</string>
+    <string name="activity_error_initrecord">初始化录像失败</string>
+
+    <string name="activity_disclaimer_agree">我已阅读并同意</string>
+    <string name="activity_disclaimer">服务条款</string>
+    <string name="activity_privacy_policy"><![CDATA[《隐私权政策》]]></string>
+    <string name="activity_disclaimer_mustagree">请先阅读并同意服务条款</string>
+
+    <string name="unit_pian">片</string>
+    <string name="unit_li">粒</string>
+    <string name="unit_ke">颗</string>
+    <string name="med_del">确认删除此药品？</string>
+    <string name="devices_list_menu_dialog_med">设置服药习惯</string>
+
+
+    <!--AdddeviceActivity-->
+    <string name="add_device_title">请选择添加方式</string>
+    <string name="add_device_code">扫码添加</string>
+    <string name="add_device_his">历史记录恢复</string>
+    <string name="add_device_type_add">设备分类添加</string>
+    <string name="add_device_buy">没有设备？立即购买</string>
+    <string name="add_device_other_type">其它类型</string>
+
+
+    <!--ZhzjMainActivity-->
+    <string name="zhzj_main_no_hub">您还没有添加主机,请先添加主机</string>
+    <string name="zhzj_main_hub_num">主机序列号 :</string>
+    <string name="zhzj_main_gsm_sta">报警方式:</string>
+    <string name="zhzj_main_current_user">当前用户   : </string>
+    <string name="zhzj_main_current">当前设备: </string>
+    <string name="zhzj_main_scence_mana">场景管理</string>
+    <string name="zhzj_main_scence_tel">电话</string>
+    <string name="zhzj_main_scence_sms">短信</string>
+    <string name="zhzj_main_scence_app">仅App报警</string>
+    <string name="zhzj_main_scence_tel_sms">电话、短信</string>
+
+
+    <string name="zhzj_add_scence">添加场景</string>
+
+
+    <string name="zhzj_login_fail_title">登录失败</string>
+
+    <string name="zhzj_add_zhuji_masterid">序列号添加</string>
+    <string name="zhzj_add_zhuji_content">您还可以选择</string>
+
+    <string name="zhzj_add_other_device">更多设备</string>
+    <string name="zhzj_add_camera">添加已配网摄像头</string>
+
+    <string name="zhzj_add_zhuji_leida">雷达添加</string>
+    <string name="zhzj_add_zhuji_wifi">局域网添加</string>
+
+    <string name="zhzj_main_slide_device">个智能设备</string>
+    <string name="zhicheng_kaisuotishi">锁没有设置密码，需要进行密码设置，是否前往?</string>
+    <string name="zhicheng_set_lock_pwd">设置开锁密码</string>
+    <string name="zhicheng_set_pwd_failed">设置失败,密码必须为6为数</string>
+
+
+    <string name="hongcai_request_name_format_tishi">名称不能为空或全为空格</string>
+
+    <string name="hongcai_sync_cancel_btn">取消</string>
+    <string name="hongcai_sync_commit_btn">确定</string>
+    <string name="hongcai_count_device">个设备</string>
+    <string name="hongcai_group_name_setting">请输入修改的名字</string>
+    <string name="hongcai_input_name_tishi">名称最多7位(符号限空格和()_.符号)</string>
+    <string name="hongcai_sync_time_title">是否同步主机时间?</string>
+    <string name="hongcai_sync_time_tishi">如果你在本次App开启期间更改了手机时区，会导致同步时区失败。请退出账号后重新登入再使用此功能。</string>
+    <string name="hongcai_tantou_title">探头触发主机设定</string>
+    <string name="hongcai_tantou_tishi">最多输入7位且不支持中文,特殊字符!</string>
+    <string name="hongcai_quwai">区外</string>
+    <string name="hongcai_tantou_name">名称</string>
+    <string name="hongcai_tantou_quhao">区号</string>
+    <string name="hongcai_liandong_shuchu">连动输出</string>
+    <string name="hongcai_tantouchufa">探头触发主机设定</string>
+    <string name="hongcai_alarm_setting_title">主机报警设定</string>
+    <string name="hongcai_naozhong_title">主机闹钟设定</string>
+    <string name="hongcai_time_tongbu_title">主机时间同步</string>
+    <string name="hongcai_jidianqi_title">继电器</string>
+    <string name="hongcai_shierfushuchu">12V输出</string>
+    <string name="hongcai_shiersi_title">24小时制</string>
+    <string name="hongcai_shandengkaiguan">闪灯开关</string>
+    <string name="hongcai_jingbao">警报</string>
+    <string name="hongcai_zidongguangan">自动光暗</string>
+    <string name="hongcai_naozhong_one_title">闹钟一设置</string>
+    <string name="hongcai_naozhong_two_title">闹钟二设置</string>
+    <string name="hongcai_yinyue_title">音乐</string>
+    <string name="hongcai_time_title">时间</string>
+    <string name="unlock_notice_layout_title">点击确认按钮将会开锁!请慎重!</string>
+    <string name="unlock_notice_layout_message">20s内未点击"确认开锁",按钮会自动取消</string>
+    <string name="unlock_notice_ensure">确认开锁</string>
+    <string name="rqzj_nongdu">燃气浓度:%s\tppm</string>
+    <string name="no_data_tip">没有更多数据了</string>
+    <string name="malfunction_status_tip_tv">设备状态:%s</string>
+    <string name="malfunction_status_temperature_tv">温度:%s℃</string>
+    <string name="malfunction_exception">故障</string>
+
+
+    <string name="jieaolihua_start_time_prompt">起始时间错误,起始时间必须大于当前时间哦</string>
+    <string name="jieaolihua_end_time_prompt">结束时间错误,结束时间必须大于开始时间哦</string>
+    <string name="jieaolihua_end_time_current">结束时间必须大于当前时间哦</string>
+    <string name="jieaolihua_time_not_empty">时间不能为空</string>
+    <string name="jieaolihua_time_error">时间错误</string>
+    <string name="jieaolihua_remote_full">远程密码已满</string>
+    <string name="jieaolihua_lock_user_info">用户信息</string>
+
+
+    <string name="zhzj_zhuji_detail">主机信息</string>
+    <string name="zhzj_alarm_time">主机报警时长:</string>
+
+    <string name="zhzj_zhujiipc_name">设备名称：</string>
+    <string name="zhzj_zhujiipc_where">放置地点：</string>
+    <string name="zhzj_zhujiipc_title">摄像头</string>
+
+    <string name="userinfo_head_title">头像</string>
+    <string name="userinfo_base">基础资料</string>
+    <string name="userinfo_passsword">密保资料</string>
+    <string name="userinfo_account_bind">账号绑定</string>
+
+    <string name="activity_device_setcall_tip">电话报警号码设置</string>
+    <string name="activity_device_setcall_gsm">电话报警号码:</string>
+    <string name="activity_device_setcall_phone_notice">请输入报警号码</string>
+
+    <string name="userinfo_alert_upload">上传头像</string>
+    <string name="userinfo_alert_photo">从相册选择</string>
+
+    <string name="monitor_number">当前观看人数: </string>
+
+    <string name="scene_list_open">显示更多</string>
+    <string name="scene_list_close">收起</string>
+
+    <string name="security_ds">无定时</string>
+    <string name="security_sf">已设防</string>
+    <string name="security_cf">已撤防</string>
+    <string name="security_open">已开启</string>
+    <string name="security_close">已关闭</string>
+    <string name="security_device_open">开启</string>
+    <string name="security_device_close">关闭</string>
+
+    <string name="smart_medc_add">添加药品</string>
+    <string name="smart_medc_photo">拍照上传图片:</string>
+    <string name="smart_medc_upload_photo">上传图片</string>
+    <string name="smart_medc_add_time">药品添加时间</string>
+    <string name="smart_medc_add_name">药品名称</string>
+    <string name="smart_medc_add_num">药品数量</string>
+    <string name="smart_medc_add_eat_time">服药时间</string>
+    <string name="smart_medc_add_time_morn">早</string>
+    <string name="smart_medc_add_time_mid">中</string>
+    <string name="smart_medc_add_time_noon">晚</string>
+    <string name="smart_medc_add_eat_num">服药剂量</string>
+    <string name="smart_medc_add_eat_before">饭前:</string>
+    <string name="smart_medc_add_eat_after">饭后:</string>
+    <string name="smart_medc_add_photo">请上传图片</string>
+    <string name="smart_medc_add_pl_time">请设置添加时间</string>
+    <string name="smart_medc_add_pl_name">请设置药品名称</string>
+    <string name="smart_medc_add_pl_total">请设置药品数量</string>
+    <string name="smart_medc_add_pl_total_toobig">药品数量不能大于1000</string>
+    <string name="smart_medc_add_pl_eat_time">请设置服药时间</string>
+    <string name="smart_medc_add_pl_eat_num">请设置服药剂量</string>
+    <string name="smart_medc_add_pl_beoraf">请选择饭前或饭后</string>
+    <string name="smart_medc_add_time_n">年</string>
+    <string name="smart_medc_add_time_y">月</string>
+    <string name="smart_medc_add_time_r">日</string>
+    <string name="smart_medc_add_time_s">时</string>
+    <string name="smart_medc_add_time_f">分</string>
+
+
+    <string name="smart_medc_update">修改药品</string>
+
+    <string name="smart_medc_main_title">智能药箱</string>
+    <string name="smart_medc_main_his">使用记录</string>
+    <string name="smart_medc_main_list">药品列表</string>
+    <string name="smart_medc_main_have">剩余</string>
+    <string name="smart_medc_main_stock">常备用药</string>
+    <string name="smart_medc_main_habit">服药习惯</string>
+    <string name="smart_medc_main_habit_set">请先设置服药习惯</string>
+
+    <string name="zhuji_owner_msg_name">名字不能为空！</string>
+    <string name="zhuji_owner_msg_addr">地址不能为空！</string>
+    <string name="zhuji_owner_msg_phone">手机不能为空！</string>
+    <string name="zhuji_owner_msg_tell">电话不能为空！</string>
+
+    <string name="smart_medc_set_time">开始时间必须小于结束时间</string>
+    <string name="smart_medc_set_time_repeat">时间有重叠请重新设置</string>
+    <string name="smart_medc_set_time_pl">请设置时间</string>
+    <string name="smart_medc_set_time_1">请设置早上时间</string>
+    <string name="smart_medc_set_time_2">请设置中午时间</string>
+    <string name="smart_medc_set_time_3">请设置晚上时间</string>
+    <string name="smart_medc_set_time_21">中午时间要大于早上时间</string>
+    <string name="smart_medc_set_time_32">晚上时间要大于中午时间</string>
+    <string name="smart_medc_set_time_31">晚上时间要大于早上时间</string>
+    <string name="smart_medc_set_name">请输入名称</string>
+
+    <string name="no_previous_file">无上一个文件</string>
+    <string name="no_next_file">无下一个文件</string>
+    <string name="search_error1">请输入开始时间</string>
+    <string name="search_error2">请输入结束时间</string>
+    <string name="search_error3">开始时间必须在结束时间之前</string>
+    <string name="one_day">最近一天</string>
+    <string name="one_month">最近一月</string>
+    <string name="end_time">结束时间</string>
+    <string name="query">查询</string>
+
+    <string-array name="connect_failure_reasons">
+        <item>@string/connect_failure_reson1</item>
+        <item>@string/connect_failure_reson2</item>
+        <item>@string/connect_failure_reson3</item>
+        <item>@string/connect_failure_reson4</item>
+    </string-array>
+    <string name="connect_failure_reson">配置失败可能原因</string>
+    <string name="connect_failure_reson1">WI-FI密码输入错误;</string>
+    <string name="connect_failure_reson2">没有按reset键，没有观察到指示灯快闪;</string>
+    <string name="connect_failure_reson3">配网时手机连接的WiFi名称中不能带有5G(仅支持2.4G);</string>
+    <string name="connect_failure_reson4">如果不确定是主机还是路由器有问题，可以换另一路由器，或使用一台手机散发的WiFi热点来代替，进行配网操作。</string>
+    <string name="connect_failure_rebuild">重试</string>
+    <string name="connect_failure_connect">WI-FI配置失败</string>
+    <string name="connect_addzhuji_title">添加新主机</string>
+    <string name="connect_select_message">确认指示灯已闪烁</string>
+    <string name="connect_gruid_mesaage">接通电源，短按reset键，指示灯进入快闪状态，语音提示“请使用手机APP进行WiFi配置”</string>
+    <string name="connect_gruid_next">指示灯已闪烁,下一步</string>
+    <string name="add_zhuji_message1">主机为新购设备或者为现有主机的用户将主机删除，主机没有管理员；请将手机连接到和主机在同一路由器下，点此项进行搜索。</string>
+    <string name="add_zhuji_message2">主机已经连接上且有管理员，请管理员通过App右上角菜单的分享主机功能，生成二维码后，点此项扫描二维码获得主机。</string>
+    <string name="add_zhuji_message_title1">添加新主机</string>
+    <string name="add_zhuji_message_title2">添加使用中主机</string>
+    <string name="add_zhuji_inuse">添加使用中主机</string>
+
+    <string name="ready_guide_msg1">接通电源，设备进入等待连接状态</string>
+    <string name="ready_guide_msg2">同时会发出连接提示音</string>
+    <string name="ready_guide_msg3">听到连接提示音点击“下一步”</string>
+    <string name="ready_guide_msg4"><b>未听见连接提示音？</b></string>
+    <string name="ready_guide_msg5">请调大手机音量</string>
+    <string name="ready_guide_msg6">并和设备保持在30cm距离内</string>
+    <string name="ready_guide_msg7">未听见连接提示音</string>
+    <string name="ready_guide_msg8">1、确认设备没有接入网线</string>
+    <string name="ready_guide_msg9">2、确认设备电源正常连接</string>
+    <string name="ready_guide_msg10">3、部分设备没有扬声器，可复位后跳过这一步</string>
+    <string name="ready_guide_msg11">可尝试</string>
+    <string name="ready_guide_msg12">用顶针轻插reset孔直到听到设备发出复位提示音，等待约30秒，设备将发出连接提示音。</string>
+    <string name="ready_guide_msg13">我知道了</string>
+    <string name="ready_title">准备就绪</string>
+    <string name="wait_title">等待连接</string>
+
+    <string name="crop_image_title">裁剪上传</string>
+    <string name="crop_image_big">图片裁剪过大，请重试</string>
+
+    <string name="alarm_no_close">门未关报警</string>
+    <string name="alam_phone_set">报警电话设置</string>
+    <string name="alam_phone_notice">请设置报警号码！</string>
+
+    <string name="device_scenes_title"> 包含此设备的场景</string>
+    <string name="record_control_type"> 录制样式选择成功</string>
+    <string name="record_control_timing"> 定时设置成功</string>
+    <string name="record_control_time"> 录制时间选择成功</string>
+
+    <!-- GcodeListActivity  -->
+    <string name="activity_gcodelist_title">国家/地区</string>
+    <string name="scene_select_max_msg">选择的智能场景达到最大值</string>
+
+    <string name="add_devices_title">添加设备</string>
+    <string name="add_devices_wifi">添加使用中设备</string>
+    <string name="add_devices_new">添加新设备</string>
+    <string name="activity_add_idzhu_msg">输入设备序列号</string>
+
+    <string name="add_device_message1">设备为新购设备或者为现有设备的用户将设备删除，设备没有管理员；请将手机连接到和设备在同一路由器下，点此项进行搜索。</string>
+    <string name="add_device_message2">设备已经连接上且有管理员，请管理员通过App右上角菜单的分享设备功能，生成二维码后，点此项扫描二维码获得设备。</string>
+    <string name="add_device_message_title1">添加新设备</string>
+    <string name="add_device_message_title2">添加使用中设备</string>
+
+
+    <string name="experience_zhuji">主机体验</string>
+    <string name="experience_zhuji_inexitence">设备不存在</string>
+    <string name="experience_zhuji_illegal">主机非体验主机</string>
+    <string name="experience_zhuji_maximize">体验用户已到最大值</string>
+    <string name="experience_zhuji_usercount_maximize">已到最大值</string>
+    <string name="experience_zhuji_usercount">体验用户数量:</string>
+    <string name="experience_zhuji_addr">所在地:</string>
+    <string name="experience_zhuji_master">主机编号:</string>
+    <string name="experience_zhuji_exit">主机已经开始体验</string>
+    <string name="experience_zhuji_success">成功添加体验主机</string>
+    <string name="experience_zhuji_nodate">没有体验主机</string>
+
+    <string name="camera_dafen_msg">如您需要接收报警，请前往“设置->报警设置->接收报警信息和移动侦测打开按钮”接收报警信息</string>
+
+    <string name="activity_platoon_status_normal">状态正常</string>
+    <string name="activity_platoon_status_exception">状态异常请检查</string>
+
+    <!--YBQCHART-->
+    <string name="ybq_chart_unit">人</string>
+    <string name="ybq_chart_name">迎宾器</string>
+    <string name="ybq_chart_total">总人流</string>
+    <string name="ybq_chart_day_high">日高峰</string>
+    <string name="ybq_chart_day_avg">日均人流</string>
+    <string name="ybq_chart_jiaozheng">校正减半</string>
+    <string name="ybq_chart_normal">数据还原</string>
+    <string name="ybq_chart_notice">校正减半：因客人会有进、出门各一次统计人流时则需减半</string>
+    <string name="ybq_chart_describe">流量: 人</string>
+    <string name="ybq_chart_peopele">人流量</string>
+
+
+    <string name="activity_device_detail_trans">确认转移?</string>
+    <string name="device_mainactivity_clear_devices">从设备已恢复，是否需要清空?</string>
+    <string name="activity_user_device_permisson_add">主机下添加设备</string>
+    <string name="activity_user_device_permisson_del">主机下删除设备</string>
+    <string name="activity_user_device_permisson_title">权限设置</string>
+
+    <string name="wsd_accept_time_0">0分钟(有变更)</string>
+    <string name="wsd_accept_newtime_0">0分钟</string>
+    <string name="wsd_accept_time_1">1分钟</string>
+    <string name="wsd_accept_time_2">2分钟</string>
+    <string name="wsd_accept_time_5">5分钟</string>
+    <string name="wsd_accept_time_10">10分钟</string>
+    <string name="wsd_accept_time_15">15分钟</string>
+    <string name="wsd_accept_time_20">20分钟</string>
+    <string name="wsd_accept_time_30">30分钟</string>
+    <string name="wsd_accept_time_30_default">30分钟(默认)</string>
+    <string name="wsd_accept_time_60">60分钟(默认)</string>
+    <string name="wsd_accept_time_120">120分钟</string>
+    <string name="wsd_accept_time_240">240分钟</string>
+    <string name="wsd_accept_time_min">分钟</string>
+    <string name="wsd_accept_time_5_default">5分钟(默认)</string>
+
+    <string name="activity_device_main_nohub">无主机点击这里体验</string>
+    <string name="activity_securityInfo_ctivity_24_device">24小时防区设备不可操作</string>
+
+    <string name="net_error_hava_record_del">有记录，删除失败</string>
+    <string name="net_error_hava_record_add">有记录，新增失败</string>
+
+    <string name="zhuji_list_frag_master">序列号:</string>
+    <string name="zhuji_list_frag_master_have">的主机下有</string>
+    <string name="zhuji_list_frag_master_del">个设备,是否删除?</string>
+
+    <string name="add_user_title">添加成员</string>
+
+    <string name="connect_wifi">连接WIFI</string>
+
+
+    <string name="xyj_menu_zn">设置智能分配</string>
+    <string name="xyj_menu_sd">手动分配数据</string>
+    <string name="xyj_menu_unit">设置体重单位</string>
+    <string name="xyj_main_tab_main">主页</string>
+    <string name="xyj_main_tab_record">记录</string>
+    <string name="xyj_choose_user">请先选择一位成员</string>
+
+    <string name="xyj_main_ssy_name">收缩压</string>
+    <string name="xyj_main_szy_name">舒张压</string>
+    <string name="xyj_main_bpm_name">心率</string>
+    <string name="xyj_main_no_smart">不智能分配</string>
+    <string name="xyj_main_smart">智能分配</string>
+
+    <string name="get_image_fail">获取图片失败,请重试</string>
+
+
+    <string name="update_zhuji_gujian">请将主机上线</string>
+
+    <string name="camera_video_control">视屏格式设置成功</string>
+    <string name="camera_video_control_vol">音量设置成功</string>
+
+    <string name="scence_arming_disarming_type">请选择定时类型</string>
+
+    <string name="frimware_dadate_old">有新版本</string>
+    <string name="frimware_dadate_new">已是最新版本</string>
+
+    <string name="zhzj_sence_dsaf">定时安防场景</string>
+
+    <string name="scan_qrcode_choose_hub">请先选择主机</string>
+    <string name="scan_qrcode_no">没有二维码点击这里</string>
+
+    <string name="cld_time_0">0平方</string>
+    <string name="cld_time_1">30平方</string>
+    <string name="cld_time_2">60平方</string>
+    <string name="cld_time_3">90平方</string>
+    <string name="cld_time_4">120平方</string>
+    <string name="cld_time_5">150平方</string>
+    <string name="cld_time_6">测试</string>
+    <string name="cld_time_squre">平方</string>
+    <string name="cld_time_7">180平方</string>
+    <string name="cld_time_8">210平方</string>
+    <string name="cld_time_9">240平方</string>
+    <string name="cld_time_10">270平方</string>
+    <string name="cld_time_11">300平方</string>
+
+    <string name="qrcode_choose_photo">选取图片</string>
+    <string name="qrcode_scan_photo_fail">识别图片失败，请重试</string>
+
+    <string name="abbq_online_qaq">\u3000\u3000敬的客户：您好！我是安安，很高兴为您服务\n\n\u3000\u3000请在发现问题时，先确定主机序列号，用户昵称或者账号等需要定位问题的详细信息。</string>
+    <string name="abbq_call_tel">\u3000\u3000点击按钮，直接拨打</string>
+    <string name="abbq_ges_notice_warning">此操作将会远程释放禁区驱离剂，在确认真实警情后，请在规定时间内确认操作！</string>
+    <string name="abbq_ges_notice_force_tip">催泪弹在当前模式当前时间下处于禁用状态</string>
+    <string name="abbq_ges_notice_toset">前往设置</string>
+    <string name="abbq_ges_notice_nomianjinoadmin">请先提醒管理员设置禁区面积,以便有效执行此指令</string>
+    <string name="abbq_ges_notice_nomianji">请先设置禁区面积,以便有效执行此指令</string>
+    <string name="abbq_ges_pwd_nomianjinoadmin">请先提醒管理员设置远程驱离密码,以便有效执行此指令</string>
+    <string name="abbq_ges_pwd_nomianji">请先设置远程驱离密码,以便有效执行此指令</string>
+    <string name="abbq_update_cld_pwd_title">更新密码</string>
+    <string name="abbq_update_cld_pwd_length">请输入6位密码</string>
+    <string name="abbq_cld_pwd_title">请输入6位密码</string>
+    <string name="input_password_request">请输入6到10位密码</string>
+
+    <string name="Scence_Arming_Disarming_title">定时列表</string>
+    <string name="Scence_Arming_Disarming_title_no_timing">当前无定时，请添加</string>
+    <string name="Scence_Arming_Disarming_allow">是否启用定时</string>
+    <string name="set">设置</string>
+
+    <string name="weight_unit_kg">Kg (公斤)</string>
+    <string name="weight_unit_lb">lb (磅)</string>
+
+    <string name="cld_send_succ">发射成功</string>
+    <string name="cld_send_error">发射失败</string>
+    <string name="cld_send_ing">发射中，请稍后</string>
+
+    <string name="bga_pp_confirm">确认</string>
+    <string name="bga_pp_all_image">所有图片</string>
+    <string name="bga_pp_choose">选择</string>
+
+
+    <string name="tab_item_zxkf">在线客服</string>
+    <string name="tab_item_cjwt">常见问题</string>
+    <string name="tab_item_bz">帮助</string>
+    <string name="tab_item_mine">我的</string>
+    <string name="tab_item_shopfind">发现</string>
+    <string name="tab_item_shopmerchant">商家</string>
+
+    <string name="carema_bind_guide_one">1. 进入摄像头操作页面，将摄像头设防;</string>
+    <string name="carema_bind_guide_two">2. 进入“摄像头-->设备设置-->录像设置”，选择“报警录像”（请确保摄像头有插入SD卡）</string>
+    <string name="carema_bind_guide_sure">我已设置好了</string>
+    <string name="notification_error_ssl_cert_invalid">安全证书不合法，是否继续?</string>
+
+    <string name="scene_unlock">开锁</string>
+
+    <!-- 权限相关 -->
+    <string name="permission_request">权限申请</string>
+    <string name="permission_setting_app">权限设置</string>
+    <string name="permission_contacts">联系人</string>
+    <string name="permission_phone">手机信息</string>
+    <string name="permission_storage">存储空间</string>
+    <string name="permission_location">位置信息</string>
+    <string name="location_closed_tishi">未开启位置服务,无法获取目前的位置信息</string>
+    <string name="permission_camera">拍照权限</string>
+    <string name="permission_dialog_title">开启%s</string>
+    <string name="permission_dialog_msg">为了您能正常使用%s，需要以下权限</string>
+    <string name="permission_title">请允许获取%s</string>
+    <string name="permission_denied">我们需要获取%1$s, 否则您将无法正常使用%2$s</string>
+    <string name="permission_denied_with_naac">"由于%1$s无法获取%2$s, 不能正常运行, 请开启权限后再使用。\n\n设置路径: 应用管理->%3$s->权限"</string>
+    <string name="permission_cancel">取消</string>
+    <string name="permission_ensure">确定</string>
+    <string name="permission_reject">拒绝</string>
+    <string name="permission_btn_next">下一步</string>
+    <string name="permission_go_to_setting">去设置</string>
+    <string name="permission_notification">检测到报警通知设置等级过低，会出现无声音、文字、震动的情况，请前往设置</string>
+    <string name="permission_location_smartlink">获取手机Wifi名称需要您授权位置权限</string>
+
+    <string name="unlock_time_passed">开锁已失效</string>
+    <string name="contact_admin_set_password">请联系管理员进行密码设置</string>
+    <string name="jjsuo_ks">开锁</string>
+    <string name="jjsuo_ks_timeout">开锁失败，请重试</string>
+    <string name="jjsuo_ks_success">开锁成功</string>
+    <string name="jjsuo_lsmm">临时密码</string>
+    <string name="jjsuo_lsmm_kaisuo">临时密码开锁</string>
+    <string name="jjsuo_dy_normal">电压正常:</string>
+    <string name="jjsuo_dy_unormal">电压异常:</string>
+    <string name="jjsuo_suo_notice">锁未关报警:</string>
+    <string name="jjsuo_suo_name">智能锁</string>
+    <string name="jjsuo_suo_pause">用户暂停开锁</string>
+    <string name="jjsuo_cancle_pass">删除密码</string>
+    <string name="jjsuo_pass_succ">密码设置成功</string>
+    <string name="jjsuo_pass_set_notice">请设置8位密码</string>
+    <string name="jjsuo_pass_cancle_notice">删除密码成功</string>
+    <string name="jjsuo_pass_cancle_notice_sure">确认删除密码？</string>
+    <string name="jjsuo_pass_notset">此用户未通过手机设置过密码</string>
+    <string name="jjsuo_input_lsmm">请输入6&#8211;10位密码</string>
+    <string name="jjsuo_no_lockid">未获取到锁Id，获取密码失败</string>
+    <string name="jjsuo_bind_carera">请先绑定摄像头</string>
+    <string name="jjsuo_genster">请先前往 “常规设置->手势密码锁定” 设置手势密码</string>
+    <string name="jjsuo_ks_notice">当前为远程开锁，请确认安全问题！点击“确定”进入手势密码安全验证</string>
+    <string name="jjsuo_init_notice">初始化会清空所有用户，点击“确定”进入手势密码安全验证</string>
+    <string name="jjsuo_set_pass_length">密码必须是8位</string>
+    <string name="jjsuo_set_pass">密码不能与原来相同</string>
+    <string name="jjsuo_set_pass_other">密码已存在，请重新设置</string>
+    <string name="jujiangsuo_title">开锁密码</string>
+    <string name="jujiangsuo_msg">温馨提示: 此密码可开锁，请不要泄露!</string>
+    <string name="jujiangsuo_valid_time">本次密码剩余有效时间:</string>
+    <string name="jujiangsuo_init_success">初始化成功</string>
+    <string name="jujiangsuo_init_error">初始化失败</string>
+    <string name="jujiangsuo_init_msg">初始化</string>
+    <string name="jujiangsuo_user_add_max">手下留情，已经不能再加了</string>
+    <string name="jujiangsuo_ks_optioning">开锁中，请稍后&#8230;</string>
+    <string name="jujiangsuo_init_optioning">初始化中，请稍后&#8230;</string>
+    <string name="jujiangsuo_init_zjoffline">主机离线脱机中，仅临时密码可正常使用！</string>
+    <string name="jjsuo_user_lname">昵称</string>
+    <string name="jjsuo_user_number">编号</string>
+    <string name="jjsuo_user_type">类型</string>
+    <string name="jjsuo_user_act">角色</string>
+    <string name="jjsuo_user_permission">权限</string>
+    <string name="jjsuo_user_type_un">未知</string>
+    <string name="jjsuo_user_type_0">指纹</string>
+    <string name="jjsuo_user_type_1">卡片</string>
+    <string name="jjsuo_user_type_2">密码</string>
+    <string name="jjsuo_user_type_3">钥匙</string>
+    <string name="jjsuo_user_type_4">用户</string>
+    <string name="jjsuo_user_type_5">遥控器</string>
+    <string name="jjsuo_user_type_6">人脸</string>
+    <string name="jjsuo_user_type_7">掌纹</string>
+    <string name="jjsuo_user_type_8">虹膜</string>
+    <string name="jjsuo_user_type_9">远程密码</string>
+    <string name="jjsuo_user_unametip">编辑昵称</string>
+    <string name="jjsuo_user_uname_empty">昵称不能为空</string>
+
+    <string name="jjsuo_info">设备信息:</string>
+    <string name="jjsuo_model">设备型号:</string>
+    <string name="jjsuo_info_where">请输入放置地点</string>
+    <string name="jjsuo_info_camera">绑定摄像头</string>
+    <string name="jjsuo_info_history">触发历史记录</string>
+    <string name="jjsuo_info_count">次</string>
+    <string name="jjsuo_info_v">电压状态:</string>
+    <string name="jjsuo_info_v_normal">电压正常</string>
+    <string name="jjsuo_info_v_unnormal">电压异常</string>
+    <string name="jjsuo_info_lockid">锁ID：</string>
+
+    <string name="jjsuo_sq_perssion">授权</string>
+    <string name="jjsuo_sq_time">用户开锁时间</string>
+    <string name="jjsuo_sq_count">用户开锁次数</string>
+    <string name="jjsuo_sp_number">请输入授权次数</string>
+    <string name="jjsuo_sp_nickname">请输入昵称</string>
+    <string name="jjsuo_sp_time_start">请设置开始时间</string>
+    <string name="jjsuo_sp_time_end">请设置结束时间</string>
+    <string name="jjsuo_sp_mana">权限管理</string>
+    <string name="jjsuo_sp_add">新增用户</string>
+    <string name="jjsuo_sp_per">请设置权限</string>
+    <string name="jjsuo_sp_per_count">请设置权限次数</string>
+    <string name="jjsuo_sp_start_time">请选择开始时间</string>
+    <string name="jjsuo_sp_please_choice_time">请选择时间</string>
+    <string name="jjsuo_sp_end_time">请选择结束时间</string>
+    <string name="jjsuo_sp_time">开始时间必须小于结束时间</string>
+    <string name="jjsuo_sp_valid_name">不支持输入符号</string>
+    <string name="jjsuo_sp_name">用户名已存在</string>
+
+    <string name="jjsuo_ps_mana">锁管理密码：</string>
+    <string name="jjsuo_ps_youxiao">本次密码有效时长：</string>
+    <string name="jjsuo_ps_time5m">5 分钟</string>
+    <string name="jjsuo_ps_time1h">1 小时</string>
+    <string name="jjsuo_ps_time2h">2 小时</string>
+    <string name="jjsuo_ps_time3h">3 小时</string>
+    <string name="jjsuo_ps_time1d">1 天</string>
+    <string name="jjsuo_ps_time2d">2 天</string>
+    <string name="jjsuo_ps_time3d">3 天</string>
+
+    <string name="jjsuo_request_adduser">锁端请求新增用户</string>
+
+    <!-- zhuji_add_way_choose-->
+    <string name="zhuji_addway_choose_item_smartlink">添加我的WiFi设备（推荐）</string>
+    <string name="zhuji_addway_choose_item_smartlink_instruction">不支持摄像头</string>
+    <string name="zhuji_addway_choose_item_ap">添加我的WiFi设备（AP方式）</string>
+    <string name="zhuji_addway_choose_item_ap_instruction">不支持摄像头</string>
+    <string name="zhuji_addway_choose_item_scan">扫描添加分享的设备</string>
+    <string name="zhuji_addway_choose_item_search">添加同一路由器上的设备</string>
+    <string name="zhuji_addway_choose_item_search_instruction">适用于有线LAN设备或者已经成功连接路由器WiFi设备</string>
+    <string name="zhuji_addway_choose_item_serial">使用序列号添加设备</string>
+    <string name="zhuji_addway_choose_item_serial_instruction">适用于GSM/3G/4G联网，NBIoT联网，有线LAN联网的设备等</string>
+    <string name="zhuji_addway_choose_item_sms">通过手机短信添加WiFi设备</string>
+    <string name="zhuji_addway_choose_item_sms_instruction">适用于内置了移动通信模块的WiFi设备</string>
+    <string name="zhuji_addway_choose_item_camera">添加我的WiFi摄像头</string>
+</resources>

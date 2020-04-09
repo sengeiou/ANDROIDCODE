@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor_actionsheet_cancel_nor"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="22dp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:text="1"/>
+
+    <TextView
+        android:textSize="@dimen/text_size_16sp"
+        android:id="@+id/dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:minLines="3"
+        android:text=""
+        android:padding="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bg_color"
+        android:layout_margin="0.5dp">
+
+        <TextView
+            android:id="@+id/dialog_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/bgColor_actionsheet_cancel_nor"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:layout_margin="0.5dp"
+            android:lines="1"
+            android:text="123"
+            />
+
+        <TextView
+            android:id="@+id/dialog_other"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/bgColor_actionsheet_cancel_nor"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_margin="0.5dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="123"
+            />
+
+        <TextView
+            android:id="@+id/dialog_sure"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/bgColor_actionsheet_cancel_nor"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_margin="0.5dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="123"
+            />
+    </LinearLayout>
+</LinearLayout>

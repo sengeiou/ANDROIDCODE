@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/history_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/device_main_bg" >
+
+            <ImageView
+                android:id="@+id/command_history_title"
+                style="@style/zhzj_imageview_back"
+                android:layout_marginLeft="17dp"
+                android:onClick="back"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="Device network diagnosis"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_diagnosis_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_100"
+                android:src="@drawable/icon_diagnosis"/>
+
+            <TextView
+                android:id="@+id/txt_diagnosis_wifi_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_18"
+                android:text="Strong signal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_icon_pregress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_60"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_10"
+                android:src="@drawable/icon_diagnosis_progress1"/>
+            <ImageView
+                android:id="@+id/icon_progress_line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_diagnosis_line"/>
+            <ImageView
+                android:id="@+id/icon_progress_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_10"
+                android:src="@drawable/icon_diagnosis_progress2"/>
+            <ImageView
+                android:id="@+id/icon_progress_line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_diagnosis_line"/>
+            <ImageView
+                android:id="@+id/icon_progress_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_10"
+                android:src="@drawable/icon_diagnosis_progress3"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_icon_pregress_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_10"
+                    android:text="1.Connecting device"/>
+                <ImageView
+                    android:id="@+id/loading_diagnosis1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_loading"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_10"
+                    android:text="2.Send instruction"/>
+                <ImageView
+                    android:id="@+id/loading_diagnosis2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_loading"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_10"
+                    android:text="3.Analysis data"/>
+                <ImageView
+                    android:id="@+id/loading_diagnosis3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_loading"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/match_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_50"
+        android:background="@drawable/zhzj_default_button"
+        android:onClick="back"
+        android:text="I GOT IT"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

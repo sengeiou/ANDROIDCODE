@@ -1,0 +1,208 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_bg"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:id="@+id/change_video_format"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ctl_setting_bar_height"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/video_format"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar_video_format"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="@dimen/inner_item_progress_width_height"
+                android:layout_height="@dimen/inner_item_progress_width_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/add_magin_right"
+                android:indeterminateDrawable="@anim/progress_white"
+                android:indeterminateDuration="560000" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/video_format_radio"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ctl_setting_bar_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/view7" />
+
+                <RadioButton
+                    android:id="@+id/radio_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/zhzj_radiobutton_select"
+                    android:drawablePadding="10dp"
+                    android:text="PAL"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/radio_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/zhzj_radiobutton_select"
+                    android:drawablePadding="10dp"
+                    android:text="NTSC" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/change_volume"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ctl_setting_bar_height"
+            android:layout_marginTop="@dimen/item_group_margin_top"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/volume"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar_volume"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="@dimen/inner_item_progress_width_height"
+                android:layout_height="@dimen/inner_item_progress_width_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/add_magin_right"
+                android:indeterminateDrawable="@anim/progress_white"
+                android:indeterminateDuration="560000" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/video_voleme_seek"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ctl_setting_bar_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/ic_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/ic_voice_set" />
+
+            <SeekBar
+                android:id="@+id/seek_volume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_voice_persent"
+                android:layout_toRightOf="@+id/ic_voice"
+                style="@style/SeekBarStyle"
+                android:max="9"
+                android:maxHeight="10dp" />
+
+            <TextView
+                android:id="@+id/tv_voice_persent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:padding="3dp"
+                android:text="3%" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/change_image_reverse"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ctl_setting_bar_height"
+            android:layout_marginTop="@dimen/item_group_margin_top"
+            android:layout_weight="0.05"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/change_imag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/ic_change_img" />
+
+            <TextView
+                android:id="@+id/image_reverse_text"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/change_imag"
+                android:gravity="center"
+                android:text="@string/image_reverse" />
+
+            <ImageView
+                android:id="@+id/image_reverse_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/zhzj_switch_off"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/progressBar_image_reverse"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="@dimen/inner_item_progress_width_height"
+                android:layout_height="@dimen/inner_item_progress_width_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:indeterminateDrawable="@anim/progress_white"
+                android:indeterminateDuration="560000" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

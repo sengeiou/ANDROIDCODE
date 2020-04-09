@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/antiquewhite"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/comm_top_tip_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/nonet_tips_bg"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/comm_top_tip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:padding="2dip"
+            android:singleLine="true"
+            android:text="@string/common_tip_tip_netcall" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/right" />
+    </LinearLayout>
+
+</LinearLayout>

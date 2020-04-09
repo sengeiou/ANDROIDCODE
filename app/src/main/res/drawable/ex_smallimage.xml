@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--这里la是下拉图标-->
+    <item android:state_expanded="false"
+        android:drawingCacheQuality="auto"
+        android:drawable="@drawable/arrow_right1"/>
+    <!--这里shou是收回图标-->
+    <item android:state_expanded="true"
+        android:drawingCacheQuality="auto"
+        android:drawable="@drawable/arrow_right2"/>
+</selector>

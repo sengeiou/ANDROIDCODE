@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/del_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dcdcdc" />
+
+            <Button
+                android:id="@+id/btn_deldevice"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_button_bg"
+                android:text="@string/zss_item_del"
+                android:textColor="@color/red"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setpassword_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dcdcdc" />
+
+            <Button
+                android:id="@+id/btn_setpassword"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_button_bg"
+                android:text="@string/register_pass_button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setdevice_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dcdcdc" />
+
+            <Button
+                android:id="@+id/btn_setdevice"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_button_bg"
+                android:text="@string/activity_beijingsuo_reqkeyauth" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setpause_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dcdcdc"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_setpause"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_button_bg"
+                android:text="@string/jjsuo_suo_pause"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/update_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dcdcdc" />
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_button_bg"
+                android:text="@string/zss_item_edit" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smartism.znzk.activity.device.add.GeneralCollectionWifiActivity">
+
+    <ImageView
+        android:id="@+id/top_tip_tv"
+        app:layout_constraintVertical_bias="0"
+        android:src="@drawable/zhzj_camera_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="0dp"
+        android:scaleType="fitXY"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/ll_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/top_tip_tv"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        layout="@layout/input_wifi_and_password_layout"/>
+
+    <TextView
+        android:id="@+id/change_wifi_tv"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="@id/ll_edit"
+        app:layout_constraintRight_toRightOf="@id/ll_edit"
+        app:layout_constraintTop_toTopOf="@id/ll_edit"
+        app:layout_constraintHorizontal_bias="1"
+        android:textSize="@dimen/text_size_12sp"
+        android:textColor="@color/zhzj_default"
+        style="@android:style/TextAppearance"
+        android:text="@string/add_zhuji_by_ap_change_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/ll_edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bt_qr_next_height"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/zhzj_dialog_info_btn"
+        android:text="@string/next"
+        android:textColor="@color/selector_btn_textcolor" />
+
+</android.support.constraint.ConstraintLayout>

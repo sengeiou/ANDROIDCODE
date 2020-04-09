@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_local_recordfiles"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        style="@style/default_paddding_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            style="@style/zhzj_imageview_back" />
+
+        <TextView
+            android:id="@+id/tv_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/record_file_list" />
+    </RelativeLayout>
+
+
+
+    <include layout="@layout/line_graylose"
+        android:id="@+id/include_layout"
+        />
+
+    <GridView
+        android:id="@+id/local_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/layout_title"
+        android:layout_marginLeft="8dp"
+        android:focusableInTouchMode="true"
+        android:layout_marginRight="8dp"
+        android:horizontalSpacing="8dp"
+        android:numColumns="3">
+    </GridView>
+</LinearLayout>

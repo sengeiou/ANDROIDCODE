@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_contact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:id="@+id/layout_net_status_bar_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/net_status_bar_top"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/net_warning_bar_bg"
+            android:paddingLeft="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/net_status_bar_info_top"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5.0dip"
+                android:layout_weight="1.0"
+                android:drawableLeft="@drawable/net_warning"
+                android:drawablePadding="10.0dip"
+                android:gravity="center_vertical"
+                android:text="@string/net_error_tip"
+                android:textColor="#ff2a271e"
+                android:textSize="13.0sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="4.0dip"
+                android:src="@drawable/net_warning_redirect"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/background"
+        android:cacheColorHint="@null"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:focusable="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="none"
+        android:smoothScrollbar="true">
+
+        <ListView
+            android:id="@+id/lv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"></ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_add"
+        android:layout_width="@dimen/add_device_width"
+        android:layout_height="@dimen/add_device_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/add_frame"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/radar_add"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_radar_add"
+                android:layout_width="@dimen/img_add_width"
+                android:layout_height="@dimen/img_add_height"
+                android:layout_centerVertical="true"
+                android:background="@drawable/img_radar_add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_radar_add"
+                android:text="@string/radar_add"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:id="@+id/manually_add"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_manally_add"
+                android:layout_width="@dimen/img_add_width"
+                android:layout_height="@dimen/img_add_height"
+                android:layout_centerVertical="true"
+                android:background="@drawable/img_manually_add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_manally_add"
+                android:text="@string/manually_add"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

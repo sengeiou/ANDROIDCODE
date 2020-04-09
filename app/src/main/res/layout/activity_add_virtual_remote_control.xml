@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/choose_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/solid_dark_holo" >
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_button_bg"
+            android:drawableLeft="@drawable/back_button_ioc_bg"
+            android:drawablePadding="10dp"
+            android:onClick="back"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_add_vrc_title"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/choose_top_layout" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/vrc_key_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_list_item_bg"
+                android:paddingBottom="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="20dp" >
+
+                <TextView
+                    android:id="@+id/vrc_key_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/activity_add_vrc_key" />
+
+                <TextView
+                    android:id="@+id/vrc_key"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toLeftOf="@+id/iv_img1"
+                    android:layout_toRightOf="@+id/vrc_key_head"
+                    android:text="@string/activity_add_vrc_key_hit"
+                    android:textColor="@color/gray" />
+
+                <ImageView
+                    android:id="@+id/iv_img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/graysloae" />
+
+            <RelativeLayout
+                android:id="@+id/vrc_type_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_list_item_bg"
+                android:paddingBottom="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="20dp" >
+
+                <TextView
+                    android:id="@+id/vrc_type_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/activity_add_vrc_type" />
+
+                <TextView
+                    android:id="@+id/vrc_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toLeftOf="@+id/iv_img2"
+                    android:layout_toRightOf="@+id/vrc_type_head"
+                    android:text="@string/activity_add_vrc_type_hit"
+                    android:textColor="@color/gray" />
+
+                <ImageView
+                    android:id="@+id/iv_img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/graysloae" />
+
+            <RelativeLayout
+                android:id="@+id/vrc_pl_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_list_item_bg"
+                android:paddingBottom="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="20dp" >
+
+                <TextView
+                    android:id="@+id/vrc_pl_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/activity_add_vrc_pl" />
+
+                <TextView
+                    android:id="@+id/vrc_pl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toLeftOf="@+id/iv_img3"
+                    android:layout_toRightOf="@+id/vrc_pl_head"
+                    android:text="@string/activity_add_vrc_pl_hit"
+                    android:textColor="@color/gray" />
+
+                <ImageView
+                    android:id="@+id/iv_img3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/graysloae" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/create_vrc"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/selector_btn_blue"
+        android:onClick="create"
+        android:text="@string/activity_add_vrc_create"
+        android:textColor="@color/selector_btn_textcolor"
+        android:textSize="18sp" />
+
+</RelativeLayout>

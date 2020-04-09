@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_set_device_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+
+    tools:context="com.smartism.znzk.activity.device.SetDeviceInfoActivity">
+
+    <RelativeLayout
+        android:id="@+id/command_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/zhzj_imageview_back"
+            android:layout_marginLeft="17dp"
+            android:onClick="back"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/device_info" />
+
+
+        <TextView
+            android:id="@+id/menu_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/action_settings"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/scene_save"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:src="@drawable/zhzj_save"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_graylose" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_item_height">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="@string/activity_device_set_dname" />
+
+        <EditText
+            android:id="@+id/device_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_1"
+            android:background="@color/white"
+            android:hint="@string/input_device_name"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/graysloae" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_item_height">
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="@string/activity_group_set_type" />
+
+        <TextView
+            android:id="@+id/device_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_2"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/graysloae" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_item_height">
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="@string/activity_device_set_where" />
+
+        <EditText
+            android:id="@+id/device_addr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_3"
+            android:background="@color/white"
+            android:hint="@string/activity_group_set_adrr"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/graysloae" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/graysloae" />
+
+    <RelativeLayout
+        android:id="@+id/deviceinfo_camera"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/main_item_height">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/activity_device_set_bipc" />
+
+        <ImageView
+            android:id="@+id/imag_v1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/zhzj_tjcj_dianji" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/graysloae" />
+    </RelativeLayout>
+
+
+    <!--用户列表-->
+    <RelativeLayout
+        android:id="@+id/rl_userList"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_item_height"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/activity_weight_mian_user_list" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/zhzj_tjcj_dianji" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/graysloae" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/deviceinfo_history"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_item_height">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/device_add_from_history_title" />
+
+        <ImageView
+            android:id="@+id/imag_v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/zhzj_tjcj_dianji" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/graysloae" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/graysloae" />
+
+    <RelativeLayout
+        android:id="@+id/scene_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_item_height"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/icon_v1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/selec_scene_marginleft"
+            android:layout_marginRight="@dimen/margin"
+            android:src="@drawable/zhzj_sy_changjing" />
+
+        <TextView
+            android:id="@+id/tv_diy_scene"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/main_item_height"
+            android:layout_toRightOf="@+id/icon_v1"
+            android:gravity="center"
+            android:text="@string/device_scenes_title" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/graysloae" />
+    </RelativeLayout>
+
+    <com.smartism.znzk.view.MyGridView
+        android:id="@+id/security_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="10dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:padding="@dimen/selec_scene_icon_margin"
+        android:verticalSpacing="10dp"></com.smartism.znzk.view.MyGridView>
+</LinearLayout>

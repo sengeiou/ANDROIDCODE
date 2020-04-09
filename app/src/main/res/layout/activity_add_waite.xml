@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        style="@style/default_paddding_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            style="@style/zhzj_imageview_back"
+            android:clickable="true"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/intelligent_online"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_waite_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wait_connect"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_large"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.smartism.znzk.view.ImageDrawable
+                android:id="@+id/wait_anim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/add_wait_anim" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="8dp"
+                android:src="@drawable/zhzj_lianjiezhong_camera" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:paddingLeft="@dimen/waiting_connect_padding">
+
+            <ProgressBar
+                android:id="@+id/add_progress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="@dimen/inner_item_progress_width_height"
+                android:layout_height="@dimen/inner_item_progress_width_height"
+                android:layout_marginRight="3dp"
+                android:layout_toLeftOf="@+id/tx_shang"
+                android:indeterminateBehavior="repeat"
+                android:indeterminateDrawable="@anim/loading_rotate"
+                android:indeterminateDuration="560000" />
+
+            <TextView
+                android:id="@+id/tx_shang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/connecting_network"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_shang"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="@string/connecting_wait"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

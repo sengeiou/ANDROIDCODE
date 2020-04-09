@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/zhzj_grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_20">
+            <LinearLayout
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp_16"
+                    android:text="HEATER"/>
+
+                <com.smartism.znzk.view.SwitchButton.SwitchButton
+                    android:id="@+id/c_switchButton"
+                    style="@style/SwitchButtonCtrBitONAndOFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_20"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp_16"
+                    android:text="MODE"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/radio_boost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checktext_selector"
+                        android:padding="5dp"
+                        android:checked="true"
+                        android:text="BOOST"/>
+                    <RadioButton
+                        android:id="@+id/radio_timer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checktext_selector"
+                        android:padding="5dp"
+                        android:text="TIMER"/>
+                    <RadioButton
+                        android:id="@+id/radio_sleep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checktext_selector"
+                        android:padding="5dp"
+                        android:text="SLEEP"/>
+                </RadioGroup>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dp_20"
+            android:paddingEnd="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10">
+            <LinearLayout
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SCHEDULE"/>
+
+                <TextView
+                    android:id="@+id/text_schedule"
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="40sp"
+                    android:background="#1A77787E"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp_16"
+                    android:text="No Schedule" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TIMER"/>
+
+                <TextView
+                    android:id="@+id/text_timer"
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="40sp"
+                    android:background="#1A77787E"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp_16"
+                    android:text="01:00" />
+
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dp_20"
+            android:paddingEnd="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10">
+            <LinearLayout
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FLUID LEVEL"/>
+
+                <TextView
+                    android:id="@+id/text_fluidlevel"
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="40sp"
+                    android:background="#1A77787E"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp_16"
+                    android:text="Replace Bottle" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AMBIENT TEMP."/>
+
+                <TextView
+                    android:id="@+id/text_ambi"
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="40sp"
+                    android:background="#1A77787E"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp_16"
+                    android:text="- -" />
+
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WICK TEMP. SETTINGS"/>
+
+            <com.smartism.znzk.view.seekBar.TickSeekBar
+                android:id="@+id/bar_wick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                app:tsb_progress="0"
+                app:tsb_show_thumb_text="above"
+                app:tsb_thumb_text_color="@color/main_color"
+                app:tsb_track_background_size="5dp"
+                app:tsb_track_progress_color="@color/main_color"
+                app:tsb_track_progress_size="5dp"
+                app:tsb_thumb_drawable="@drawable/heater_wick_seekbar_thumb"
+                app:tsb_thumb_size="@dimen/dp_100"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_20">
+            <LinearLayout
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="@dimen/dp_150"
+                    android:layout_gravity="center_horizontal">
+
+                    <com.smartism.znzk.view.ProgressBar.CircleBarView
+                        android:id="@+id/circle_heater_temp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        app:bar_width="15dp"
+                        app:bg_color="#1A77787E"
+                        app:progress_color="@color/green"
+                        app:start_angle="155"
+                        app:sweep_angle="230" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/text_heater_progress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/sp_25"/>
+                        <TextView
+                            android:id="@+id/text_heater_progress_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_14"/>
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:id="@+id/text_heater_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="@dimen/dp_25"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:text="0"/>
+
+                    <TextView
+                        android:id="@+id/text_heater_max"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/dp_25"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:text="160"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HEATER TEMP."/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="@dimen/dp_150"
+                    android:layout_gravity="center_horizontal">
+
+                    <com.smartism.znzk.view.ProgressBar.CircleBarView
+                        android:id="@+id/circle_wick_temp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        app:bar_width="15dp"
+                        app:bg_color="#1A77787E"
+                        app:progress_color="@color/green"
+                        app:start_angle="155"
+                        app:sweep_angle="230" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/text_wick_progress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/sp_25"/>
+                        <TextView
+                            android:id="@+id/text_wick_progress_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_14"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/text_wick_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="@dimen/dp_25"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:text="0℃"/>
+
+                    <TextView
+                        android:id="@+id/text_wick_max"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/dp_25"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:text="160℃"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WICK TEMP."/>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

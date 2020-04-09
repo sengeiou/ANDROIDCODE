@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ybq_chart_bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_55"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:onClick="back"
+            android:src="@drawable/zhzj_welcome_device_back" />
+
+        <!--<com.smartism.znzk.view.SegmentControl-->
+        <!--android:id="@+id/segment_control"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="32dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_margin="8dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:textSize="16sp"-->
+        <!--app:cornerRadius="5dip"-->
+        <!--app:horizonGap="8dip"-->
+        <!--app:normalColor="#1a87ab"-->
+        <!--app:selectedColor="#8ecbe1"-->
+        <!--app:texts="收缩压|舒张压"-->
+        <!--app:verticalGap="8dip" />-->
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp_15"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_title"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_week"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/ybq_chart_btn_date"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/activity_thchart_week"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/ybq_chart_btn_date"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/activity_thchart_month"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/ybq_chart_btn_date"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/activity_thchart_year"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/rl_top"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        app:tabIndicatorColor="@color/white"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="#cccccc"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/linechart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab"
+        android:paddingBottom="20dp" />
+</RelativeLayout>

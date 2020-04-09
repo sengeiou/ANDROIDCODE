@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/set_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            style="@style/zhzj_imageview_back"
+            android:layout_marginLeft="17dp"
+            android:clickable="true"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_device_setcall_tip" />
+
+        <ImageView
+            android:id="@+id/history"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:src="@drawable/history_button"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/common_top_tip_warning"/>
+
+    <include layout="@layout/common_top_tip_netcall"/>
+
+    <LinearLayout
+        android:id="@+id/txt_switch_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:textColor="@color/zhzj_default"
+            style="@android:style/TextAppearance"
+            android:textSize="@dimen/text_size_12sp"
+            android:text="@string/activity_device_setgsm_scall_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_callsms_contacts"
+            android:textColor="@color/zhzj_default"
+            style="@android:style/TextAppearance"
+            android:textSize="@dimen/text_size_12sp"
+            android:text="@string/activity_device_setgsm_scall_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/graysloae" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_gsm_status"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:visibility="gone"
+        android:layout_below="@+id/set_top_layout">
+
+        <TextView
+            android:id="@+id/txt_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:text="@string/gsm_tel" />
+
+        <com.smartism.znzk.view.SwitchButton.SwitchButton
+            android:id="@+id/btn_gsm_status"
+            style="@style/SwitchButtonStyleIOS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/graysloae" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_msg"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_below="@+id/set_top_layout">
+
+        <TextView
+            android:id="@+id/text_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:text="@string/activity_device_setgsm_ssms" />
+
+        <com.smartism.znzk.view.SwitchButton.SwitchButton
+            android:id="@+id/btn_sms_status"
+            style="@style/SwitchButtonStyleIOS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/graysloae" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/graysloae" />
+
+    <LinearLayout
+        android:id="@+id/ll_addtel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="17dp"
+            android:text="@string/alam_phone_set" />
+
+        <ImageView
+            android:id="@+id/addTel"
+            style="@style/zhzj_imageview_add"
+            android:layout_gravity="center_vertical"
+             />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/graysloae" />
+
+
+    <TextView
+        android:id="@+id/tv_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alam_phone_notice"
+        android:layout_marginLeft="17dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone"
+        android:textSize="12sp" />
+
+    <ListView
+        android:id="@+id/lv_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/setgsm_edit_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/main"
+        android:layout_toEndOf="@id/rl_gsm_status"
+        android:layout_toRightOf="@id/rl_gsm_status"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <EditText
+                android:id="@+id/setgsm_phone_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_editbox"
+                android:hint="@string/activity_device_setgsm_gsmhit"
+                android:inputType="number"
+                android:maxLength="16"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_gsmnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_device_setcall_gsm" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/setgsm_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/zhzj_bg_button_style"
+            android:onClick="subToUpdate"
+            android:padding="5dp"
+            android:text="@string/activity_device_set_updagebutton"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!--
+    <ListView
+        android:id="@+id/lv_gsmTelList"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/set_top_layout" >
+    </ListView>
+    -->
+
+</LinearLayout>

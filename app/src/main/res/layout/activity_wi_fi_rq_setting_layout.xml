@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smartism.znzk.activity.device.WiFiRqSettingActivity">
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/ll_rangqinongdu_setting"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_45"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_rangqi"
+            style="@android:style/TextAppearance"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="@string/ranqinongdu_fazhi" />
+
+        <TextView
+            android:layout_marginRight="5dp"
+            android:id="@+id/current_ranqi"
+            android:drawablePadding="15dp"
+            android:drawableRight="@drawable/zhzj_tjsb_dianji"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/first_divider"
+        app:layout_constraintTop_toBottomOf="@id/ll_rangqinongdu_setting"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bgColor_divier" />
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/first_divider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/ll_temp_setting"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_45"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@android:style/TextAppearance"
+            android:id="@+id/tv_temp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="@string/wendu_fazhi" />
+
+        <TextView
+            android:layout_marginRight="5dp"
+            android:id="@+id/current_temp"
+            android:drawablePadding="15dp"
+            android:drawableRight="@drawable/zhzj_tjsb_dianji"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:id="@+id/second_divider"
+        app:layout_constraintTop_toBottomOf="@id/ll_temp_setting"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bgColor_divier" />
+
+</android.support.constraint.ConstraintLayout>

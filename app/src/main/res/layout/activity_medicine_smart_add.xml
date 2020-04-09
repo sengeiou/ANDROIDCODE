@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            style="@style/zhzj_imageview_back"
+            android:layout_marginLeft="17dp"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/menu_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/smart_medc_add" />
+
+        <ImageView
+            android:id="@+id/yx_add"
+            style="@style/zhzj_imageview_save" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/graysloae" />
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/photo_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/smart_medc_photo"
+                        android:textSize="16sp" />
+
+                    <FrameLayout
+                        android:id="@+id/fl_bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/photo_tv"
+                        android:background="@color/graysloae">
+
+                        <ImageView
+                            android:id="@+id/iv_photo"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop" />
+
+                        <TextView
+                            android:id="@+id/tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/smart_medc_upload_photo"
+                            android:textColor="@color/zhzj_default"
+                            android:textSize="16sp" />
+                        <!--android:textColor="#0d86d3"-->
+
+                    </FrameLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#03dae7" />
+
+                <TextView
+                    android:id="@+id/add_time_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/smart_medc_add_time"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#03dae7" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:hint="@string/smart_medc_add_name"
+                    android:maxLength="18"
+                    android:singleLine="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#03dae7" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/et_num"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:hint="@string/smart_medc_add_num"
+                            android:inputType="number" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#03dae7" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <Spinner
+                            android:id="@+id/field_item_spinner_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/spinner_selector"
+                            android:paddingLeft="5dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#03dae7"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/graysloae" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/icon_shezhi"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/smart_medc_add_eat_time"
+                    android:textSize="15sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_define"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/graysloae" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/icon_fuyaojiliang"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/smart_medc_add_eat_num"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_minus"
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/yx_jl" />
+
+                    <TextView
+                        android:id="@+id/number_tv"
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_plus"
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/yx_jladd" />
+
+                    <TextView
+                        android:id="@+id/dos_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/unit_pian"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/graysloae" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="15dp"
+                    android:gravity="center|right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:singleLine="true"
+                        android:text="@string/smart_medc_add_eat_before"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/iv_before"
+                        style="@style/MyCheckBox"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="10dp" />
+
+                    <!--<android.support.design.widget.CheckableImageButton-->
+                    <!--android:id="@+id/iv_before"-->
+                    <!--android:layout_width="25dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:src="@drawable/yx_no_check" />-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:singleLine="true"
+                        android:text="@string/smart_medc_add_eat_after"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/iv_after"
+                        style="@style/MyCheckBox"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="10dp" />
+
+                    <!--<android.support.design.widget.CheckableImageButton-->
+                    <!--android:id="@+id/iv_after"-->
+                    <!--android:layout_width="25dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:src="@drawable/yx_no_check" />-->
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

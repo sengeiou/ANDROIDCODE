@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/history_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/device_main_bg" >
+
+            <ImageView
+                android:id="@+id/command_history_title"
+                style="@style/zhzj_imageview_back"
+                android:layout_marginLeft="17dp"
+                android:onClick="back"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="Network diagnosis"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_network_disgnosis_process"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginStart="@dimen/dp_50"
+                android:layout_marginEnd="@dimen/dp_50"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_18"
+                android:text="Being processed..."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginStart="@dimen/dp_50"
+                android:layout_marginEnd="@dimen/dp_50"
+                android:textSize="@dimen/sp_18"
+                android:text="The diagnosis process should take about two minutes. You can cancel it at any time."/>
+
+            <com.smartism.znzk.view.MyRoundProcess
+                android:id="@+id/round_process"
+                android:layout_marginTop="@dimen/dp_30"
+                android:layout_marginBottom="@dimen/dp_30"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:background="#00000000"
+                android:visibility="visible"
+                app:myroundColor="@color/bgColor_alert_button_press"
+                app:myroundProgressColor="@color/zhzj_default"
+                app:mytextColor="@color/zhzj_default"
+                app:mytextSize="@dimen/text_size_22sp" />
+
+            <TextView
+                android:id="@+id/txt_diagnosis_process"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginStart="@dimen/dp_50"
+                android:layout_marginEnd="@dimen/dp_50"
+                android:textSize="@dimen/sp_18"
+                android:text="Diagnose Domain Name MQTT Domain Start traceroute..."/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_network_disgnosis_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_100"
+                android:src="@drawable/icon_diagnosis_network_start"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginStart="@dimen/dp_50"
+                android:layout_marginEnd="@dimen/dp_50"
+                android:textSize="@dimen/sp_18"
+                android:text="Performing a network diagnosis willhelp us solve your network problemsfaster. The diagnosis takes about two minutes."/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_network_disgnosis_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_100"
+                android:src="@drawable/icon_diagnosis_network_end"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginStart="@dimen/dp_50"
+                android:layout_marginEnd="@dimen/dp_50"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_18"
+                android:text="Diagnosis completed"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginStart="@dimen/dp_50"
+                android:layout_marginEnd="@dimen/dp_50"
+                android:textSize="@dimen/sp_18"
+                android:text="Please upload logs to help us better solve your network problems."/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/match_btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_50"
+        android:background="@drawable/zhzj_default_button"
+        android:onClick="start"
+        android:text="START DIAGNOSIS"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/match_btn_end"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_50"
+        android:background="@drawable/zhzj_default_button"
+        android:onClick="save"
+        android:text="UPLOAD LOG"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

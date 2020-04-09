@@ -1,0 +1,612 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/change_record_type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ctl_setting_bar_height"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:button="@null"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/add_magin_right"
+                android:text="@string/record_type" />
+
+            <ProgressBar
+                android:id="@+id/progressBar_record_type"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="@dimen/inner_item_progress_width_height"
+                android:layout_height="@dimen/inner_item_progress_width_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/add_magin_right"
+                android:indeterminateDrawable="@anim/progress_white"
+                android:indeterminateDuration="560000" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/video_voleme_seek"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ctl_top_info_user_icon_width_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/ll_progress_sd"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/add_magin_right"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/memory_card"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/sd_remainning_capacity" />
+
+                <TextView
+                    android:id="@+id/remainning_capacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:text="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/sd_capacity" />
+
+                <TextView
+                    android:id="@+id/total_capacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_progress_sd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/sd_persen"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_ll_sd"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progressbar_sd"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_ll_sd"
+                    android:layout_margin="3dp"
+                    android:layout_toLeftOf="@+id/tv_voice_persent"
+                    android:layout_toRightOf="@+id/ic_voice"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/zhzj_progress_sd" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sd_persen"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:padding="3dp"
+                android:layout_margin="8dp"
+                android:text="0%"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sd_format"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:button="@null"
+            android:drawableRight="@android:drawable/btn_radio">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/sd_formatting" />
+
+            <ImageView
+                android:id="@+id/format_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/zhzj_arrow"
+                android:contentDescription="@string/imagedes"
+                android:visibility="visible" />
+
+            <ProgressBar
+                android:id="@+id/progress_format"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="@dimen/inner_item_progress_width_height"
+                android:layout_height="@dimen/inner_item_progress_width_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:indeterminateDrawable="@anim/progress_white"
+                android:indeterminateDuration="560000" />
+        </RelativeLayout>
+
+        <!--      录像模式     -->
+        <LinearLayout
+            android:id="@+id/record_type_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_item_height"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:button="@null"
+                    android:drawableRight="@drawable/zhzj_radiobutton_select"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/record_manual" />
+
+                <RadioButton
+                    android:id="@+id/radio_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_item_height"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:button="@null"
+                    android:drawableRight="@drawable/zhzj_radiobutton_select"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/record_alarm" />
+
+                <RadioButton
+                    android:id="@+id/radio_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_item_height"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:button="@null"
+                    android:drawableRight="@drawable/zhzj_radiobutton_select"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/record_timer"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/record_type_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/change_record"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ctl_setting_bar_height"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/record_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/add_magin_right"
+                    android:gravity="center"
+                    android:text="@string/remote_record" />
+
+                <ImageView
+                    android:id="@+id/record_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/add_magin_right"
+                    android:background="@drawable/zhzj_switch_off"
+                    android:contentDescription="@string/imagedes"
+                    android:visibility="visible" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_record"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="@dimen/inner_item_progress_width_height"
+                    android:layout_height="@dimen/inner_item_progress_width_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/add_magin_right"
+                    android:indeterminateDrawable="@anim/progress_white"
+                    android:indeterminateDuration="560000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/change_pre_record"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ctl_setting_bar_height"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:button="@null"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/pre_record_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/add_magin_right"
+                    android:gravity="center"
+                    android:text="@string/pre_record" />
+
+                <ImageView
+                    android:id="@+id/pre_record_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/add_magin_right"
+                    android:background="@drawable/zhzj_switch_off"
+                    android:contentDescription="@string/imagedes"
+                    android:visibility="visible" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_pre_record"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="@dimen/inner_item_progress_width_height"
+                    android:layout_height="@dimen/inner_item_progress_width_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/add_magin_right"
+                    android:indeterminateDrawable="@anim/progress_white"
+                    android:indeterminateDuration="560000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/change_record_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ctl_setting_bar_height"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:button="@null"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/add_magin_right"
+                    android:text="@string/record_time_length"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBar_record_time"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="@dimen/inner_item_progress_width_height"
+                    android:layout_height="@dimen/inner_item_progress_width_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/add_magin_right"
+                    android:indeterminateDrawable="@anim/progress_white"
+                    android:indeterminateDuration="560000" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/record_time_radio"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_item_height"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:button="@null"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/add_magin_right"
+                    android:gravity="center"
+                    android:text="@string/record_time_length" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_one_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/zhzj_radiobutton_select"
+                        android:drawablePadding="10dp"
+                        android:text="1"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <RadioButton
+                        android:id="@+id/radio_two_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="2"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/zhzj_radiobutton_select"
+                        android:drawablePadding="10dp"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <RadioButton
+                        android:id="@+id/radio_three_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="3"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/zhzj_radiobutton_select"
+                        android:drawablePadding="10dp"
+                        android:textSize="@dimen/text_size_normal" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/time_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:button="@null"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:orientation="horizontal"
+                android:padding="@dimen/add_magin_right"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="@string/time_control"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/time_from"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="00:00" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="-" />
+
+                    <TextView
+                        android:id="@+id/time_to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="00:01" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bt_set_time"
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/default_zhzj_button"
+                    android:padding="3dp"
+                    android:text="@string/confirm"
+                    android:textColor="@color/bgColor_actionsheet_cancel_nor" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l_sd_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ctl_setting_bar_height"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:button="@null"
+                android:drawableRight="@android:drawable/btn_radio">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/memory_card" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sd_card_capacity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ctl_setting_bar_height"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:button="@null"
+                android:drawableRight="@android:drawable/btn_radio">
+
+                <TextView
+                    android:id="@+id/tv_sd_capacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_sd" />
+
+                <TextView
+                    android:id="@+id/tv_sd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_sd_capacity"
+                    android:layout_alignBottom="@+id/tv_sd_capacity"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/sd_capacity" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sd_card_remainning_capacity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ctl_setting_bar_height"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:button="@null"
+                android:drawableRight="@android:drawable/btn_radio">
+
+                <TextView
+                    android:id="@+id/tv_sd_remainning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/sd_remainning_capacity" />
+
+                <TextView
+                    android:id="@+id/tv_sd_remainning_capacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_sd_remainning"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l_usb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/usb_capacity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ctl_setting_bar_height"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:button="@null"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_usb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/usb_capacity" />
+
+                <TextView
+                    android:id="@+id/tv_usb_capacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_usb"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/usb_remainning_capacity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ctl_setting_bar_height"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:button="@null"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_usb_remainning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/usb_remainning_capacity" />
+
+                <TextView
+                    android:id="@+id/tv_usb_remainning_capacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_usb_remainning" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

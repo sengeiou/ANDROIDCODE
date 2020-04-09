@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/setting_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        style="@style/default_paddding_left_right"
+        android:background="@color/device_main_bg"
+        >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/zhzj_imageview_back"
+            android:clickable="true"
+            android:onClick="back" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/line_graylose" />
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/setting_top_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="55dp"-->
+        <!--android:background="@color/device_main_bg" >-->
+
+        <!--<Button-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:background="@drawable/back_button_bg"-->
+            <!--android:drawableLeft="@drawable/back_button_ioc_bg"-->
+            <!--android:drawablePadding="10dp"-->
+            <!--android:onClick="back"-->
+            <!--android:padding="10dp"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="18sp" />-->
+    <!--</RelativeLayout>-->
+
+    <LinearLayout
+        android:id="@+id/rl_pl_setting_devices_audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/rl_setting_devices_audio"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:paddingRight="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="@string/Set_up_prompt_tone_of_devices" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:src="@drawable/right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/graysloae" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_pl_setting_message_audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/rl_setting_message_audio"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:paddingRight="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="@string/Set_up_prompt_tone_of_messages" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:src="@drawable/right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/graysloae" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_pl_device_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_device_setting"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:paddingRight="5dp" >
+
+            <TextView
+                android:id="@+id/tv_pl_device_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="@string/devices_list_menu_dialog_devicesetting" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:src="@drawable/right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/graysloae" />
+    </LinearLayout>
+
+
+
+    <!--致利德继电器工作时长设置-->
+    <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/rl_pl_jidianqitime_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        <RelativeLayout
+                android:id="@+id/rl_jidianqitime_setting"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:paddingRight="5dp" >
+
+            <TextView
+                    android:id="@+id/tv_pl_jidinaqitime_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/jwtsa_work_time_title" />
+            <TextView
+                    android:id="@+id/current_jidiantitime_tv"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:text=""
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/right_img_jidianqi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <ImageView
+                    android:id="@+id/right_img_jidianqi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/right" />
+        </RelativeLayout>
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/graysloae" />
+    </LinearLayout>
+
+    <!--致利德防区设置 -->
+    <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/rl_pl_fangqu_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        <RelativeLayout
+                android:id="@+id/rl_fangqu_setting"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:paddingRight="5dp" >
+
+            <TextView
+                    android:id="@+id/tv_pl_fangqu_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/triggers_title" />
+            <TextView
+                    android:id="@+id/current_fangqu_tv"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:text=""
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/right_img_fangqu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <ImageView
+                    android:id="@+id/right_img_fangqu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/right" />
+        </RelativeLayout>
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/graysloae" />
+    </LinearLayout>
+
+    <!--佳玉防区属性-->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/rl_pl_fangqu_attribute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_fangqu_attribute"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:paddingRight="5dp" >
+
+            <TextView
+                android:id="@+id/tv_pl_fangqu_attribute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="@string/jiayu_zone_attribute_open" />
+
+            <TextView
+                android:id="@+id/current_fangqu_tv_attribute"
+                android:textSize="@dimen/text_size_12sp"
+                android:text="@string/jiayu_zone_attribute_door"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/right_img_fangqu_attribute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/right_img_fangqu_attribute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:src="@drawable/right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/graysloae" />
+    </LinearLayout>
+
+    <!-- 触发模式设置 -->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/rl_pl_edge_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_edge_setting"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:paddingRight="5dp" >
+
+            <TextView
+                android:id="@+id/tv_pl_edge_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="@string/triggers_edge_title" />
+            <TextView
+                android:id="@+id/current_edge_tv"
+                android:textSize="@dimen/text_size_12sp"
+                android:text=""
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/right_edge_fangqu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/right_edge_fangqu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:src="@drawable/right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/graysloae" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rl_pl_device_med"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_device_med"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:paddingRight="5dp" >
+
+            <TextView
+                android:id="@+id/tv_pl_device_med"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="@string/devices_list_menu_dialog_med" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:src="@drawable/right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/graysloae" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rl_pl_device_bipc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_device_dipc"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:paddingRight="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="@string/activity_device_set_bipc" />
+
+            <ImageView
+                android:id="@+id/right_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:src="@drawable/right" />
+
+            <TextView
+                android:id="@+id/tips_bipc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/right_img"
+                android:textColor="@color/gray" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/graysloae" />
+    </LinearLayout>
+
+    <!--未关门报警时长-->
+    <LinearLayout
+        android:id="@+id/rl_pl_device_alarm_dnc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_device_alarm_dnc"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:paddingRight="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="@string/activity_weiguanmenbaojing" />
+
+            <ImageView
+                android:id="@+id/right_img_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:src="@drawable/right" />
+
+            <TextView
+                android:id="@+id/tips_alarm_dnc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/right_img_alarm"
+                android:textColor="@color/gray" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/graysloae" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_receivepush"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_receivepush"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:id="@+id/tv_push"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="@string/devices_list_menu_dialog_rece_push"/>
+
+            <com.smartism.znzk.view.CheckSwitchButton
+                android:id="@+id/check_receivepush"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/graysloae" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_pl_device_lowbattery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_device_lowbattery"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:paddingRight="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="@string/activity_device_set_lowbattery" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/right"
+                android:textColor="@color/darkgray"
+                android:text="@string/activity_device_set_restorebattery" />
+
+            <ImageView
+                android:id="@+id/right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:src="@drawable/right" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/graysloae" />
+    </LinearLayout>
+
+</LinearLayout>

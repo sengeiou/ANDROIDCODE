@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jdm="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/setting_top_layout"
+        style="@style/default_paddding_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/zhzj_imageview_back"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_setting_title" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/setting_top_layout"
+        android:background="@color/graysloae" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/view"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ll_set_wsd_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@drawable/item_pressed_bg"
+            >
+
+            <RelativeLayout
+                style="@style/default_paddding_left_right"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_45">
+
+                <TextView
+                    android:id="@+id/tips_tips_showw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/activity_setting_wsd_time" />
+                <ImageView
+                        android:id="@+id/wenshidijiantou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/zhzj_tjsb_dianji" />
+
+                <TextView
+                    android:id="@+id/tips_wsd_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/wenshidijiantou"
+                    android:paddingRight="@dimen/dp_10"/>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/graysloae" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hongcai_banben_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:id="@+id/hongcai_alarm_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/item_pressed_bg"
+                >
+
+                <RelativeLayout
+                    style="@style/default_paddding_left_right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_45">
+
+
+                    <TextView
+                        android:id="@+id/hongcai_alarm_setting_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/hongcai_alarm_setting_title" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/zhzj_tjsb_dianji" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bgColor_divier" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/hongcai_alarm_clock_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/item_pressed_bg"
+                >
+
+                <RelativeLayout
+                    style="@style/default_paddding_left_right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_45">
+
+
+                    <TextView
+                        android:id="@+id/hongcai_alarm_clock_setting_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/hongcai_naozhong_title" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/zhzj_tjsb_dianji" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bgColor_divier" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hongcai_time_sync"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/item_pressed_bg"
+                >
+
+                <RelativeLayout
+                    style="@style/default_paddding_left_right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_45">
+
+
+                    <TextView
+                        android:id="@+id/hongcai_time_sync_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/hongcai_time_tongbu_title" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/zhzj_tjsb_dianji" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bgColor_divier" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--主机报警时长-->
+        <LinearLayout
+            android:id="@+id/ll_alarm_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@drawable/item_pressed_bg"
+            >
+
+            <RelativeLayout
+                style="@style/default_paddding_left_right"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_45">
+
+
+                <TextView
+                    android:id="@+id/tv_zhuji_alarm_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/zhzj_alarm_time" />
+
+                <ImageView
+                        android:id="@+id/baojingshichang_jiantou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/zhzj_tjsb_dianji" />
+
+                <TextView
+                    android:id="@+id/tv_alarm_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/baojingshichang_jiantou"
+                    android:paddingRight="@dimen/dp_10"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bgColor_divier" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/zhuji_shangxiaxian_tip"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        <RelativeLayout
+            style="@style/default_paddding_left_right"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_45"
+            android:paddingRight="0dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/Whether_receive_host_online_notification" />
+
+
+            <com.smartism.znzk.view.SwitchButton.SwitchButton
+                android:id="@+id/btn_toogle_online_status"
+                style="@style/SwitchButtonStyleIOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/graysloae" />
+
+        <RelativeLayout
+            style="@style/default_paddding_left_right"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_45"
+            android:paddingRight="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/Whether_receive_host_offline_notification" />
+
+
+            <com.smartism.znzk.view.SwitchButton.SwitchButton
+                android:id="@+id/btn_toogle_offline_status"
+                style="@style/SwitchButtonStyleIOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/graysloae" />
+
+        </LinearLayout>
+
+
+        <!--主机离线提醒-->
+        <LinearLayout
+                android:id="@+id/ll_offline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/item_pressed_bg"
+        >
+
+            <RelativeLayout
+                    style="@style/default_paddding_left_right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp">
+                <TextView
+                        android:id="@+id/tv_offline__title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/hub_offline_tips" />
+
+                <ImageView
+                        android:id="@+id/img_offline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/zhzj_tjsb_dianji" />
+
+                <TextView
+                        android:id="@+id/tv_offline__content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/img_offline"
+                        android:paddingRight="@dimen/dp_10"
+                        android:text="@string/hub_offline_tips_close"
+                />
+
+
+            </RelativeLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bgColor_divier" />
+        </LinearLayout>
+
+        <!--致利德拨号模式选择-->
+        <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_call_mode_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/item_pressed_bg"
+        >
+
+            <RelativeLayout
+                    style="@style/default_paddding_left_right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp">
+                <TextView
+                        android:id="@+id/tv_call_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/zscm_call_mode_title" />
+
+                <ImageView
+                        android:id="@+id/call_mode_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/zhzj_tjsb_dianji" />
+
+                <TextView
+                        android:id="@+id/call_mode_current_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/call_mode_img"
+                        android:paddingRight="@dimen/dp_10"
+                        android:text=""
+                />
+
+
+            </RelativeLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bgColor_divier" />
+        </LinearLayout>
+
+        <!--致利德布防电平选择-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_level_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/item_pressed_bg"
+            >
+
+            <RelativeLayout
+                style="@style/default_paddding_left_right"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:id="@+id/tv_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/triggers_defen_title" />
+
+                <ImageView
+                    android:id="@+id/level_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/zhzj_tjsb_dianji" />
+
+                <TextView
+                    android:id="@+id/level_current_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/level_img"
+                    android:paddingRight="@dimen/dp_10"
+                    android:text=""
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bgColor_divier" />
+        </LinearLayout>
+
+        <!--佳域布防延迟时长-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_jiayu_army_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/item_pressed_bg"
+            >
+
+            <RelativeLayout
+                style="@style/default_paddding_left_right"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:id="@+id/tv_jiayu_army"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/jiayu_adsa_title" />
+
+                <ImageView
+                    android:id="@+id/jiayu_army_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/zhzj_tjsb_dianji" />
+
+                <TextView
+                    android:id="@+id/jiayu_army_current_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/jiayu_army_img"
+                    android:paddingRight="@dimen/dp_10"
+                    android:text="@string/jiayu_adsa_zero_time"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bgColor_divier" />
+        </LinearLayout>
+
+        <!--佳域报警延迟时长-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_jiayu_aralm_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/item_pressed_bg"
+            >
+
+            <RelativeLayout
+                style="@style/default_paddding_left_right"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:id="@+id/tv_jiayu_aralm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/jiayu_adsa_alarm_title" />
+
+                <ImageView
+                    android:id="@+id/jiayu_aralm_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/zhzj_tjsb_dianji" />
+
+                <TextView
+                    android:id="@+id/jiayu_aralm_current_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/jiayu_aralm_img"
+                    android:paddingRight="@dimen/dp_10"
+                    android:text="@string/jiayu_adsa_zero_time"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bgColor_divier" />
+        </LinearLayout>
+
+        <!--主机密码设置-->
+        <LinearLayout
+            android:id="@+id/ll_zhuji_pwd_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/item_pressed_bg"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+                style="@style/default_paddding_left_right"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:id="@+id/tv_zhuji_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/zhuji_pwd_setting_title" />
+
+                <ImageView
+                    android:id="@+id/zhuji_pwd_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/zhzj_tjsb_dianji" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/current_zhuji_pwd_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/zhuji_pwd_img"
+                    android:paddingRight="@dimen/dp_10"
+                    android:text="@string/jiayu_adsa_zero_time"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bgColor_divier" />
+        </LinearLayout>
+
+        <!--主机时间同步-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_zhuji_time_sync_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/item_pressed_bg"
+            >
+
+            <RelativeLayout
+                style="@style/default_paddding_left_right"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:id="@+id/tv_zhuji_time_sync"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="主机时间同步" />
+
+                <ImageView
+                    android:id="@+id/zhuji_time_sync_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/zhzj_tjsb_dianji" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/current_zhuji_time_sync_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/zhuji_time_sync_img"
+                    android:paddingRight="@dimen/dp_10"
+                    android:text="@string/jiayu_adsa_zero_time"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bgColor_divier" />
+        </LinearLayout>
+
+        <!--主机时区设定-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_zhuji_timezone_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/item_pressed_bg"
+            >
+
+            <RelativeLayout
+                style="@style/default_paddding_left_right"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:id="@+id/tv_zhuji_timezone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/zhuji_setting_timezone" />
+
+                <ImageView
+                    android:id="@+id/zhuji_timezone_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/zhzj_tjsb_dianji" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/current_zhuji_timezone_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/zhuji_timezone_img"
+                    android:paddingRight="@dimen/dp_10"
+                    android:text="@string/jiayu_adsa_zero_time"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bgColor_divier" />
+        </LinearLayout>
+
+        <!--主机语言设定-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_zhuji_lang_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/item_pressed_bg"
+            >
+
+            <RelativeLayout
+                style="@style/default_paddding_left_right"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:id="@+id/tv_zhuji_lang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/zhuji_setting_lang" />
+
+                <ImageView
+                    android:id="@+id/zhuji_lang_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/zhzj_tjsb_dianji" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/current_zhuji_lang_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/zhuji_lang_img"
+                    android:paddingRight="@dimen/dp_10"
+                    android:text="@string/jiayu_adsa_zero_time"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bgColor_divier" />
+        </LinearLayout>
+
+        <!--主机wifi和密码设定-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_zhuji_wifi_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/item_pressed_bg"
+            >
+
+            <RelativeLayout
+                style="@style/default_paddding_left_right"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:id="@+id/tv_zhuji_wifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/zhuji_setting_wifi" />
+
+                <ImageView
+                    android:id="@+id/zhuji_wifi_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/zhzj_tjsb_dianji" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/current_zhuji_wifi_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/zhuji_wifi_img"
+                    android:paddingRight="@dimen/dp_10"
+                    android:text="@string/jiayu_adsa_zero_time"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bgColor_divier" />
+        </LinearLayout>
+
+        <!--主机配件同步-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_zhuji_init_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/item_pressed_bg"
+            >
+
+            <RelativeLayout
+                style="@style/default_paddding_left_right"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:id="@+id/tv_zhuji_init"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/zhuji_setting_init" />
+
+                <ImageView
+                    android:id="@+id/zhuji_init_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/zhzj_tjsb_dianji" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/current_zhuji_init_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/zhuji_init_img"
+                    android:paddingRight="@dimen/dp_10"
+                    android:text="@string/jiayu_adsa_zero_time"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bgColor_divier" />
+        </LinearLayout>
+
+        <!-- 手势密码功能 -->
+        <LinearLayout
+            android:id="@+id/rl_setting_gensture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@drawable/item_pressed_bg">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/Enable_gesture_password" />
+
+                <TextView
+                    android:id="@+id/tv_gensture_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="30dp"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/right" />
+            </RelativeLayout>
+
+            <!-- =============设置提示音================ -->
+            <!-- <View -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="1dip" -->
+            <!-- android:background="@color/graysloae" /> -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/rl_setting_audio" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="58dp" -->
+            <!-- android:paddingRight="5dp" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:layout_marginLeft="5dp" -->
+            <!-- android:text="提示音设置" /> -->
+
+
+            <!-- <ImageView -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:paddingRight="5dp" -->
+            <!-- android:src="@drawable/right" /> -->
+            <!-- </RelativeLayout> -->
+
+
+            <!-- =============设置提示音================ -->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/graysloae" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

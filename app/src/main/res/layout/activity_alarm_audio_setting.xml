@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/setting_top_layout"
+        style="@style/default_paddding_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/zhzj_imageview_back"
+            android:clickable="true"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/regiter_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/Set_up_prompt_tone" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/line_graylose" />
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/setting_top_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="55dp"-->
+    <!--android:background="@drawable/solid_dark_holo" >-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:text="@string/Set_up_prompt_tone"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:textSize="18sp" />-->
+
+    <!--<Button-->
+    <!--android:layout_width="60dp"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:background="@drawable/back_button_bg"-->
+    <!--android:drawableLeft="@drawable/back_button_ioc_bg"-->
+    <!--android:drawablePadding="10dp"-->
+    <!--android:padding="10dp"-->
+    <!--android:onClick="back"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="18sp" />-->
+    <!--</RelativeLayout>-->
+
+    <ListView
+        android:id="@+id/lv_audio_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:listSelector="#00000000"></ListView>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="setting" />
+
+</LinearLayout>

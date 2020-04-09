@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        >
+    <RelativeLayout
+            android:id="@+id/setting_top_layout"
+            style="@style/default_paddding_left_right"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/device_main_bg">
+
+        <ImageView
+                android:id="@+id/iv_back"
+                style="@style/zhzj_imageview_back" />
+
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/text_size_18sp"
+                android:text="@string/hongcai_tantou_title" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/save"
+                android:background="@drawable/bg_alertbutton_none"
+                android:textSize="@dimen/text_size_18sp"
+        />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/setting_top_layout"
+        android:animateLayoutChanges="true"
+    >
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tantou_setting_name"
+    >
+        <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/hongcai_name_pic"
+                android:layout_centerVertical="true"
+                android:id="@+id/tantou_setting_name_pic"
+        />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hongcai_tantou_name"
+                android:layout_toRightOf="@id/tantou_setting_name_pic"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+        />
+
+        <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/zhzj_tjsb_dianji"
+                android:layout_marginRight="@dimen/dp_10"
+                android:id="@+id/jiantou_tantou_name_pic_one"
+        />
+        <TextView
+                android:paddingRight="@dimen/dp_10"
+                android:layout_toLeftOf="@id/jiantou_tantou_name_pic_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="名字"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/dp_16"
+                android:id="@+id/tantou_name_select_content"
+        />
+    </RelativeLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/bgColor_divier"
+    />
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tantou_quhao_setting"
+        >
+            <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/hongcai_quhao_pic"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tantou_quhao_pic"
+            />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hongcai_tantou_quhao"
+                    android:layout_toRightOf="@id/tantou_quhao_pic"
+                    android:layout_centerVertical="true"
+                    android:textSize="18sp"
+            />
+
+            <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/zhzj_tjsb_dianji"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:id="@+id/tantou_quhao_jiantou_pic"
+            />
+            <TextView
+                    android:paddingRight="@dimen/dp_10"
+                    android:layout_toLeftOf="@id/tantou_quhao_jiantou_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/dp_16"
+                    android:id="@+id/tantou_quhao_select_content"
+            />
+        </RelativeLayout>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/bgColor_divier"
+        />
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tantou_yinyue_setting"
+        >
+            <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/hongcai_music_pic"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tantou_yinyue_pic"
+            />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hongcai_yinyue_title"
+                    android:layout_toRightOf="@id/tantou_yinyue_pic"
+                    android:layout_centerVertical="true"
+                    android:textSize="18sp"
+            />
+
+            <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/zhzj_tjsb_dianji"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:id="@+id/tantou_yinyue_jiantou"
+            />
+            <TextView
+                    android:paddingRight="@dimen/dp_10"
+                    android:layout_toLeftOf="@id/tantou_yinyue_jiantou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/dp_16"
+                    android:id="@+id/music_select_content_one"
+            />
+        </RelativeLayout>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/bgColor_divier"
+        />
+
+        <!--震动-->
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+
+            <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/hongcai_zhendong_pic"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tantou_zhendong_setting_pic"
+            />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shock"
+                    android:layout_toRightOf="@id/tantou_zhendong_setting_pic"
+                    android:layout_centerVertical="true"
+                    android:textSize="18sp"
+            />
+
+            <com.smartism.znzk.view.SwitchButton.SwitchButton
+                    android:id="@+id/btn_switch_tantou_zhendong_guangan"
+                    style="@style/SwitchButtonStyleIOS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/bgColor_divier"
+        />
+
+        <!--闪灯-->
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/hongcai_shangdeng_pic"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/flash_deng_open_close_pic"
+            />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hongcai_shandengkaiguan"
+                    android:layout_toRightOf="@id/flash_deng_open_close_pic"
+                    android:layout_centerVertical="true"
+                    android:textSize="18sp"
+            />
+
+            <com.smartism.znzk.view.SwitchButton.SwitchButton
+                    android:id="@+id/btn_switch_tantou_flash_deng"
+                    style="@style/SwitchButtonStyleIOS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/bgColor_divier"
+        />
+
+        <!--连动输出-->
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+
+            <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/hongcai_liandongshuchu_pic"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tantou_liandong_jidianqi_pic"
+            />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hongcai_liandong_shuchu"
+                    android:layout_toRightOf="@id/tantou_liandong_jidianqi_pic"
+                    android:layout_centerVertical="true"
+                    android:textSize="18sp"
+            />
+
+            <com.smartism.znzk.view.SwitchButton.SwitchButton
+                    android:id="@+id/btn_switch_liandong_guangan_one"
+                    style="@style/SwitchButtonStyleIOS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/bgColor_divier"
+        />
+
+        <!--12伏输出-->
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/shierfushuchu_parent_rl"
+        >
+
+            <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/hongcai_shierfu_pic"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tantou_shierfu_pic_one"
+            />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hongcai_shierfushuchu"
+                    android:layout_toRightOf="@id/tantou_shierfu_pic_one"
+                    android:layout_centerVertical="true"
+                    android:textSize="18sp"
+            />
+
+            <com.smartism.znzk.view.SwitchButton.SwitchButton
+                    android:id="@+id/btn_switch_tantou_shierfu_guangan_one"
+                    style="@style/SwitchButtonStyleIOS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/bgColor_divier"
+        />
+
+        <!--继电器-->
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/jidianqi_parent_rl"
+        >
+
+            <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/hongcai_jidianqi_pic"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tantou_jidianqi_pic"
+            />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hongcai_jidianqi_title"
+                    android:layout_toRightOf="@id/tantou_jidianqi_pic"
+                    android:layout_centerVertical="true"
+                    android:textSize="18sp"
+            />
+
+            <com.smartism.znzk.view.SwitchButton.SwitchButton
+                    android:id="@+id/btn_switch_tantou_jidianqi_guangan_one"
+                    style="@style/SwitchButtonStyleIOS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/bgColor_divier"
+                    android:layout_below="@id/btn_switch_tantou_jidianqi_guangan_one"
+            />
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+    <ListView android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/showMusicList"
+              android:visibility="gone"
+              android:choiceMode="singleChoice"
+              android:layout_below="@id/setting_top_layout"
+              android:background="@color/white"
+    />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/inputNameParent"
+        android:layout_below="@id/setting_top_layout"
+        android:background="@color/bgColor_divier"
+        android:visibility="gone"
+    >
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/edit_tishi_content"
+                  android:layout_marginTop="30dp"
+                  android:text="@string/hongcai_input_name_tishi"
+                  android:padding="8dp"
+                  android:textSize="@dimen/text_size_16sp"
+        />
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:layout_below="@id/edit_tishi_content"
+                  android:background="@drawable/eidt_background_quhao"
+                  android:id="@+id/name_edit"
+                  android:maxLength="7"
+        />
+        <ImageView android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:background="@drawable/ic_clear_black_24dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_below="@id/edit_tishi_content"
+                   android:layout_marginTop="11dp"
+                   android:layout_marginRight="10dp"
+                   android:onClick="clearEditText"
+        />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

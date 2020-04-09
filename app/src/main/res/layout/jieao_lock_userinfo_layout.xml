@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/mediumpurple"
+            app:navigationIcon="@drawable/zhzj_welcome_device_back"
+            android:id="@+id/toolbar"
+    >
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:text="@string/jieaolihua_lock_user_info"
+           android:textSize="@dimen/sp_18"
+           android:textColor="@color/white"
+        />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/graysloae"
+    />
+    <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="10dp"
+    >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jjsuo_user_number"
+                android:textSize="18sp"
+        />
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="hello"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textSize="@dimen/text_size_18sp"
+                android:textColor="@color/mediumpurple"
+                android:id="@+id/number_tv"
+        />
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/graysloae"
+    />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+    >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jjsuo_user_lname"
+                android:textSize="18sp"
+        />
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="hello"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textSize="@dimen/text_size_18sp"
+                android:textColor="@color/mediumpurple"
+                android:id="@+id/name_tv"
+        />
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/graysloae"
+    />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+    >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_time"
+                android:textSize="18sp"
+        />
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="hello"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textSize="@dimen/text_size_18sp"
+                android:textColor="@color/mediumpurple"
+                android:id="@+id/start_time_tv"
+        />
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/graysloae"
+    />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+    >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/end_time"
+                android:textSize="18sp"
+        />
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="hello"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textSize="@dimen/text_size_18sp"
+                android:textColor="@color/mediumpurple"
+                android:id="@+id/end_time_tv"
+        />
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/graysloae"
+    />
+
+
+</LinearLayout>

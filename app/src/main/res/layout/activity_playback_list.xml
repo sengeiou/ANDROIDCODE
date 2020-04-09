@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        style="@style/default_paddding_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            style="@style/zhzj_imageview_back" />
+
+        <TextView
+            android:id="@+id/tv_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/playback" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/line_graylose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title" />
+
+    <RelativeLayout
+        android:id="@+id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ctl_top_info_bar_height"
+        android:layout_below="@+id/layout_title">
+
+        <com.smartism.znzk.widget.HeaderView
+            android:id="@+id/header_img"
+            android:layout_width="@dimen/ctl_top_info_user_icon_width_height"
+            android:layout_height="@dimen/ctl_top_info_user_icon_width_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/header_icon" />
+
+        <LinearLayout
+            android:id="@+id/contact_pro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/header_img"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/contactName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/contactNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="2222"
+                    android:textSize="@dimen/text_size_normal"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_item_height1"
+        android:layout_below="@+id/header_bar"
+        android:background="@drawable/set_laguage"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/search_one_day"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/sbc_header_text"
+            android:text="@string/one_day"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/search_three_day"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/three_day"
+            android:textColor="@color/sbc_header_text"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/search_one_month"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/sbc_header_text"
+            android:text="@string/one_month"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/search_detail"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/customize"
+            android:textColor="@color/sbc_header_text"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/record_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_bar">
+
+    </RelativeLayout>
+
+    <include layout="@layout/play_back_date_pick" />
+</RelativeLayout>

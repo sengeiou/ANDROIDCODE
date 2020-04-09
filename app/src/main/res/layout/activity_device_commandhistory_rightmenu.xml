@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:divider="@drawable/split_line_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RadioButton
+
+            android:id="@+id/pop_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rightmenu_item_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:text="@string/edit"
+            android:textColor="@color/button_choose_change"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/pop_shock"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rightmenu_item_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:text="@string/shock"
+            android:textColor="@color/button_choose_change"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/pop_voiced"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rightmenu_item_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:text="@string/voiced"
+            android:textColor="@color/button_choose_change"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/pop_silent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rightmenu_item_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:text="@string/silent"
+            android:textColor="@color/button_choose_change"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/pop_voice_and_shock"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rightmenu_item_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:text="@string/voice_and_shock"
+            android:textColor="@color/button_choose_change"
+            android:textSize="15sp" />
+        <RadioButton
+            android:id="@+id/pop_history"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rightmenu_item_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:text="@string/history"
+            android:visibility="gone"
+            android:textColor="@color/button_choose_change"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+</LinearLayout>

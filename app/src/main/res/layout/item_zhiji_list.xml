@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <FrameLayout
+        android:id="@+id/f_layout"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/device_low"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="top|start"
+            android:scaleType="fitCenter"
+            android:src="@drawable/low"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/device_power"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="bottom|start"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_power_normal"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/device_logo"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:padding="3dp"
+            android:scaleType="centerInside" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/f_layout"
+        android:orientation="vertical"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/zhuji_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxEms="8"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/zhuji_statu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="" />
+            <ImageView
+                android:id="@+id/scene_imag"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:visibility="invisible"
+                android:background="@drawable/zhzj_sl_zaijia" />
+            <TextView
+                android:id="@+id/zhuji_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginLeft="10dp"
+                android:lines="1"
+                android:text="" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/offline_imag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/offline_animlist" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/zhuji_users"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:lines="1"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/zhuji_devices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/zhuji_users"
+                android:layout_marginLeft="10dp"
+                android:lines="1"
+                android:visibility="gone"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/dlist_imag"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                android:background="@drawable/zhzj_zj_litem" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/scene_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/scene_arming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/scene_item_arming_normal" />
+
+            <ImageView
+                android:id="@+id/scene_disarming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/scene_item_disarming_normal" />
+
+            <ImageView
+                android:id="@+id/scene_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/scene_item_home_normal" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smartism.znzk.activity.device.AddZhujiBySelectMethodActivity">
+
+    <TextView
+        android:id="@+id/tip_tv"
+        android:padding="10dp"
+        android:textColor="@color/zhzj_default"
+        style="@android:style/TextAppearance"
+        android:textSize="@dimen/text_size_16sp"
+        android:text="@string/zhuji_perwang_othermethod_tip"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <com.smartism.znzk.widget.ElasticityListView
+        android:scrollbars="none"
+        android:id="@+id/pei_wangmethod_list"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tip_tv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"></com.smartism.znzk.widget.ElasticityListView>
+
+</android.support.constraint.ConstraintLayout>

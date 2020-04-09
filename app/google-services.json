@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1020409819349",
+    "firebase_url": "https://ctrsmarthost.firebaseio.com",
+    "project_id": "ctrsmarthost",
+    "storage_bucket": "ctrsmarthost.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020409819349:android:50b30d8ecb8405ba7d725c",
+        "android_client_info": {
+          "package_name": "com.smartism.ctrsmarthome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020409819349-rftcpn8716ob96nah29br7cslhcscjvr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxZIT5-Kl7vsQ_W9Sv2PflgnvbeaitC98"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020409819349-rftcpn8716ob96nah29br7cslhcscjvr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,346 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateCtrUserDeviceRelations(
+  $id: ID
+  $uid: String
+  $mac: String
+  $type: String
+  $name: String
+) {
+  onCreateCtrUserDeviceRelations(
+    id: $id
+    uid: $uid
+    mac: $mac
+    type: $type
+    name: $name
+  ) {
+    id
+    uid
+    mac
+    type
+    name
+  }
+}
+subscription OnUpdateCtrUserDeviceRelations(
+  $id: ID
+  $uid: String
+  $mac: String
+  $type: String
+  $name: String
+) {
+  onUpdateCtrUserDeviceRelations(
+    id: $id
+    uid: $uid
+    mac: $mac
+    type: $type
+    name: $name
+  ) {
+    id
+    uid
+    mac
+    type
+    name
+  }
+}
+subscription OnDeleteCtrUserDeviceRelations(
+  $id: ID
+  $uid: String
+  $mac: String
+  $type: String
+  $name: String
+) {
+  onDeleteCtrUserDeviceRelations(
+    id: $id
+    uid: $uid
+    mac: $mac
+    type: $type
+    name: $name
+  ) {
+    id
+    uid
+    mac
+    type
+    name
+  }
+}
+subscription OnCreateCtrUserDeviceShare(
+  $id: ID
+  $uid: String
+  $key: String
+  $mac: String
+  $validityTime: Int
+) {
+  onCreateCtrUserDeviceShare(
+    id: $id
+    uid: $uid
+    key: $key
+    mac: $mac
+    validityTime: $validityTime
+  ) {
+    id
+    uid
+    key
+    mac
+    validityTime
+  }
+}
+subscription OnUpdateCtrUserDeviceShare(
+  $id: ID
+  $uid: String
+  $key: String
+  $mac: String
+  $validityTime: Int
+) {
+  onUpdateCtrUserDeviceShare(
+    id: $id
+    uid: $uid
+    key: $key
+    mac: $mac
+    validityTime: $validityTime
+  ) {
+    id
+    uid
+    key
+    mac
+    validityTime
+  }
+}
+subscription OnDeleteCtrUserDeviceShare(
+  $id: ID
+  $uid: String
+  $key: String
+  $mac: String
+  $validityTime: Int
+) {
+  onDeleteCtrUserDeviceShare(
+    id: $id
+    uid: $uid
+    key: $key
+    mac: $mac
+    validityTime: $validityTime
+  ) {
+    id
+    uid
+    key
+    mac
+    validityTime
+  }
+}
+subscription OnCreateCtrAromaLiquid($id: ID, $type: String, $temperature: Int) {
+  onCreateCtrAromaLiquid(id: $id, type: $type, temperature: $temperature) {
+    id
+    type
+    temperature
+  }
+}
+subscription OnUpdateCtrAromaLiquid($id: ID, $type: String, $temperature: Int) {
+  onUpdateCtrAromaLiquid(id: $id, type: $type, temperature: $temperature) {
+    id
+    type
+    temperature
+  }
+}
+subscription OnDeleteCtrAromaLiquid($id: ID, $type: String, $temperature: Int) {
+  onDeleteCtrAromaLiquid(id: $id, type: $type, temperature: $temperature) {
+    id
+    type
+    temperature
+  }
+}
+subscription OnCreateCtrUserGroup(
+  $id: ID
+  $uid: String
+  $name: String
+  $type: String
+) {
+  onCreateCtrUserGroup(id: $id, uid: $uid, name: $name, type: $type) {
+    id
+    uid
+    name
+    type
+  }
+}
+subscription OnUpdateCtrUserGroup(
+  $id: ID
+  $uid: String
+  $name: String
+  $type: String
+) {
+  onUpdateCtrUserGroup(id: $id, uid: $uid, name: $name, type: $type) {
+    id
+    uid
+    name
+    type
+  }
+}
+subscription OnDeleteCtrUserGroup(
+  $id: ID
+  $uid: String
+  $name: String
+  $type: String
+) {
+  onDeleteCtrUserGroup(id: $id, uid: $uid, name: $name, type: $type) {
+    id
+    uid
+    name
+    type
+  }
+}
+subscription OnCreateCtrGroupDevices($id: ID, $gid: String, $mac: String) {
+  onCreateCtrGroupDevices(id: $id, gid: $gid, mac: $mac) {
+    id
+    gid
+    mac
+  }
+}
+subscription OnUpdateCtrGroupDevices($id: ID, $gid: String, $mac: String) {
+  onUpdateCtrGroupDevices(id: $id, gid: $gid, mac: $mac) {
+    id
+    gid
+    mac
+  }
+}
+subscription OnDeleteCtrGroupDevices($id: ID, $gid: String, $mac: String) {
+  onDeleteCtrGroupDevices(id: $id, gid: $gid, mac: $mac) {
+    id
+    gid
+    mac
+  }
+}
+subscription OnCreateCtrUserInfoTable(
+  $id: ID
+  $uid: String
+  $client: String
+  $snsarn: String
+  $logo: String
+) {
+  onCreateCtrUserInfoTable(
+    id: $id
+    uid: $uid
+    client: $client
+    snsarn: $snsarn
+    logo: $logo
+  ) {
+    id
+    uid
+    client
+    snsarn
+    logo
+    lang
+    time_zone
+  }
+}
+subscription OnUpdateCtrUserInfoTable(
+  $id: ID
+  $uid: String
+  $client: String
+  $snsarn: String
+  $logo: String
+) {
+  onUpdateCtrUserInfoTable(
+    id: $id
+    uid: $uid
+    client: $client
+    snsarn: $snsarn
+    logo: $logo
+  ) {
+    id
+    uid
+    client
+    snsarn
+    logo
+    lang
+    time_zone
+  }
+}
+subscription OnDeleteCtrUserInfoTable(
+  $id: ID
+  $uid: String
+  $client: String
+  $snsarn: String
+  $logo: String
+) {
+  onDeleteCtrUserInfoTable(
+    id: $id
+    uid: $uid
+    client: $client
+    snsarn: $snsarn
+    logo: $logo
+  ) {
+    id
+    uid
+    client
+    snsarn
+    logo
+    lang
+    time_zone
+  }
+}
+subscription OnCreateCtrDeviceFirmware(
+  $id: ID
+  $type: String
+  $versionCode: Int
+  $url: String
+  $domain: String
+) {
+  onCreateCtrDeviceFirmware(
+    id: $id
+    type: $type
+    versionCode: $versionCode
+    url: $url
+    domain: $domain
+  ) {
+    id
+    type
+    versionCode
+    versionName
+    url
+    domain
+    md5
+  }
+}
+subscription OnUpdateCtrDeviceFirmware(
+  $id: ID
+  $type: String
+  $versionCode: Int
+  $url: String
+  $domain: String
+) {
+  onUpdateCtrDeviceFirmware(
+    id: $id
+    type: $type
+    versionCode: $versionCode
+    url: $url
+    domain: $domain
+  ) {
+    id
+    type
+    versionCode
+    versionName
+    url
+    domain
+    md5
+  }
+}
+subscription OnDeleteCtrDeviceFirmware(
+  $id: ID
+  $type: String
+  $versionCode: Int
+  $url: String
+  $domain: String
+) {
+  onDeleteCtrDeviceFirmware(
+    id: $id
+    type: $type
+    versionCode: $versionCode
+    url: $url
+    domain: $domain
+  ) {
+    id
+    type
+    versionCode
+    versionName
+    url
+    domain
+    md5
+  }
+}

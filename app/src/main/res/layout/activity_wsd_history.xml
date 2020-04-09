@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/zhzj_imageview_back"
+            android:layout_marginLeft="17dp"
+            android:onClick="back"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/add_title_button" />
+
+
+        <ImageView
+            android:id="@+id/iv_new_chart"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@id/iv_chart"
+            android:onClick="lineChart1"
+            android:padding="10dp"
+            android:src="@drawable/button_history_linechart"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/line_graylose" />
+    <!-- *********************   设备信息  ***********************-->
+    <LinearLayout
+        android:id="@+id/ll_deviceinfo_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/zhzj_default"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/dinfo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:id="@+id/ll_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hub_background"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/device_logo"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/ll_logo"
+                android:layout_alignTop="@id/ll_logo"
+                android:layout_toRightOf="@id/ll_logo"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/history_d_name"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/d_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/history_d_where"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/d_where"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/history_d_type"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/d_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!-- *********************按钮和历史记录*********************** -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bgColor_actionsheet_cancel_nor" />
+
+    <LinearLayout
+        android:id="@+id/ll_command_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/command_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/command_keys"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@android:color/transparent"></ListView>
+    </LinearLayout>
+</LinearLayout>

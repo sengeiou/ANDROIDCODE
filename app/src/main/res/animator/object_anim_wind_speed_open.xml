@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:propertyName="pathData"
+    android:valueType="pathType"
+    android:duration="500"
+    android:valueFrom="M10,50,l65,0,a10,10,0,1,0,-1,-1
+             M10,30,l45,0,a10,10,0,1,0,-1,-1
+             M10,70,l45,0,a10,10,0,1,1,-1,1"
+    android:valueTo="M10,50,l65,0,a10,10,0,1,0,-7,-17
+             M10,30,l45,0,a10,10,0,1,0,-7,-17
+             M10,70,l45,0,a10,10,0,1,1,-7,17">
+
+</objectAnimator>

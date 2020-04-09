@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    tools:context="com.smartism.znzk.activity.device.add.ConnectActivity">
+
+
+    <RelativeLayout
+        style="@style/default_paddding_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/zhzj_imageview_back"
+            android:clickable="true" />
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/connect" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/addzhuji_top_layout"
+        android:background="@color/graysloae" />
+
+    <LinearLayout
+        android:id="@+id/ll_configure"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_connect_parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.smartism.znzk.view.MyRoundProcess
+                android:id="@+id/round_process"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:background="#00000000"
+                android:visibility="visible"
+                app:myroundColor="@color/bgColor_alert_button_press"
+                app:myroundProgressColor="@color/zhzj_default"
+                app:mytextColor="@color/zhzj_default"
+                app:mytextSize="@dimen/text_size_22sp" />
+
+            <TextView
+                android:id="@+id/tv_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:text="@string/configure_info"
+                android:textColor="@color/zhzj_default" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btn_check"
+                android:layout_width="160dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:background="@color/cornflowerblue"
+                android:text="@string/error_check"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btn_ap"
+                android:layout_width="160dp"
+                android:layout_height="20dp"
+                android:background="@color/cornflowerblue"
+                android:text="@string/error_ap"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/ll_serach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <com.smartism.znzk.view.MyRoundProcess
+                    android:id="@+id/serach_process"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="#00000000"
+                    app:myroundColor="@color/bgColor_alert_button_press"
+                    app:myroundProgressColor="@color/zhzj_default"
+                    app:mytextColor="@color/zhzj_default"
+                    app:mytextSize="@dimen/text_size_22sp" />
+
+                <TextView
+                    android:id="@+id/tv_serach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="@string/deviceslist_server_search_ing"
+                    android:textColor="@color/zhzj_default" />
+
+                <LinearLayout
+                    android:id="@+id/ll_fail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <Button
+                        android:id="@+id/btn_serach_retry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/zhzj_default_button"
+                        android:text="@string/try_again_panel"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

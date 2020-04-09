@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/activity_beijingsuo_keylist"
+        android:drawableLeft="@drawable/icon_liebiao"/>
+
+    <ImageButton
+        android:id="@+id/bj_head_add"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/icon_bj_add"
+        android:visibility="gone"/>
+
+    </RelativeLayout>
+</LinearLayout>

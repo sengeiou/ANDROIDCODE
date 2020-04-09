@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/command_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/zhzj_imageview_back"
+            android:layout_marginLeft="17dp"
+            android:onClick="back"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_name"
+            style="@style/default_paddding_left_right"
+            android:layout_width="fill_parent"
+            android:layout_height="58dp">
+
+            <TextView
+                android:id="@+id/tips_tips_show1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/activity_device_set_dname" />
+
+            <TextView
+                android:id="@+id/et_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical|right"
+                android:layout_toLeftOf="@id/temp"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:src="@drawable/right_list" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/graysloae" />
+
+        <RelativeLayout
+            style="@style/default_paddding_left_right"
+            android:layout_width="fill_parent"
+            android:layout_height="58dp">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/jjsuo_model" />
+
+
+
+            <ImageView
+                android:id="@+id/temp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:src="@drawable/right_list"
+                android:visibility="invisible" />
+            <TextView
+                android:id="@+id/tv_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/temp1"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/graysloae" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_where"
+            style="@style/default_paddding_left_right"
+            android:layout_width="fill_parent"
+            android:layout_height="58dp">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/activity_device_set_where" />
+
+
+            <ImageView
+                android:id="@+id/temp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:src="@drawable/right_list" />
+
+            <TextView
+                android:id="@+id/et_where"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/temp2"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/graysloae" />
+
+        <RelativeLayout
+            style="@style/default_paddding_left_right"
+            android:layout_width="fill_parent"
+            android:layout_height="58dp">
+
+            <TextView
+                android:id="@+id/tv_miaosu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/jjsuo_info_v" />
+
+
+
+            <ImageView
+                android:id="@+id/temp22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:src="@drawable/right_list"
+                android:visibility="invisible" />
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/temp22"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/graysloae" />
+
+        <RelativeLayout
+            style="@style/default_paddding_left_right"
+            android:layout_width="fill_parent"
+            android:layout_height="58dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/jjsuo_info_lockid" />
+
+            <TextView
+                android:id="@+id/tv_lockid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/graysloae" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_pwd_set"
+            style="@style/default_paddding_left_right"
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:layout_height="58dp">
+
+            <TextView
+                android:id="@+id/pwd_set_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/zhicheng_set_lock_pwd" />
+
+
+            <ImageView
+                android:id="@+id/pwd_set_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:src="@drawable/right_list" />
+
+            <TextView
+                android:id="@+id/pwd_set_tv_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/pwd_set_iv"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+
+
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20dip"
+            android:background="@color/graysloae" />
+
+        <!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+        <RelativeLayout
+            android:id="@+id/rl_bind_camere"
+            style="@style/default_paddding_left_right"
+            android:layout_width="fill_parent"
+            android:layout_height="58dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/jjsuo_info_camera" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:src="@drawable/right_list" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/graysloae" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_history"
+
+            style="@style/default_paddding_left_right"
+            android:layout_width="fill_parent"
+            android:layout_height="58dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/jjsuo_info_history" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:src="@drawable/right_list" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/graysloae" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_init"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/default_paddding_left_right"
+                android:layout_width="fill_parent"
+                android:layout_height="58dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/jujiangsuo_init_msg" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/right_list" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/graysloae" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/selector_btn_blue"
+        android:onClick="sure"
+        android:visibility="gone"
+        android:text="@string/register_determinebutton"
+        android:textColor="@color/selector_btn_textcolor"
+        android:textSize="18sp" />
+
+</LinearLayout>

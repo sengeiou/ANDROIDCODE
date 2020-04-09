@@ -1,0 +1,23 @@
+{
+    "ctr": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-ctrsmarthome-ctr-202046-authRole",
+            "UnauthRoleArn": "arn:aws:iam::786203740403:role/amplify-ctrsmarthome-ctr-202046-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::786203740403:role/amplify-ctrsmarthome-ctr-202046-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-ctrsmarthome-ctr-202046-deployment",
+            "UnauthRoleName": "amplify-ctrsmarthome-ctr-202046-unauthRole",
+            "StackName": "amplify-ctrsmarthome-ctr-202046",
+            "StackId": "arn:aws:cloudformation:us-east-1:786203740403:stack/amplify-ctrsmarthome-ctr-202046/6fc11710-53db-11ea-9583-0a39c55408a9",
+            "AmplifyAppId": "d2smjgghuee6t1"
+        },
+        "categories": {
+            "auth": {
+                "ctrsmarthomefacd92d1": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Facebook\",\"client_id\":\"123123123\",\"client_secret\":\"123123456\"}]"
+                }
+            },
+            "notifications": {}
+        }
+    }
+}

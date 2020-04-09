@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/securtity_top_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="55dp"-->
+    <!--android:background="@drawable/solid_dark_holo" >-->
+
+    <!--<Button-->
+    <!--android:id="@+id/securtity_title"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:background="@drawable/back_button_bg"-->
+    <!--android:drawableLeft="@drawable/back_button_ioc_bg"-->
+    <!--android:drawablePadding="10dp"-->
+    <!--android:onClick="back"-->
+    <!--android:padding="10dp"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="18sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/title_edit_securtity"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:clickable="true"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/edit"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="18sp" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/securtity_add_save"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:background="@drawable/back_button_bg"-->
+    <!--android:drawablePadding="10dp"-->
+    <!--android:onClick="save"-->
+    <!--android:padding="10dp"-->
+    <!--android:text="@string/edit"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="18sp" />-->
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/setting_top_layout"
+        style="@style/default_paddding_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/zhzj_imageview_back"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/title_edit_securtity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:text="@string/edit" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="save"
+            android:src="@drawable/zhzj_twenty_four_hour_standoff_set_up" />
+
+        <!--<Button-->
+        <!--android:id="@+id/securtity_add_save"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:background="@drawable/back_button_bg"-->
+        <!--android:onClick="save"-->
+        <!--android:text="@string/edit"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="18sp" />-->
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/graysloae"/>
+
+    <ListView
+        android:id="@+id/securtity_list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/add_edit_layout"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"></ListView>
+
+    <!--<Button-->
+    <!--android:id="@+id/securtity_save"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_margin="16dp"-->
+    <!--android:background="@drawable/selector_btn_blue"-->
+    <!--android:text="@string/register_determinebutton"-->
+    <!--android:textColor="@color/selector_btn_textcolor"-->
+    <!--android:textSize="18sp" />-->
+
+    <Button
+        android:id="@+id/securtity_save"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/zhzj_default_button"
+        android:onClick="logout"
+        android:text="@string/register_determinebutton"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

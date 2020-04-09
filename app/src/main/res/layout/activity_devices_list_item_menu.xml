@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+                android:id="@+id/hongcai_alarm_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_button_bg"
+                android:visibility="gone"
+        >
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentTop="true"
+                    android:background="#dcdcdc" />
+
+            <TextView
+                    android:id="@+id/hongcai_alarm_setting_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/hongcai_alarm_setting_title"
+                    android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/hongcai_naozhong_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_button_bg"
+                android:visibility="gone"
+        >
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentTop="true"
+                    android:background="#dcdcdc" />
+
+            <TextView
+                    android:id="@+id/hongcai_naozhong_setting_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/hongcai_naozhong_title"
+                    android:textStyle="bold" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+                android:id="@+id/tantou_chufa_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_button_bg"
+                android:visibility="gone"
+        >
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentTop="true"
+                    android:background="#dcdcdc" />
+
+            <TextView
+                    android:id="@+id/tanchouchufa_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/hongcai_tantouchufa"
+                    android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_bind_camera"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_button_bg"
+            android:visibility="gone"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="#dcdcdc" />
+
+            <TextView
+                android:id="@+id/txt_bind_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/jjsuo_info_camera"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_accept_auto_strongshow"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_button_bg">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="#dcdcdc" />
+
+            <TextView
+                android:id="@+id/strongshow_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/activity_scene_item_outside"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/storongshow_img"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/strongshow_text"
+                android:src="@drawable/gou" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_accept_autoshow"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_button_bg"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="#dcdcdc" />
+
+            <TextView
+                android:id="@+id/autoshow_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/activity_scene_item_inhome"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/autoshow_img"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/autoshow_text"
+                android:src="@drawable/gou" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_acceptnotshow"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_button_bg"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="#dcdcdc" />
+
+            <TextView
+                android:id="@+id/notshow_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/devices_list_menu_dialog_jsbts"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/notshow_img"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/notshow_text"
+                android:src="@drawable/gou" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_notaccept"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_button_bg"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="#dcdcdc" />
+
+            <TextView
+                android:id="@+id/notaccept_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/activity_scene_item_home"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/notaccept_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/notaccept_text"
+                android:src="@drawable/gou" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_setgsm"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_button_bg">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="#dcdcdc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/devices_list_menu_dialog_gsmsetting"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_setscall"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_button_bg">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="#dcdcdc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/devices_list_menu_dialog_scallsetting"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_setdevice"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_button_bg">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="#dcdcdc" />
+
+            <TextView
+                android:id="@+id/txt_setdevice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/devices_list_menu_dialog_devicesetting"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_checkversion"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_button_bg">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="#dcdcdc" />
+
+            <TextView
+                android:id="@+id/checkversion_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/devices_list_menu_dialog_checkversion"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_deldevice"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_button_bg">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="#dcdcdc" />
+
+            <TextView
+                android:id="@+id/txt_deldevice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/devices_list_menu_dialog_devicedel"
+                android:textColor="@color/red"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

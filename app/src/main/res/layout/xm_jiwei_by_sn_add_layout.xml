@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        android:background="@drawable/xm_jiwei_xiongmai_bg"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:app="http://schemas.android.com/apk/res-auto"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+>
+    <TextView
+            android:id="@+id/brand_title"
+            android:textSize="@dimen/text_size_18sp"
+            style="@android:style/TextAppearance"
+            android:text="@string/hwzf_brand_xinghao"
+            android:padding="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+            android:id="@+id/xiongmai_tv"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/other_tv"
+            app:layout_constraintTop_toBottomOf="@id/brand_title"
+            app:layout_constraintVertical_bias="0"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatImageView
+                app:srcCompat="@drawable/ic_jiwei_svg_pic"
+                android:layout_width="65dp"
+                android:layout_height="65dp"/>
+        <TextView
+                android:textSize="@dimen/text_size_12sp"
+                style="@android:style/TextAppearance"
+                android:text="@string/xmdss_xiongmai_name"
+                android:gravity="center"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+            app:layout_constraintLeft_toRightOf="@id/xiongmai_tv"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/brand_title"
+            app:layout_constraintVertical_bias="0"
+            android:id="@+id/other_tv"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatImageView
+                app:srcCompat="@drawable/ic_xiongmai_svg_pic"
+                android:layout_width="65dp"
+                android:layout_height="65dp"/>
+
+        <TextView
+                android:textSize="@dimen/text_size_12sp"
+                style="@android:style/TextAppearance"
+                android:text="@string/xmdss_jiwei_name"
+                android:gravity="center"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

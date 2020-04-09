@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context="com.smartism.znzk.activity.device.SingleProductDetailActivity">
+
+    <View
+        android:id="@+id/wave_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintVertical_bias="1"
+        android:background="@color/zhzj_default"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    <ImageView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/wave_view"
+        android:id="@+id/logo_img"
+        android:layout_width="@dimen/dp_65"
+        android:layout_height="@dimen/dp_65"
+
+        />
+
+    <LinearLayout
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wave_view"
+        android:id="@+id/ll_zhuji_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:orientation="vertical">
+
+        <TextView
+            style="@android:style/TextAppearance"
+            android:textSize="@dimen/text_size_16sp"
+            android:id="@+id/tv_zhuji_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/zhzj_tjsb_dianji"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="@string/zhzj_zhuji_detail" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bgColor_divier" />
+    </LinearLayout>
+
+    <LinearLayout
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_zhuji_info"
+        android:id="@+id/layout_zhuji_owner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:orientation="vertical">
+
+        <TextView
+            style="@android:style/TextAppearance"
+            android:textSize="@dimen/text_size_16sp"
+            android:id="@+id/tv_zhuji_owenr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/zhzj_tjsb_dianji"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="@string/activity_zhujiowner_title" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bgColor_divier" />
+    </LinearLayout>
+
+    <LinearLayout
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_zhuji_owner"
+        android:id="@+id/ll_users"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:orientation="vertical">
+
+        <TextView
+            style="@android:style/TextAppearance"
+            android:textSize="@dimen/text_size_16sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/zhzj_tjsb_dianji"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="@string/activity_weight_mian_user_list" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bgColor_divier" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

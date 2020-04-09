@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/device_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/device_item_click_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp" >
+
+    <FrameLayout
+        android:id="@+id/f_layout"
+        android:layout_width="55dip"
+        android:layout_height="55dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/device_logo"
+            android:layout_width="55dip"
+            android:layout_height="55dip"
+            android:layout_gravity="center"
+            android:padding="3dp"
+            android:scaleType="centerInside" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/r_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/checked"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/submenu" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/r_layout"
+        android:layout_toRightOf="@id/f_layout" >
+
+        <LinearLayout
+            android:id="@+id/n_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/device_name"
+                style="@style/Devices_list_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/device_type_left"
+                style="@style/Devices_list_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="("
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/device_type"
+                style="@style/Devices_list_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/device_type_right"
+                style="@style/Devices_list_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=")"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/comm_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/n_layout"
+            android:layout_marginTop="3dp" >
+
+            <ImageView
+                android:id="@+id/wendu_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/wendu"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/last_command"
+                style="@style/Devices_list_item_command"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/wendu_img"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/wendu_shidu_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/last_command"
+                android:src="@drawable/shidu"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/last_command_shidu"
+                style="@style/Devices_list_item_command"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/wendu_shidu_img"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

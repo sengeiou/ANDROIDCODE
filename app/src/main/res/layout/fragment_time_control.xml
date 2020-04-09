@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/setting_device_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ctl_setting_bar_height"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/fragment_time_device"/>
+
+        <TextView
+            android:id="@+id/deviec_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/time"
+            android:text="2017-11-22 12:22" />
+
+        <ImageView
+            android:id="@+id/buzzer_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/zhzj_arrow"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/setting_urban_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_setting_urban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/contact_item_margin"
+            android:text="@string/fragment_time_timezone"
+           />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_setting_urban"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_utc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="UTC" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+                <com.smartism.znzk.widget.wheel.WheelView
+                    android:id="@+id/w_urban"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/bt_set_timezone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/default_zhzj_button"
+                    android:text="@string/sure"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/bgColor_actionsheet_cancel_nor" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/sure"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/dp_40"
+            android:background="@drawable/default_zhzj_button"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/sure"
+            android:textColor="@color/selector_btn_textcolor"
+            android:layout_alignParentBottom="true"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</LinearLayout>

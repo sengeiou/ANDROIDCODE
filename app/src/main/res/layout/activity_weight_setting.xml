@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jdm="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_bg_normal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/setting_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/solid_dark_holo">
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_button_bg"
+            android:drawableLeft="@drawable/back_button_ioc_bg"
+            android:drawablePadding="10dp"
+            android:onClick="back"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_setting_title"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/setting_top_layout"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="58dp"
+            android:background="@drawable/common_list_item_bg"
+            android:onClick="setWeightShowType"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_weight_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/weight_unit"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/activity_setting_tip_weight_unit" />
+
+            <TextView
+                android:id="@+id/tips_show_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_weight_unit" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:src="@drawable/right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/graysloae" />
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="58dp"
+            android:background="@drawable/common_list_item_bg"
+            android:onClick="setWeightGoal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_weight_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/weight_goal"
+                android:layout_alignParentLeft="true"
+                android:drawablePadding="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/activity_weight_goal" />
+
+            <TextView
+                android:id="@+id/tips_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_weight_goal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:src="@drawable/right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/graysloae" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="58dp"
+            android:background="@drawable/common_list_item_bg"
+            android:onClick="setDeviceSortShowType"
+            android:visibility="gone"
+            android:padding="5dp"
+          >
+
+            <TextView
+                android:id="@+id/tv_weight_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@drawable/weight_notice"
+                android:drawablePadding="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/activity_weight_notice" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:src="@drawable/right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/graysloae"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

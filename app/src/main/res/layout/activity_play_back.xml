@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.camera.CameraPlayBackActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color" />
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/solid_dark_holo"
+        android:orientation="vertical" >
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_button_bg"
+            android:drawableLeft="@drawable/back_button_ioc_bg"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tv_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/playback"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_p2pview"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/layout_title">
+
+        <com.p2p.core.P2PView
+            android:id="@+id/pview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.smartism.znzk.widget.HeaderView
+            android:id="@+id/header_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:src="@drawable/header_icon" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:id="@+id/btn_palyback"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_action_playback_pressed" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

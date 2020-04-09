@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/item_addgroup_device_logo"
+        android:layout_width="55dip"
+        android:layout_height="55dip"
+        android:padding="3dp"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/item_addgroup_device_name"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"/>
+
+    <CheckBox
+        android:id="@+id/item_addgroup_device_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"/>
+</LinearLayout>

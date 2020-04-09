@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    >
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/p2p_call_top_bar_height"
+        android:background="@drawable/background"
+        >
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/chat"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/p2p_call_bottom_bar_height"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <RelativeLayout
+            android:id="@+id/layout_accept"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            >
+            <RelativeLayout
+                android:id="@+id/accept"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/tv_ok"
+                android:layout_marginLeft="@dimen/p2p_call_btn_left_right_margin"
+                android:layout_marginRight="@dimen/p2p_call_btn_left_right_margin"
+                android:layout_marginTop="@dimen/p2p_call_btn_top_bottom_margin"
+                android:layout_marginBottom="@dimen/p2p_call_btn_top_bottom_margin"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/white"
+                    android:text="@string/accept"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/reject"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/tv_ok"
+                android:layout_marginLeft="@dimen/p2p_call_btn_left_right_margin"
+                android:layout_marginRight="@dimen/p2p_call_btn_left_right_margin"
+                android:layout_marginTop="@dimen/p2p_call_btn_top_bottom_margin"
+                android:layout_marginBottom="@dimen/p2p_call_btn_top_bottom_margin"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/reject_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/antiquewhite"
+                    android:text="@string/reject"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/point_black"
+        android:layout_below="@+id/layout_top"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="center"
+
+            >
+            <com.smartism.znzk.widget.HeaderView
+                android:id="@+id/header_img"
+                android:layout_width="@dimen/p2p_call_header_width_height"
+                android:layout_height="@dimen/p2p_call_header_width_height"
+                android:scaleType="fitCenter"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/header_icon"
+                />
+
+            <TextView
+                android:id="@+id/top_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/white"
+                android:layout_below="@+id/header_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/activity_zhujiowner_please_select"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            >
+            <ImageView
+                android:id="@+id/call_anim"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/p2p_call_anim_height"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="center"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

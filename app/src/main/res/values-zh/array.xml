@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="record_type">
+        <item>全部录像</item>
+        <item>报警录像</item>
+        <item>侦测录像</item>
+        <item>普通录像</item>
+        <item>手动录像</item>
+        <item>遥控录像</item>
+    </string-array>
+
+    <string-array name="pic_type">
+        <item>全部</item>
+        <item>报警</item>
+        <item>侦测</item>
+        <item>普通</item>
+        <item>遥控</item>
+        <item>关键</item>
+        <item>延时拍</item>
+        <item>连拍</item>
+    </string-array>
+</resources>

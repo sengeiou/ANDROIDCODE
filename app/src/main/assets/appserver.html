@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+    <title>Service</title>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    }
+
+    body {
+        font-size: 12px;
+        font-family: "微软雅黑";
+    }
+
+    a {
+        color: #7f7f7f;
+        text-decoration: none;
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 30px 0px;
+        overflow-y: auto;
+    }
+
+    .container .box {
+        width: 50%;
+        height: auto;
+        margin-bottom: 30px;
+        float: left;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .container .box img {
+        display: block;
+        width: 40%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .container .box span {
+        font-size: 1.16em;
+        display: block;
+        margin-top: 5px;
+    }
+
+    .container .server {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        background: #f0f0f0;
+        border-top: 1px solid #dedede;
+        border-bottom: 1px solid #dedede;
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+
+    .container .server img {
+        width: 30px;
+        height: 30px;
+        margin: 10px 20px;
+        float: left;
+    }
+
+    .container .server span {
+        font-size: 18px;
+    }
+
+    .container .text {
+        padding: 0 10%;
+        overflow: hidden;
+    }
+
+    .container .text span {
+        color: #1dc58a;
+        font-size: 14px;
+    }
+
+    .container .text p {
+        color: #666666;
+        line-height: 1.6em;
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    .modal-mask {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #000000;
+        opacity: 0.5;
+        overflow: hidden;
+        z-index: 9000;
+        color: #fff;
+        display: none;
+    }
+
+    .modal-dialog {
+        width: 80%;
+        margin: 0 10%;
+        height: auto;
+        position: fixed;
+        top: 35%;
+        left: 0;
+        border-radius: 4px;
+        overflow: hidden;
+        z-index: 9999;
+        display: none;
+    }
+
+    .modal-dialog .modal-item {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        background: #ffffff;
+        border-bottom: 1px solid #dedede;
+        overflow: hidden;
+    }
+
+    .modal-dialog .modal-item a {
+        display: block;
+        color: #333333;
+    }
+
+    .modal-dialog .modal-item img {
+        width: 40px;
+        height: 40px;
+        margin: 5px 20px 5px 40px;
+        float: left;
+    }
+
+    .modal-dialog .modal-item span {
+        font-size: 16px;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="box">
+        <a href="jdmnew://file:///android_asset/question.html"><img
+                src="images/icon_changjianwenti.png" alt=""/><span>Question</span></a>
+    </div>
+    <div class="box">
+        <a href="jdmnew://file:///android_asset/feedback.html"><img
+                src="images/icon_feedback.png" alt=""/><span>Feedback</span></a>
+    </div>
+</body>
+</html>

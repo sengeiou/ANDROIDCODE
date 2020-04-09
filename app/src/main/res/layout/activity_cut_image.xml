@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+	    <AbsoluteLayout 
+	        android:id="@+id/layout_top"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_above="@+id/layout_bottom"
+	        android:background="@color/black"
+	        >
+	        
+	        <ImageView 
+	            android:id="@+id/temp"
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:scaleType="fitCenter"
+	            />
+	        
+	        <ImageView 
+	            android:id="@+id/layout_cut"
+	            android:layout_width="20dp"
+	            android:layout_height="20dp"
+	            android:background="@drawable/cut_bg"
+	            >
+	            
+	        </ImageView>
+	    </AbsoluteLayout>
+	   <RelativeLayout
+	        android:id="@+id/layout_bottom"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/cut_img_bottom_height"
+	        android:background="@drawable/title_bar"
+	        android:layout_alignParentBottom="true"
+	         >
+	        <ImageView 
+	            android:id="@+id/header_img"
+	            android:layout_width="@dimen/cut_img_header_img_width_height"
+	            android:layout_height="@dimen/cut_img_header_img_width_height"
+	            android:scaleType="fitCenter"
+	            android:layout_centerInParent="true"
+	            />
+	        
+			<ImageView 
+	            android:id="@+id/back_btn"
+	            android:layout_width="match_parent"
+	            android:layout_height="@dimen/cut_img_button_height"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:layout_toLeftOf="@+id/header_img"
+	            android:textColor="@color/white"
+	            android:src="@drawable/back_new"
+	            android:padding="@dimen/tab_btn_padding"
+	            android:scaleType="center"
+	            android:layout_margin="10dp"
+	            />
+	        
+	        
+	        <TextView 
+	            android:id="@+id/save"
+	            android:layout_width="match_parent"
+	            android:layout_height="@dimen/cut_img_button_height"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:gravity="center"
+	            android:layout_toRightOf="@+id/header_img"
+	            android:text="@string/save"
+	            android:layout_margin="10dp"
+	            android:textColor="@color/white"
+	            />
+	            
+	    </RelativeLayout>
+</RelativeLayout>

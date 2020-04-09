@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/pop_layout2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/group_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/activity_group_rightmenu_add"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/group_dele"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/group_add"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/activity_group_rightmenu_del"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/group_dele"
+            android:background="@color/graysloae" />
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_above="@id/group_dele"-->
+        <!--android:layout_alignLeft="@id/group_dele"-->
+        <!--android:layout_alignRight="@id/group_dele"-->
+        <!--android:background="@color/graysloae" />-->
+    </RelativeLayout>
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="right"-->
+    <!--android:background="@drawable/zhzj_twenty_four_hour_standoff_bg"-->
+    <!--android:orientation="vertical"-->
+    <!--android:visibility="gone"-->
+    <!--android:padding="5dp">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/group_add"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="8dp"-->
+    <!--android:text="@string/activity_group_rightmenu_add"-->
+    <!--android:textSize="15sp" />-->
+    <!---->
+    <!--<TextView-->
+    <!--android:id="@+id/group_dele"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="8dp"-->
+    <!--android:text="@string/activity_group_rightmenu_del"-->
+    <!--android:textSize="15sp" />-->
+
+    <!--<View-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:visibility="gone"-->
+    <!--android:background="@color/graysloae"/>-->
+
+    <!---->
+    <!--</LinearLayout>-->
+
+    <!--<RadioGroup-->
+    <!--android:divider="@drawable/split_line_radiogroup"-->
+    <!--android:layout_gravity="right"-->
+    <!--android:background="@drawable/zhzj_twenty_four_hour_standoff_bg"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical" >-->
+
+    <!--<RadioButton-->
+
+    <!--android:id="@+id/group_add"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:button="@null"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:padding="8dp"-->
+    <!--android:text="@string/activity_group_rightmenu_add"-->
+    <!--android:textSize="15sp" />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/group_dele"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:button="@null"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:padding="8dp"-->
+    <!--android:text="@string/activity_group_rightmenu_del"-->
+    <!--android:textSize="15sp" />-->
+    <!--</RadioGroup>-->
+
+</RelativeLayout>

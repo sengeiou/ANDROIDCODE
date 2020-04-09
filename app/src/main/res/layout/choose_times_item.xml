@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="@dimen/main_item_height"
+    android:paddingRight="@dimen/selec_scene_marginleft"
+    android:paddingLeft="@dimen/selec_scene_marginleft"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/times_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        style="@style/textStyle"
+        android:layout_marginRight="@dimen/selec_scene_icon_margin"
+        android:layout_toLeftOf="@+id/times_choose"/>
+
+    <RadioButton
+        android:id="@+id/times_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:button="@null"
+        android:drawableLeft="@drawable/zhzj_radiobutton_select"/>
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_item_height"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/selec_scene_marginleft"
+    android:paddingRight="@dimen/selec_scene_marginleft">
+
+    <TextView
+        android:id="@+id/times_name"
+        style="@style/textStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/selec_scene_icon_margin"
+        android:lines="1"
+        android:layout_toLeftOf="@+id/times_keys"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/times_keys"
+        style="@style/textStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/icon"
+        android:layout_marginRight="@dimen/selec_scene_icon_margin"
+        android:lines="1"
+        android:textColor="@color/zhzj_default"
+        android:gravity="center_vertical" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/zhzj_tjcj_dianji" />
+</RelativeLayout>

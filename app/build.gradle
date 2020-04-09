@@ -1,0 +1,294 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.amazonaws.appsync'
+apply plugin: 'com.google.gms.google-services'
+//新版设置见：https://github.com/MobClub/ShareSDK-for-Android/blob/master/SampleFresh/MobSDK.gradle
+
+//apply plugin: 'com.jakewharton.butterknife'
+
+//实现apk版本号自动增长，每一个"版本"从73开始，每打一次包加1
+def automaticGrowthVersionCode() {
+    def versionFile = file('versionCode.properties')
+    def assembleFile = file('assembles.properties')
+    if (versionFile.canRead() && assembleFile.canRead()) {
+        ArrayList<String> assembles = new ArrayList<>();//保存我们支持的打包命令
+        def Properties versionPro = new Properties()
+        def Properties assemblePro = new Properties()
+        versionPro.load(new FileInputStream(versionFile))
+        assemblePro.load(new FileInputStream(assembleFile))
+        //初始化assembles
+        if (assemblePro.size() > 0) {
+            assembles.addAll(assemblePro.values())
+        }
+        //获取执行的task命令，
+        def runTask = gradle.startParameter.taskNames
+        //判断是不是打包命令，如果是index将不为-1
+        def index = assembles.indexOf(runTask.toString())
+        def versionCode = versionPro['versionCode'].toInteger() //默认的版本号，我们调试应用用的版本号
+        if (index != -1) {
+            //保存的使用了一条打包命令
+            versionPro['taskName'] = runTask.toString()
+            versionCode = versionPro[assembles.get(index)].toInteger()  //获取到该“版本”的版本号
+            versionCode = ++versionCode
+            versionPro[assembles.get(index)] = versionCode.toString()
+            versionPro.store(versionFile.newWriter(), null)  //保存
+        }
+
+        return versionCode
+
+    } else {
+        throw new GradleException("Gradle无法读取versionCode.properties或assembles.properties文件")
+    }
+}
+
+
+repositories
+        { flatDir { dirs 'aars' } }
+
+android {
+    def currentVersion = automaticGrowthVersionCode()
+    compileSdkVersion 28
+    useLibrary 'org.apache.http.legacy' //代码中有用org.apache.http，后续代码建议去掉此库使用
+    testOptions.unitTests.includeAndroidResources = true
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/INDEX.LIST'
+        exclude 'META-INF/io.netty.versions.properties'
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    //解决dex分包出现的问题
+    dexOptions {
+        preDexLibraries false //dexOptions应用中包含引用的lirary工程,需要将预编译设置为false
+        javaMaxHeapSize "4g"
+    }
+    defaultConfig {
+
+        vectorDrawables.useSupportLibrary = true
+        packagingOptions {
+            exclude 'META-INF/LICENSE.txt'
+        }
+        multiDexEnabled true //是否支持dex分割
+        applicationId "com.smartism.znzk"
+        minSdkVersion 23
+        targetSdkVersion 28
+        //版本号默认是73
+        versionCode currentVersion
+        //上一次更新64位和收费 从 3.0开始
+        versionName "3.1.0"
+        flavorDimensions "versionCode"//统一 flavor dimension 维度
+        ndk {
+            //选择要添加的对应cpu类型的.so库（不需要的删除即可）。
+//            abiFilters 'armeabi','armeabi-v7a','arm64-v8a', 'x86','x86_64', 'mips'
+            abiFilters 'armeabi', 'arm64-v8a'
+        }
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+
+//        manifestPlaceholders = [
+//                JPUSH_PKGNAME: applicationId,
+//                JPUSH_APPKEY : "f5cb60babba6d0f39bd7782a", //JPush上注册的包名对应的appkey（*换成你的*）
+//                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+//        ]
+    }
+    signingConfigs {//签名的配置
+        signing_ctr {
+            storeFile file('keys/ctr.jks')
+            storePassword 'SmartCTR2020'
+            keyAlias 'ctr'
+            keyPassword 'SmartCTR@)@)'
+        }
+    }
+    buildTypes { //构建不同的版本 debug为内置构建版本
+        debug {
+            minifyEnabled false
+            matchingFallbacks = ['release']
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        ctr {
+            minifyEnabled false  //开启混淆
+            debuggable true    //可以用于调试，发布版本时需要修改为false
+            matchingFallbacks = ['release']
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "driver_${variant.productFlavors[0].name}_v${variant.versionName}_${releaseTime()}.apk"
+        }
+    }
+    productFlavors {//多用户渠道打包，命令行打包：gradlew assembleRelease
+        flavors_ctr {
+            applicationId 'com.smartism.ctrsmarthome' //包名
+            manifestPlaceholders.put("UMENG_APPKEY_VALUE", '58119320f5ade44e9f002f6c')
+            manifestPlaceholders.put("JPUSH_PKGNAME", 'com.smartism.ctrsmarthome')
+            manifestPlaceholders.put("MIPUSH_PERMISSION_VALUE", 'com.smartism.ctrsmarthome.permission.MIPUSH_RECEIVE')
+            manifestPlaceholders.put("JIPUSH_PERMISSION_VALUE", 'com.smartism.ctrsmarthome.permission.JPUSH_MESSAGE')
+            manifestPlaceholders.put("JPUSH_APPKEY_VALUE", 'f5cb60babba6d0f39bd7782a')
+            manifestPlaceholders.put("HUAWEI_PUSH_APPID", '100140349')
+            manifestPlaceholders.put("BAIDU_LBS_API_KEY", 'zMEbh80FfYGWyCGE5dztrQMBo1jKRzzs')
+            signingConfig signingConfigs.signing_ctr            //应用哪个签名文件
+        }
+    }
+    dependencies {
+        implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+        def aws_version = "2.16.+"
+        def aws_appsync_version = "3.0.+"
+        //Base SDK
+        implementation "com.amazonaws:aws-android-sdk-core:$aws_version"
+        implementation "com.amazonaws:aws-android-sdk-iot:$aws_version"
+        implementation "com.amazonaws:aws-android-sdk-mobile-client:$aws_version"
+        //AWS IoT
+//        implementation ('com.amazonaws:aws-android-sdk-iot:2.15.+@aar') { transitive = true }
+        //AWS Mobile Client
+//        implementation ('com.amazonaws:aws-android-sdk-mobile-client:2.15.+@aar') { transitive = true }
+        //API Gateway
+//        implementation "com.amazonaws:aws-android-sdk-apigateway-core:$aws_version"
+        //api gateway - GraphGL
+        implementation "com.amazonaws:aws-android-sdk-appsync:$aws_appsync_version"
+        //AWS Cognito User Pools SignIn Provider
+//        implementation ("com.amazonaws:aws-android-sdk-auth-userpools:$aws_version@aar") { transitive = true }
+        //Amazon Cognito Auth
+        implementation("com.amazonaws:aws-android-sdk-cognitoauth:$aws_version@aar") {
+            transitive = true
+        }
+        //Amazon Cognito Auth google
+        implementation("com.amazonaws:aws-android-sdk-auth-google:$aws_version@aar") {
+            transitive = true
+        }
+        //Amazon S3
+        implementation "com.amazonaws:aws-android-sdk-s3:$aws_version"
+        //Amazon SNS
+        implementation "com.amazonaws:aws-android-sdk-sns:$aws_version"
+        implementation "com.amazonaws:aws-android-sdk-sqs:$aws_version"
+        //fcm notification
+        // Overrides an auth dependency to ensure correct behavior
+//        implementation 'com.google.android.gms:play-services-auth:17.0.0'
+//
+//        implementation 'com.google.firebase:firebase-core:17.2.3'
+//        implementation 'com.google.firebase:firebase-messaging:20.1.3'
+        // Overrides an auth dependency to ensure correct behavior
+        implementation 'com.google.android.gms:play-services-auth:15.0.1'
+
+        implementation 'com.google.firebase:firebase-core:16.0.1'
+        implementation 'com.google.firebase:firebase-messaging:17.3.0'
+
+        implementation "com.amazonaws:aws-android-sdk-pinpoint:$aws_version"
+//        implementation ("com.amazonaws:aws-android-sdk-auth-ui:$aws_version@aar") {
+//            transitive = true
+//        }
+
+        implementation ('com.amazonaws:aws-android-sdk-auth-ui:2.16.+@aar') { transitive = true }
+        //Amazon Cognito Identity Provider
+//        implementation ("com.amazonaws:aws-android-sdk-cognitoidentityprovider:$aws_version")
+        //AWS Lambda
+//        implementation ("com.amazonaws:aws-android-sdk-lambda:$aws_version")
+
+        //seekbar自定义控件 地址：https://github.com/warkiz/TickSeekBar
+        implementation 'com.github.warkiz.tickseekbar:tickseekbar:0.1.4'
+        //带侧滑功能的ListView,控件地址：https://github.com/baoyongzhang/SwipeMenuListView
+        implementation 'com.baoyz.swipemenulistview:library:1.3.0'
+        //时间选择和联动控件 地址：https://github.com/jaaksi/pickerview
+        implementation 'org.jaaksi:pickerview:3.0.0'
+        //toastutil工具
+        implementation 'com.hjq:toast:8.0'
+        //butterknife,最新版本androidx和Android support库不能共存，所以用8的版本 地址：https://github.com/JakeWharton/butterknife
+        implementation 'com.jakewharton:butterknife:8.8.0'
+        annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.0'
+        // AgentWeb对Webview的封装。地址：https://github.com/Justson/AgentWeb
+        implementation 'com.just.agentweb:agentweb:4.1.3' // (必选)
+        implementation 'com.just.agentweb:filechooser:4.1.3'// (可选)
+        implementation 'com.download.library:Downloader:4.1.3'// (可选)
+        //implementation 'me.weyye.hipermission:library:1.0.7' //6.0以上的动态权限获取三方库 源码拷贝方式集成。有一个崩溃问题无法解决
+        //https://github.com/evant/JobSchedulerCompat 定时任务
+        implementation 'me.tatarka.support:jobscheduler:0.1.1'
+        implementation 'com.android.support:multidex:1.0.3'
+        //桌面角标  https://github.com/leolin310148/ShortcutBadger
+        implementation 'me.leolin:ShortcutBadger:1.1.22@aar'
+        implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+//        implementation (name:'libxmfunsdk-release', ext: 'aar')
+        testImplementation 'junit:junit:4.12'
+        testImplementation 'org.mockito:mockito-core:2.+'
+        testImplementation 'org.robolectric:robolectric:4.1'
+        testImplementation 'org.robolectric:shadows-support-v4:3.3.2'
+        // testImplementation 'org.robolectric:shadows-multidex:4.0.1'
+        //    implementation 'com.android.support:support-core-ui:27.1.1'
+        //    implementation files('libs/mpandroidchartlibrary-2-1-6.jar')
+        //    implementation 'com.google.android.gms:play-services-appindexing:8.4.0'
+        implementation("com.squareup.okhttp3:okhttp:3.6.0")
+        implementation 'com.zhy:okhttputils:2.6.2'  //https://github.com/hongyangAndroid/okhttputils
+        implementation 'com.android.support:appcompat-v7:28.+'
+        implementation 'com.android.support:design:28.+'
+        implementation 'com.android.support:support-v4:28.+'
+        implementation 'com.android.support:cardview-v7:28.+'
+        //    implementation 'com.p2p.core:p2p-core:0.5.8'//下载不下来，手动下载放到aars下面，通过本地导入,直接到GwellDemo中拿
+        //    2019年09月25日
+        implementation(name: 'p2p-core-release', ext: 'aar')
+        implementation(name: 'pano-release', ext: 'aar')
+        //com.p2p.core的依赖,得重新加进来
+        api 'com.libhttp:libhttp:v0.5.0'
+        //    implementation(name: 'HMS-SDK-2.4.0.300', ext: 'aar')
+//        implementation 'com.google.firebase:firebase-messaging:15.0.2'
+//        implementation 'com.google.firebase:firebase-core:15.0.2'
+        implementation 'me.drakeet.multitype:multitype:3.4.2'
+        implementation 'com.youth.banner:banner:1.4.9'
+        implementation 'com.github.bumptech.glide:glide:3.7.0'
+        implementation 'com.google.code.gson:gson:2.8.5'
+        implementation 'com.koushikdutta.async:androidasync:2.1.8'
+        implementation 'com.koushikdutta.ion:ion:2.1.8'
+        // 极光推送。会导致google play被下架，改用手动集成的方式，支持google play的版本
+        //集成文档：https://docs.jiguang.cn/jpush/client/Android/android_guide/#_5
+//        implementation 'cn.jiguang.sdk:jpush:3.3.4'
+//        implementation 'cn.jiguang.sdk:jcore:2.1.0'
+        //包括jcorexxx.jar jpushxxx.jar 和 libjcore212.so
+        //声波配网，由于增加了64位库，直接从GitHub上clone下来，并拷贝到项目下,地址：https://github.com/jwkj/SoundWaveSender
+        implementation project(':soundwave')
+        implementation 'com.yanzhenjie:recyclerview-swipe:1.1.3'
+        //https://github.com/yanzhenjie/SwipeRecyclerView
+        implementation 'com.google.zxing:core:3.3.3'
+        implementation 'cn.bingoogolapple:bga-qrcodecore:1.1.9@aar'
+        implementation 'cn.bingoogolapple:bga-zxing:1.1.9@aar'
+        implementation 'cn.bingoogolapple:bga-photopicker:1.2.3@aar'
+        implementation 'cn.bingoogolapple:bga-adapter:1.2.0@aar'
+
+        //大括号里面表示不需要信用卡支付 --paypal支付 现在采用web端支付，没用到原生端
+//        implementation  ('com.paypal.sdk:paypal-android-sdk:2.16.0'){ exclude group: 'io.card'}
+        //如果需要信用卡支付则去掉大括号,如下
+        implementation 'com.paypal.sdk:paypal-android-sdk:2.16.0'
+
+        //友盟统计
+        implementation 'com.umeng.umsdk:analytics:8.0.0'
+        implementation 'com.umeng.umsdk:common:2.0.0'
+//        implementation  'com.umeng.umsdk:utdid:1.1.5.3' 冲突 alipaySdk中已经包含
+
+        //braintree支付，聚合器还有类似的包括paypal和stripe
+//        implementation 'com.braintreepayments.api:drop-in:4.3.0'
+
+        //https://github.com/JakeWharton/butterknife @BindView
+        //    implementation 'com.jakewharton:butterknife:8.8.1'
+        //    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+        //浏览器中查看sqlite数据库和sp文件内容，用法浏览器输入 http://手机ip地址:8080 即可（注:手机与电脑需在同一个局域网）
+        debugImplementation 'com.amitshekhar.android:debug-db:1.0.6'
+
+    }
+}
+
+def releaseTime() {
+    return new Date().format("MM-dd-HH-mm", TimeZone.getTimeZone("GMT+8"))
+}

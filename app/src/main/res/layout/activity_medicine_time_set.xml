@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_55"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            style="@style/zhzj_imageview_back"
+            android:layout_marginLeft="17dp"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/devices_list_menu_dialog_med" />
+
+
+        <ImageView
+            android:id="@+id/yx_add"
+            style="@style/zhzj_imageview_save" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_top">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_top"
+            android:layout_margin="@dimen/dp_20"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/start_time" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/end_time" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/graysloae" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="@string/smart_medc_add_time_morn" />
+
+                <TextView
+                    android:id="@+id/et_start_o"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="@string/start_time"
+                    android:singleLine="true" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="一" />
+
+                <TextView
+                    android:id="@+id/et_after_o"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="@string/end_time"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/graysloae" />
+
+            <!-- 中-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="@string/smart_medc_add_time_mid" />
+
+                <TextView
+                    android:id="@+id/et_start_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="@string/start_time"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="一" />
+
+                <TextView
+                    android:id="@+id/et_after_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="@string/end_time"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/graysloae" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="@string/smart_medc_add_time_noon" />
+
+                <TextView
+                    android:id="@+id/et_start_th"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="@string/start_time"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="一" />
+
+                <TextView
+                    android:id="@+id/et_after_th"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="@string/end_time"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/graysloae" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_define"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_40"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dp_30"
+                android:background="@drawable/zhzj_default_button"
+                android:text="@string/activity_device_addgsm_tip"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

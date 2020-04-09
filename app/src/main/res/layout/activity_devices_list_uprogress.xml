@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jdm="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:padding="20dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/progress_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.smartism.znzk.view.ProgressCycleView 
+        android:id="@+id/zj_update_probar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        jdm:max="100"
+        jdm:jdmprogress="0"/>
+    
+    <!-- 
+    <ProgressBar
+        android:id="@+id/zj_update_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/progress_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/progress_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+ -->
+</LinearLayout>

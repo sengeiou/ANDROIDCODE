@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_button_bg_yk"
+    android:padding="10dp"
+    android:id="@+id/rl_device_item"
+    >
+
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/yaokan_ctrl_d_air" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="空调"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</RelativeLayout>

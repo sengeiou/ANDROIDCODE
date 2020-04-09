@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_platoon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ybq_chart_bg"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7">
+
+        <RelativeLayout
+            android:id="@+id/id_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:onClick="back"
+                android:src="@drawable/zhzj_welcome_device_back" />
+
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_month"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:background="@drawable/ybq_chart_btn_date"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:text="月" />-->
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text="@string/ybq_chart_peopele"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_title"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_day"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ybq_chart_btn_date"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/fragment_time_day"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_week"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ybq_chart_btn_date"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/week"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_month"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ybq_chart_btn_date"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/fragment_time_moth"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tab"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/id_top"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:tabSelectedTextColor="@color/white"
+                app:tabIndicatorColor="@color/white"
+                app:tabTextColor="#cccccc"></android.support.design.widget.TabLayout>
+
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chart1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_tab"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tv_jz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ybq_chart_btn"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:text="@string/ybq_chart_jiaozheng"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp_6"
+       >
+
+        <ImageView
+            android:id="@+id/iv_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/zhzj_welcome_device_total" />
+
+        <TextView
+            style="@style/ybq_chart_text"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="@string/ybq_chart_total" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="@color/ybq_text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                style="@style/ybq_chart_text"
+                android:text="@string/ybq_chart_unit"
+                android:textColor="#B2000000" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_6"
+            android:src="@drawable/zhzj_welcome_device_peak" />
+
+        <TextView
+            style="@style/ybq_chart_text"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="@string/ybq_chart_day_high" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_high_date"
+                style="@style/ybq_chart_text"
+                android:text="8" />
+
+            <TextView
+                android:id="@+id/tv_unit"
+                style="@style/ybq_chart_text"
+                android:text="@string/hour"
+                android:textColor="#B2000000" />
+
+            <TextView
+                android:id="@+id/tv_high_number"
+                style="@style/ybq_chart_text"
+                android:layout_marginLeft="2dp"
+                android:text="100" />
+
+            <TextView
+                style="@style/ybq_chart_text"
+                android:text="@string/ybq_chart_unit"
+                android:textColor="#B2000000" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_day_avg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+          >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_6"
+                android:src="@drawable/zhzj_welcome_device_daily_average_flow" />
+
+            <TextView
+                android:id="@+id/tv_rl"
+                style="@style/ybq_chart_text"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center"
+                android:text="@string/ybq_chart_day_avg" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_avg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="70"
+                    android:textColor="@color/ybq_text_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    style="@style/ybq_chart_text"
+                    android:text="@string/ybq_chart_unit"
+                    android:textColor="#B2000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_6"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/ybq_chart_notice"
+            android:textColor="#282828"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

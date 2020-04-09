@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/about_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/solid_dark_holo" >
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_button_bg"
+            android:drawableLeft="@drawable/back_button_ioc_bg"
+            android:drawablePadding="10dp"
+            android:onClick="back"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="透传协议指令显示"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/deve_accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_top_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="开始接受并显示收到的指令" />
+
+    <TextView
+        android:id="@+id/deve_command_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deve_accept"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="这里显示收到的指令信息"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/deve_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="发送上面输入框的指令给主机" />
+
+    <EditText
+        android:id="@+id/deve_command_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/deve_send"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:ems="10" />
+
+</RelativeLayout>

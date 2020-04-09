@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btn_setdevice"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_button_bg_graylose"
+            android:gravity="center"
+            android:text="@string/zss_item_edit"
+            android:textColor="@color/zhzj_default" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dcdcdc" />
+
+        <LinearLayout
+            android:id="@+id/ll_permission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btn_setperssion"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_button_bg_graylose"
+                android:gravity="center"
+                android:text="@string/activity_beijingsuo_reqkeyauth"
+                android:textColor="@color/zhzj_default" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dcdcdc" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_deldevice"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_button_bg_graylose"
+            android:gravity="center"
+            android:text="@string/zss_item_del"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+</RelativeLayout>

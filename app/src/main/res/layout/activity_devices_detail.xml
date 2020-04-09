@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_55"
+        android:background="@color/device_main_bg"
+        android:paddingLeft="17dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/zhzj_imageview_back"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/deviceslist_sever_now" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:id="@+id/iv_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/zhzj_history" />
+            <ImageView
+                android:id="@+id/iv_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:layout_toLeftOf="@id/iv_history"
+                android:src="@drawable/zhzj_host_share"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/graysloae" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/wangduoduo_devider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_6"
+                android:background="@color/graysloae" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_zhuji_info"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_zhuji_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/zhzj_tjsb_dianji"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="@string/zhzj_zhuji_detail" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bgColor_divier" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_zhuji_owner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_zhuji_owenr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/zhzj_tjsb_dianji"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="@string/activity_zhujiowner_title" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bgColor_divier" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_wifiymq_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/zhzj_tjsb_dianji"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="@string/deviceinfo_activity_wifiymq_password_setting" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bgColor_divier" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_sence"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/zhzj_tjsb_dianji"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="@string/zhzj_main_scence_mana" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bgColor_divier" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_alarm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:visibility="gone"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:id="@+id/tv_alarm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/zhzj_tjsb_dianji"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="@string/activity_device_setgsm_phone_mana" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bgColor_divier" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_notice_center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/zhzj_tjsb_dianji"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="@string/activity_setting_tip_notice" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bgColor_divier" />
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_camera"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/zhzj_tjsb_dianji"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="@string/activity_setting_camera" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bgColor_divier" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_security"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/zhzj_tjsb_dianji"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="@string/activity_setting_security" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bgColor_divier" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_disarming"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/zhzj_tjsb_dianji"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="@string/activity_setting_disarming" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bgColor_divier" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_check_version"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:text="@string/devices_list_menu_dialog_checkversion" />
+
+                    <TextView
+                        android:id="@+id/tv_version"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bgColor_divier" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_setting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/zhzj_tjsb_dianji"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="@string/activity_setting_title" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bgColor_divier" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_users"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/zhzj_tjsb_dianji"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="@string/activity_weight_mian_user_list" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bgColor_divier" />
+            </LinearLayout>
+
+
+            <!--主机报警时长-->
+            <LinearLayout
+                android:id="@+id/ll_alarm_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/rl_alarm_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv_zhuji_alarm_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:text="@string/zhzj_alarm_time" />
+
+                    <TextView
+                        android:id="@+id/tv_alarm_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/tv_zhuji_alarm_title" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="8dp"
+                        android:src="@drawable/zhzj_tjsb_dianji" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bgColor_divier" />
+            </LinearLayout>
+
+
+            <!--主机历史记录-->
+            <LinearLayout
+                android:id="@+id/ll_his"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/zhzj_tjsb_dianji"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="@string/history" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bgColor_divier" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/graysloae"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:text="@string/Whether_receive_host_online_notification" />
+
+
+                <com.smartism.znzk.view.SwitchButton.SwitchButton
+                    android:id="@+id/btn_toogle_online_status"
+                    style="@style/SwitchButtonStyleIOS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/graysloae"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:text="@string/Whether_receive_host_offline_notification" />
+
+
+                <com.smartism.znzk.view.SwitchButton.SwitchButton
+                    android:id="@+id/btn_toogle_offline_status"
+                    style="@style/SwitchButtonStyleIOS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl_smoke_device_offline_tip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:text="@string/smoke_offline_tip_name" />
+
+
+                <com.smartism.znzk.view.SwitchButton.SwitchButton
+                    android:id="@+id/smoke_offline_tip_switchbtn"
+                    style="@style/SwitchButtonStyleIOS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/graysloae"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_lv"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+            <View
+                android:id="@+id/dv_view_top"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_8"
+                android:background="@color/graysloae" />
+
+            <ListView
+                android:id="@+id/devices_listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@drawable/deviceslist_divider"
+                android:dividerHeight="1px"
+                android:headerDividersEnabled="false"
+                android:listSelector="@android:color/transparent" />
+
+            <View
+                android:id="@+id/dv_view"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/graysloae"
+                 />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

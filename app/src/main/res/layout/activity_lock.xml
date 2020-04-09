@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/lock_tip"
+        android:textColor="@color/zhzj_default"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/error_count_left_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#ff0000" />
+
+    <com.smartism.znzk.activity.view.LockPatternView
+        android:id="@+id/lock_pattern"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <!--     屏蔽找回密码功能 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:clickable="true"
+        android:onClick="resetPassWord"
+        android:text="忘记密码"
+        android:textColor="@color/zhzj_default"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:clickable="true"
+        android:onClick="cancle"
+        android:text="@string/cancel"
+        android:textColor="@color/zhzj_default"
+        android:visibility="gone" />
+</RelativeLayout>

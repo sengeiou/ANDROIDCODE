@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/addscene_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/solid_dark_holo"
+        android:padding="3dp" >
+
+        <Button
+            android:id="@+id/addscene_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="back"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/addscene_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="addScene"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sense_name"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_editscene_name" />
+
+        <EditText
+            android:layout_gravity="center_vertical"
+            android:id="@+id/addscene_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@null"
+            android:hint="@string/activity_editscene_name_hit"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/scene_edit_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+       >
+
+        <RelativeLayout
+            android:id="@+id/addscene_time_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/addscene_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_editscene_time" />
+
+            <TextView
+                android:id="@+id/addscene_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/addscene_time_text"
+                android:textColor="@color/gray" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/right" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dip"
+                android:layout_below="@+id/addscene_time_text"
+                android:layout_marginTop="15dp"
+                android:background="@color/graysloae" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/addscene_cycle_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/addscene_cycle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_editscene_cycle" />
+
+            <TextView
+                android:id="@+id/addscene_cycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp"
+                android:layout_toLeftOf="@+id/iv_imag"
+                android:layout_toRightOf="@+id/addscene_cycle_text"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_imag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/right" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:layout_below="@+id/addscene_cycle_layout"
+            android:layout_marginTop="15dp"
+            android:background="@color/graysloae" />
+
+        <RelativeLayout
+            android:id="@+id/addscene_trigger_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/addscene_trigger_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_editscene_trigger" />
+
+            <TextView
+                android:id="@+id/addscene_trigger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/addscene_trigger_text"
+                android:textColor="@color/gray" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/right" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dip"
+                android:layout_below="@+id/addscene_trigger_text"
+                android:layout_marginTop="15dp"
+                android:background="@color/graysloae" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/addscene_controls_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/addscene_controls_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_editscene_control" />
+
+            <TextView
+                android:id="@+id/addscene_controls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/addscene_controls_text"
+                android:textColor="@color/gray" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/right" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dip"
+                android:layout_below="@+id/addscene_controls_text"
+                android:layout_marginTop="15dp"
+                android:background="@color/graysloae" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_trigger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/activity_device_trigger" />
+
+                <com.smartism.znzk.view.MyListView
+                    android:id="@+id/lv_operation_trigger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:divider="@null" >
+                </com.smartism.znzk.view.MyListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_control"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/activity_device_control" />
+
+                <com.smartism.znzk.view.MyListView
+                    android:id="@+id/lv_operation_equipment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:divider="@null" >
+                </com.smartism.znzk.view.MyListView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

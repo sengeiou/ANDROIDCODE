@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ListView
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:id="@+id/list_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#ffffff"
+        >
+    </ListView>
+    <RelativeLayout
+        android:id="@+id/layout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/back_btn_bg_pressed"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/text"
+            android:indeterminateDrawable="@anim/progress_white"
+            android:indeterminateDuration="560000" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin_actionsheet_left_right"
+            android:text="@string/loading"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_normal" />
+    </RelativeLayout>
+    <!--
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_record"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
+         <ProgressBar
+                    android:id="@+id/progressBar_loading"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="@dimen/inner_item_progress_width_height"
+                    android:layout_height="@dimen/inner_item_progress_width_height"
+                    android:indeterminateDrawable="@anim/progress_white"
+                    android:indeterminateDuration="560000"
+                    android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more_record"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/gray"
+           android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+     -->
+</RelativeLayout>

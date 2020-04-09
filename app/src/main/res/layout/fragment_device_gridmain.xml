@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_device_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <!--广告view-->
+    <LinearLayout
+        android:id="@+id/ll_notice"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/rl_title"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:background="@color/dimgray"
+            android:src="@drawable/icon_trumpet" />
+
+        <com.smartism.znzk.view.TextViewAutoVerticalScroll
+            android:id="@+id/textview_auto_roll"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/iv_notice"
+            android:background="@color/dimgray"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_notice">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.smartism.znzk.view.GridViewWithHeaderAndFooter
+                android:id="@+id/dv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:background="@null"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@drawable/deviceslist_divider"
+                android:dividerHeight="1px"
+                android:gravity="center_horizontal"
+                android:headerDividersEnabled="false"
+                android:horizontalSpacing="8dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:verticalSpacing="8dp" />
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/dv" />
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

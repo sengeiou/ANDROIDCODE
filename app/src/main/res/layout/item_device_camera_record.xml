@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_push_result_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+
+    <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_record_shot"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="12dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_icon_video_svg_final" />
+
+
+    <TextView
+        android:id="@+id/tv_record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_record_shot"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/gray"
+        android:textSize="18sp"
+        />
+
+</RelativeLayout>

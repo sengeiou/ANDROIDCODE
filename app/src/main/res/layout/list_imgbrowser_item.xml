@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/unbind_phone_btn_width"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    >
+    
+    <ImageView 
+        android:layout_margin="1dp"
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/back_new"
+        />
+    
+        
+</RelativeLayout>

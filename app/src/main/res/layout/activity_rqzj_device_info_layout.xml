@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.device.RqzjDeviceInfoActivity"
+        >
+
+    <View
+            android:id="@+id/bg_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/zhzj_default"
+            app:layout_constraintHeight_percent="0.25"
+    />
+
+
+        <LinearLayout
+                app:layout_constraintVertical_bias="0.35"
+                app:layout_constraintHorizontal_bias="0.35"
+                android:layout_marginRight="10dp"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintRight_toLeftOf="@id/info_ll"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/bg_view"
+                android:id="@+id/ll_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hub_background"
+                android:gravity="center">
+
+            <ImageView
+                    android:id="@+id/device_logo"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:scaleType="fitXY" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+                app:layout_constraintVertical_bias="0.35"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/ll_logo"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/bg_view"
+                android:id="@+id/info_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/history_d_name"
+                        android:textColor="@color/white" />
+
+                <TextView
+                        android:maxEms="16"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:id="@+id/d_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/history_d_where"
+                        android:textColor="@color/white" />
+
+                <TextView
+                        android:id="@+id/d_where"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/history_d_type"
+                        android:textColor="@color/white" />
+
+                <TextView
+                        android:id="@+id/d_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+    <android.support.constraint.Barrier
+            app:constraint_referenced_ids="ll_logo,info_ll"
+            app:barrierDirection="bottom"
+            android:id="@+id/logo_info_barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <android.support.constraint.Group
+            app:constraint_referenced_ids="jidianti_tv,switch_toggle"
+            android:visibility="gone"
+            android:id="@+id/rq_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:visibility="gone"
+            android:id="@+id/jidianti_tv"
+            android:text="@string/hongcai_jidianqi_title"
+            app:showText="false"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/ll_logo"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            style="@style/TextAppearance.AppCompat"
+            app:layout_constraintTop_toBottomOf="@id/logo_info_barrier"
+    />
+
+    <com.smartism.znzk.view.SwitchButton.SwitchButton
+            android:visibility="gone"
+            app:layout_constraintLeft_toRightOf="@id/jidianti_tv"
+            app:layout_constraintTop_toBottomOf="@id/logo_info_barrier"
+            android:id="@+id/switch_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SwitchButtonStyleIOS"
+    />
+
+    <android.support.constraint.Barrier
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="switch_toggle,jidianti_tv"
+            app:barrierDirection="bottom"
+            android:id="@+id/switch_jidian_barrier"
+    />
+    <TextView
+            android:visibility="gone"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/ll_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rqzj_nongdu"
+            app:layout_constraintTop_toBottomOf="@id/switch_jidian_barrier"
+            app:layout_constraintBottom_toBottomOf="@id/bg_view"
+            android:id="@+id/ranqi_tv"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            style="@style/TextAppearance.AppCompat"
+    />
+    <LinearLayout
+        android:id="@+id/wifirqbjq_parent"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/ll_logo"
+        app:layout_constraintTop_toBottomOf="@id/logo_info_barrier"
+        app:layout_constraintBottom_toBottomOf="@id/bg_view"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/text_size_14sp"
+            android:text="@string/rqzj_nongdu"
+            android:id="@+id/wifirqbjq_gas_tv"
+            style="@android:style/TextAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="@dimen/text_size_14sp"
+            android:text="26℃"
+            android:id="@+id/wifirqbjq_temp_tv"
+            style="@android:style/TextAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <com.smartism.znzk.widget.ElasticityListView
+            app:layout_constraintTop_toBottomOf="@id/bg_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/command_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="1"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@android:color/transparent"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,193 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateCtrUserDeviceRelations(
+  $input: CreateCtrUserDeviceRelationsInput!
+) {
+  createCtrUserDeviceRelations(input: $input) {
+    id
+    uid
+    mac
+    type
+    name
+  }
+}
+mutation UpdateCtrUserDeviceRelations(
+  $input: UpdateCtrUserDeviceRelationsInput!
+) {
+  updateCtrUserDeviceRelations(input: $input) {
+    id
+    uid
+    mac
+    type
+    name
+  }
+}
+mutation DeleteCtrUserDeviceRelations(
+  $input: DeleteCtrUserDeviceRelationsInput!
+) {
+  deleteCtrUserDeviceRelations(input: $input) {
+    id
+    uid
+    mac
+    type
+    name
+  }
+}
+mutation CreateCtrUserDeviceShare($input: CreateCtrUserDeviceShareInput!) {
+  createCtrUserDeviceShare(input: $input) {
+    id
+    uid
+    key
+    mac
+    validityTime
+  }
+}
+mutation UpdateCtrUserDeviceShare($input: UpdateCtrUserDeviceShareInput!) {
+  updateCtrUserDeviceShare(input: $input) {
+    id
+    uid
+    key
+    mac
+    validityTime
+  }
+}
+mutation DeleteCtrUserDeviceShare($input: DeleteCtrUserDeviceShareInput!) {
+  deleteCtrUserDeviceShare(input: $input) {
+    id
+    uid
+    key
+    mac
+    validityTime
+  }
+}
+mutation CreateCtrAromaLiquid($input: CreateCtrAromaLiquidInput!) {
+  createCtrAromaLiquid(input: $input) {
+    id
+    type
+    temperature
+  }
+}
+mutation UpdateCtrAromaLiquid($input: UpdateCtrAromaLiquidInput!) {
+  updateCtrAromaLiquid(input: $input) {
+    id
+    type
+    temperature
+  }
+}
+mutation DeleteCtrAromaLiquid($input: DeleteCtrAromaLiquidInput!) {
+  deleteCtrAromaLiquid(input: $input) {
+    id
+    type
+    temperature
+  }
+}
+mutation CreateCtrUserGroup($input: CreateCtrUserGroupInput!) {
+  createCtrUserGroup(input: $input) {
+    id
+    uid
+    name
+    type
+  }
+}
+mutation UpdateCtrUserGroup($input: UpdateCtrUserGroupInput!) {
+  updateCtrUserGroup(input: $input) {
+    id
+    uid
+    name
+    type
+  }
+}
+mutation DeleteCtrUserGroup($input: DeleteCtrUserGroupInput!) {
+  deleteCtrUserGroup(input: $input) {
+    id
+    uid
+    name
+    type
+  }
+}
+mutation CreateCtrGroupDevices($input: [CreateCtrGroupDevicesInput]!) {
+  createCtrGroupDevices(input: $input) {
+    id
+    gid
+    mac
+  }
+}
+mutation UpdateCtrGroupDevices($input: UpdateCtrGroupDevicesInput!) {
+  updateCtrGroupDevices(input: $input) {
+    id
+    gid
+    mac
+  }
+}
+mutation DeleteCtrGroupDevices($input: DeleteCtrGroupDevicesInput!) {
+  deleteCtrGroupDevices(input: $input) {
+    id
+    gid
+    mac
+  }
+}
+mutation CreateCtrUserInfoTable($input: CreateCtrUserInfoTableInput!) {
+  createCtrUserInfoTable(input: $input) {
+    id
+    uid
+    client
+    snsarn
+    logo
+    lang
+    time_zone
+  }
+}
+mutation UpdateCtrUserInfoTable($input: UpdateCtrUserInfoTableInput!) {
+  updateCtrUserInfoTable(input: $input) {
+    id
+    uid
+    client
+    snsarn
+    logo
+    lang
+    time_zone
+  }
+}
+mutation DeleteCtrUserInfoTable($input: DeleteCtrUserInfoTableInput!) {
+  deleteCtrUserInfoTable(input: $input) {
+    id
+    uid
+    client
+    snsarn
+    logo
+    lang
+    time_zone
+  }
+}
+mutation CreateCtrDeviceFirmware($input: CreateCtrDeviceFirmwareInput!) {
+  createCtrDeviceFirmware(input: $input) {
+    id
+    type
+    versionCode
+    versionName
+    url
+    domain
+    md5
+  }
+}
+mutation UpdateCtrDeviceFirmware($input: UpdateCtrDeviceFirmwareInput!) {
+  updateCtrDeviceFirmware(input: $input) {
+    id
+    type
+    versionCode
+    versionName
+    url
+    domain
+    md5
+  }
+}
+mutation DeleteCtrDeviceFirmware($input: DeleteCtrDeviceFirmwareInput!) {
+  deleteCtrDeviceFirmware(input: $input) {
+    id
+    type
+    versionCode
+    versionName
+    url
+    domain
+    md5
+  }
+}

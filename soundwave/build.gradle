@@ -1,0 +1,208 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+//        zhzj {
+//            minifyEnabled false
+//            debuggable true
+//            matchingFallbacks = ['release']
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//        chuangan {
+//            minifyEnabled true
+//            matchingFallbacks = ['release']
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//        zhilide {
+//            minifyEnabled false
+//            debuggable true
+//            matchingFallbacks = ['release']
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//        qyjunhong {
+//            minifyEnabled true
+//            matchingFallbacks = ['release']
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//        szjiajiaan {
+//            minifyEnabled true
+//            debuggable false
+//            matchingFallbacks = ['release']
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//        aierfude {
+//            minifyEnabled true
+//            debuggable false
+//            matchingFallbacks = ['release']
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//        anbabaoquan {
+//            minifyEnabled false
+//            debuggable true
+//            matchingFallbacks = ['release']
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//        uctech {
+//            minifyEnabled true
+//            matchingFallbacks = ['release']
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//        dviot {
+//            minifyEnabled true
+//            matchingFallbacks = ['release']
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//
+//        hzyczn {
+//            minifyEnabled true
+//            debuggable false
+//            matchingFallbacks = ['release']
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//
+//        htzn {
+//            minifyEnabled true
+//            matchingFallbacks = ['release']
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//
+//        wofea {
+//            minifyEnabled true
+//            matchingFallbacks = ['release']
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//
+//        hongtai {
+//            minifyEnabled true
+//            debuggable false
+//            matchingFallbacks = ['release']
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//
+//        zhicheng {
+//            minifyEnabled true
+//            debuggable false
+//            matchingFallbacks = ['release']
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//        uhome {
+//            minifyEnabled true
+//            debuggable false
+//            matchingFallbacks = ['release']
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//        wangduoduo {
+//            minifyEnabled true
+//            debuggable false
+//            matchingFallbacks = ['release']
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//        hongcai {
+//            minifyEnabled true
+//            debuggable false
+//            matchingFallbacks = ['release']
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//        jieao {
+//            minifyEnabled true
+//            debuggable false
+//            matchingFallbacks = ['release']
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//
+//        ditaixing {
+//            minifyEnabled true
+//            debuggable false
+//            matchingFallbacks = ['release']
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//
+//        runlong {
+//            minifyEnabled false
+//            debuggable true
+//            matchingFallbacks = ['release']
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//
+//        huali {
+//            minifyEnabled true
+//            debuggable false
+//            matchingFallbacks = ['release']
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//
+//        yixunge{
+//            minifyEnabled true
+//            debuggable false
+//            matchingFallbacks = ['release']
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//
+//        mds{
+//            minifyEnabled true
+//            debuggable false
+//            matchingFallbacks = ['release']
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //udp发送器（也可以接收的哦）
+    api 'com.jwkj:udpsender:v2.0.1'
+    api files('libs/EMTMFSDK.jar')
+}
+
+// 指定编码
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+// 打包源码
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+
+task javadoc(type: Javadoc) {
+    failOnError false
+    source = android.sourceSets.main.java.sourceFiles
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+    classpath += configurations.compile
+}
+
+// 制作文档(Javadoc)
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    archives sourcesJar
+    archives javadocJar
+}

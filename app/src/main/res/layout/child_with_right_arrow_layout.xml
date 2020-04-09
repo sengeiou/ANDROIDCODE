@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+>
+            <TextView
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:textSize="@dimen/text_size_18sp"
+                    style="@android:style/TextAppearance"
+                    android:padding="10dp"
+                    android:id="@+id/tv_call_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="第一组" />
+
+            <ImageView
+                    app:layout_constraintVertical_bias= "0.5"
+                    android:layout_marginRight = "5dp"
+                    app:layout_constraintBottom_toTopOf="@id/first_dividing_line"
+                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:id="@+id/call_mode_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/zhzj_tjsb_dianji" />
+
+            <TextView
+                    app:layout_constraintVertical_bias= "0.5"
+                    style="@android:style/TextAppearance"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintBottom_toTopOf="@id/first_dividing_line"
+                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/call_mode_img"
+                    android:textSize="16sp"
+                    android:textColor="@color/gray"
+                    android:id="@+id/display_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+            />
+    <android.support.constraint.Barrier
+            android:id="@+id/tv_switch_andr_btnrarrier"
+            app:constraint_referenced_ids="tv_call_mode,call_mode_img,display_tv"
+            app:barrierDirection="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    <TextView
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/text_size_12sp"
+            style="@android:style/TextAppearance"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_switch_andr_btnrarrier"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/first_dividing_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/device_main_bg" />
+
+
+</android.support.constraint.ConstraintLayout>

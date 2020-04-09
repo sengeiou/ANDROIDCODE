@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pop_layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/pop_addzhuji"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rightmenu_item_bg"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/actionbar_add_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/activity_devices_list_rightmenu_addzhuji"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_adddevice"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rightmenu_item_bg"
+                android:orientation="horizontal"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/actionbar_add_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/activity_devices_list_rightmenu_addnew"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_adddgroup"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rightmenu_item_bg"
+                android:orientation="horizontal"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/actionbar_add_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/activity_devices_list_rightmenu_addgroup"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_addy"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rightmenu_item_bg"
+                android:orientation="horizontal"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/actionbar_addfactory_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:singleLine="false"
+                    android:text="@string/activity_devices_list_rightmenu_addy"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_addyx"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rightmenu_item_bg"
+                android:orientation="horizontal"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/actionbar_addfactory_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/activity_devices_list_rightmenu_addyx"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_addt"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rightmenu_item_bg"
+                android:orientation="horizontal"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/actionbar_addfactory_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/activity_devices_list_rightmenu_addt"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_showss"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rightmenu_item_bg"
+                android:orientation="horizontal"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ofm_qrcode_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/activity_devices_list_rightmenu_sys"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <!-- 零时分享10分钟 -->
+
+        <LinearLayout
+            android:id="@+id/pop_showss_temp"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rightmenu_item_bg"
+                android:orientation="horizontal"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ofm_qrcode_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/activity_devices_list_rightmenu_sys_temp"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_addfromfactory"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rightmenu_item_bg"
+                android:orientation="horizontal"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/actionbar_addfactory_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/activity_devices_list_rightmenu_factory"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_devetc"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rightmenu_item_bg"
+                android:orientation="horizontal"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/actionbar_addfactory_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/activity_devices_list_rightmenu_devetc"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_camera"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rightmenu_item_bg"
+                android:orientation="horizontal"
+                android:padding="8dp" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/actionbar_addfactory_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/activity_camera_add_main"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_vcamera"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rightmenu_item_bg"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/actionbar_addfactory_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="@string/activity_vcamera_add_main"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

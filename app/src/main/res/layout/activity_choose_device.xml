@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choose_device"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.smartism.znzk.activity.scene.ChooseDeviceActivity">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        style="@style/default_paddding_left_right"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            style="@style/zhzj_imageview_back"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/title_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_slectscene_title_deviec"
+           />
+
+        <ImageView
+            android:id="@+id/right_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:src="@drawable/right_menu" />
+    </RelativeLayout>
+    <include layout="@layout/line_graylose" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_device"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/sure"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/selec_scene_marginleft"
+        android:background="@drawable/default_zhzj_button"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/sure"
+        android:textColor="@color/selector_btn_textcolor"
+        android:textSize="18sp" />
+</LinearLayout>

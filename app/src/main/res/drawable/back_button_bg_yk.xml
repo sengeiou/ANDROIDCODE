@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- 按钮被按下后的背景 -->
+	<!--<item android:state_pressed="true" android:drawable="@color/orange">-->
+		<!--<shape >-->
+			<!--<corners android:radius="20dp"/>-->
+		<!--</shape>-->
+	<!--</item>-->
+	
+	<!-- 一般状态下的背景 -->
+	<item >
+		<shape>
+			<!--定义圆角-->
+			<corners android:radius="8dp" />
+			<!--内部填充色-->
+			<solid android:color="@color/yk_main_bg" />
+		</shape>
+	</item>
+</selector>

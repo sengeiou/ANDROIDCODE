@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:padding="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_20"
+    android:layout_marginLeft="@dimen/dp_20"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_user"
+        android:textSize="@dimen/dp_19"
+        android:padding="@dimen/dp_4"
+        android:textColor="@color/black"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/please_enter_admin_pwd_and_user_name"
+        android:textSize="@dimen/dp_15"
+        android:padding="@dimen/dp_8"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/hongtai_shape"
+        android:id="@+id/editText_parent"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/admin_password_input"
+            android:maxLength="10"
+            android:inputType="numberPassword"
+            android:id="@+id/admin_pwd_edit"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/new_user_password"
+            android:maxLength="10"
+            android:inputType="numberPassword"
+            android:id="@+id/new_pwd_edit"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/new_user_name"
+            android:id="@+id/user_name_edit"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/graysloae"
+        android:layout_marginTop="@dimen/dp_10"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/permission_cancel"
+            android:textColor="@color/green"
+            android:gravity="center"
+            android:padding="10dp"
+            android:id="@+id/hongtai_cancel_user"
+            />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/graysloae"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/permission_ensure"
+            android:layout_weight="1"
+            android:textColor="@color/green"
+            android:padding="10dp"
+            android:gravity="center"
+            android:id="@+id/hongtai_confirm_user"
+            />
+    </LinearLayout>
+
+</LinearLayout>

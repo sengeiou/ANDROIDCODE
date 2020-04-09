@@ -1,0 +1,468 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:background="@drawable/main_bg"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/layout_alarm_switch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ctl_setting_bar_height"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_receive_alarm_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/alarm_switch" />
+
+                <ImageView
+                    android:id="@+id/img_receive_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/zhzj_switch_off"
+                    android:contentDescription="@string/imagedes" 
+                    android:visibility="gone"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBar_receive_alarm"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="@dimen/inner_item_progress_width_height"
+                    android:layout_height="@dimen/inner_item_progress_width_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:indeterminateDrawable="@anim/progress_white"
+                    android:indeterminateDuration="560000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/add_alarm_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ctl_setting_bar_height"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:visibility="gone"
+                 >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/binding" />
+
+                <TextView
+                    android:id="@+id/alarmId_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/account_icon"
+                    android:text="@string/unbound"
+                    android:textSize="@dimen/text_size_small"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_alarmId"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="@dimen/inner_item_progress_width_height"
+                    android:layout_height="@dimen/inner_item_progress_width_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:indeterminateDrawable="@anim/progress_white"
+                    android:indeterminateDuration="560000"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/icon_add_alarm_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_add_item"
+                    android:contentDescription="@string/imagedes"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/zhzj_arrow"
+                    android:contentDescription="@string/imagedes" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/change_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ctl_setting_bar_height"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/email_text_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/alarm_email"/>
+
+                <TextView
+                    android:id="@+id/email_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/email_icon"
+                    android:layout_toRightOf="@+id/email_text_left"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="@string/unbound"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_size_small"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_email"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="@dimen/inner_item_progress_width_height"
+                    android:layout_height="@dimen/inner_item_progress_width_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/email_icon"
+                    android:indeterminateDrawable="@anim/progress_white"
+                    android:indeterminateDuration="560000" />
+
+                <ImageView
+                    android:id="@+id/email_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/zhzj_arrow"
+                    android:contentDescription="@string/imagedes" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/change_motion"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ctl_setting_bar_height"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"  >
+
+                <TextView
+                    android:id="@+id/record_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/motion_detection" />
+
+                <ImageView
+                    android:id="@+id/motion_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/zhzj_switch_off"
+                    android:contentDescription="@string/imagedes"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_motion"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="@dimen/inner_item_progress_width_height"
+                    android:layout_height="@dimen/inner_item_progress_width_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:indeterminateDrawable="@anim/progress_white"
+                    android:indeterminateDuration="560000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/change_buzzer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ctl_setting_bar_height"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/buzzer_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/buzzer" />
+
+                <ImageView
+                    android:id="@+id/buzzer_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/zhzj_switch_off"
+                    android:contentDescription="@string/imagedes"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="@dimen/inner_item_progress_width_height"
+                    android:layout_height="@dimen/inner_item_progress_width_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:indeterminateDrawable="@anim/progress_white"
+                    android:indeterminateDuration="560000" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/buzzer_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/buzzer_texts"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/buzzer_time"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height"
+                    android:gravity="center"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="2" />
+
+                    <RadioButton
+                        android:id="@+id/radio_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="3" />
+                </RadioGroup>
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/change_pir"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ctl_setting_bar_height"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/pir_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/infrared_switch" />
+
+                <ImageView
+                    android:id="@+id/pir_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/zhzj_switch_off"
+                    android:contentDescription="@string/imagedes"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_pir"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="@dimen/inner_item_progress_width_height"
+                    android:layout_height="@dimen/inner_item_progress_width_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:indeterminateDrawable="@anim/progress_white"
+                    android:indeterminateDuration="560000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/alarm_input_switch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ctl_setting_bar_height"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_alarm_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/alarm_input_switch"/>
+
+                <ImageView
+                    android:id="@+id/img_alarm_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/zhzj_switch_off"
+                    android:contentDescription="@string/imagedes"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_alarm_input"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="@dimen/inner_item_progress_width_height"
+                    android:layout_height="@dimen/inner_item_progress_width_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:indeterminateDrawable="@anim/progress_white"
+                    android:indeterminateDuration="560000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/alarm_out_switch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ctl_setting_bar_height"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_alarm_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/alarm_out_switch" />
+
+                <ImageView
+                    android:id="@+id/img_alarm_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/zhzj_switch_off"
+                    android:contentDescription="@string/imagedes"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_alarm_out"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="@dimen/inner_item_progress_width_height"
+                    android:layout_height="@dimen/inner_item_progress_width_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:indeterminateDrawable="@anim/progress_white"
+                    android:indeterminateDuration="560000" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layout_vioce_switch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ctl_setting_bar_height"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_receive_vioce_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/alarm_vioce" />
+
+                <ImageView
+                    android:id="@+id/img_receive_vioce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/zhzj_switch_off"
+                    android:contentDescription="@string/imagedes" />
+            </RelativeLayout>
+
+           <RelativeLayout
+               android:id="@+id/alarm_withzj_switch"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/ctl_setting_bar_height"
+               android:layout_marginBottom="1dp"
+               android:background="@color/white">
+
+               <TextView
+                   android:id="@+id/alarm_bind_zj_txt"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="10dp"
+                   android:text="@string/alarm_bind_zj"/>
+
+               <ImageView
+                   android:id="@+id/img_alarm_bind_zj"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="10dp"
+                   android:background="@drawable/zhzj_switch_off"
+                   android:contentDescription="@string/imagedes"
+                   android:visibility="gone" />
+
+               <ProgressBar
+                   android:id="@+id/progressBar_alarm_bind_zj"
+                   style="?android:attr/progressBarStyleSmall"
+                   android:layout_width="@dimen/inner_item_progress_width_height"
+                   android:layout_height="@dimen/inner_item_progress_width_height"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="10dp"
+                   android:indeterminateDrawable="@anim/progress_white"
+                   android:indeterminateDuration="560000" />
+           </RelativeLayout>
+        </LinearLayout>
+</ScrollView>

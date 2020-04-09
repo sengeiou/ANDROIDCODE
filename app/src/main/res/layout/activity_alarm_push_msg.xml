@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/solid_dark_holo"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_button_bg"
+            android:drawableLeft="@drawable/back_button_ioc_bg"
+            android:drawablePadding="10dp"
+            android:onClick="back"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tv_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/binding"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_left_right_margin"
+        android:layout_marginRight="@dimen/item_left_right_margin"
+        android:layout_marginTop="@dimen/item_group_margin_top"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/add_alarm_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ctl_setting_bar_height"
+            android:background="@drawable/tiao_bg_center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/binding"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/alarmId_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/account_icon"
+                android:text="@string/unbound"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_small"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/progressBar_alarmId"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="@dimen/inner_item_progress_width_height"
+                android:layout_height="@dimen/inner_item_progress_width_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:indeterminateDrawable="@anim/progress_white"
+                android:indeterminateDuration="560000" />
+        </RelativeLayout>
+
+        <com.smartism.znzk.widget.addBar.AddBar
+            android:id="@+id/add_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/add_bar_parent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </com.smartism.znzk.widget.addBar.AddBar>
+    </LinearLayout>
+
+</LinearLayout>

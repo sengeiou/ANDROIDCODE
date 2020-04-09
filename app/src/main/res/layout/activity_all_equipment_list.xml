@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/login_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/solid_dark_holo" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_button_bg"
+            android:drawableLeft="@drawable/back_button_ioc_bg"
+            android:drawablePadding="10dp"
+            android:onClick="back"
+            android:padding="10dp"
+             />
+        
+        <TextView 
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/activity_devices_list_choose"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_all_equipment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+    </ListView>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/selector_btn_blue"
+        android:onClick="determine"
+        android:text="@string/register_determinebutton"
+        android:textColor="@color/selector_btn_textcolor"
+        android:textSize="18sp" />
+
+</LinearLayout>

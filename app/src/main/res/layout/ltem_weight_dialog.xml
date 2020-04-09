@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.smartism.znzk.activity.weight.MyListView
+        android:id="@+id/item_weight_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.smartism.znzk.activity.weight.MyListView>
+
+    <!--<TextView-->
+        <!--android:id="@+id/create_user_tv"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="创建新成员" />-->
+
+</LinearLayout>

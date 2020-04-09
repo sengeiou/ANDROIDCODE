@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/fragContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tab_component"
+        android:layout_below="@+id/layout_title">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_component"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/icon_contact"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_icon">
+
+            <ImageView
+                android:id="@+id/icon_contact_img"
+                android:layout_width="@dimen/tab_icon_width"
+                android:layout_height="@dimen/tab_icon_height"
+                android:layout_centerHorizontal="true"
+                android:focusable="false"
+                android:scaleType="centerCrop"
+                android:src="@drawable/contact" />
+
+            <TextView
+                android:id="@+id/tv_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon_contact_img"
+                android:layout_centerHorizontal="true"
+                android:text="@string/tab_device"
+                android:textSize="@dimen/tab_text_size" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/icon_keyboard"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_icon">
+
+            <ImageView
+                android:id="@+id/icon_keyboard_img"
+                android:layout_width="@dimen/tab_icon_width"
+                android:layout_height="@dimen/tab_icon_height"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/keyboard" />
+
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon_keyboard_img"
+                android:layout_centerHorizontal="true"
+                android:text="@string/tab_message"
+                android:textSize="@dimen/tab_text_size" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/icon_discover"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_icon">
+
+            <ImageView
+                android:id="@+id/icon_discover_img"
+                android:layout_width="@dimen/tab_icon_width"
+                android:layout_height="@dimen/tab_icon_height"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/toolbox" />
+
+            <TextView
+                android:id="@+id/tv_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon_discover_img"
+                android:layout_centerHorizontal="true"
+                android:text="@string/tab_image"
+                android:textSize="@dimen/tab_text_size" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/icon_nearlytell"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_icon"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/icon_nearlytell_img"
+                android:layout_width="@dimen/tab_icon_width"
+                android:layout_height="@dimen/tab_icon_height"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/recent" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/icon_setting"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_icon">
+
+            <ImageView
+                android:id="@+id/icon_setting_img"
+                android:layout_width="@dimen/tab_icon_width"
+                android:layout_height="@dimen/tab_icon_height"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/setting" />
+
+            <TextView
+                android:id="@+id/tv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon_setting_img"
+                android:layout_centerHorizontal="true"
+                android:text="@string/tab_more"
+                android:textSize="@dimen/tab_text_size" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tab_component"
+        android:layout_toRightOf="@+id/tab_component"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/zhzj_imageview_back"
+            android:layout_marginLeft="17dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_tel"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/button_add"
+            style="@style/zhzj_imageview_add"
+            android:scaleType="center" />
+    </RelativeLayout>
+
+</RelativeLayout>

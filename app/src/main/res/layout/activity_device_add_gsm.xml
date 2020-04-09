@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_gsm_status"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_below="@+id/set_top_layout"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txt_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="@string/gsm_tel" />
+
+        <com.smartism.znzk.view.SwitchButton.SwitchButton
+            android:id="@+id/btn_gsm_status"
+            style="@style/SwitchButtonStyleIOS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp" />
+
+        <!--<com.smartism.znzk.view.CheckSwitchButton-->
+        <!--android:id="@+id/btn_gsm_status"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="5dp" />-->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/graysloae" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_gsm_status">
+
+        <ListView
+            android:id="@+id/lv_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:visibility="gone"></ListView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/set_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/device_main_bg">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            style="@style/zhzj_imageview_back"
+            android:layout_marginLeft="17dp"
+            android:clickable="true"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_device_setcall_tip" />
+
+        <ImageView
+            android:id="@+id/addTel"
+            style="@style/zhzj_imageview_add"
+            android:onClick="addTel" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/set_top_layout"
+        android:background="@color/graysloae" />
+
+    <LinearLayout
+        android:id="@+id/setgsm_edit_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/main"
+        android:layout_toEndOf="@id/rl_gsm_status"
+        android:layout_toRightOf="@id/rl_gsm_status"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/ll_typeway"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_device_setgsm_typeway"/>
+
+                <CheckBox
+                    android:id="@+id/gsm_typeway_sms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_device_setgsm_typewaysms"/>
+
+                <CheckBox
+                    android:id="@+id/gsm_typeway_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:layout_marginStart="@dimen/dp_40"
+                    android:text="@string/activity_device_setgsm_typewaycall"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/graysloae" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_editbox"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <LinearLayout
+                android:id="@+id/gcode_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/gcode_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/china" />
+
+                <TextView
+                    android:id="@+id/gcode_aname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="+86"
+                    android:textColor="@color/zhzj_default" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/setgsm_phone_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@color/bg_null"
+                android:hint="@string/activity_device_setcall_phone_notice"
+                android:inputType="number"
+                android:maxLength="16"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_gsmnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_device_setcall_gsm"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/zhzj_zhuce_yanzhengma"
+                    android:visibility="gone" />
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:text="   "-->
+                <!--android:textColor="@color/zhzj_default"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginRight="5dp"/>-->
+
+                <EditText
+                    android:id="@+id/register_email_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/register_emailcodehint"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/register_code_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/register_emailcodesend"
+                    android:textColor="@color/zhzj_default"
+                    android:textSize="14sp" />
+                <!--android:background="@drawable/btn_style_code"-->
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/graysloae" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/voice_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/voice_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_voicecodetip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/register_voicecode_btn"
+                android:layout_toStartOf="@+id/register_voicecode_btn" />
+
+            <TextView
+                android:id="@+id/register_voicecode_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/register_voicecodesend"
+                android:textColor="@color/zhzj_default"
+                android:textSize="14sp" />
+            <!--android:background="@drawable/btn_style_code"-->
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/setgsm_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/zhzj_bg_button_style"
+            android:onClick="subToUpdate"
+            android:padding="5dp"
+            android:text="@string/activity_device_set_updagebutton"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

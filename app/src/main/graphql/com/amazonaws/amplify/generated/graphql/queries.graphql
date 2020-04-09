@@ -1,0 +1,186 @@
+# this is an auto generated file. This will be overwritten
+query GetCtrUserDeviceRelations($id: ID!) {
+  getCtrUserDeviceRelations(id: $id) {
+    id
+    uid
+    mac
+    type
+    name
+  }
+}
+query ListCtrUserDeviceRelations(
+  $filter: TableCtrUserDeviceRelationsFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listCtrUserDeviceRelations(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      id
+      uid
+      mac
+      type
+      name
+    }
+    nextToken
+  }
+}
+query GetCtrUserDeviceShare($id: ID!) {
+  getCtrUserDeviceShare(id: $id) {
+    id
+    uid
+    key
+    mac
+    validityTime
+  }
+}
+query ListCtrUserDeviceShares(
+  $filter: TableCtrUserDeviceShareFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listCtrUserDeviceShares(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      id
+      uid
+      key
+      mac
+      validityTime
+    }
+    nextToken
+  }
+}
+query GetCtrAromaLiquid($id: ID!) {
+  getCtrAromaLiquid(id: $id) {
+    id
+    type
+    temperature
+  }
+}
+query ListCtrAromaLiquids(
+  $filter: TableCtrAromaLiquidFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listCtrAromaLiquids(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      type
+      temperature
+    }
+    nextToken
+  }
+}
+query GetCtrUserGroup($id: ID!) {
+  getCtrUserGroup(id: $id) {
+    id
+    uid
+    name
+    type
+  }
+}
+query ListCtrUserGroups(
+  $filter: TableCtrUserGroupFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listCtrUserGroups(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      uid
+      name
+      type
+    }
+    nextToken
+  }
+}
+query GetCtrGroupDevices($id: ID!) {
+  getCtrGroupDevices(id: $id) {
+    id
+    gid
+    mac
+  }
+}
+query ListCtrGroupDevices(
+  $filter: TableCtrGroupDevicesFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listCtrGroupDevices(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      gid
+      mac
+    }
+    nextToken
+  }
+}
+query GetCtrUserInfoTable($id: ID!) {
+  getCtrUserInfoTable(id: $id) {
+    id
+    uid
+    client
+    snsarn
+    logo
+    lang
+    time_zone
+  }
+}
+query ListCtrUserInfoTables(
+  $filter: TableCtrUserInfoTableFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listCtrUserInfoTables(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      uid
+      client
+      snsarn
+      logo
+      lang
+      time_zone
+    }
+    nextToken
+  }
+}
+query GetCtrDeviceFirmware($id: ID!) {
+  getCtrDeviceFirmware(id: $id) {
+    id
+    type
+    versionCode
+    versionName
+    url
+    domain
+    md5
+  }
+}
+query ListCtrDeviceFirmwares(
+  $filter: TableCtrDeviceFirmwareFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listCtrDeviceFirmwares(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      id
+      type
+      versionCode
+      versionName
+      url
+      domain
+      md5
+    }
+    nextToken
+  }
+}

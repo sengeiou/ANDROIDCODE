@@ -1,0 +1,194 @@
+<com.smartism.znzk.view.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="50dp" >
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.smartism.znzk.view.CircleImageView
+                android:id="@+id/iv_bottom"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tv_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <Button
+                android:id="@+id/tv_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_button_bg"
+                android:drawableLeft="@drawable/setting_icon"
+                android:drawablePadding="5dp"
+                android:padding="3dp"
+                android:text="@string/action_settings"
+                android:textColor="@color/whitesmoke" />
+            <!--
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_launcher" />
+            -->
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_mail"
+            android:layout_below="@id/ll1"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <com.smartism.znzk.view.MyRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg_normal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/solid_dark_holo" >
+
+            <com.smartism.znzk.view.CircleImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/conn_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:layout_toRightOf="@id/iv_icon"
+                android:scaleType="centerCrop"
+                android:src="@drawable/loading" />
+
+            <TextView
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/actionbar_more_icon" />
+        </RelativeLayout>
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_adv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_below="@+id/textview_auto_roll"-->
+            <!--android:drawableLeft="@drawable/icon_trumpet"-->
+            <!--android:ellipsize="marquee"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:marqueeRepeatLimit="marquee_forever"-->
+            <!--android:padding="4dp"-->
+            <!--android:scrollHorizontally="true"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="#cccccc"-->
+            <!--android:background="@color/dimgray"-->
+             <!--/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/ll_notice"
+            android:orientation="horizontal"
+            android:layout_below="@+id/rl_title"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:id="@+id/iv_notice"
+                android:src="@drawable/icon_trumpet"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:background="@color/dimgray"
+                android:layout_height="30dp" />
+
+            <com.smartism.znzk.view.TextViewAutoVerticalScroll
+                android:id="@+id/textview_auto_roll"
+                android:layout_toRightOf="@+id/iv_notice"
+                android:background="@color/dimgray"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_ly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_notice" >
+
+            <ListView
+                android:id="@+id/dv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@drawable/deviceslist_divider"
+                android:dividerHeight="1px"
+                android:headerDividersEnabled="false"
+                android:listSelector="@android:color/transparent" >
+            </ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </com.smartism.znzk.view.MyRelativeLayout>
+
+    <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/tabLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--app:tabGravity="fill"-->
+        <!--app:tabIndicatorHeight="0dp"-->
+        <!--app:tabMode="fixed"-->
+        <!--app:tabSelectedTextColor="#FF4081"-->
+        <!--app:tabTextColor="#000">-->
+    <!--</android.support.design.widget.TabLayout>-->
+</com.smartism.znzk.view.DragLayout>
